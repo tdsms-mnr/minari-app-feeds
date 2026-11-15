@@ -99,6 +99,7 @@
   @media (max-width: 820px) { :lang(ja) h1 { font-size:34px; } :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { font-size:26px; } }
   :lang(ja) body { word-break:auto-phrase; }
   .nb { display:inline-block; }
+  .plan h3 .price { font-weight:400; color:var(--dim); margin-left:8px; }
   .card .shot.flush { padding:0; }
   .card .shot.flush img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; }
   .card .shot.swatches { align-items:center; padding:32px; }
@@ -121,12 +122,21 @@
    "description": "A quiet countdown widget for iPhone. It puts the days until your important dates on the Home Screen and Lock Screen. One widget and up to three events stay free; Pro is a one-time purchase, not a subscription. No ads, no account.",
    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/ja/",
    "installUrl": "https://apps.apple.com/app/id6796972154",
-   "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD",
-    "description": "One widget and up to three events free. Pro is a one-time purchase."
-   },
+   "offers": [
+    {
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "USD",
+     "description": "One widget and up to three events free. Pro is a one-time purchase."
+    },
+    {
+     "@type": "Offer",
+     "name": "Datto Pro",
+     "price": "1000",
+     "priceCurrency": "JPY",
+     "description": "One-time in-app purchase, not a subscription."
+    }
+   ],
    "author": {
     "@type": "Person",
     "name": "minari"
@@ -134,6 +144,43 @@
    "inLanguage": [
     "en",
     "ja"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "サブスクなしで使えるiPhoneのカウントダウンウィジェットはある？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "DattoのProは買い切りで、サブスクリプションではありません。ウィジェット1枚とイベント3件までは、ずっと無料で使えます。広告もアカウント登録もありません。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "大切な日までの残り日数を、ホーム画面に出すには？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Dattoに日付を登録して、ホーム画面かロック画面にDattoのウィジェットを置きます。アプリを開かなくても、残り日数がそこに出ます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "誕生日や記念日を、毎年くり返しカウントダウンできる？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "できます。イベントは毎年・毎月の繰り返しにでき、次の年へひとりでに進みます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "iPhoneとiPadで同期できる？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iCloud同期をオンにすると、同じAppleアカウントの端末すべてに同じ日付が並びます。データが置かれるのは、あなたのiCloudだけです。"
+     }
+    }
    ]
   }
  ]
@@ -182,10 +229,16 @@
 <section class="wrap pricing">
   <h2>料金のこと</h2>
   <div class="plan"><h3>無料</h3><p class="note">広告なし・アカウント不要。</p><ul><li>大切な日までの残り日数をカウントダウン（3件まで）</li><li>ホーム画面ウィジェット（スモール）に1件表示</li><li>背景色は、洗練された12色のパレット＋自由なカスタムカラー</li><li>ダークモードに対応（端末に合わせるか、いつも明るく／暗く保つかを選べます）</li></ul></div>
-  <div class="plan"><h3>Datto Pro</h3><p class="note">買い切り・サブスクリプションではありません。</p><ul><li>ウィジェットを好きなだけ。Medium・Large・ロック画面にも対応</li><li>イベントを無制限に</li><li>繰り返しイベント（毎年・毎月、次の年へひとりでに）</li><li>節目のお知らせ（100日前・前日・当日など。音は鳴りません）</li><li>時間・分まで表示（その日が近づいたら、こまやかに）</li><li>カテゴリーで分けて置ける（仕事・家族・旅。一覧の上で切り替え）</li><li>iCloudで同期（同じAppleアカウントの端末なら、機種を変えても同じ予定が並びます）</li></ul></div>
+  <div class="plan"><h3>Datto Pro<span class="price">¥1,000</span></h3><p class="note">買い切り・サブスクリプションではありません。</p><ul><li>ウィジェットを好きなだけ。Medium・Large・ロック画面にも対応</li><li>イベントを無制限に</li><li>繰り返しイベント（毎年・毎月、次の年へひとりでに）</li><li>節目のお知らせ（100日前・前日・当日など。音は鳴りません）</li><li>時間・分まで表示（その日が近づいたら、こまやかに）</li><li>カテゴリーで分けて置ける（仕事・家族・旅。一覧の上で切り替え）</li><li>iCloudで同期（同じAppleアカウントの端末なら、機種を変えても同じ予定が並びます）</li></ul></div>
 </section>
 
-
+<section class="wrap faq">
+  <h2>よくある質問</h2>
+  <div class="q"><b>サブスクなしで使えるiPhoneのカウントダウンウィジェットはある？</b><span>DattoのProは買い切りで、サブスクリプションではありません。ウィジェット1枚とイベント3件までは、ずっと無料で使えます。広告もアカウント登録もありません。</span></div>
+  <div class="q"><b>大切な日までの残り日数を、ホーム画面に出すには？</b><span>Dattoに日付を登録して、ホーム画面かロック画面にDattoのウィジェットを置きます。アプリを開かなくても、残り日数がそこに出ます。</span></div>
+  <div class="q"><b>誕生日や記念日を、毎年くり返しカウントダウンできる？</b><span>できます。イベントは毎年・毎月の繰り返しにでき、次の年へひとりでに進みます。</span></div>
+  <div class="q"><b>iPhoneとiPadで同期できる？</b><span>iCloud同期をオンにすると、同じAppleアカウントの端末すべてに同じ日付が並びます。データが置かれるのは、あなたのiCloudだけです。</span></div>
+</section>
 
 <section class="closing">
   <p><span class="lead">シンプルに、</span><span class="nb">あなたの「その日まで」を。</span></p>

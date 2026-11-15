@@ -100,74 +100,84 @@
   @media (max-width: 820px) { :lang(ja) h1 { font-size:34px; } :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { font-size:26px; } }
   :lang(ja) body { word-break:auto-phrase; }
   .nb { display:inline-block; }
+  .plan h3 .price { font-weight:400; color:var(--dim); margin-left:8px; }
   .card .shot.flush { padding:0; }
   .card .shot.flush img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; }
 </style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "Savebar",
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "FinanceApplication",
+   "description": "サブスクなしの貯金目標ウィジェット。進み具合をホーム画面とロック画面に。ウィジェットからワンタップで足せます。銀行とはつながず、金額はiPhoneの中だけ。",
+   "installUrl": "https://apps.apple.com/app/id6815409629",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/",
+   "offers": [
     {
-      "@type": "SoftwareApplication",
-      "name": "Savebar",
-      "operatingSystem": "iOS 17 or later",
-      "applicationCategory": "FinanceApplication",
-      "description": "サブスクなしの貯金目標ウィジェット。進み具合をホーム画面とロック画面に。ウィジェットからワンタップで足せます。銀行とはつながず、金額はiPhoneの中だけ。",
-      "installUrl": "https://apps.apple.com/app/id6815409629",
-      "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "description": "Free with a one-time Pro purchase. Not a subscription."
-      },
-      "author": {
-        "@type": "Person",
-        "name": "minari"
-      },
-      "inLanguage": [
-        "en",
-        "ja"
-      ]
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "USD",
+     "description": "Free with a one-time Pro purchase. Not a subscription."
     },
     {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "サブスクなしの貯金アプリはありますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "あります。SavebarはSmallウィジェットと目標1つが無料で、目標を増やせて大きいウィジェットも使えるProは買い切りです。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "銀行とつながりますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "つながりません。金額は自分で足すので、ログインも連携もありません。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "アプリを開かずに足せますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "はい。ホーム画面のウィジェットの金額のボタン（＋¥500など）をタップします。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "目標と金額はどこに保存されますか？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "iPhoneの中だけです。アップロードはしません。"
-          }
-        }
-      ]
+     "@type": "Offer",
+     "name": "Savebar Pro",
+     "price": "800",
+     "priceCurrency": "JPY",
+     "description": "One-time in-app purchase, not a subscription."
     }
-  ]
+   ],
+   "author": {
+    "@type": "Person",
+    "name": "minari"
+   },
+   "inLanguage": [
+    "en",
+    "ja"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "サブスクなしの貯金アプリはありますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "あります。SavebarはSmallウィジェットと目標1つが無料で、目標を増やせて大きいウィジェットも使えるProは買い切りです。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "銀行とつながりますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "つながりません。金額は自分で足すので、ログインも連携もありません。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "アプリを開かずに足せますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。ホーム画面のウィジェットの金額のボタン（＋¥500など）をタップします。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "目標と金額はどこに保存されますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iPhoneの中だけです。アップロードはしません。"
+     }
+    }
+   ]
+  }
+ ]
 }
 </script>
 
@@ -221,7 +231,7 @@
 <section class="wrap pricing">
   <h2>料金のこと</h2>
   <div class="plan"><h3>無料</h3><p class="note">広告なし・アカウント不要。</p><ul><li>Smallウィジェット：目標1つのバーと％、アプリを開かずに決めた金額を足せるボタン</li><li>目標1つ（名前・目標額・任意の期日）</li><li>目標に写真と商品のリンク</li><li>期日を決めると「あと◯日・1日いくら」</li><li>目標ごとに別の通貨</li></ul></div>
-  <div class="plan"><h3>Savebar Pro</h3><p class="note">買い切り・サブスクなし。</p><ul><li>目標は無制限：いくつもの目標を同時に</li><li>Medium・Largeウィジェット：複数の目標を一度に。目標ごとに金額のボタンを2つまで</li><li>ロック画面ウィジェット</li><li>Apple Watchアプリと文字盤のコンプリケーション</li></ul></div>
+  <div class="plan"><h3>Savebar Pro<span class="price">¥800</span></h3><p class="note">買い切り・サブスクなし。</p><ul><li>目標は無制限：いくつもの目標を同時に</li><li>Medium・Largeウィジェット：複数の目標を一度に。目標ごとに金額のボタンを2つまで</li><li>ロック画面ウィジェット</li><li>Apple Watchアプリと文字盤のコンプリケーション</li></ul></div>
 </section>
 
 <section class="wrap faq">
@@ -229,10 +239,10 @@
   <div class="q"><b>サブスクなしの貯金アプリはありますか？</b><span>あります。SavebarはSmallウィジェットと目標1つが無料で、目標を増やせて大きいウィジェットも使えるProは買い切りです。</span></div>
   <div class="q"><b>銀行とつながりますか？</b><span>つながりません。金額は自分で足すので、ログインも連携もありません。</span></div>
   <div class="q"><b>アプリを開かずに足せますか？</b><span>はい。ホーム画面のウィジェットの金額のボタン（＋¥500など）をタップします。ほかの金額を足すときは、アプリを開いて「＋ 入金」から入れます。</span></div>
+  <div class="q"><b>目標と金額はどこに保存されますか？</b><span>iPhoneの中だけです。アップロードはしません。</span></div>
   <div class="q"><b>ウィジェットのボタンの金額を変えるには？</b><span>目標を開いて「…」＞「編集」の「ウィジェットで足す金額」を変えます。Medium・Largeには2つ目の金額も出せます。</span></div>
   <div class="q"><b>目標を消すには？</b><span>一覧で目標を長押しして「削除」をタップします。数秒のあいだは取り消せます。</span></div>
   <div class="q"><b>お店のリンクで写真が入りません。</b><span>アプリからページを読めないお店があります。そのときは写真アプリから選んでください。</span></div>
-  <div class="q"><b>目標と金額はどこに保存されますか？</b><span>iPhoneの中だけです。アップロードはしません。 <a href="../../privacy/savebar/">プライバシーポリシー</a></span></div>
 </section>
 
 <section class="closing">
@@ -240,4 +250,4 @@
   <a class="badge" href="https://apps.apple.com/app/id6815409629"><img src="img/badge_ja.svg" alt="App Storeからダウンロード"></a>
 </section>
 
-<footer>19言語に対応・iOS 17以降・Made by minari</footer>
+<footer>19言語に対応・iOS 17以降・Made by minari・<a href="../../privacy/savebar/">プライバシーポリシー</a></footer>

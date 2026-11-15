@@ -100,74 +100,84 @@
   @media (max-width: 820px) { :lang(ja) h1 { font-size:34px; } :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { font-size:26px; } }
   :lang(ja) body { word-break:auto-phrase; }
   .nb { display:inline-block; }
+  .plan h3 .price { font-weight:400; color:var(--dim); margin-left:8px; }
   .card .shot.flush { padding:0; }
   .card .shot.flush img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; }
 </style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "Savebar",
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "FinanceApplication",
+   "description": "A savings goal widget for iPhone with no subscription. See your progress on the Home Screen and Lock Screen and add with one tap from the widget. No bank connection — amounts stay on your iPhone.",
+   "installUrl": "https://apps.apple.com/app/id6815409629",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/en/",
+   "offers": [
     {
-      "@type": "SoftwareApplication",
-      "name": "Savebar",
-      "operatingSystem": "iOS 17 or later",
-      "applicationCategory": "FinanceApplication",
-      "description": "A savings goal widget for iPhone with no subscription. See your progress on the Home Screen and Lock Screen and add with one tap from the widget. No bank connection — amounts stay on your iPhone.",
-      "installUrl": "https://apps.apple.com/app/id6815409629",
-      "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/en/",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "description": "Free with a one-time Pro purchase. Not a subscription."
-      },
-      "author": {
-        "@type": "Person",
-        "name": "minari"
-      },
-      "inLanguage": [
-        "en",
-        "ja"
-      ]
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "USD",
+     "description": "Free with a one-time Pro purchase. Not a subscription."
     },
     {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is there a savings goal tracker without a subscription?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Savebar's Small widget and one goal are free, and Pro — more goals and bigger widgets — is a one-time purchase."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does it connect to my bank?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. You add amounts yourself, so there are no logins and nothing to link."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I add money without opening the app?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Tap the amount button (like +$10) on the Home Screen widget."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where are my goals and amounts stored?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "On your iPhone. Nothing is uploaded."
-          }
-        }
-      ]
+     "@type": "Offer",
+     "name": "Savebar Pro",
+     "price": "4.99",
+     "priceCurrency": "USD",
+     "description": "One-time in-app purchase, not a subscription."
     }
-  ]
+   ],
+   "author": {
+    "@type": "Person",
+    "name": "minari"
+   },
+   "inLanguage": [
+    "en",
+    "ja"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is there a savings goal tracker without a subscription?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Savebar's Small widget and one goal are free, and Pro — more goals and bigger widgets — is a one-time purchase."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it connect to my bank?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. You add amounts yourself, so there are no logins and nothing to link."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I add money without opening the app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Tap the amount button (like +$10) on the Home Screen widget."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where are my goals and amounts stored?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On your iPhone. Nothing is uploaded."
+     }
+    }
+   ]
+  }
+ ]
 }
 </script>
 
@@ -221,7 +231,7 @@
 <section class="wrap pricing">
   <h2>Pricing, plainly</h2>
   <div class="plan"><h3>Free</h3><p class="note">No ads. No account.</p><ul><li>Small widget with a progress bar and a one-tap amount button</li><li>One goal — name, target amount and optional date</li><li>A photo and a product link for your goal</li><li>Days left and how much per day</li><li>Any currency, even a different one for each goal</li></ul></div>
-  <div class="plan"><h3>Savebar Pro</h3><p class="note">One-time purchase, no subscription.</p><ul><li>Unlimited goals: save for several things at once</li><li>Medium and Large widgets with several goals and up to two amount buttons each</li><li>Lock Screen widgets</li><li>Apple Watch app and watch face complications</li></ul></div>
+  <div class="plan"><h3>Savebar Pro<span class="price">$4.99</span></h3><p class="note">One-time purchase, no subscription.</p><ul><li>Unlimited goals: save for several things at once</li><li>Medium and Large widgets with several goals and up to two amount buttons each</li><li>Lock Screen widgets</li><li>Apple Watch app and watch face complications</li></ul></div>
 </section>
 
 <section class="wrap faq">
@@ -229,10 +239,10 @@
   <div class="q"><b>Is there a savings goal tracker without a subscription?</b><span>Yes. Savebar&#x27;s Small widget and one goal are free, and Pro — more goals and bigger widgets — is a one-time purchase.</span></div>
   <div class="q"><b>Does it connect to my bank?</b><span>No. You add amounts yourself, so there are no logins and nothing to link.</span></div>
   <div class="q"><b>Can I add money without opening the app?</b><span>Yes. Tap the amount button (like +$10) on the Home Screen widget. To add a different amount, open the app and tap “+ Add”.</span></div>
+  <div class="q"><b>Where are my goals and amounts stored?</b><span>On your iPhone. Nothing is uploaded.</span></div>
   <div class="q"><b>How do I change the amount on the widget button?</b><span>Open the goal, tap “…” › Edit, and change “Widget amounts”. Medium and Large widgets can show a second amount.</span></div>
   <div class="q"><b>How do I delete a goal?</b><span>Touch and hold the goal in the list and tap Delete. You can undo it for a few seconds.</span></div>
   <div class="q"><b>A store link didn&#x27;t fill in the photo.</b><span>Some stores don&#x27;t let apps read their pages. Choose a photo from your library instead.</span></div>
-  <div class="q"><b>Where are my goals and amounts stored?</b><span>On your iPhone. Nothing is uploaded. <a href="../../../privacy/savebar/">Privacy policy</a></span></div>
 </section>
 
 <section class="closing">
@@ -240,4 +250,4 @@
   <a class="badge" href="https://apps.apple.com/app/id6815409629"><img src="../img/badge_en.svg" alt="Download on the App Store"></a>
 </section>
 
-<footer>Available in 19 languages · iOS 17 or later · Made by minari</footer>
+<footer>Available in 19 languages · iOS 17 or later · Made by minari · <a href="../../../privacy/savebar/">Privacy policy</a></footer>
