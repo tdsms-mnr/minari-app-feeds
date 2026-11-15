@@ -14,8 +14,9 @@ BASE = "https://tdsms-mnr.github.io/minari-app-feeds/apps/weeklybump/"
 STORE = "https://apps.apple.com/app/id6815057854"
 
 LANGS = [  # (コード, フォルダ, hreflang, 表示名)
-    ("ja", "", "ja", "日本語"),
-    ("en", "en/", "en", "English"),
+    # URL の形（2026-11-16 本人決定）：英語＝ルート・ほかの言語＝/<言語>/
+    ("ja", "ja/", "ja", "日本語"),
+    ("en", "", "en", "English"),
     ("th", "th/", "th", "ไทย"),
     ("ko", "ko/", "ko", "한국어"),
     ("pt", "pt/", "pt-BR", "Português"),
@@ -23,7 +24,8 @@ LANGS = [  # (コード, フォルダ, hreflang, 表示名)
 ]
 
 # プライバシーポリシーは ja（先頭）と en（#en）だけ。
-PRIVACY_ANCHOR = {"ja": "", "en": "#en", "th": "#en", "ko": "#en", "pt": "#en", "es": "#en"}
+# プライバシーポリシーは英語＝ルート・日本語＝ja/（2026-11-16 に分けた）
+PRIVACY_ANCHOR = {"ja": "ja/", "en": "", "th": "", "ko": "", "pt": "", "es": ""}
 
 T = {
 "ja": dict(
@@ -276,7 +278,7 @@ def page(code, folder, hreflang, label):
            "<title>%s</title>" % e(t["title"]),
            '<meta name="description" content="%s">' % e(t["desc"]),
            '<link rel="canonical" href="%s%s">' % (BASE, folder), alts,
-           '<link rel="alternate" hreflang="x-default" href="%sen/">' % BASE,
+           '<link rel="alternate" hreflang="x-default" href="%s">' % BASE,
            STYLE_BLOCK,
            '<script type="application/ld+json">\n%s\n</script>' % json.dumps(ld, ensure_ascii=False, indent=2),
            "", "<h1>Petalweek</h1>", '<p class="tagline">%s</p>' % e(t["tagline"]), '<p class="langs">%s</p>' % langs,
@@ -292,7 +294,7 @@ def page(code, folder, hreflang, label):
     out += ["<h2>%s</h2>" % e(t["h_spec"]), "<ul>" + "".join("<li>%s</li>" % e(s) for s in t["spec"]) + "</ul>",
             "<h2>%s</h2>" % e(t["h_privacy"]),
             '<p>%s <a href="%sprivacy/weeklybump/%s">%s</a></p>' % (e(t["privacy"]), root, PRIVACY_ANCHOR[code], e(t["privacy_link"])),
-            '<p class="dim" style="margin-top:3rem">\n  <a href="%s">minari-app-feeds</a> · Made by minari\n</p>' % root, ""]
+            '<p class="dim" style="margin-top:3rem">\n  Made by minari\n</p>', ""]   # 一覧ページは 2026-11-16 に消した
     return "\n".join(out)
 
 
