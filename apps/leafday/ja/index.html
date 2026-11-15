@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<script src="/minari-app-feeds/legacy-notice.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leafday — 今日水をやる鉢を、ホーム画面に（サブスクなし）</title>
+<meta name="description" content="サブスクなしの iPhone 水やりウィジェット。今日水をやる鉢がホーム画面でわかり、ウィジェットのしずくをタップで完了。植物判定なし・アカウント不要。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/ja/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/ja/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#2F6B4F; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#8CC7A6; }
+  }
+  body { font-family: -apple-system, "Helvetica Neue", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .2rem; letter-spacing: -.01em; }
+  .tagline { color: var(--accent); font-weight: 600; margin: 0 0 2rem; }
+  h2 { font-size: 1.05rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  .langs { font-size: .85rem; color: var(--dim); margin-bottom: 2rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Leafday",
+      "operatingSystem": "iOS 17 or later",
+      "applicationCategory": "LifestyleApplication",
+      "description": "サブスクなしの iPhone 水やりウィジェット。今日水をやる鉢がホーム画面でわかり、ウィジェットのしずくをタップで完了。植物判定なし・アカウント不要。",
+      "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/ja/",
+      "installUrl": "https://apps.apple.com/app/id6815058276",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free with a one-time Pro purchase. Not a subscription."
+      },
+      "author": {
+        "@type": "Person",
+        "name": "minari"
+      },
+      "inLanguage": [
+        "en",
+        "ja",
+        "es",
+        "pt",
+        "zh-Hant"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "サブスクなしの水やりリマインダーはありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "あります。Leafday は Small ウィジェットと鉢の登録が無料で、Pro は買い切りです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "アプリを開かずに水やり済みにできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "できます。ホーム画面のウィジェットのしずくをタップします。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "植物の名前を判定しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "しません。サーバーもサブスクも要らない形にするため、判定はあえて入れていません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "鉢と写真はどこに保存されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iPhone の中です。iCloud 同期をオンにしたときだけ、写真以外があなた自身の iCloud を通じてもう1台とそろいます。開発者には届きません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "天気はどこから取っていますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Apple Weather（WeatherKit）です。位置は約11km単位に丸めて、天気を調べるためだけに使います。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "雨が降ったのに予定がずれません。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "「天気で調整」で動くのは「外に置いている」をオンにした鉢だけです。室内の鉢は、とても暑い日だけ1日早まります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "不具合や要望はどこに送ればいいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "アプリの設定の「問い合わせ・不具合の報告」からメールで送れます。いただいたメッセージはすべて読んでいます。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<h1>Leafday</h1>
+<p class="tagline">今日水をやる鉢を、ホーム画面に。サブスクなし。</p>
+<p class="langs"><a href="../">English</a></p>
+
+<p class="lede">Leafday は、今日水をやる鉢をホーム画面に出す iPhone のウィジェットです。ウィジェットのしずくをタップすれば水やり済み。植物の判定も AI 診断もサブスクもなく、あなたの鉢と、それぞれがあと何日で乾くかだけ。</p>
+
+<a class="cta" href="https://apps.apple.com/app/id6815058276">App Store で見る</a>
+
+<h2>料金について</h2>
+<ul>
+  <li>Pro は買い切り。サブスクではありません。</li>
+  <li>広告なし・アカウント不要。</li>
+  <li>Small ウィジェットはずっと無料。</li>
+</ul>
+
+<h2>できること</h2>
+<ul>
+  <li>無料の Small ウィジェットに今日の鉢と水やりボタン</li>
+  <li>鉢は何個でも・写真も付けられる</li>
+  <li>よくある観葉植物の間隔の目安（あくまで目安。まず土を触って）</li>
+  <li>Pro：Medium・Large・ロック画面、肥料・葉水・植え替えの予定、部屋ごとの管理と部屋を選べるウィジェット、旅行モード、朝のリマインダー、天気で水やりを調整、iCloud 同期、手入れの振り返り</li>
+  <li>英語・日本語・スペイン語・ポルトガル語・中国語（繁体字）</li>
+  <li>iOS 17 以降</li>
+</ul>
+
+<h2>使い方</h2>
+<ol>
+  <li>右上の「＋」で鉢を足します。名前と水やりの間隔を決めるだけ。写真と部屋は後からでも。</li>
+  <li>水をやったら、一覧かウィジェットのしずくをタップ。間違えたらもう一度タップで取り消せます。</li>
+  <li>ウィジェットは、ホーム画面の何もないところを長押し →「編集」→「ウィジェットを追加」→ Leafday から置きます。</li>
+  <li>天気で調整（Pro）：設定の「天気で調整」をオン。外の鉢は、鉢の編集画面で「外に置いている」もオンにします。雨の後は1日待ち、暑い日は1日早まります。</li>
+  <li>旅行モード（Pro）：設定の「旅行を予定する」で出発日と帰宅日を入れると、留守の間は予定が止まり、帰ったら留守の日数だけ後ろにずれます。</li>
+  <li>iCloud 同期（Pro）：両方の iPhone で設定の「iCloud で同期」をオンにします。写真は同期しません。</li>
+  <li>もう一度インストールしたとき・機種変更のときは、設定の「購入を復元」で Pro が戻ります。</li>
+</ol>
+
+<h2>よくある質問</h2>
+<p><strong>サブスクなしの水やりリマインダーはありますか？</strong><br>あります。Leafday は Small ウィジェットと鉢の登録が無料で、Pro は買い切りです。</p>
+<p><strong>アプリを開かずに水やり済みにできますか？</strong><br>できます。ホーム画面のウィジェットのしずくをタップします。</p>
+<p><strong>植物の名前を判定しますか？</strong><br>しません。サーバーもサブスクも要らない形にするため、判定はあえて入れていません。</p>
+<p><strong>鉢と写真はどこに保存されますか？</strong><br>iPhone の中です。iCloud 同期をオンにしたときだけ、写真以外があなた自身の iCloud を通じてもう1台とそろいます。開発者には届きません。</p>
+<p><strong>天気はどこから取っていますか？</strong><br>Apple Weather（WeatherKit）です。位置は約11km単位に丸めて、天気を調べるためだけに使います。</p>
+<p><strong>雨が降ったのに予定がずれません。</strong><br>「天気で調整」で動くのは「外に置いている」をオンにした鉢だけです。室内の鉢は、とても暑い日だけ1日早まります。</p>
+<p><strong>不具合や要望はどこに送ればいいですか？</strong><br>アプリの設定の「問い合わせ・不具合の報告」からメールで送れます。いただいたメッセージはすべて読んでいます。</p>
+
+<h2>プライバシー</h2>
+<p>鉢と写真は端末の中にあります。iCloud 同期をオンにしたときだけ、写真以外をあなたの iCloud でそろえます。
+<a href="../../../privacy/leafday/ja/">プライバシーポリシー</a>.</p>
+
+<p class="dim" style="margin-top:3rem">
+  <a href="../../../">minari-app-feeds</a> · Made by minari
+</p>

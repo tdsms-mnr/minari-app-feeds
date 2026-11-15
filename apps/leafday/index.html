@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <meta charset="utf-8">
 <script src="/minari-app-feeds/legacy-notice.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leafday — 今日水をやる鉢を、ホーム画面に（サブスクなし）</title>
-<meta name="description" content="サブスクなしの iPhone 水やりウィジェット。今日水をやる鉢がホーム画面でわかり、ウィジェットのしずくをタップで完了。植物判定なし・アカウント不要。">
+<title>Leafday — which plants need water today, on your Home Screen (no subscription)</title>
+<meta name="description" content="A plant watering widget for iPhone with no subscription. See which plants need water today on the Home Screen and tap the drop on the widget to mark it done. No plant ID, no account.">
 <link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/">
-<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/en/">
-<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/">
-<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/en/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/ja/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/">
 <style>
   :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#2F6B4F; }
   @media (prefers-color-scheme: dark) {
@@ -38,7 +38,7 @@
       "name": "Leafday",
       "operatingSystem": "iOS 17 or later",
       "applicationCategory": "LifestyleApplication",
-      "description": "サブスクなしの iPhone 水やりウィジェット。今日水をやる鉢がホーム画面でわかり、ウィジェットのしずくをタップで完了。植物判定なし・アカウント不要。",
+      "description": "A plant watering widget for iPhone with no subscription. See which plants need water today on the Home Screen and tap the drop on the widget to mark it done. No plant ID, no account.",
       "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/",
       "installUrl": "https://apps.apple.com/app/id6815058276",
       "offers": {
@@ -64,58 +64,58 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "サブスクなしの水やりリマインダーはありますか？",
+          "name": "Is there a plant watering reminder without a subscription?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "あります。Leafday は Small ウィジェットと鉢の登録が無料で、Pro は買い切りです。"
+            "text": "Yes. Leafday's Small widget and unlimited plants are free, and Pro is a one-time purchase."
           }
         },
         {
           "@type": "Question",
-          "name": "アプリを開かずに水やり済みにできますか？",
+          "name": "Can I mark a plant as watered without opening the app?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "できます。ホーム画面のウィジェットのしずくをタップします。"
+            "text": "Yes. Tap the drop on the Home Screen widget."
           }
         },
         {
           "@type": "Question",
-          "name": "植物の名前を判定しますか？",
+          "name": "Does it identify plants?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "しません。サーバーもサブスクも要らない形にするため、判定はあえて入れていません。"
+            "text": "No. Leafday deliberately skips identification so it can work without a server or a subscription."
           }
         },
         {
           "@type": "Question",
-          "name": "鉢と写真はどこに保存されますか？",
+          "name": "Where are my plants and photos stored?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "iPhone の中です。iCloud 同期をオンにしたときだけ、写真以外があなた自身の iCloud を通じてもう1台とそろいます。開発者には届きません。"
+            "text": "On your iPhone. Only if you turn on iCloud sync, everything except photos is matched to your other iPhone through your own iCloud. Nothing reaches the developer."
           }
         },
         {
           "@type": "Question",
-          "name": "天気はどこから取っていますか？",
+          "name": "Where does the weather come from?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Apple Weather（WeatherKit）です。位置は約11km単位に丸めて、天気を調べるためだけに使います。"
+            "text": "Apple Weather (WeatherKit). Your location is rounded to about 11 km and used only to look up the weather."
           }
         },
         {
           "@type": "Question",
-          "name": "雨が降ったのに予定がずれません。",
+          "name": "It rained, but my schedule didn't move.",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "「天気で調整」で動くのは「外に置いている」をオンにした鉢だけです。室内の鉢は、とても暑い日だけ1日早まります。"
+            "text": "Weather adjustments only move plants with “Outdoors” turned on. Indoor plants only come a day sooner on very hot days."
           }
         },
         {
           "@type": "Question",
-          "name": "不具合や要望はどこに送ればいいですか？",
+          "name": "Where can I send a bug report or a request?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "アプリの設定の「問い合わせ・不具合の報告」からメールで送れます。いただいたメッセージはすべて読んでいます。"
+            "text": "From “Contact / report a problem” in the app’s Settings. Every message is read."
           }
         }
       ]
@@ -125,53 +125,53 @@
 </script>
 
 <h1>Leafday</h1>
-<p class="tagline">今日水をやる鉢を、ホーム画面に。サブスクなし。</p>
-<p class="langs"><a href="en/">English</a></p>
+<p class="tagline">Which plants need water today? Tap the drop. No subscription.</p>
+<p class="langs"><a href="ja/">日本語</a></p>
 
-<p class="lede">Leafday は、今日水をやる鉢をホーム画面に出す iPhone のウィジェットです。ウィジェットのしずくをタップすれば水やり済み。植物の判定も AI 診断もサブスクもなく、あなたの鉢と、それぞれがあと何日で乾くかだけ。</p>
+<p class="lede">Leafday shows which of your plants need water today, right on your Home Screen. Tap the drop on the widget and it&#x27;s done. No plant identification, no AI diagnosis, no subscription — just your pots and how many days until each is thirsty.</p>
 
-<a class="cta" href="https://apps.apple.com/app/id6815058276">App Store で見る</a>
+<a class="cta" href="https://apps.apple.com/app/id6815058276">View on the App Store</a>
 
-<h2>料金について</h2>
+<h2>Pricing, plainly</h2>
 <ul>
-  <li>Pro は買い切り。サブスクではありません。</li>
-  <li>広告なし・アカウント不要。</li>
-  <li>Small ウィジェットはずっと無料。</li>
+  <li>Pro is a one-time purchase, not a subscription.</li>
+  <li>No ads. No account.</li>
+  <li>The Small widget stays free forever.</li>
 </ul>
 
-<h2>できること</h2>
+<h2>What it does</h2>
 <ul>
-  <li>無料の Small ウィジェットに今日の鉢と水やりボタン</li>
-  <li>鉢は何個でも・写真も付けられる</li>
-  <li>よくある観葉植物の間隔の目安（あくまで目安。まず土を触って）</li>
-  <li>Pro：Medium・Large・ロック画面、肥料・葉水・植え替えの予定、部屋ごとの管理と部屋を選べるウィジェット、旅行モード、朝のリマインダー、天気で水やりを調整、iCloud 同期、手入れの振り返り</li>
-  <li>英語・日本語・スペイン語・ポルトガル語・中国語（繁体字）</li>
-  <li>iOS 17 以降</li>
+  <li>Today's plant and a water button on the free Small widget</li>
+  <li>As many plants as you like, with optional photos</li>
+  <li>Suggested intervals for common houseplants — always a guide: check the soil first</li>
+  <li>Pro: Medium and Large widgets, Lock Screen widgets, fertilizing, misting and repotting schedules, rooms with a widget per room, travel mode, a morning reminder, weather-aware watering, iCloud sync, and a care review</li>
+  <li>Available in English, Japanese, Spanish, Portuguese and Traditional Chinese</li>
+  <li>iOS 17 or later</li>
 </ul>
 
-<h2>使い方</h2>
+<h2>How to use</h2>
 <ol>
-  <li>右上の「＋」で鉢を足します。名前と水やりの間隔を決めるだけ。写真と部屋は後からでも。</li>
-  <li>水をやったら、一覧かウィジェットのしずくをタップ。間違えたらもう一度タップで取り消せます。</li>
-  <li>ウィジェットは、ホーム画面の何もないところを長押し →「編集」→「ウィジェットを追加」→ Leafday から置きます。</li>
-  <li>天気で調整（Pro）：設定の「天気で調整」をオン。外の鉢は、鉢の編集画面で「外に置いている」もオンにします。雨の後は1日待ち、暑い日は1日早まります。</li>
-  <li>旅行モード（Pro）：設定の「旅行を予定する」で出発日と帰宅日を入れると、留守の間は予定が止まり、帰ったら留守の日数だけ後ろにずれます。</li>
-  <li>iCloud 同期（Pro）：両方の iPhone で設定の「iCloud で同期」をオンにします。写真は同期しません。</li>
-  <li>もう一度インストールしたとき・機種変更のときは、設定の「購入を復元」で Pro が戻ります。</li>
+  <li>Tap “+” at the top right to add a plant. A name and a watering interval are all it needs; photos and rooms can come later.</li>
+  <li>After watering, tap the drop in the list or on the widget. Tap again to undo.</li>
+  <li>To add the widget, touch and hold an empty spot on your Home Screen → Edit → Add Widget → Leafday.</li>
+  <li>Weather adjustments (Pro): turn on “Weather adjustments” in Settings. For plants outside, also turn on “Outdoors” in the plant’s edit screen. They wait a day after rain, and watering comes a day sooner on hot days.</li>
+  <li>Travel mode (Pro): in Settings, “Plan a trip” with the day you leave and the day you’re back. Schedules pause while you’re away and move back by the days you were gone.</li>
+  <li>iCloud sync (Pro): turn on “Sync with iCloud” in Settings on both iPhones. Photos are not synced.</li>
+  <li>After reinstalling or switching iPhones, tap “Restore Purchases” in Settings to get Pro back.</li>
 </ol>
 
-<h2>よくある質問</h2>
-<p><strong>サブスクなしの水やりリマインダーはありますか？</strong><br>あります。Leafday は Small ウィジェットと鉢の登録が無料で、Pro は買い切りです。</p>
-<p><strong>アプリを開かずに水やり済みにできますか？</strong><br>できます。ホーム画面のウィジェットのしずくをタップします。</p>
-<p><strong>植物の名前を判定しますか？</strong><br>しません。サーバーもサブスクも要らない形にするため、判定はあえて入れていません。</p>
-<p><strong>鉢と写真はどこに保存されますか？</strong><br>iPhone の中です。iCloud 同期をオンにしたときだけ、写真以外があなた自身の iCloud を通じてもう1台とそろいます。開発者には届きません。</p>
-<p><strong>天気はどこから取っていますか？</strong><br>Apple Weather（WeatherKit）です。位置は約11km単位に丸めて、天気を調べるためだけに使います。</p>
-<p><strong>雨が降ったのに予定がずれません。</strong><br>「天気で調整」で動くのは「外に置いている」をオンにした鉢だけです。室内の鉢は、とても暑い日だけ1日早まります。</p>
-<p><strong>不具合や要望はどこに送ればいいですか？</strong><br>アプリの設定の「問い合わせ・不具合の報告」からメールで送れます。いただいたメッセージはすべて読んでいます。</p>
+<h2>Questions people ask</h2>
+<p><strong>Is there a plant watering reminder without a subscription?</strong><br>Yes. Leafday's Small widget and unlimited plants are free, and Pro is a one-time purchase.</p>
+<p><strong>Can I mark a plant as watered without opening the app?</strong><br>Yes. Tap the drop on the Home Screen widget.</p>
+<p><strong>Does it identify plants?</strong><br>No. Leafday deliberately skips identification so it can work without a server or a subscription.</p>
+<p><strong>Where are my plants and photos stored?</strong><br>On your iPhone. Only if you turn on iCloud sync, everything except photos is matched to your other iPhone through your own iCloud. Nothing reaches the developer.</p>
+<p><strong>Where does the weather come from?</strong><br>Apple Weather (WeatherKit). Your location is rounded to about 11 km and used only to look up the weather.</p>
+<p><strong>It rained, but my schedule didn't move.</strong><br>Weather adjustments only move plants with “Outdoors” turned on. Indoor plants only come a day sooner on very hot days.</p>
+<p><strong>Where can I send a bug report or a request?</strong><br>From “Contact / report a problem” in the app’s Settings. Every message is read.</p>
 
-<h2>プライバシー</h2>
-<p>鉢と写真は端末の中にあります。iCloud 同期をオンにしたときだけ、写真以外をあなたの iCloud でそろえます。
-<a href="../../privacy/leafday/">プライバシーポリシー</a>.</p>
+<h2>Privacy</h2>
+<p>Your plants and photos stay on your device. Only if you turn on iCloud sync, everything except photos is matched through your own iCloud.
+<a href="../../privacy/leafday/">Privacy policy</a>.</p>
 
 <p class="dim" style="margin-top:3rem">
   <a href="../../">minari-app-feeds</a> · Made by minari

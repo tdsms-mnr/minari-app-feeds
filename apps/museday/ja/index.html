@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<script src="/minari-app-feeds/legacy-notice.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Museday — 毎日1枚の名画をホーム画面に｜買い切り・広告なし・オフライン</title>
+<meta name="description" content="Musedayは、毎日1枚の名画をホーム画面のウィジェットに届けるiPhoneアプリです。ファン・ゴッホ、フェルメール、レンブラントなど280人以上の画家によるパブリックドメインの名画511枚を同梱しているので、通信なしで使えます。サブスクなし・広告なし・アカウント不要。Proは買い切りです。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/ja/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/ja/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/pt/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/fr/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/pl/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/ru/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/uk/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/tr/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/th/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/">
+<style>
+  :root { --bezel:#2B2B2B; --bg:#FAF9F7; --surface:#FFFFFF; --ink:#2B2B2B; --dim:#6B6B6B; --track:#ECEAE6; --accent:#2E6E70; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bezel:#3A3A3C; --bg:#171614; --surface:#22201E; --ink:#ECE9E6; --dim:#A09A94; --track:#332F2C; --accent:#7CC5C7; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif;
+         -webkit-font-smoothing: antialiased; line-height:1.6; }
+  a { color:var(--accent); }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
+  .nav { position:sticky; top:12px; z-index:2; display:flex; justify-content:center; padding:0 16px; }
+  .nav-inner { display:flex; align-items:center; gap:10px; padding:8px 18px 8px 10px; border-radius:999px;
+               background:color-mix(in srgb, var(--surface) 80%, transparent); backdrop-filter:blur(12px);
+               box-shadow:0 1px 8px rgba(0,0,0,.06); font-weight:600; font-size:15px; }
+  .nav img { width:28px; height:28px; border-radius:7px; }
+  .nav .lang { font-weight:400; font-size:14px; color:var(--dim); text-decoration:none; margin-left:8px; }
+
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center; padding-top:56px; padding-bottom:80px; }
+  h1 { font-size:52px; line-height:1.15; font-weight:700; letter-spacing:-0.03em; margin:0 0 24px; }
+  .lead { color:var(--accent); }
+  .sub { font-size:18px; color:var(--dim); margin:0 0 32px; max-width:30em; }
+  .badge { display:inline-block; }
+  .badge img { height:54px; display:block; }
+  .facts { display:flex; flex-wrap:wrap; gap:8px; margin:28px 0 0; padding:0; list-style:none; }
+  .facts li { font-size:14px; padding:6px 12px; border-radius:999px; background:var(--track); }
+
+  .device { width:100%; max-width:300px; aspect-ratio:1206/2622; border:10px solid var(--bezel); border-radius:52px;
+            overflow:hidden; box-shadow:0 30px 60px -20px rgba(30,40,60,.35); background:#000; justify-self:center; }
+  .device img { width:100%; height:100%; object-fit:cover; display:block; }
+
+  .statement { text-align:center; padding:96px 24px; }
+  .statement p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto; max-width:22em; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; padding-bottom:96px; }
+  .card { background:var(--surface); border-radius:32px; overflow:hidden; display:flex; flex-direction:column; }
+  .card .shot { background:var(--track); padding:32px 32px 0; display:flex; justify-content:center; align-items:flex-start;
+                height:380px; overflow:hidden; }
+  .card .shot.bottom { align-items:flex-end; padding:0 32px 32px; }
+  .card .shot .device { max-width:210px; border-width:7px; border-radius:36px; box-shadow:0 20px 40px -20px rgba(30,40,60,.35); }
+  .card .shot .watch { width:200px; aspect-ratio:416/496; border:10px solid var(--bezel); border-radius:48px; overflow:hidden;
+                       background:#000; margin-top:40px; box-shadow:0 20px 40px -20px rgba(30,40,60,.35); }
+  .card .shot .watch img { width:100%; display:block; }
+  .card p { margin:0; padding:24px 28px 28px; font-size:17px; color:var(--dim); }
+  .card p b { color:var(--ink); font-weight:600; }
+  .pro { display:inline-block; font-size:12px; font-weight:600; color:var(--accent); border:1px solid currentColor;
+         border-radius:999px; padding:1px 8px; margin-left:6px; vertical-align:2px; }
+
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; padding-bottom:96px; }
+  .split.rev .text { order:2; }
+  h2 { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 0 20px; }
+  .split .text p { font-size:18px; color:var(--dim); margin:0; max-width:28em; }
+
+  .pricing { display:grid; grid-template-columns:1fr 1fr; gap:20px; padding-bottom:96px; }
+  .pricing h2 { grid-column:1/-1; text-align:center; margin-bottom:12px; }
+  .plan { background:var(--surface); border-radius:32px; padding:32px; }
+  .plan h3 { font-size:22px; letter-spacing:-0.02em; margin:0 0 4px; }
+  .plan .note { color:var(--dim); margin:0 0 16px; font-size:15px; }
+  .plan ul { margin:0; padding-left:1.1em; }
+  .plan li { margin:.35em 0; }
+
+  .faq { max-width:760px; padding-bottom:96px; }
+  .faq h2 { text-align:center; margin-bottom:32px; }
+  .faq .q { border-top:1px solid var(--track); padding:20px 0; }
+  .faq .q:last-child { border-bottom:1px solid var(--track); }
+  .faq .q b { display:block; font-weight:600; margin-bottom:4px; }
+  .faq .q span { color:var(--dim); }
+
+  .closing { text-align:center; padding:32px 24px 96px; }
+  .closing p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto 32px; max-width:18em; }
+  footer { text-align:center; color:var(--dim); font-size:14px; padding:0 24px 48px; }
+
+  @media (max-width: 820px) {
+    .wrap { padding:0 16px; }
+    .hero, .split, .pricing { grid-template-columns:1fr; gap:40px; }
+    .hero { padding-top:48px; padding-bottom:64px; }
+    .split.rev .text { order:0; }
+    h1 { font-size:40px; }
+    h2, .statement p, .closing p { font-size:30px; }
+    .statement { padding:64px 16px; }
+    .cards { grid-template-columns:1fr; padding-bottom:64px; }
+    .split, .pricing, .faq { padding-bottom:64px; }
+    .device { max-width:260px; }
+  }
+</style>
+<style>
+  :lang(ja) h1, :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { letter-spacing:0.01em; line-height:1.35; }
+  :lang(ja) h1 { font-size:46px; }
+  @media (max-width: 820px) { :lang(ja) h1 { font-size:34px; } :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { font-size:26px; } }
+  :lang(ja) body { word-break:auto-phrase; }
+  .nb { display:inline-block; }
+  .plan h3 .price { font-weight:400; color:var(--dim); margin-left:8px; }
+  .hero .price-line { margin:14px 0 0; font-size:15px; color:var(--dim); }
+  .hero .price-line b { color:var(--ink); font-weight:600; }
+  .plan .fine { color:var(--dim); font-size:14px; margin:16px 0 0; }
+  .faq .all { text-align:center; margin:24px 0 0; }
+  .credit { max-width:760px; margin:0 auto; padding:0 24px 96px; color:var(--dim); font-size:15px; }
+  .credit h2 { text-align:center; margin-bottom:16px; }
+  .pair { position:relative; justify-self:center; width:100%; max-width:380px; aspect-ratio:380/600; }
+  .pair .device { position:absolute; max-width:250px; }
+  .pair .device:first-child { left:0; top:0; }
+  .pair .device:last-child { right:0; bottom:0; }
+  .crop { display:none; }
+  @media (max-width: 820px) {
+    .hero > .device, .hero > .pair { display:none; }
+    .crop { display:block; margin:0 0 24px; border-radius:28px; overflow:hidden; box-shadow:0 20px 40px -20px rgba(30,40,60,.35); }
+    .crop img { width:100%; display:block; }
+    .credit { padding:0 16px 64px; }
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "Museday",
+   "alternateName": [
+    "Museday – Daily Art Widget"
+   ],
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "LifestyleApplication",
+   "description": "Musedayは、毎日1枚の名画をホーム画面のウィジェットに届けるiPhoneアプリです。ファン・ゴッホ、フェルメール、レンブラントなど280人以上の画家によるパブリックドメインの名画511枚を同梱しているので、通信なしで使えます。サブスクなし・広告なし・アカウント不要。Proは買い切りです。",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/ja/",
+   "installUrl": "https://apps.apple.com/app/id6816428852",
+   "offers": [
+    {
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "JPY",
+     "description": "Free with a one-time Pro purchase. Not a subscription."
+    },
+    {
+     "@type": "Offer",
+     "name": "Museday Pro",
+     "price": "1300",
+     "priceCurrency": "JPY",
+     "description": "One-time in-app purchase, not a subscription."
+    }
+   ],
+   "author": {
+    "@type": "Person",
+    "name": "minari"
+   },
+   "inLanguage": "ja"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "買い切りの名画ウィジェットはありますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "あります。Musedayは今日の絵を出すSmallウィジェットとロック画面のウィジェットが無料で、Proは1回だけの買い切りです。広告もありません。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "サブスクですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "いいえ。ダウンロードは無料で、Proは1回だけの買い切りです。サブスクではなく、自動で更新されることもありません。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "広告は出ますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "出ません。無料版にもProにも、広告は一切ありません。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "アカウントや通信は必要ですか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "アカウントは要りません。511枚の絵と解説をすべてアプリに同梱しているので、通信がなくても毎日絵が替わります。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "MediumやLargeのウィジェットに「Museday Pro」と出ます。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Medium・Large・特大のウィジェットはProの機能です。無料のときは絵がぼかして表示され、題名の場所に「Museday Pro」と出ます。タップするとProの案内が開きます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "別のiPhoneでProが使えません。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "購入したときと同じAppleアカウントでApp Storeにサインインしているか確かめてから、Musedayの設定にある「購入を復元」を押してください。購入した直後は、反映まで少し時間がかかることがあります。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "絵はどこから来ていますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "画像はシカゴ美術館・メトロポリタン美術館・アムステルダム国立美術館・ワシントン・ナショナル・ギャラリーがパブリックドメイン（CC0）として公開しているものです。解説はシカゴ美術館の文章（CC BY 4.0）とアムステルダム国立美術館の文章（CC0）で、翻訳はMusedayによるものです。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "問い合わせはどこからできますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Musedayの設定 →「問い合わせ・不具合の報告」からメールを送れます。アプリとiOSのバージョン、機種が自動で入ります。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<nav class="nav"><div class="nav-inner"><img src="../img/icon.png" alt="">Museday<a class="lang" href="../">English</a></div></nav>
+
+<section class="wrap hero">
+  <div>
+    <h1><span class="lead">毎朝、ホーム画面に</span><span class="nb">1枚の名画を。</span></h1>
+    <div class="crop"><img src="../img/crop_ja.jpg" alt="iPhoneのホーム画面に置いたMusedayのLarge・Mediumウィジェット（名画と題名）"></div>
+    <p class="sub">0時になると新しい絵に替わります。511枚の絵はすべてアプリに入っているので、通信がなくても毎日替わります。</p>
+    <a class="badge" href="https://apps.apple.com/app/id6816428852"><img src="../img/badge_ja.svg" alt="App Storeからダウンロード"></a>
+    <p class="price-line">Medium・Largeのウィジェットは<b>Pro ¥1,300</b>・買い切り</p>
+    <ul class="facts"><li>買い切り・サブスクなし</li><li>オフラインで動く</li><li>広告なし</li><li>アカウント不要</li></ul>
+  </div>
+  <div class="device"><img src="../img/home_ja.jpg" alt="iPhoneのホーム画面に置いたMusedayのLarge・Mediumウィジェット（名画と題名）"></div>
+</section>
+
+<section class="statement">
+  <p><span class="lead">スマホを開くたびに、</span>小さな美術館をひとめぐり。</p>
+</section>
+
+<section class="wrap split">
+  <div class="text">
+    <h2><span class="lead">511枚の名画、</span><span class="nb">280人以上の画家。</span></h2>
+    <p>ファン・ゴッホ、フェルメール、レンブラント、ルノワール、スーラ、ボッティチェリ、クリムト。『夜警』『牛乳を注ぐ女』から日本の水墨画まで。絵はすべてアプリに入っているので、読み込みを待つことはありません。</p>
+  </div>
+  <div class="device"><img src="../img/today_ja.jpg" alt="" loading="lazy"></div>
+</section>
+<section class="wrap split rev">
+  <div class="text">
+    <h2><span class="lead">美術館による、</span><span class="nb">作品の物語。</span></h2>
+    <p>「この絵について」から、美術館による作品の物語が読めます（18の言語に対応）。その絵が飾られている美術館をAppleマップで開いて、本物を見に行けます。</p>
+  </div>
+  <div class="device"><img src="../img/detail_ja.jpg" alt="" loading="lazy"></div>
+</section>
+<section class="wrap split">
+  <div class="text">
+    <h2><span class="lead">テーマ・時代・所蔵館で</span><span class="nb">絵をさがす。</span></h2>
+    <p>風景・人物・花と静物・海と水辺・動物・街と建物のテーマ、時代、所蔵館で一覧に。気に入った絵はお気に入りに。</p>
+  </div>
+  <div class="device"><img src="../img/browse_ja.jpg" alt="" loading="lazy"></div>
+</section>
+
+<section class="wrap pricing">
+  <h2>料金のこと</h2>
+  <div class="plan"><h3>無料</h3><p class="note">広告なし・アカウント不要。期限はなく、ずっと使えます。</p><ul><li>今日の絵を出すSmallウィジェット</li><li>ロック画面のウィジェット</li><li>美術館の解説、お気に入り、直近7日、絵をさがす（一覧）</li><li>本物を見に行く：その絵が飾られている美術館をAppleマップで開けます</li></ul></div>
+  <div class="plan"><h3>Museday Pro<span class="price">¥1,300</span></h3><p class="note">一度買えば、ずっと。サブスクではなく、更新されることもありません。</p><ul><li>MediumとLargeのウィジェットで、絵をゆったり大きく（絵と題名／絵のみ）</li><li>特大ウィジェット（iOS 27）：絵を縦に大きく。題名・作者・年と、絵の物語を数行添えて</li><li>お気に入り・テーマ・時代・所蔵館を選んで出すウィジェット</li><li>これまでの全部の絵と、時代・所蔵館・作者での絞り込み</li></ul></div>
+</section>
+
+<section class="credit"><h2>絵の出どころ</h2><p>画像はシカゴ美術館・メトロポリタン美術館・アムステルダム国立美術館・ワシントン・ナショナル・ギャラリーがパブリックドメイン（CC0）として公開しているものです。解説はシカゴ美術館の文章（CC BY 4.0）とアムステルダム国立美術館の文章（CC0）で、翻訳はMusedayによるものとしてアプリ内に明記しています。</p></section>
+
+<section class="wrap faq">
+  <h2>よくある質問</h2>
+  <div class="q"><b>買い切りの名画ウィジェットはありますか？</b><span>あります。Musedayは今日の絵を出すSmallウィジェットとロック画面のウィジェットが無料で、Proは1回だけの買い切りです。広告もありません。</span></div>
+  <div class="q"><b>サブスクですか？</b><span>いいえ。ダウンロードは無料で、Proは1回だけの買い切りです。サブスクではなく、自動で更新されることもありません。</span></div>
+  <div class="q"><b>広告は出ますか？</b><span>出ません。無料版にもProにも、広告は一切ありません。</span></div>
+  <div class="q"><b>アカウントや通信は必要ですか？</b><span>アカウントは要りません。511枚の絵と解説をすべてアプリに同梱しているので、通信がなくても毎日絵が替わります。</span></div>
+  <div class="q"><b>MediumやLargeのウィジェットに「Museday Pro」と出ます。</b><span>Medium・Large・特大のウィジェットはProの機能です。無料のときは絵がぼかして表示され、題名の場所に「Museday Pro」と出ます。タップするとProの案内が開きます。</span></div>
+  <div class="q"><b>別のiPhoneでProが使えません。</b><span>購入したときと同じAppleアカウントでApp Storeにサインインしているか確かめてから、Musedayの設定にある「購入を復元」を押してください。購入した直後は、反映まで少し時間がかかることがあります。</span></div>
+  <div class="q"><b>絵はどこから来ていますか？</b><span>画像はシカゴ美術館・メトロポリタン美術館・アムステルダム国立美術館・ワシントン・ナショナル・ギャラリーがパブリックドメイン（CC0）として公開しているものです。解説はシカゴ美術館の文章（CC BY 4.0）とアムステルダム国立美術館の文章（CC0）で、翻訳はMusedayによるものです。</span></div>
+  <div class="q"><b>絵をさがす</b><span>今日の画面の「絵をさがす」から、風景・人物・花と静物・海と水辺・動物・街と建物のテーマや、時代・所蔵館ごとに、すべての絵を一覧で見られます。開けるのは直近7日に出た絵まで、それより前の絵はProで開けます。</span></div>
+  <div class="q"><b>お気に入りに残す</b><span>今日の画面や絵の詳細で ♡ をタップすると、お気に入りに残ります。今日の画面の「お気に入り」から見返せます。</span></div>
+  <div class="q"><b>本物を見に行く</b><span>絵の詳細にある美術館の名前をタップすると、マップでその美術館が開きます。展示替えなどで見られない時期もあるので、お出かけ前に美術館のサイトをご確認ください。</span></div>
+  <div class="q"><b>Largeで解説の一文も（Pro）</b><span>Largeウィジェットには、題名・作者・年に加えて、解説の最初の一文が添えられます。</span></div>
+  <div class="q"><b>特大ウィジェット（iOS 27・Pro）</b><span>iOS 27のiPhoneでは、ホーム画面に縦長の特大ウィジェットを置けます。名画を大きく、題名・作者・年と、解説を3文ほど添えて。「絵のみ」にもできます。</span></div>
+  <div class="q"><b>ウィジェットに出す絵を選ぶ（Pro）</b><span>ウィジェットを長押しして「ウィジェットを編集」を開き、「表示する絵」から、お気に入り・テーマ・時代・所蔵館を選びます。ウィジェットごとに違う絵を出せます。MediumとLargeは「見せ方」で「絵と題名」か「絵のみ」も選べます。</span></div>
+  <div class="q"><b>これまでの絵と絞り込み（Pro）</b><span>今日の画面の「これまでの絵」から、どの日の絵も開けます。時代・所蔵館・作者で絞り込めます。</span></div>
+  <div class="q"><b>問い合わせはどこからできますか？</b><span>Musedayの設定 →「問い合わせ・不具合の報告」からメールを送れます。アプリとiOSのバージョン、機種が自動で入ります。</span></div>
+</section>
+
+<section class="closing">
+  <p><span class="lead">サブスクなし・</span>広告なし・アカウント不要。</p>
+  <a class="badge" href="https://apps.apple.com/app/id6816428852"><img src="../img/badge_ja.svg" alt="App Storeからダウンロード"></a>
+</section>
+
+<footer>18の言語に対応・iOS 17以降（特大ウィジェットはiOS 27以降）・Made by minari・<a href="../../../privacy/museday/ja/">プライバシーポリシー</a></footer>

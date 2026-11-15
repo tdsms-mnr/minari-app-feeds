@@ -1,21 +1,21 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <meta charset="utf-8">
 <script src="/minari-app-feeds/legacy-notice.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ClassicalLog — クラシック演奏会の記録と発売日のお知らせ</title>
-<meta name="description" content="クラシックの演奏会を記録する iPhone アプリ。聴いた公演・曲目・座った席・感想を無料で件数制限なく残せて、JSON/CSV に書き出せます。チケットの発売日が決まったらお知らせします。広告なし・アカウント不要・記録は端末の中だけ。">
+<title>ClassicalLog — A classical concert journal for iPhone</title>
+<meta name="description" content="Log the classical concerts you attend: programme piece by piece, the seat block you sat in, your notes. Count how many times you have heard a symphony. Free with no limit, export to JSON/CSV, no account, no ads. Concert catalogues and on-sale dates from the London Symphony Orchestra, Barbican, Symphony Hall Birmingham, RSNO, Usher Hall and other UK box offices, plus the Boston Symphony (on-sale dates too), LA Phil, Cleveland, Sydney, Melbourne and Vancouver orchestras, Japan and Germany.">
 <link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/">
-<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/">
-<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/en/">
-<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/en/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/ja/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/">
 <style>
   :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#8a5566; }
   @media (prefers-color-scheme: dark) {
     :root { --ink:#ece9e6; --dim:#a09a94; --line:#332c2e; --bg:#171314; --accent:#c98da0; }
   }
-  body { font-family: -apple-system, "Hiragino Sans", sans-serif; max-width: 42rem;
-         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.8;
+  body { font-family: -apple-system, "Helvetica Neue", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
          color: var(--ink); background: var(--bg); }
   h1 { font-size: 1.9rem; margin: 0 0 .2rem; letter-spacing: -.01em; }
   .tagline { color: var(--accent); font-weight: 600; margin: 0 0 2rem; }
@@ -29,128 +29,105 @@
   .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem;
          background: var(--accent); color: #fff; border-radius: 999px;
          text-decoration: none; font-weight: 600; }
-  [lang="en"] { margin-top: 3rem; }
+  .langs { font-size: .85rem; color: var(--dim); margin-bottom: 2rem; }
+  table { border-collapse: collapse; font-size: .92rem; }
+  td, th { text-align: left; padding: .3rem .8rem .3rem 0; vertical-align: top; border-bottom: 1px solid var(--line); }
 </style>
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@graph": [
-  {
-   "@type": "SoftwareApplication",
-   "name": "ClassicalLog",
-   "operatingSystem": "iOS 17 or later",
-   "applicationCategory": "LifestyleApplication",
-   "description": "聴いたクラシックの演奏会を記録する iPhone アプリ。公演・団体・曲目・座った席・感想を無料で件数制限なく残せて、JSON と CSV に書き出せる。気になる団体のチケット発売日が決まったらお知らせする。広告なし・アカウント不要・記録は端末の中だけ。",
-   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/",
-   "installUrl": "https://apps.apple.com/app/id6801409117",
-   "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "JPY",
-    "description": "記録・台帳・座席の記録・書き出しは無料で件数無制限。Pro は通知の拡張のみ。"
-   },
-   "author": {
-    "@type": "Person",
-    "name": "minari"
-   },
-   "inLanguage": [
-    "ja",
-    "en"
-   ]
-  },
-  {
-   "@type": "FAQPage",
-   "mainEntity": [
+  "@context": "https://schema.org",
+  "@graph": [
     {
-     "@type": "Question",
-     "name": "クラシックの演奏会に行った記録をつけられる iPhone アプリはある？",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "ClassicalLog は、聴いた演奏会を公演・団体・曲目・座った席・感想まで残せる記録アプリです。記録は無料で件数の制限がなく、JSON と CSV に書き出せます。"
-     }
+      "@type": "SoftwareApplication",
+      "name": "ClassicalLog",
+      "alternateName": ["ClassicalLog — Concert Journal", "ClassicalLog クラシック演奏会の記録"],
+      "operatingSystem": "iOS 17 or later",
+      "applicationCategory": "LifestyleApplication",
+      "description": "A journal for the classical concerts you attend. Keep the programme piece by piece, the seat block you sat in and your notes; count how many times you have heard a symphony and how much of a composer's cycle is left. Logging is free with no limit; records stay on your device and export to JSON or CSV.",
+      "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/",
+      "installUrl": "https://apps.apple.com/app/id6801409117",
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Logging, ledger, seat notes and export are free with no limit. Pro (subscription or one-time Lifetime) adds on-sale-date alerts for as many ensembles as you like."},
+      "author": {"@type": "Person", "name": "minari"},
+      "inLanguage": ["en", "ja"]
     },
     {
-     "@type": "Question",
-     "name": "同じ曲を何回聴いたか、作曲家の全曲まであと何曲か分かる？",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "曲目を構造化して持っているので、同じ交響曲を何度聴いたか、ある作曲家の全曲まであと何曲かを数えられます。"
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "オーケストラのチケット発売日を通知してくれる？",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "気になる団体を選んでおくと、チケットの発売日が決まったときにお知らせします。1団体までは無料です。"
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "記録はどこに保存される？アカウントは必要？",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "記録はすべて端末の中に保存されます。アカウント登録は要りません。広告はありません。"
-     }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Is there an iPhone app for keeping a record of classical concerts I've attended?",
+         "acceptedAnswer": {"@type": "Answer", "text": "ClassicalLog is a journal for classical concerts: the performance, ensemble, programme piece by piece, the seat block you sat in and your notes. Logging is free with no limit, and you can export everything to JSON or CSV."}},
+        {"@type": "Question", "name": "Can it count how many times I've heard a symphony, or how much of a composer's cycle I have left?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes. The programme is stored piece by piece against a works master, so the ledger counts each work and each composer's cycle — something a plain list of concerts cannot show."}},
+        {"@type": "Question", "name": "Can I pick the concert from a list instead of typing it?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes. The app carries a concert catalogue, updated weekly, taken from the orchestras' and halls' own sites and box offices: in the UK the London Symphony Orchestra, London Philharmonic Orchestra, BBC Symphony Orchestra, Barbican Centre, Cadogan Hall, Symphony Hall Birmingham, Royal Scottish National Orchestra, Usher Hall, Bristol Beacon, Saffron Hall, Oxford Philharmonic, Bournemouth Symphony Orchestra, Opera North and Scottish Opera; in North America the Los Angeles Philharmonic, The Cleveland Orchestra, Boston Symphony Orchestra, Utah Symphony, Rochester Philharmonic, Vancouver, Calgary and Edmonton orchestras; in Australia and New Zealand the Sydney, Melbourne and Queensland Symphony Orchestras and the NZSO; plus Japanese orchestras and halls, the Elbphilharmonie and Staatskapelle Dresden."}},
+        {"@type": "Question", "name": "Does it tell me when tickets go on sale?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes, where the box office publishes them: UK venues and orchestras that sell through Spektrix (London Symphony Orchestra and the Barbican, Symphony Hall Birmingham, RSNO, Usher Hall, Bristol Beacon, Saffron Hall, Oxford Philharmonic, Bournemouth Symphony Orchestra, Opera North, Scottish Opera), the Boston Symphony Orchestra, the Calgary Philharmonic, the New Zealand Symphony Orchestra, and Japanese orchestras and halls. Pick the ensemble and you are told the day the on-sale date is set. Where an orchestra does not publish on-sale dates in a readable form, the app says so next to its name rather than promising an alert it cannot send."}},
+        {"@type": "Question", "name": "Where are my records stored? Do I need an account?",
+         "acceptedAnswer": {"@type": "Answer", "text": "On your device. No account. Only anonymous usage counts (event names, no content) are sent, and you can switch that off under Privacy in Settings."}}
+      ]
     }
-   ]
-  }
- ]
+  ]
 }
 </script>
 
 <h1>ClassicalLog</h1>
-<p class="tagline">シーズンの発売日は、逃すと次が1年後です。</p>
-<p class="dim" style="margin:-1.5rem 0 2rem"><a href="en/">English</a></p>
+<p class="tagline">A journal for the classical concerts you attend — programme, seat, notes, and the counts that come from them.</p>
+<p class="langs"><a href="ja/">日本語</a></p>
 
-<p class="lede">ClassicalLog は、聴いた演奏会を貯めながら、次に買うべき日を知らせるアプリです。
-チケットの発売日は公演の3〜5か月前に決まります。決まった時点で分かれば、十分に間に合います。</p>
+<p class="lede">ClassicalLog keeps every concert you have heard, piece by piece, and turns the pile into
+something you can read: how many times you have heard a symphony, how much of a composer's cycle is left,
+which block of which hall you liked. Logging is free with no limit. Records stay on your device.</p>
 
-<a class="cta" href="https://apps.apple.com/app/id6801409117">App Store で見る</a>
+<a class="cta" href="https://apps.apple.com/app/id6801409117">View on the App Store</a>
 
-<h2>料金のこと</h2>
+<h2>Pricing, plainly</h2>
 <ul>
-  <li><strong>演奏会の記録・台帳・座席の記録・書き出しは、すべて無料です。件数の制限もありません。</strong></li>
-  <li>広告はありません。送るのは匿名の利用状況（操作の種類だけ・内容は含まない）のみで、設定からオフにできます。</li>
-  <li>アカウントは要りません。</li>
-  <li>通知は1団体まで無料（発売日を月に1回まとめてお知らせします）。</li>
-  <li>Pro は、月額または年額の自動更新サブスクリプションと、更新のない買い切りの Lifetime から選べます。
-      サブスクリプションは期間終了の24時間以上前に解約しない限り自動更新され、解約と管理は
-      Apple アカウントの設定から行えます。</li>
-  <li>Pro でできること＝通知を受け取る団体が無制限になり、発売日の前日にお知らせが届きます。</li>
+  <li><strong>Logging concerts, the ledger, seat notes and export are free, with no limit.</strong></li>
+  <li>No ads. No account.</li>
+  <li>Pro is a monthly or yearly subscription, or a one-time Lifetime purchase that never renews. It adds on-sale-date alerts for as many ensembles as you like, and a reminder the day before. Subscriptions renew unless cancelled at least 24 hours before the period ends; manage them in your Apple account settings.</li>
 </ul>
 
-<h2>できること</h2>
+<h2>What it does</h2>
 <ul>
-  <li><strong>発売日を知らせる</strong>— 気になる団体を選んでおくと、チケットの発売日が決まったときにお知らせします</li>
-  <li><strong>席は、自分の記録から選ぶ</strong>— 座った席と感想をホールのブロック単位で残せます。
-      次に同じホールで買うとき、他人の評価ではなく自分の記録を見て決められます。
-      まだ座っていないブロックも分かります</li>
-  <li><strong>曲を数える</strong>— 同じ交響曲を何度聴いたか、ある作曲家の全曲まであと何曲か。
-      曲目を構造化して持っているので、演奏会の一覧では出てこない見え方ができます</li>
-  <li><strong>書き出せる</strong>— いつでも JSON と CSV で持ち出せます</li>
-  <li>iPhone・iOS 17 以降</li>
+  <li><strong>Pick the concert from a catalogue</strong> — or type it. The catalogue is updated weekly with programmes from the orchestras' own sites</li>
+  <li><strong>Count the music</strong> — the programme is stored piece by piece, so the ledger counts works and cycles</li>
+  <li><strong>Seats from your own record</strong> — keep the block you sat in and what it was like, hall by hall; next time you buy for that hall you decide from your own notes</li>
+  <li><strong>Export</strong> — JSON and CSV, whenever you like</li>
+  <li>iPhone, iOS 17 or later. English and Japanese</li>
 </ul>
 
-<h2>よくある質問</h2>
-<p><strong>クラシックの演奏会に行った記録をつけられる iPhone アプリはある？</strong><br>
-ClassicalLog は、聴いた演奏会を公演・団体・曲目・座った席・感想まで残せる記録アプリです。記録は無料で件数の制限がなく、JSON と CSV に書き出せます。</p>
-<p><strong>同じ曲を何回聴いたか、作曲家の全曲まであと何曲か分かる？</strong><br>
-曲目を構造化して持っているので、演奏会の一覧では出てこない数え方ができます。</p>
-<p><strong>オーケストラのチケット発売日を通知してくれる？</strong><br>
-気になる団体を選んでおくと、発売日が決まったときにお知らせします。1団体までは無料です。</p>
-<p><strong>記録はどこに保存される？アカウントは必要？</strong><br>
-記録はすべて端末の中に保存されます。アカウント登録は要りません。</p>
+<h2>Where the catalogue comes from</h2>
+<table>
+  <tr><th>Country</th><th>Sources</th><th>On-sale dates</th></tr>
+  <tr><td>United Kingdom</td><td>London Symphony Orchestra, BBC Symphony Orchestra, Academy of Ancient Music (via the Barbican), Cadogan Hall, Symphony Hall Birmingham, Royal Scottish National Orchestra, Usher Hall, Bristol Beacon, Saffron Hall, Oxford Philharmonic Orchestra, Bournemouth Symphony Orchestra, Royal Northern College of Music, Perth Concert Hall, Opera North, Scottish Opera</td><td>Yes</td></tr>
+  <tr><td>United Kingdom</td><td>London Philharmonic Orchestra</td><td>Not yet</td></tr>
+  <tr><td>United States</td><td>Boston Symphony Orchestra</td><td>Yes</td></tr>
+  <tr><td>United States</td><td>Los Angeles Philharmonic, The Cleveland Orchestra, Utah Symphony, Rochester Philharmonic Orchestra</td><td>Not yet</td></tr>
+  <tr><td>Canada</td><td>Calgary Philharmonic Orchestra</td><td>Yes</td></tr>
+  <tr><td>Canada</td><td>Vancouver Symphony Orchestra, Edmonton Symphony Orchestra</td><td>Not yet</td></tr>
+  <tr><td>New Zealand</td><td>New Zealand Symphony Orchestra</td><td>Yes</td></tr>
+  <tr><td>Australia</td><td>Sydney, Melbourne and Queensland Symphony Orchestras</td><td>Not yet</td></tr>
+  <tr><td>Germany</td><td>Elbphilharmonie, Staatskapelle Dresden</td><td>Not yet</td></tr>
+  <tr><td>Japan</td><td>Major orchestras and halls, plus ぶらあぼONLINE</td><td>Yes</td></tr>
+</table>
+<p class="dim">Only concerts and programmes are taken — facts, never text or images. Each concert links back to its source.
+On-sale dates are read straight from the box office where it publishes them (Spektrix venues in the UK, the Boston Symphony Orchestra, Calgary, NZSO, Japan). Where an orchestra does not, the app marks it
+“No on-sale dates yet” rather than promising an alert it cannot send.</p>
 
-<h2>プライバシー</h2>
-<p>記録はすべて端末の中だけに保存されます。アカウント登録は要りません。広告はありません。
-<a href="https://carbonated-archeology-c56.notion.site/ClassicalLog-Privacy-Policy-3bd374a2b2e380a3b23aec6977e3055c">プライバシーポリシー</a></p>
+<h2>Questions people ask</h2>
+<p><strong>Is there an iPhone app for keeping a record of classical concerts I've attended?</strong><br>
+ClassicalLog is that: performance, ensemble, programme piece by piece, seat block and notes. Free with no limit; export to JSON or CSV.</p>
+<p><strong>Can it count how many times I've heard a symphony?</strong><br>
+Yes — and how much of a composer's cycle is left. The programme is stored against a works master.</p>
+<p><strong>Can I pick the concert from a list instead of typing it?</strong><br>
+Yes, from the catalogue above, updated weekly.</p>
+<p><strong>Does it tell me when tickets go on sale?</strong><br>
+Yes, where the box office publishes them: UK venues and orchestras selling through Spektrix (LSO and the Barbican, Symphony Hall Birmingham, RSNO, Usher Hall, Bristol Beacon, Saffron Hall, Oxford Philharmonic, Bournemouth SO, Opera North, Scottish Opera), the Boston Symphony Orchestra, the Calgary Philharmonic, the NZSO, and Japanese orchestras and halls. Elsewhere the app says “No on-sale dates yet” next to the name.</p>
+<p><strong>Where are my records stored? Do I need an account?</strong><br>
+On your device. No account. Anonymous usage counts only, switchable off in Settings.</p>
 
-<section lang="en">
-<h2>English</h2>
-<p>ClassicalLog is a classical concert journal for iPhone — <a href="en/">read the English page</a>.</p>
-</section>
+<h2>Privacy</h2>
+<p>Records stay on your device. <a href="https://carbonated-archeology-c56.notion.site/ClassicalLog-Privacy-Policy-3bd374a2b2e380a3b23aec6977e3055c">Privacy policy</a>.</p>
 
 <p class="dim" style="margin-top:3rem">
-  <a href="../../">minari-app-feeds</a> ・ 開発：minari
+  <a href="../../">minari-app-feeds</a> · Made by minari
 </p>

@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <meta charset="utf-8">
 <script src="/minari-app-feeds/legacy-notice.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rowmark — ロック画面で数える編み物の段数カウンター（サブスクなし）</title>
-<meta name="description" content="サブスクなしの編み物・かぎ針編みの段数カウンター。ロック画面・アクションボタン・ホーム画面のウィジェットから、アプリを開かずに＋1段。針を持ったまま数えられます。">
+<title>Rowmark — knitting &amp; crochet row counter on your Lock Screen (no subscription)</title>
+<meta name="description" content="A knitting and crochet row counter for iPhone with no subscription. Tap +1 from the Lock Screen, the Action Button or a Home Screen widget without opening the app — your hands stay on the needles.">
 <link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/">
-<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/en/">
-<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/">
-<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/en/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/ja/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/">
 <style>
   :root { --bezel:#2B2B2B; --bg:#FAF9F7; --surface:#FFFFFF; --ink:#2B2B2B; --dim:#6B6B6B; --track:#ECEAE6; --accent:#34506B; }
   @media (prefers-color-scheme: dark) {
@@ -122,20 +122,20 @@
    "name": "Rowmark",
    "operatingSystem": "iOS 17 or later",
    "applicationCategory": "LifestyleApplication",
-   "description": "サブスクなしの編み物・かぎ針編みの段数カウンター。ロック画面・アクションボタン・ホーム画面のウィジェットから、アプリを開かずに＋1段。針を持ったまま数えられます。",
+   "description": "A knitting and crochet row counter for iPhone with no subscription. Tap +1 from the Lock Screen, the Action Button or a Home Screen widget without opening the app — your hands stay on the needles.",
    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/",
    "offers": [
     {
      "@type": "Offer",
      "price": "0",
-     "priceCurrency": "JPY",
+     "priceCurrency": "USD",
      "description": "Free with a one-time Pro purchase. Not a subscription."
     },
     {
      "@type": "Offer",
      "name": "Rowmark Pro",
-     "price": "1300",
-     "priceCurrency": "JPY",
+     "price": "7.99",
+     "priceCurrency": "USD",
      "description": "One-time in-app purchase, not a subscription."
     }
    ],
@@ -153,58 +153,34 @@
    "mainEntity": [
     {
      "@type": "Question",
-     "name": "サブスクなしの段数カウンターはありますか？",
+     "name": "Is there a row counter without a subscription?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "あります。Rowmarkは＋1が押せるSmallウィジェットと作品数無制限が無料で、Proは買い切りです。"
+      "text": "Yes. Rowmark's Small widget with +1 and unlimited projects are free, and Pro is a one-time purchase."
      }
     },
     {
      "@type": "Question",
-     "name": "アプリを開かずに数えられますか？",
+     "name": "Can I count rows without opening the app?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "はい。ホーム画面のウィジェットで＋1。Proならロック画面のカウンターやアクションボタンからも。"
+      "text": "Yes. Tap +1 on the Home Screen widget, or with Pro on the Lock Screen counter or the Action Button."
      }
     },
     {
      "@type": "Question",
-     "name": "画面をロックしたまま押せますか？",
+     "name": "Does it work with the phone locked?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Proのロック画面カウンターは、ロックしたまま＋1／−1が押せます。"
+      "text": "With Pro, the Lock Screen counter has +1 and −1 buttons you can press while the iPhone stays locked."
      }
     },
     {
      "@type": "Question",
-     "name": "作品のデータはどこに保存されますか？",
+     "name": "Where are my projects stored?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "iPhoneの中だけです。アップロードはしません。"
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "ロック画面のカウンターが消えました。",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "ロック画面のカウンター（ライブアクティビティ）は、iOSの仕様で8時間ほどで終わります。Rowmarkを開いて、もう一度「ロック画面に出す」を押してください。「ライブアクティビティがオフです」と出たときは、設定 › Rowmarkでオンにしてください。"
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "アクションボタンで＋1段したい。",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Pro・iOS 18以降・iPhone 15 Pro以降：設定 › アクションボタン › コントロール › Rowmark。コントロールセンターや、ロック画面下のボタンにも置けます。"
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "機種変更した・入れ直した。",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Proはアプリの歯車 ›「購入を復元」で戻ります。作品と編み図はiPhoneの中だけにあるため、iPhoneのバックアップや移行で引き継がれます。アプリを削除すると消えます。"
+      "text": "On your iPhone. Nothing is uploaded."
      }
     }
    ]
@@ -213,69 +189,66 @@
 }
 </script>
 
-<nav class="nav"><div class="nav-inner"><img src="img/icon.png" alt="">Rowmark<a class="lang" href="en/">English</a></div></nav>
+<nav class="nav"><div class="nav-inner"><img src="img/icon.png" alt="">Rowmark<a class="lang" href="ja/">日本語</a></div></nav>
 
 <section class="wrap hero">
   <div>
-    <h1><span class="lead">ロック画面で＋1段。</span><span class="nb">針を持ったまま。</span></h1>
-    <div class="crop"><img src="img/lock_crop_ja.jpg" alt="ロック画面に出たRowmarkの段数カウンター（＋1・−1）"></div>
-    <p class="sub">アプリを開かずに、ロック画面・ダイナミックアイランド・アクションボタンから数えられます。ホーム画面のウィジェットの＋1・−1は無料。</p>
-    <a class="badge" href="https://apps.apple.com/app/id6815409342"><img src="img/badge_ja.svg" alt="App Storeからダウンロード"></a>
-    <p class="price-line">ロック画面のカウンターは<b>Pro ¥1,300</b>・買い切り</p>
-    <ul class="facts"><li>サブスクなし</li><li>広告なし</li><li>アカウント不要</li><li>作品は何個でも</li></ul>
+    <h1><span class="lead">+1 row from your <span class="nb">Lock Screen.</span></span> <span class="nb">Hands stay on the needles.</span></h1>
+    <div class="crop"><img src="img/lock_crop_en.jpg" alt="Rowmark row counter with +1 and −1 on the iPhone Lock Screen"></div>
+    <p class="sub">Count without opening the app — from the Lock Screen, the Dynamic Island or the Action Button. +1 and −1 on the Home Screen widget are free.</p>
+    <a class="badge" href="https://apps.apple.com/app/id6815409342"><img src="img/badge_en.svg" alt="Download on the App Store"></a>
+    <p class="price-line">Lock Screen counter with <b>Pro, $7.99</b> — one-time purchase</p>
+    <ul class="facts"><li>No subscription</li><li>No ads</li><li>No account</li><li>Unlimited projects</li></ul>
   </div>
-  <div class="device"><img src="img/lock_ja.jpg" alt="ロック画面に出たRowmarkの段数カウンター（＋1・−1）"></div>
+  <div class="device"><img src="img/lock_en.jpg" alt="Rowmark row counter with +1 and −1 on the iPhone Lock Screen"></div>
 </section>
 
 <section class="statement">
-  <p><span class="lead">アカウントも広告もサブスクもありません。</span>あなたの作品と、いま何段目か、そして大きな＋1だけ。</p>
+  <p><span class="lead">No account, no ads, no subscription.</span> Just your projects, the row you're on, and a big +1.</p>
 </section>
 
 <section class="wrap split">
   <div class="text">
-    <h2><span class="lead">ホーム画面で</span><span class="nb">そのまま＋1。</span></h2>
-    <p>Smallウィジェットは無料。＋1と−1を、アプリを開かずにそのまま押せます。ProのMedium・Largeウィジェットには、繰り返しの中の位置と目標までの進み具合も。</p>
+    <h2><span class="lead">Tap +1 right on</span> <span class="nb">your Home Screen.</span></h2>
+    <p>The Small widget is free: +1 and −1 — tap it without opening the app. With Pro, the Medium and Large widgets also show where you are in the repeat and progress to your target.</p>
   </div>
-  <div class="device"><img src="img/home_ja.jpg" alt="iPhoneのホーム画面に置いたRowmarkのSmall・Mediumウィジェット" loading="lazy"></div>
+  <div class="device"><img src="img/home_en.jpg" alt="Rowmark Small and Medium widgets on an iPhone Home Screen" loading="lazy"></div>
 </section>
 
 <section class="wrap split rev">
   <div class="text">
-    <h2><span class="lead">編み図に、</span><span class="nb">今の段の印。</span></h2>
-    <p>作品に編み図（PDFや紙の編み図の写真）を付けて、今の段に印を置いたまま数えられます。＋1で印も1段進みます。無料です。</p>
+    <h2><span class="lead">Your pattern,</span> <span class="nb">with a row marker.</span></h2>
+    <p>Attach a pattern (PDF or a photo of a paper chart) to a project and keep a row marker on it while you count — the marker moves with +1. Free.</p>
   </div>
-  <div class="device"><img src="img/pattern_ja.jpg" alt="" loading="lazy"></div>
+  <div class="device"><img src="img/pattern_en.jpg" alt="" loading="lazy"></div>
 </section>
 
 <section class="wrap split">
   <div class="text">
-    <h2><span class="lead">作品ごとに、</span><span class="nb">段数と繰り返し。</span></h2>
-    <p>作品は何個でも。目標段数（「あと78段」）と、繰り返し（「6段ごと」の中のいまの位置）を作品ごとに持てます。</p>
+    <h2><span class="lead">Every project,</span> <span class="nb">its own count.</span></h2>
+    <p>As many projects as you like. A target (“78 rows to go”) and a repeat counter (“every 6 rows” — where you are in the repeat).</p>
   </div>
-  <div class="device"><img src="img/main_ja.jpg" alt="" loading="lazy"></div>
+  <div class="device"><img src="img/main_en.jpg" alt="" loading="lazy"></div>
 </section>
 
 <section class="wrap pricing">
-  <h2>料金のこと</h2>
-  <div class="plan"><h3>無料</h3><p class="note">広告なし・アカウント不要。</p><ul><li>ホーム画面のSmallウィジェット：＋1と−1。アプリを開かずにそのまま押せます</li><li>作品は何個でも</li><li>作品に編み図（PDFや写真）を付けて、今の段に印。＋1で印も1段進みます</li><li>アプリ内で目標段数と繰り返し</li></ul></div>
-  <div class="plan"><h3>Rowmark Pro<span class="price">¥1,300</span></h3><p class="note">買い切り・サブスクなし。</p><ul><li>ロック画面の段数カウンター：ロック画面・ダイナミックアイランド・StandByに段数と＋1／−1</li><li>コントロール（iOS 18以降）：「＋1段」をコントロールセンター・ロック画面下のボタン・アクションボタン（iPhone 15 Pro以降）に</li><li>Medium・Largeウィジェット：繰り返しの中の位置と目標までの進み具合、＋1と−1</li><li>ロック画面ウィジェット：段数と目標までのゲージ</li></ul><p class="fine">ロック画面のカウンターは、iOSの仕様で1回につき最長8時間ほど表示されます。止まったらアプリから出し直してください。</p></div>
+  <h2>Pricing, plainly</h2>
+  <div class="plan"><h3>Free</h3><p class="note">No ads. No account.</p><ul><li>Small Home Screen widget with +1 and −1 — tap it without opening the app</li><li>As many projects as you like</li><li>A pattern (PDF or photo) on each project, with a row marker that moves with +1</li><li>A target and a repeat counter in the app</li></ul></div>
+  <div class="plan"><h3>Rowmark Pro<span class="price">$7.99</span></h3><p class="note">One-time purchase, no subscription.</p><ul><li>Lock Screen counter: your count with +1 and −1 on the Lock Screen, in the Dynamic Island and in StandBy</li><li>Controls (iOS 18 or later): “+1 row” in Control Center, as a Lock Screen button, or on the Action Button (iPhone 15 Pro and later)</li><li>Medium and Large widgets: where you are in the repeat and progress to your target, with +1 and −1</li><li>Lock Screen widgets: your count and a gauge to your target</li></ul><p class="fine">iOS keeps the Lock Screen counter running for up to 8 hours at a time; start it again from the app.</p></div>
 </section>
 
 <section class="wrap faq">
-  <h2>よくある質問</h2>
-  <div class="q"><b>サブスクなしの段数カウンターはありますか？</b><span>あります。Rowmarkは＋1が押せるSmallウィジェットと作品数無制限が無料で、Proは買い切りです。</span></div>
-  <div class="q"><b>アプリを開かずに数えられますか？</b><span>はい。ホーム画面のウィジェットで＋1。Proならロック画面のカウンターやアクションボタンからも。</span></div>
-  <div class="q"><b>画面をロックしたまま押せますか？</b><span>Proのロック画面カウンターは、ロックしたまま＋1／−1が押せます。</span></div>
-  <div class="q"><b>作品のデータはどこに保存されますか？</b><span>iPhoneの中だけです。アップロードはしません。</span></div>
-  <div class="q"><b>ロック画面のカウンターが消えました。</b><span>ロック画面のカウンター（ライブアクティビティ）は、iOSの仕様で8時間ほどで終わります。Rowmarkを開いて、もう一度「ロック画面に出す」を押してください。「ライブアクティビティがオフです」と出たときは、設定 › Rowmarkでオンにしてください。</span></div>
-  <div class="q"><b>アクションボタンで＋1段したい。</b><span>Pro・iOS 18以降・iPhone 15 Pro以降：設定 › アクションボタン › コントロール › Rowmark。コントロールセンターや、ロック画面下のボタンにも置けます。</span></div>
-  <div class="q"><b>機種変更した・入れ直した。</b><span>Proはアプリの歯車 ›「購入を復元」で戻ります。作品と編み図はiPhoneの中だけにあるため、iPhoneのバックアップや移行で引き継がれます。アプリを削除すると消えます。</span></div>
-  <p class="all"><a href="faq/ja/">使い方とよくある質問（全部）</a></p>
+  <h2>Questions people ask</h2>
+  <div class="q"><b>Is there a row counter without a subscription?</b><span>Yes. Rowmark&#x27;s Small widget with +1 and unlimited projects are free, and Pro is a one-time purchase.</span></div>
+  <div class="q"><b>Can I count rows without opening the app?</b><span>Yes. Tap +1 on the Home Screen widget, or with Pro on the Lock Screen counter or the Action Button.</span></div>
+  <div class="q"><b>Does it work with the phone locked?</b><span>With Pro, the Lock Screen counter has +1 and −1 buttons you can press while the iPhone stays locked.</span></div>
+  <div class="q"><b>Where are my projects stored?</b><span>On your iPhone. Nothing is uploaded.</span></div>
+  <p class="all"><a href="faq/">How to use & all questions</a></p>
 </section>
 
 <section class="closing">
-  <p><span class="lead">サブスクなし・</span>広告なし・アカウント不要。</p>
-  <a class="badge" href="https://apps.apple.com/app/id6815409342"><img src="img/badge_ja.svg" alt="App Storeからダウンロード"></a>
+  <p><span class="lead">No subscription,</span> no ads, no account.</p>
+  <a class="badge" href="https://apps.apple.com/app/id6815409342"><img src="img/badge_en.svg" alt="Download on the App Store"></a>
 </section>
 
-<footer>英語・日本語・スペイン語に対応・iOS 17以降・Made by minari・<a href="../../privacy/rowmark/">プライバシーポリシー</a></footer>
+<footer>English, Japanese and Spanish · iOS 17 or later · Made by minari · <a href="../../privacy/rowmark/">Privacy policy</a></footer>

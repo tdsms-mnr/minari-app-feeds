@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <meta charset="utf-8">
 <script src="/minari-app-feeds/legacy-notice.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bookspine — いま読んでいる本が、ホーム画面に出る読書ウィジェット（買い切り）</title>
-<meta name="description" content="買い切りの読書ウィジェット。いま読んでいる本と進み具合がホーム画面に出て、ウィジェットを押すだけでページを足せます。冊数は無制限、広告もアカウントもありません。">
+<title>Bookspine — A reading widget for iPhone: the book you're reading, on your Home Screen (no subscription)</title>
+<meta name="description" content="A reading widget for iPhone with no subscription. The book you're reading sits on your Home Screen with its progress, and you can add pages right on the widget. Unlimited books, no ads, no account.">
 <link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/">
-<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/en/">
-<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/">
-<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/en/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/ja/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/">
 <style>
   :root { --bezel:#2B2B2B; --bg:#FAF9F7; --surface:#FFFFFF; --ink:#2B2B2B; --dim:#6B6B6B; --track:#ECEAE6; --accent:#3A5A78; }
   @media (prefers-color-scheme: dark) {
@@ -126,24 +126,36 @@
   {
    "@type": "SoftwareApplication",
    "name": "Bookspine",
-   "operatingSystem": "iOS 17.0以降",
-   "applicationCategory": "BookApplication",
-   "description": "買い切りの読書ウィジェット。いま読んでいる本と進み具合がホーム画面に出て、ウィジェットを押すだけでページを足せます。冊数は無制限、広告もアカウントもありません。",
-   "url": "https://apps.apple.com/app/id6815020170",
+   "alternateName": [
+    "Bookspine – 3 Things Today"
+   ],
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "ProductivityApplication",
+   "description": "A daily to-do widget for iPhone with no subscription. Write three things for today and check them off right on the Home Screen widget, without opening the app. No ads, no account.",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/",
+   "installUrl": "https://apps.apple.com/app/id6815020170",
    "offers": [
     {
      "@type": "Offer",
      "price": "0",
-     "priceCurrency": "JPY",
-     "description": "小ウィジェットと冊数無制限は無料。Bookspine Proは買い切り。"
+     "priceCurrency": "USD",
+     "description": "Free with a one-time Pro purchase. Not a subscription."
     },
     {
      "@type": "Offer",
      "name": "Bookspine Pro",
-     "price": "1300",
-     "priceCurrency": "JPY",
+     "price": "7.99",
+     "priceCurrency": "USD",
      "description": "One-time in-app purchase, not a subscription."
     }
+   ],
+   "author": {
+    "@type": "Person",
+    "name": "minari"
+   },
+   "inLanguage": [
+    "en",
+    "ja"
    ]
   },
   {
@@ -151,26 +163,42 @@
    "mainEntity": [
     {
      "@type": "Question",
-     "name": "サブスクはありますか？",
+     "name": "Is there a to-do widget for iPhone that I can tap without opening the app?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "ありません。Bookspine Proは買い切りです。小ウィジェットと冊数無制限はずっと無料、広告もアカウントもありません。"
+      "text": "Yes. Bookspine's Home Screen widget is interactive: tap a circle and the item is checked off right there. The Small widget is free."
      }
     },
     {
      "@type": "Question",
-     "name": "無料だと何冊まで登録できますか？",
+     "name": "Is there a simple to-do app without a subscription?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "無制限です。「5冊まで」のような上限はありません。読み終えた本の記録も無料のまま残ります。"
+      "text": "Yes. Bookspine's Pro is a one-time purchase, not a subscription. Today's three things and the Small widget are free forever, with no ads and no account."
      }
     },
     {
      "@type": "Question",
-     "name": "ウィジェットは無料で使えますか？",
+     "name": "Why only three things?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "小ウィジェットは無料です。中・大とロック画面のウィジェットがBookspine Pro（買い切り）です。"
+      "text": "Because three is what gets done. Bookspine deliberately has three lines a day — not a backlog. Unfinished things can be carried over to tomorrow or let go."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it track streaks?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Your current streak shows on the main screen for free. Pro adds Medium and Large widgets with the streak, and eight weeks of history."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Where is my list stored?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On your device. Nothing you write is uploaded anywhere."
      }
     }
    ]
@@ -179,65 +207,66 @@
 }
 </script>
 
-<nav class="nav"><div class="nav-inner"><img src="img/icon.png" alt="">Bookspine<a class="lang" href="en/">English</a></div></nav>
+<nav class="nav"><div class="nav-inner"><img src="img/icon.png" alt="">Bookspine<a class="lang" href="ja/">日本語</a></div></nav>
 
 <section class="wrap hero">
   <div>
-    <h1><span class="lead">いま読んでいる本が、</span><span class="nb">ホーム画面に。</span></h1>
-    <div class="crop"><img src="img/crop_ja.jpg" alt="iPhoneのホーム画面に置いたBookspineの大ウィジェット（今年の本棚）と小ウィジェット"></div>
-    <p class="sub">本を1冊入れると、表紙（または背表紙）と進み具合がホーム画面に並びます。ウィジェットを押すだけで、アプリを開かずに読んだぶんを足せます。</p>
-    <a class="badge" href="https://apps.apple.com/app/id6815020170"><img src="img/badge_ja.svg" alt="App Storeからダウンロード"></a>
-    <p class="price-line">今年の本棚の大ウィジェットは<b>Pro ¥1,300</b>・買い切り</p>
-    <ul class="facts"><li>サブスクなし</li><li>広告なし</li><li>アカウント不要</li><li>冊数は無制限</li></ul>
+    <h1><span class="lead">The book you're reading,</span> <span class="nb">on your Home Screen.</span></h1>
+    <div class="crop"><img src="img/crop_en.jpg" alt="Bookspine Large widget with this year's shelf and a Small widget on an iPhone Home Screen"></div>
+    <p class="sub">Add a book, and your current read — its cover or spine, and how far you are — sits on the Home Screen. Tap the widget to add pages without opening the app.</p>
+    <a class="badge" href="https://apps.apple.com/app/id6815020170"><img src="img/badge_en.svg" alt="Download on the App Store"></a>
+    <p class="price-line">This year's shelf in a Large widget with <b>Pro, $7.99</b> — one-time purchase</p>
+    <ul class="facts"><li>No subscription</li><li>No ads</li><li>No account</li><li>Unlimited books</li></ul>
   </div>
-  <div class="device"><img src="img/home_large_ja.jpg" alt="iPhoneのホーム画面に置いたBookspineの大ウィジェット（今年の本棚）と小ウィジェット"></div>
+  <div class="device"><img src="img/home_large_en.jpg" alt="Bookspine Large widget with this year's shelf and a Small widget on an iPhone Home Screen"></div>
 </section>
 
 <section class="statement">
-  <p><span class="lead">読書アプリの多くは、ウィジェットを課金の向こうに置いています。</span>ここではウィジェットが本体なので、小さいウィジェットはずっと無料、冊数の制限もありません。</p>
+  <p><span class="lead">Most reading apps keep the widget behind a subscription.</span> Here the widget is the point, so the Small one is free, and the number of books is never limited.</p>
 </section>
 
 <section class="wrap split">
   <div class="text">
-    <h2><span class="lead">ウィジェットの上で</span><span class="nb">「+10ページ」。</span></h2>
-    <p>小ウィジェットは無料：いま読んでいる本と、どこまで読んだか。ウィジェットを押すだけで、アプリを開かずに読んだぶんを足せます。</p>
+    <h2><span class="lead">Add pages</span> <span class="nb">right on the widget.</span></h2>
+    <p>The Small widget is free: the book you're reading, its cover or spine, and how far you are. Tap it to add pages without opening the app.</p>
   </div>
-  <div class="device"><img src="img/home_ja.jpg" alt="ホーム画面のBookspineの小ウィジェット" loading="lazy"></div>
+  <div class="device"><img src="img/home_en.jpg" alt="Bookspine Small widget on an iPhone Home Screen" loading="lazy"></div>
 </section>
 <section class="wrap split rev">
   <div class="text">
-    <h2><span class="lead">読み終えた本は、</span><span class="nb">棚に刺さっていく。</span></h2>
-    <p>読み終えた本は、古い順に棚へ刺さっていきます。表紙が見つからない本は、色と書名の背表紙として描くので、棚に灰色の穴ができません。</p>
+    <h2><span class="lead">Finished books</span> <span class="nb">line up on a shelf.</span></h2>
+    <p>Books you finish line up on a shelf, oldest to newest. Books without a cover are drawn as a spine — a colour and the title — so the shelf never has grey holes in it.</p>
   </div>
-  <div class="device"><img src="img/main_ja.jpg" alt="" loading="lazy"></div>
+  <div class="device"><img src="img/main_en.jpg" alt="" loading="lazy"></div>
 </section>
 <section class="wrap split">
   <div class="text">
-    <h2><span class="lead">一年の振り返り。</span><span class="nb">去年以前も。</span></h2>
-    <p>Pro：月ごとの冊数、読んだページ、一番厚かった本、その年の棚。</p>
+    <h2><span class="lead">Your year in review,</span> <span class="nb">past years too.</span></h2>
+    <p>Pro: books per month, pages read, your thickest book and the year's shelf.</p>
   </div>
-  <div class="device"><img src="img/yearreview_ja.jpg" alt="" loading="lazy"></div>
+  <div class="device"><img src="img/yearreview_en.jpg" alt="" loading="lazy"></div>
 </section>
 
 <section class="wrap pricing">
-  <h2>料金のこと</h2>
-  <div class="plan"><h3>無料</h3><p class="note">広告なし・アカウント不要。</p><ul><li>小ウィジェット：いま読んでいる本と、どこまで読んだか</li><li>ウィジェットの上で「+10ページ」</li><li>冊数は無制限。「5冊まで」はありません</li><li>読み終えた本の記録は、無料のまま残ります</li><li>書名・著者で検索、またはISBNのバーコードを読む</li><li>今年読む冊数を決めて、目標までの進みを見る</li></ul></div>
-  <div class="plan"><h3>Bookspine Pro<span class="price">¥1,300</span></h3><p class="note">買い切り・サブスクではありません。</p><ul><li>中ウィジェット：表紙・進捗バー・あと何ページ・今年の冊数</li><li>大ウィジェット：今年の本棚。読み終えた本が並びます</li><li>ロック画面ウィジェット</li><li>棚を背表紙で見るか、表紙で見るか</li><li>読書目標のウィジェット</li><li>一年の振り返り（去年以前も）</li><li>iCloud同期：機種変更しても棚はそのまま</li><li>「これから読む」棚のウィジェット</li><li>Goodreadsから取り込む</li><li>背表紙の色を選ぶ</li></ul><p class="fine">本のデータはOpen Libraryを使っています。</p></div>
+  <h2>Pricing, plainly</h2>
+  <div class="plan"><h3>Free</h3><p class="note">No ads. No account.</p><ul><li>Small widget: the book you're reading, its cover or spine, and how far you are</li><li>Add pages right on the widget</li><li>Unlimited books — no five-book cap</li><li>Finished books stay on your shelf, free, forever</li><li>Search by title or author, or scan the ISBN barcode</li><li>Set a reading goal for this year and see how close you are</li></ul></div>
+  <div class="plan"><h3>Bookspine Pro<span class="price">$7.99</span></h3><p class="note">One-time purchase, not a subscription.</p><ul><li>Medium widget: cover, progress bar, pages left, books this year</li><li>Large widget: this year's shelf — every book you've finished, lined up</li><li>Lock Screen widgets</li><li>See your shelf by spines or by covers</li><li>Reading goal widget</li><li>Year in review — past years too</li><li>iCloud sync — the same shelf even after a new iPhone</li><li>To-read shelf widget</li><li>Import from Goodreads</li><li>Spine colors</li></ul><p class="fine">Book data comes from Open Library.</p></div>
 </section>
 
 
 
 <section class="wrap faq">
-  <h2>よくある質問</h2>
-  <div class="q"><b>サブスクはありますか？</b><span>ありません。Bookspine Proは買い切りです。</span></div>
-  <div class="q"><b>無料だと何冊まで？</b><span>無制限です。「5冊まで」はありません。</span></div>
-  <div class="q"><b>払わないと読了記録は消えますか？</b><span>消えません。無料のまま残ります。</span></div>
-  <div class="q"><b>アカウントは要りますか？</b><span>要りません。</span></div>
+  <h2>Questions people ask</h2>
+  <div class="q"><b>Is there a to-do widget for iPhone that I can tap without opening the app?</b><span>Yes. Bookspine's Home Screen widget is interactive: tap a circle and the item is checked off right there. The Small widget is free.</span></div>
+  <div class="q"><b>Is there a simple to-do app without a subscription?</b><span>Yes. Bookspine's Pro is a one-time purchase, not a subscription. Today's three things and the Small widget are free forever, with no ads and no account.</span></div>
+  <div class="q"><b>Why only three things?</b><span>Because three is what gets done. Bookspine deliberately has three lines a day — not a backlog. Unfinished things can be carried over to tomorrow or let go.</span></div>
+  <div class="q"><b>Does it track streaks?</b><span>Your current streak shows on the main screen for free. Pro adds Medium and Large widgets with the streak, and eight weeks of history.</span></div>
+  <div class="q"><b>Where is my list stored?</b><span>On your device. Nothing you write is uploaded anywhere.</span></div>
 </section>
 
 <section class="closing">
-  <p><span class="lead">サブスクなし・</span>広告なし・アカウント不要。</p>
-  <a class="badge" href="https://apps.apple.com/app/id6815020170"><img src="img/badge_ja.svg" alt="App Storeからダウンロード"></a>
+  <p><span class="lead">No subscription,</span> no ads, no account.</p>
+  <a class="badge" href="https://apps.apple.com/app/id6815020170"><img src="img/badge_en.svg" alt="Download on the App Store"></a>
 </section>
 
-<footer>日本語・英語・スペイン語・ドイツ語・韓国語に対応・iOS 17以降・Made by minari・<a href="../../privacy/bookspine/">プライバシーポリシー</a></footer>
+<footer>English, Japanese, Spanish, German and Korean · iOS 17 or later · Made by minari · <a href="../../privacy/bookspine/">Privacy policy</a></footer>

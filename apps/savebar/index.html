@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <meta charset="utf-8">
 <script src="/minari-app-feeds/legacy-notice.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Savebar — 貯金の進み具合をホーム画面とロック画面に（サブスクなし）</title>
-<meta name="description" content="サブスクなしの貯金目標ウィジェット。進み具合をホーム画面とロック画面に。ウィジェットからワンタップで足せます。銀行とはつながず、金額はiPhoneの中だけ。">
+<title>Savebar — savings goal progress on your Home Screen and Lock Screen (no subscription)</title>
+<meta name="description" content="A savings goal widget for iPhone with no subscription. See your progress on the Home Screen and Lock Screen and add with one tap from the widget. No bank connection — amounts stay on your iPhone.">
 <link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/">
-<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/en/">
-<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/">
-<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/en/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/ja/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/">
 <style>
   :root { --bezel:#1F1A15; --bg:#FAF6F0; --surface:#FFFFFF; --ink:#1F1A15; --dim:#6B6259; --track:#EDE5DA; --accent:#C0582F; }
   @media (prefers-color-scheme: dark) {
@@ -113,21 +113,21 @@
    "name": "Savebar",
    "operatingSystem": "iOS 17 or later",
    "applicationCategory": "FinanceApplication",
-   "description": "サブスクなしの貯金目標ウィジェット。進み具合をホーム画面とロック画面に。ウィジェットからワンタップで足せます。銀行とはつながず、金額はiPhoneの中だけ。",
+   "description": "A savings goal widget for iPhone with no subscription. See your progress on the Home Screen and Lock Screen and add with one tap from the widget. No bank connection — amounts stay on your iPhone.",
    "installUrl": "https://apps.apple.com/app/id6815409629",
    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/",
    "offers": [
     {
      "@type": "Offer",
      "price": "0",
-     "priceCurrency": "JPY",
+     "priceCurrency": "USD",
      "description": "Free with a one-time Pro purchase. Not a subscription."
     },
     {
      "@type": "Offer",
      "name": "Savebar Pro",
-     "price": "800",
-     "priceCurrency": "JPY",
+     "price": "4.99",
+     "priceCurrency": "USD",
      "description": "One-time in-app purchase, not a subscription."
     }
    ],
@@ -145,50 +145,50 @@
    "mainEntity": [
     {
      "@type": "Question",
-     "name": "サブスクなしの貯金アプリはありますか？",
+     "name": "Is there a savings goal tracker without a subscription?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "あります。SavebarはSmallウィジェットと目標1つが無料で、目標を増やせて大きいウィジェットも使えるProは買い切りです。"
+      "text": "Yes. Savebar's Small widget and one goal are free, and Pro — more goals and bigger widgets — is a one-time purchase."
      }
     },
     {
      "@type": "Question",
-     "name": "無料で目標はいくつ作れますか？",
+     "name": "How many goals can I make for free?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "1つです。目標を増やすにはSavebar Pro（買い切り・サブスクなし）にします。Proは目標が無制限です。"
+      "text": "One. Savebar Pro (one-time purchase, no subscription) gives you unlimited goals."
      }
     },
     {
      "@type": "Question",
-     "name": "ロック画面にも出せますか？",
+     "name": "Can I see my progress on the Lock Screen?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "はい。ロック画面ウィジェット（％の円、残りの金額、一行表示）はSavebar Proです。無料版はホーム画面のSmallウィジェットです。"
+      "text": "Yes. Lock Screen widgets (a ring with your percentage, what's left to go, and a one-line view) are part of Savebar Pro. The free version has the Small widget on the Home Screen."
      }
     },
     {
      "@type": "Question",
-     "name": "銀行とつながりますか？",
+     "name": "Does it connect to my bank?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "つながりません。金額は自分で足すので、ログインも連携もありません。"
+      "text": "No. You add amounts yourself, so there are no logins and nothing to link."
      }
     },
     {
      "@type": "Question",
-     "name": "アプリを開かずに足せますか？",
+     "name": "Can I add money without opening the app?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "はい。ホーム画面のウィジェットの金額のボタン（＋¥500など）をタップします。"
+      "text": "Yes. Tap the amount button (like +$10) on the Home Screen widget."
      }
     },
     {
      "@type": "Question",
-     "name": "目標と金額はどこに保存されますか？",
+     "name": "Where are my goals and amounts stored?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "iPhoneの中だけです。アップロードはしません。"
+      "text": "On your iPhone. Nothing is uploaded."
      }
     }
    ]
@@ -197,75 +197,75 @@
 }
 </script>
 
-<nav class="nav"><div class="nav-inner"><img src="img/icon.png" alt="">Savebar<a class="lang" href="en/">English</a></div></nav>
+<nav class="nav"><div class="nav-inner"><img src="img/icon.png" alt="">Savebar<a class="lang" href="ja/">日本語</a></div></nav>
 
 <section class="wrap hero">
   <div>
-    <h1><span class="lead">スマホを手に取るたびに、</span><span class="nb">貯金の進み具合。</span></h1>
-    <p class="sub">ウィジェットからワンタップで足せます。期限を入れれば、1日いくら貯めればいいかも分かります。</p>
-    <a class="badge" href="https://apps.apple.com/app/id6815409629"><img src="img/badge_ja.svg" alt="App Storeからダウンロード"></a>
-    <ul class="facts"><li>サブスクなし</li><li>広告なし</li><li>銀行連携なし</li><li>アカウント不要</li></ul>
+    <h1><span class="lead">Your savings progress,</span> <span class="nb">every time you pick up your phone.</span></h1>
+    <p class="sub">Tap + on the widget when you put money aside. Set a date to see how much to save per day.</p>
+    <a class="badge" href="https://apps.apple.com/app/id6815409629"><img src="img/badge_en.svg" alt="Download on the App Store"></a>
+    <ul class="facts"><li>No subscription</li><li>No ads</li><li>No bank connection</li><li>No account</li></ul>
   </div>
-  <div class="device"><img src="img/home_ja.jpg" alt="iPhoneのホーム画面に置いたSavebarのウィジェット"></div>
+  <div class="device"><img src="img/home_en.jpg" alt="Savebar widgets on an iPhone Home Screen"></div>
 </section>
 
 <section class="statement">
-  <p><span class="lead">お金を取り分けたら、</span>ウィジェットの「＋¥500」のような金額のボタンをタップ。バーが進みます。</p>
+  <p><span class="lead">Set aside some money,</span> tap an amount button like +$10 on the widget, and watch the bar move.</p>
 </section>
 
 <section class="wrap cards">
   <div class="card">
-    <div class="shot flush"><img src="img/card_home_ja.jpg" alt="" loading="lazy"></div>
-    <p><b>欲しい物を、ホーム画面に。</b> Smallウィジェットは無料。目標1つのバーと％、アプリを開かずに決めた金額を足せるボタン。</p>
+    <div class="shot flush"><img src="img/card_home_en.jpg" alt="" loading="lazy"></div>
+    <p><b>What you're saving for, on your Home Screen.</b> The Small widget is free: one goal, its progress bar and a button that adds your set amount without opening the app.</p>
   </div>
   <div class="card">
-    <div class="shot bottom"><div class="device"><img src="img/lock_ja.jpg" alt="" loading="lazy"></div></div>
-    <p><b>目標が、毎日すこしずつ近づく。</b><span class="pro">Pro</span> ロック画面ウィジェット：％の円、残りの金額、一行表示。</p>
+    <div class="shot bottom"><div class="device"><img src="img/lock_en.jpg" alt="" loading="lazy"></div></div>
+    <p><b>Watch your goal get closer every day.</b><span class="pro">Pro</span> Lock Screen widgets: a ring with your percentage, what's left to go, and a one-line view.</p>
   </div>
   <div class="card">
-    <div class="shot"><div class="watch"><img src="img/watch_ja.png" alt="" loading="lazy"></div></div>
-    <p><b>Apple Watchから足せる。</b><span class="pro">Pro</span> ウィジェットと同じ額のボタンで、手首から目標に足せます。文字盤のコンプリケーションにも対応。</p>
+    <div class="shot"><div class="watch"><img src="img/watch_en.png" alt="" loading="lazy"></div></div>
+    <p><b>Add to a goal from your wrist.</b><span class="pro">Pro</span> The same amount buttons as the widget, plus watch face complications.</p>
   </div>
 </section>
 
 <section class="wrap split">
   <div class="text">
-    <h2><span class="lead">リンクを貼るだけで</span><span class="nb">写真と名前が入る。</span></h2>
-    <p>貯めて買いたい物の写真を目標に付けられます。Smallウィジェットに写真が大きく出ます。Safariのお店のページから、または共有ボタンから、写真・名前・値段ごと目標に保存。</p>
+    <h2><span class="lead">Paste a link.</span> <span class="nb">Photo and name fill in.</span></h2>
+    <p>Add a photo of what you're saving for — the Small widget shows it big. Save something from a shop page in Safari — or with the Share button — as a goal, with its photo, name and price.</p>
   </div>
-  <div class="device"><img src="img/edit_ja.jpg" alt="" loading="lazy"></div>
+  <div class="device"><img src="img/edit_en.jpg" alt="" loading="lazy"></div>
 </section>
 
 <section class="wrap split rev">
   <div class="text">
-    <h2><span class="lead">あと何日、</span><span class="nb">1日いくらも。</span></h2>
-    <p>期日を決めると「あと◯日・1日いくら」を表示。足した記録は履歴に残り、直す・削除ができます。</p>
+    <h2><span class="lead">Every goal.</span> <span class="nb">Days left, per day.</span></h2>
+    <p>With a date: how many days are left and how much to set aside per day. Every deposit is kept in a history you can edit or delete.</p>
   </div>
-  <div class="device"><img src="img/list_ja.jpg" alt="" loading="lazy"></div>
+  <div class="device"><img src="img/list_en.jpg" alt="" loading="lazy"></div>
 </section>
 
 <section class="wrap pricing">
-  <h2>料金のこと</h2>
-  <div class="plan"><h3>無料</h3><p class="note">広告なし・アカウント不要。</p><ul><li>Smallウィジェット：目標1つのバーと％、アプリを開かずに決めた金額を足せるボタン</li><li>目標1つ（名前・目標額・任意の期日）</li><li>目標に写真と商品のリンク</li><li>期日を決めると「あと◯日・1日いくら」</li><li>目標ごとに別の通貨</li></ul></div>
-  <div class="plan"><h3>Savebar Pro<span class="price">¥800</span></h3><p class="note">買い切り・サブスクなし。</p><ul><li>目標は無制限：いくつもの目標を同時に</li><li>Medium・Largeウィジェット：複数の目標を一度に。目標ごとに金額のボタンを2つまで</li><li>ロック画面ウィジェット</li><li>Apple Watchアプリと文字盤のコンプリケーション</li></ul></div>
+  <h2>Pricing, plainly</h2>
+  <div class="plan"><h3>Free</h3><p class="note">No ads. No account.</p><ul><li>Small widget with a progress bar and a one-tap amount button</li><li>One goal — name, target amount and optional date</li><li>A photo and a product link for your goal</li><li>Days left and how much per day</li><li>Any currency, even a different one for each goal</li></ul></div>
+  <div class="plan"><h3>Savebar Pro<span class="price">$4.99</span></h3><p class="note">One-time purchase, no subscription.</p><ul><li>Unlimited goals: save for several things at once</li><li>Medium and Large widgets with several goals and up to two amount buttons each</li><li>Lock Screen widgets</li><li>Apple Watch app and watch face complications</li></ul></div>
 </section>
 
 <section class="wrap faq">
-  <h2>よくある質問</h2>
-  <div class="q"><b>サブスクなしの貯金アプリはありますか？</b><span>あります。SavebarはSmallウィジェットと目標1つが無料で、目標を増やせて大きいウィジェットも使えるProは買い切りです。</span></div>
-  <div class="q"><b>無料で目標はいくつ作れますか？</b><span>1つです。目標を増やすにはSavebar Pro（買い切り・サブスクなし）にします。Proは目標が無制限です。</span></div>
-  <div class="q"><b>ロック画面にも出せますか？</b><span>はい。ロック画面ウィジェット（％の円、残りの金額、一行表示）はSavebar Proです。無料版はホーム画面のSmallウィジェットです。</span></div>
-  <div class="q"><b>銀行とつながりますか？</b><span>つながりません。金額は自分で足すので、ログインも連携もありません。</span></div>
-  <div class="q"><b>アプリを開かずに足せますか？</b><span>はい。ホーム画面のウィジェットの金額のボタン（＋¥500など）をタップします。ほかの金額を足すときは、アプリを開いて「＋ 入金」から入れます。</span></div>
-  <div class="q"><b>目標と金額はどこに保存されますか？</b><span>iPhoneの中だけです。アップロードはしません。</span></div>
-  <div class="q"><b>ウィジェットのボタンの金額を変えるには？</b><span>目標を開いて「…」＞「編集」の「ウィジェットで足す金額」を変えます。Medium・Largeには2つ目の金額も出せます。</span></div>
-  <div class="q"><b>目標を消すには？</b><span>一覧で目標を長押しして「削除」をタップします。数秒のあいだは取り消せます。</span></div>
-  <div class="q"><b>お店のリンクで写真が入りません。</b><span>アプリからページを読めないお店があります。そのときは写真アプリから選んでください。</span></div>
+  <h2>Questions people ask</h2>
+  <div class="q"><b>Is there a savings goal tracker without a subscription?</b><span>Yes. Savebar&#x27;s Small widget and one goal are free, and Pro — more goals and bigger widgets — is a one-time purchase.</span></div>
+  <div class="q"><b>How many goals can I make for free?</b><span>One. Savebar Pro (one-time purchase, no subscription) gives you unlimited goals.</span></div>
+  <div class="q"><b>Can I see my progress on the Lock Screen?</b><span>Yes. Lock Screen widgets (a ring with your percentage, what's left to go, and a one-line view) are part of Savebar Pro. The free version has the Small widget on the Home Screen.</span></div>
+  <div class="q"><b>Does it connect to my bank?</b><span>No. You add amounts yourself, so there are no logins and nothing to link.</span></div>
+  <div class="q"><b>Can I add money without opening the app?</b><span>Yes. Tap the amount button (like +$10) on the Home Screen widget. To add a different amount, open the app and tap “+ Add”.</span></div>
+  <div class="q"><b>Where are my goals and amounts stored?</b><span>On your iPhone. Nothing is uploaded.</span></div>
+  <div class="q"><b>How do I change the amount on the widget button?</b><span>Open the goal, tap “…” › Edit, and change “Widget amounts”. Medium and Large widgets can show a second amount.</span></div>
+  <div class="q"><b>How do I delete a goal?</b><span>Touch and hold the goal in the list and tap Delete. You can undo it for a few seconds.</span></div>
+  <div class="q"><b>A store link didn&#x27;t fill in the photo.</b><span>Some stores don&#x27;t let apps read their pages. Choose a photo from your library instead.</span></div>
 </section>
 
 <section class="closing">
-  <p><span class="lead">銀行連携なし・</span>アカウント不要・サブスクなし。</p>
-  <a class="badge" href="https://apps.apple.com/app/id6815409629"><img src="img/badge_ja.svg" alt="App Storeからダウンロード"></a>
+  <p><span class="lead">No bank connection,</span> no account, no subscription.</p>
+  <a class="badge" href="https://apps.apple.com/app/id6815409629"><img src="img/badge_en.svg" alt="Download on the App Store"></a>
 </section>
 
-<footer>19言語に対応・iOS 17以降・Made by minari・<a href="../../privacy/savebar/">プライバシーポリシー</a></footer>
+<footer>Available in 19 languages · iOS 17 or later · Made by minari · <a href="../../privacy/savebar/">Privacy policy</a></footer>

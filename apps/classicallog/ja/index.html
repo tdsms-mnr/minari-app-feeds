@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<script src="/minari-app-feeds/legacy-notice.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClassicalLog — クラシック演奏会の記録と発売日のお知らせ</title>
+<meta name="description" content="クラシックの演奏会を記録する iPhone アプリ。聴いた公演・曲目・座った席・感想を無料で件数制限なく残せて、JSON/CSV に書き出せます。チケットの発売日が決まったらお知らせします。広告なし・アカウント不要・記録は端末の中だけ。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/ja/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/ja/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#8a5566; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332c2e; --bg:#171314; --accent:#c98da0; }
+  }
+  body { font-family: -apple-system, "Hiragino Sans", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.8;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .2rem; letter-spacing: -.01em; }
+  .tagline { color: var(--accent); font-weight: 600; margin: 0 0 2rem; }
+  h2 { font-size: 1.05rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem;
+       border-top: 1px solid var(--line); }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem;
+         background: var(--accent); color: #fff; border-radius: 999px;
+         text-decoration: none; font-weight: 600; }
+  [lang="en"] { margin-top: 3rem; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "ClassicalLog",
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "LifestyleApplication",
+   "description": "聴いたクラシックの演奏会を記録する iPhone アプリ。公演・団体・曲目・座った席・感想を無料で件数制限なく残せて、JSON と CSV に書き出せる。気になる団体のチケット発売日が決まったらお知らせする。広告なし・アカウント不要・記録は端末の中だけ。",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/ja/",
+   "installUrl": "https://apps.apple.com/app/id6801409117",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY",
+    "description": "記録・台帳・座席の記録・書き出しは無料で件数無制限。Pro は通知の拡張のみ。"
+   },
+   "author": {
+    "@type": "Person",
+    "name": "minari"
+   },
+   "inLanguage": [
+    "ja",
+    "en"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "クラシックの演奏会に行った記録をつけられる iPhone アプリはある？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ClassicalLog は、聴いた演奏会を公演・団体・曲目・座った席・感想まで残せる記録アプリです。記録は無料で件数の制限がなく、JSON と CSV に書き出せます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "同じ曲を何回聴いたか、作曲家の全曲まであと何曲か分かる？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "曲目を構造化して持っているので、同じ交響曲を何度聴いたか、ある作曲家の全曲まであと何曲かを数えられます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "オーケストラのチケット発売日を通知してくれる？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "気になる団体を選んでおくと、チケットの発売日が決まったときにお知らせします。1団体までは無料です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "記録はどこに保存される？アカウントは必要？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "記録はすべて端末の中に保存されます。アカウント登録は要りません。広告はありません。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<h1>ClassicalLog</h1>
+<p class="tagline">シーズンの発売日は、逃すと次が1年後です。</p>
+<p class="dim" style="margin:-1.5rem 0 2rem"><a href="../">English</a></p>
+
+<p class="lede">ClassicalLog は、聴いた演奏会を貯めながら、次に買うべき日を知らせるアプリです。
+チケットの発売日は公演の3〜5か月前に決まります。決まった時点で分かれば、十分に間に合います。</p>
+
+<a class="cta" href="https://apps.apple.com/app/id6801409117">App Store で見る</a>
+
+<h2>料金のこと</h2>
+<ul>
+  <li><strong>演奏会の記録・台帳・座席の記録・書き出しは、すべて無料です。件数の制限もありません。</strong></li>
+  <li>広告はありません。送るのは匿名の利用状況（操作の種類だけ・内容は含まない）のみで、設定からオフにできます。</li>
+  <li>アカウントは要りません。</li>
+  <li>通知は1団体まで無料（発売日を月に1回まとめてお知らせします）。</li>
+  <li>Pro は、月額または年額の自動更新サブスクリプションと、更新のない買い切りの Lifetime から選べます。
+      サブスクリプションは期間終了の24時間以上前に解約しない限り自動更新され、解約と管理は
+      Apple アカウントの設定から行えます。</li>
+  <li>Pro でできること＝通知を受け取る団体が無制限になり、発売日の前日にお知らせが届きます。</li>
+</ul>
+
+<h2>できること</h2>
+<ul>
+  <li><strong>発売日を知らせる</strong>— 気になる団体を選んでおくと、チケットの発売日が決まったときにお知らせします</li>
+  <li><strong>席は、自分の記録から選ぶ</strong>— 座った席と感想をホールのブロック単位で残せます。
+      次に同じホールで買うとき、他人の評価ではなく自分の記録を見て決められます。
+      まだ座っていないブロックも分かります</li>
+  <li><strong>曲を数える</strong>— 同じ交響曲を何度聴いたか、ある作曲家の全曲まであと何曲か。
+      曲目を構造化して持っているので、演奏会の一覧では出てこない見え方ができます</li>
+  <li><strong>書き出せる</strong>— いつでも JSON と CSV で持ち出せます</li>
+  <li>iPhone・iOS 17 以降</li>
+</ul>
+
+<h2>よくある質問</h2>
+<p><strong>クラシックの演奏会に行った記録をつけられる iPhone アプリはある？</strong><br>
+ClassicalLog は、聴いた演奏会を公演・団体・曲目・座った席・感想まで残せる記録アプリです。記録は無料で件数の制限がなく、JSON と CSV に書き出せます。</p>
+<p><strong>同じ曲を何回聴いたか、作曲家の全曲まであと何曲か分かる？</strong><br>
+曲目を構造化して持っているので、演奏会の一覧では出てこない数え方ができます。</p>
+<p><strong>オーケストラのチケット発売日を通知してくれる？</strong><br>
+気になる団体を選んでおくと、発売日が決まったときにお知らせします。1団体までは無料です。</p>
+<p><strong>記録はどこに保存される？アカウントは必要？</strong><br>
+記録はすべて端末の中に保存されます。アカウント登録は要りません。</p>
+
+<h2>プライバシー</h2>
+<p>記録はすべて端末の中だけに保存されます。アカウント登録は要りません。広告はありません。
+<a href="https://carbonated-archeology-c56.notion.site/ClassicalLog-Privacy-Policy-3bd374a2b2e380a3b23aec6977e3055c">プライバシーポリシー</a></p>
+
+<section lang="en">
+<h2>English</h2>
+<p>ClassicalLog is a classical concert journal for iPhone — <a href="../">read the English page</a>.</p>
+</section>
+
+<p class="dim" style="margin-top:3rem">
+  <a href="../../../">minari-app-feeds</a> ・ 開発：minari
+</p>

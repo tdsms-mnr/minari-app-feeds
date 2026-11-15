@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <meta charset="utf-8">
 <script src="/minari-app-feeds/legacy-notice.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Todayboard — 今日の予定をホーム画面に（カレンダーウィジェット・サブスクなし）</title>
-<meta name="description" content="サブスクなしの iPhone カレンダーウィジェット。iPhone にあるカレンダー（iCloud・Google・Outlook）を読んで今日の予定をホーム画面に出します。読み取りだけ・広告なし・アカウント不要。">
+<title>Todayboard — Today's calendar events on your iPhone Home Screen (calendar widget, no subscription)</title>
+<meta name="description" content="A calendar widget for iPhone with no subscription. Todayboard reads the calendars already on your iPhone — iCloud, Google, Outlook — and shows today's events on the Home Screen. Read-only, no ads, no account.">
 <link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/">
-<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/en/">
-<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/">
-<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/en/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/ja/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/">
 <style>
   :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#3B55B5; }
   @media (prefers-color-scheme: dark) {
@@ -39,7 +39,7 @@
       "alternateName": ["Todayboard – Calendar Widget"],
       "operatingSystem": "iOS 17 or later",
       "applicationCategory": "ProductivityApplication",
-      "description": "サブスクなしの iPhone カレンダーウィジェット。iPhone にあるカレンダー（iCloud・Google・Outlook）を読んで今日の予定をホーム画面に出します。読み取りだけ・広告なし・アカウント不要。",
+      "description": "A calendar widget for iPhone with no subscription. Todayboard reads the calendars already on your iPhone — iCloud, Google, Outlook — and shows today's events on the Home Screen. Read-only, no ads, no account.",
       "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/",
       "installUrl": "https://apps.apple.com/app/id6814139080",
       "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free with a one-time Pro purchase. Not a subscription."},
@@ -49,12 +49,16 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "サブスクなしのカレンダーウィジェットはありますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "はい。Todayboard の Pro は買い切りで、広告もありません。今日の予定の Small ウィジェットはずっと無料。"}},
-        {"@type": "Question", "name": "Google カレンダーや Outlook でも使えますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "はい。ただし Todayboard が読むのは iPhone の「カレンダー」に入っている予定です。Google カレンダーのアプリだけを使っている場合は、先に iPhone の「設定」→「アプリ」→「カレンダー」→「カレンダーアカウント」→「アカウントを追加」で Google アカウントを追加してください（2分・一度だけ。仕事用と私用があれば両方）。"}},
-        {"@type": "Question", "name": "仕事のカレンダーだけ出せますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "Pro で表示するカレンダーを選べます。誕生日や祝日などの終日の予定を隠すこともできます。"}}
+        {"@type": "Question", "name": "Is there an iPhone calendar widget without a subscription or ads?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes. Todayboard's Pro is a one-time purchase, not a subscription, and there are no ads. A Small widget with today's events is free forever."}},
+        {"@type": "Question", "name": "Does it work with Google Calendar or Outlook?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes, through your iPhone’s Calendar. Todayboard reads the calendars set up on your iPhone. If you only use the Google Calendar app, first add your Google account in Settings → Apps → Calendar → Calendar Accounts → Add Account (two minutes, once — add both work and personal accounts if you have them)."}},
+        {"@type": "Question", "name": "Can I show only my work calendar?",
+         "acceptedAnswer": {"@type": "Answer", "text": "Yes, with Pro you choose which calendars appear in the widget, and you can hide all-day events like birthdays and holidays."}},
+        {"@type": "Question", "name": "Can the widget show tomorrow or the whole week?",
+         "acceptedAnswer": {"@type": "Answer", "text": "With Pro, the Medium widget shows today and tomorrow side by side and the Large widget shows up to 7 days ahead."}},
+        {"@type": "Question", "name": "Does Todayboard change or upload my events?",
+         "acceptedAnswer": {"@type": "Answer", "text": "No. Calendar access is read-only, and your events are never sent anywhere."}}
       ]
     }
   ]
@@ -62,43 +66,47 @@
 </script>
 
 <h1>Todayboard</h1>
-<p class="tagline">今日の予定を、ホーム画面に。サブスクなしのカレンダーウィジェット。</p>
-<p class="langs"><a href="en/">English</a></p>
+<p class="tagline">Today's events on your Home Screen — a calendar widget. No subscription.</p>
+<p class="langs"><a href="ja/">日本語</a></p>
 
-<p class="lede">Todayboard は<strong>サブスクなし</strong>のカレンダーウィジェットです。iPhone にすでにあるカレンダー——iCloud・Google・Outlook——を読んで、次の予定をいつも見ている場所に出します。読み取りだけ。</p>
+<p class="lede">Todayboard is a calendar widget for iPhone with <strong>no subscription</strong>. It reads the calendars already on your phone — iCloud, Google, Outlook — and shows what's next, right where you already look. Read-only. Nothing leaves your phone.</p>
 
-<a class="cta" href="https://apps.apple.com/app/id6814139080">App Store で見る</a>
+<a class="cta" href="https://apps.apple.com/app/id6814139080">View on the App Store</a>
 
-<h2>料金のこと</h2>
+<h2>Pricing, plainly</h2>
 <ul>
-  <li>Pro は買い切り。サブスクではありません。</li>
-  <li>広告なし・アカウント不要。</li>
-  <li>読み取りだけ。予定を書き換えません。</li>
-  <li>今日の予定の Small ウィジェットはずっと無料。</li>
+  <li>Pro is a one-time purchase, not a subscription.</li>
+  <li>No ads. No account.</li>
+  <li>Read-only: Todayboard never edits your events.</li>
+  <li>A Small widget with today's events stays free forever.</li>
 </ul>
 
-<h2>できること</h2>
+<h2>What it does</h2>
 <ul>
-  <li>今日の次の予定を Small ウィジェットに。時間が進むと更新され、今の予定に印</li>
-  <li>iPhone に設定済みのすべてのカレンダーで動く</li>
-  <li>Pro：Medium（今日と明日）・Large（7日間）・表示するカレンダーの選択・終日を隠す</li>
-  <li>英語・日本語</li>
-  <li>iOS 17 以降</li>
+  <li>Today's next events in a Small widget, updated as the day goes on; the current event is marked NOW</li>
+  <li>Works with every calendar account already set up on your iPhone</li>
+  <li>Pro: Medium (today + tomorrow) and Large (up to 7 days), choose which calendars show, hide all-day events</li>
+  <li>Available in English and Japanese</li>
+  <li>iOS 17 or later</li>
 </ul>
 
-<h2>よくある質問</h2>
-<p><strong>サブスクなしのカレンダーウィジェットはありますか？</strong><br>
-はい。Todayboard の Pro は買い切りで、広告もありません。今日の予定の Small ウィジェットはずっと無料。</p>
-<p><strong>Google カレンダーや Outlook でも使えますか？</strong><br>
-はい。ただし Todayboard が読むのは iPhone の「カレンダー」に入っている予定です。Google カレンダーのアプリだけを使っている場合は、先に iPhone の「設定」→「アプリ」→「カレンダー」→「カレンダーアカウント」→「アカウントを追加」で Google アカウントを追加してください（2分・一度だけ。仕事用と私用があれば両方）。</p>
-<p><strong>仕事のカレンダーだけ出せますか？</strong><br>
-Pro で表示するカレンダーを選べます。誕生日や祝日などの終日の予定を隠すこともできます。</p>
+<h2>Questions people ask</h2>
+<p><strong>Is there an iPhone calendar widget without a subscription or ads?</strong><br>
+Yes. Todayboard's Pro is a one-time purchase, not a subscription, and there are no ads. A Small widget with today's events is free forever.</p>
+<p><strong>Does it work with Google Calendar or Outlook?</strong><br>
+Yes, through your iPhone’s Calendar. Todayboard reads the calendars set up on your iPhone. If you only use the Google Calendar app, first add your Google account in Settings → Apps → Calendar → Calendar Accounts → Add Account (two minutes, once — add both work and personal accounts if you have them).</p>
+<p><strong>Can I show only my work calendar?</strong><br>
+Yes, with Pro you choose which calendars appear in the widget, and you can hide all-day events like birthdays and holidays.</p>
+<p><strong>Can the widget show tomorrow or the whole week?</strong><br>
+With Pro, the Medium widget shows today and tomorrow side by side and the Large widget shows up to 7 days ahead.</p>
+<p><strong>Does Todayboard change or upload my events?</strong><br>
+No. Calendar access is read-only, and your events are never sent anywhere.</p>
 
-<p><a href="faq/ja/">使い方とよくある質問（全部）</a></p>
+<p><a href="faq/">How to use &amp; all FAQ</a></p>
 
-<h2>プライバシー</h2>
-<p>データは端末の中にだけあります。
-<a href="../../privacy/todayboard/">プライバシーポリシー</a>.</p>
+<h2>Privacy</h2>
+<p>Your data stays on your device.
+<a href="../../privacy/todayboard/">Privacy policy</a>.</p>
 
 <p class="dim" style="margin-top:3rem">
   <a href="../../">minari-app-feeds</a> · Made by minari
