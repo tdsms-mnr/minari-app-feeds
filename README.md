@@ -3,7 +3,6 @@
 個人開発 iOS アプリが読む、静的なデータ配信の置き場。
 
 - `classicallog/concerts.json` — クラシック演奏会の公演と**発売日**（[ClassicalLog](https://apps.apple.com/jp/app/id6801409117)）
-- `eisei/questions.json` — 衛生管理者試験の自作問題（Eisei）。公表問題（4月・10月）の後に同じ論点の問題を足す
 
 ## 約束
 
