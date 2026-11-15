@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<script src="/minari-app-feeds/legacy-notice.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datto - カウントダウン｜大切な日を、ホーム画面に。</title>
+<meta name="description" content="開かなくても、あと何日か分かる。ホーム画面のウィジェットに残り日数が出るので、アプリを開く習慣は要りません。試験も、記念日も、旅行も、置いておくだけ。広告なし・アカウント不要・データは端末の中だけ。">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/ja/">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/ja/">
+<style>
+  :root { --bezel:#332B24; --bg:#FAF7F2; --surface:#FFFFFF; --ink:#332B24; --dim:#6B6B6B; --track:#EFE7DB; --accent:#B0735C; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bezel:#3A3A3C; --bg:#171513; --surface:#332F2C; --ink:#EFEAE4; --dim:#A09A94; --track:#3A3A3C; --accent:#D3987E; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif;
+         -webkit-font-smoothing: antialiased; line-height:1.6; }
+  a { color:var(--accent); }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
+  .nav { position:sticky; top:12px; z-index:2; display:flex; justify-content:center; padding:0 16px; }
+  .nav-inner { display:flex; align-items:center; gap:10px; padding:8px 18px 8px 10px; border-radius:999px;
+               background:color-mix(in srgb, var(--surface) 80%, transparent); backdrop-filter:blur(12px);
+               box-shadow:0 1px 8px rgba(0,0,0,.06); font-weight:600; font-size:15px; }
+  .nav img { width:28px; height:28px; border-radius:7px; }
+  .nav .lang { font-weight:400; font-size:14px; color:var(--dim); text-decoration:none; margin-left:8px; }
+
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center; padding-top:56px; padding-bottom:80px; }
+  h1 { font-size:52px; line-height:1.15; font-weight:700; letter-spacing:-0.03em; margin:0 0 24px; }
+  .lead { color:var(--accent); }
+  .sub { font-size:18px; color:var(--dim); margin:0 0 32px; max-width:30em; }
+  .badge { display:inline-block; }
+  .badge img { height:54px; display:block; }
+  .facts { display:flex; flex-wrap:wrap; gap:8px; margin:28px 0 0; padding:0; list-style:none; }
+  .facts li { font-size:14px; padding:6px 12px; border-radius:999px; background:var(--track); }
+
+  .device { width:100%; max-width:300px; aspect-ratio:1206/2622; border:10px solid var(--bezel); border-radius:52px;
+            overflow:hidden; box-shadow:0 30px 60px -20px rgba(60,40,20,.35); background:#000; justify-self:center; }
+  .device img { width:100%; height:100%; object-fit:cover; display:block; }
+
+  .statement { text-align:center; padding:96px 24px; }
+  .statement p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto; max-width:22em; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; padding-bottom:96px; }
+  .card { background:var(--surface); border-radius:32px; overflow:hidden; display:flex; flex-direction:column; }
+  .card .shot { background:var(--track); padding:32px 32px 0; display:flex; justify-content:center; align-items:flex-start;
+                height:380px; overflow:hidden; }
+  .card .shot.bottom { align-items:flex-end; padding:0 32px 32px; }
+  .card .shot .device { max-width:210px; border-width:7px; border-radius:36px; box-shadow:0 20px 40px -20px rgba(60,40,20,.35); }
+  .card .shot .watch { width:200px; aspect-ratio:416/496; border:10px solid var(--bezel); border-radius:48px; overflow:hidden;
+                       background:#000; margin-top:40px; box-shadow:0 20px 40px -20px rgba(60,40,20,.35); }
+  .card .shot .watch img { width:100%; display:block; }
+  .card p { margin:0; padding:24px 28px 28px; font-size:17px; color:var(--dim); }
+  .card p b { color:var(--ink); font-weight:600; }
+  .pro { display:inline-block; font-size:12px; font-weight:600; color:var(--accent); border:1px solid currentColor;
+         border-radius:999px; padding:1px 8px; margin-left:6px; vertical-align:2px; }
+
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; padding-bottom:96px; }
+  .split.rev .text { order:2; }
+  h2 { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 0 20px; }
+  .split .text p { font-size:18px; color:var(--dim); margin:0; max-width:28em; }
+
+  .pricing { display:grid; grid-template-columns:1fr 1fr; gap:20px; padding-bottom:96px; }
+  .pricing h2 { grid-column:1/-1; text-align:center; margin-bottom:12px; }
+  .plan { background:var(--surface); border-radius:32px; padding:32px; }
+  .plan h3 { font-size:22px; letter-spacing:-0.02em; margin:0 0 4px; }
+  .plan .note { color:var(--dim); margin:0 0 16px; font-size:15px; }
+  .plan ul { margin:0; padding-left:1.1em; }
+  .plan li { margin:.35em 0; }
+
+  .faq { max-width:760px; padding-bottom:96px; }
+  .faq h2 { text-align:center; margin-bottom:32px; }
+  .faq .q { border-top:1px solid var(--track); padding:20px 0; }
+  .faq .q:last-child { border-bottom:1px solid var(--track); }
+  .faq .q b { display:block; font-weight:600; margin-bottom:4px; }
+  .faq .q span { color:var(--dim); }
+
+  .closing { text-align:center; padding:32px 24px 96px; }
+  .closing p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto 32px; max-width:18em; }
+  footer { text-align:center; color:var(--dim); font-size:14px; padding:0 24px 48px; }
+
+  @media (max-width: 820px) {
+    .wrap { padding:0 16px; }
+    .hero, .split, .pricing { grid-template-columns:1fr; gap:40px; }
+    .hero { padding-top:48px; padding-bottom:64px; }
+    .split.rev .text { order:0; }
+    h1 { font-size:40px; }
+    h2, .statement p, .closing p { font-size:30px; }
+    .statement { padding:64px 16px; }
+    .cards { grid-template-columns:1fr; padding-bottom:64px; }
+    .split, .pricing, .faq { padding-bottom:64px; }
+    .device { max-width:260px; }
+  }
+</style>
+<style>
+  :lang(ja) h1, :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { letter-spacing:0.01em; line-height:1.35; }
+  :lang(ja) h1 { font-size:46px; }
+  @media (max-width: 820px) { :lang(ja) h1 { font-size:34px; } :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { font-size:26px; } }
+  :lang(ja) body { word-break:auto-phrase; }
+  .nb { display:inline-block; }
+  .card .shot.flush { padding:0; }
+  .card .shot.flush img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; }
+  .card .shot.swatches { align-items:center; padding:32px; }
+  .swatches ul { display:grid; grid-template-columns:repeat(4, 44px); gap:16px; margin:0; padding:0; list-style:none; }
+  .swatches li { width:44px; height:44px; border-radius:50%; box-shadow:inset 0 0 0 1px rgba(0,0,0,.06); }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "Datto",
+   "alternateName": [
+    "Datto - Countdown Widget",
+    "Datto - カウントダウン"
+   ],
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "UtilitiesApplication",
+   "description": "A quiet countdown widget for iPhone. It puts the days until your important dates on the Home Screen and Lock Screen. One widget and up to three events stay free; Pro is a one-time purchase, not a subscription. No ads, no account.",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/ja/",
+   "installUrl": "https://apps.apple.com/app/id6796972154",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "One widget and up to three events free. Pro is a one-time purchase."
+   },
+   "author": {
+    "@type": "Person",
+    "name": "minari"
+   },
+   "inLanguage": [
+    "en",
+    "ja"
+   ]
+  }
+ ]
+}
+</script>
+
+<nav class="nav"><div class="nav-inner"><img src="../img/icon.png" alt="">Datto<a class="lang" href="../">English</a></div></nav>
+
+<section class="wrap hero">
+  <div>
+    <h1><span class="lead">開かなくても、</span><span class="nb">あと何日か分かる。</span></h1>
+    <p class="sub">Datto（ダット）は、大切な日までの残り日数をホーム画面のウィジェットに出すカウントダウンです。</p>
+    <a class="badge" href="https://apps.apple.com/app/id6796972154"><img src="../img/badge_ja.svg" alt="App Storeからダウンロード"></a>
+    <ul class="facts"><li>サブスクなし</li><li>広告なし</li><li>アカウント不要</li></ul>
+  </div>
+  <div class="device"><img src="../img/list_ja.jpg" alt="Dattoのカウントダウンの一覧"></div>
+</section>
+
+<section class="statement">
+  <p><span class="lead">試験や提出の締切、誕生日や記念日、旅行や引っ越し——</span><span class="nb">「その日」を登録するのは最初の一度だけ。</span></p>
+</section>
+
+<section class="wrap cards">
+  <div class="card">
+    <div class="shot flush"><img src="../img/widget_ja.jpg" alt="" loading="lazy"></div>
+    <p><b>試験も、記念日も、旅行も。</b> ウィジェット1枚と、イベント3件までは無料のままずっと使えます。</p>
+  </div>
+  <div class="card">
+    <div class="shot bottom"><div class="device"><img src="../img/remind_ja.jpg" alt="" loading="lazy"></div></div>
+    <p><b>繰り返しも、節目のお知らせも。</b><span class="pro">Pro</span> 繰り返しは毎年・毎月、次の年へひとりでに。節目のお知らせは100日前・前日・当日など。音は鳴りません。</p>
+  </div>
+  <div class="card">
+    <div class="shot swatches"><ul><li style="background:#6F5B4E"></li><li style="background:#C0775C"></li><li style="background:#B98E8C"></li><li style="background:#7C8C6E"></li><li style="background:#6B6B47"></li><li style="background:#A8998A"></li><li style="background:#6E5566"></li><li style="background:#3E4C5E"></li><li style="background:#3A3A3C"></li><li style="background:#E8D5C8"></li><li style="background:#CAD2BE"></li><li style="background:#EFE7DB"></li></ul></div>
+    <p><b>色を選んで、その日を登録。</b> 洗練された12色のパレット＋自由なカスタムカラー。文字色は背景に合わせて自動で読みやすく。</p>
+  </div>
+</section>
+
+<section class="wrap split">
+  <div class="text">
+    <h2><span class="lead">あと何日か、</span><span class="nb">もう数えなくていい。</span></h2>
+    <p>アプリを開く習慣は要りません。一度置いておけば、ホーム画面を見るたびに目に入ります。</p>
+  </div>
+  <div class="device"><img src="../img/home_ja.jpg" alt="" loading="lazy"></div>
+</section>
+
+<section class="wrap pricing">
+  <h2>料金のこと</h2>
+  <div class="plan"><h3>無料</h3><p class="note">広告なし・アカウント不要。</p><ul><li>大切な日までの残り日数をカウントダウン（3件まで）</li><li>ホーム画面ウィジェット（スモール）に1件表示</li><li>背景色は、洗練された12色のパレット＋自由なカスタムカラー</li><li>ダークモードに対応（端末に合わせるか、いつも明るく／暗く保つかを選べます）</li></ul></div>
+  <div class="plan"><h3>Datto Pro</h3><p class="note">買い切り・サブスクリプションではありません。</p><ul><li>ウィジェットを好きなだけ。Medium・Large・ロック画面にも対応</li><li>イベントを無制限に</li><li>繰り返しイベント（毎年・毎月、次の年へひとりでに）</li><li>節目のお知らせ（100日前・前日・当日など。音は鳴りません）</li><li>時間・分まで表示（その日が近づいたら、こまやかに）</li><li>カテゴリーで分けて置ける（仕事・家族・旅。一覧の上で切り替え）</li><li>iCloudで同期（同じAppleアカウントの端末なら、機種を変えても同じ予定が並びます）</li></ul></div>
+</section>
+
+
+
+<section class="closing">
+  <p><span class="lead">シンプルに、</span><span class="nb">あなたの「その日まで」を。</span></p>
+  <a class="badge" href="https://apps.apple.com/app/id6796972154"><img src="../img/badge_ja.svg" alt="App Storeからダウンロード"></a>
+</section>
+
+<footer>18言語に対応・iOS 17以降・Made by minari・<a href="../../../privacy/datto/">プライバシーポリシー</a></footer>
