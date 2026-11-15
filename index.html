@@ -1,38 +1,266 @@
 <!doctype html>
+<html lang="ja">
 <meta charset="utf-8">
 <script src="/minari-app-feeds/legacy-notice.js" defer></script>
-<meta name="robots" content="noindex">
-<title>minari-app-feeds</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>minari — Apps</title>
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/en/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/en/">
 <style>
-  h2 { font-size: 1.05rem; margin-top: 2.2rem; }
-  body { font-family: -apple-system, "Hiragino Sans", sans-serif; max-width: 40rem;
-         margin: 4rem auto; padding: 0 1.5rem; line-height: 1.8; color: #333; }
-  code { background: #f4f4f5; padding: .1em .4em; border-radius: 4px; }
+  :root { --bg:#FAF7F2; --surface:#FFFFFF; --ink:#332B24; --dim:#6B6B6B; --track:#EFE7DB; --accent:#B0735C; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#171513; --surface:#332F2C; --ink:#EFEAE4; --dim:#A09A94; --track:#3A3A3C; --accent:#D3987E; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); line-height:1.6;
+         font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:var(--accent); }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
+  header { padding:72px 0 40px; display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+  h1 { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0; }
+  .lang { color:var(--dim); text-decoration:none; font-size:15px; }
+  .grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; padding-bottom:72px; list-style:none; margin:0 auto; }
+  .app { background:var(--surface); border-radius:24px; padding:20px; display:flex; gap:16px; align-items:flex-start; position:relative; }
+  .app img { width:64px; height:64px; border-radius:15px; flex:none; }
+  .app .name { display:block; font-weight:600; color:var(--ink); text-decoration:none; font-size:17px; line-height:1.35; }
+  .app .name::after { content:""; position:absolute; inset:0; border-radius:24px; }
+  .app p { margin:4px 0 8px; color:var(--dim); font-size:15px; }
+  .app .store { position:relative; z-index:1; font-size:14px; }
+  .feeds { padding-bottom:64px; color:var(--dim); font-size:15px; max-width:42rem; }
+  .feeds h2 { color:var(--ink); font-size:20px; letter-spacing:-0.02em; margin:0 0 8px; }
+  .feeds code { background:var(--track); padding:.1em .4em; border-radius:4px; }
+  footer { color:var(--dim); font-size:14px; padding:0 0 48px; }
+  @media (max-width: 900px) { .grid { grid-template-columns:repeat(2, 1fr); } }
+  @media (max-width: 620px) { .wrap { padding:0 16px; } header { padding:48px 0 28px; } h1 { font-size:30px; } .grid { grid-template-columns:1fr; } }
 </style>
-<h1>minari-app-feeds</h1>
-<p>個人開発 iOS アプリが読む、静的なデータ配信の置き場です。</p>
-<ul>
-  <li><code>classicallog/concerts.json</code> — クラシック演奏会の公演と発売日</li>
-  <li><code>ganpuku/seed.json</code> — 国宝・重要文化財・浮世絵の展示</li>
-</ul>
-<p>事実だけを置き、出典を添えています。掲載についてお申し出があれば止めます。</p>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ItemList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Savebar – Savings Tracker",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/",
+    "installUrl": "https://apps.apple.com/app/id6815409629"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Datto - カウントダウン",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/ja/",
+    "installUrl": "https://apps.apple.com/app/id6796972154"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Kotoba - 言葉のウィジェット",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/",
+    "installUrl": "https://apps.apple.com/app/id6796988697"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 4,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Bookspine – Reading Widget",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/",
+    "installUrl": "https://apps.apple.com/app/id6815020170"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 5,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "ClassicalLog クラシック演奏会の記録",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/",
+    "installUrl": "https://apps.apple.com/app/id6801409117"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 6,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Farwalk - 誰かの家まで歩く",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/farwalk/",
+    "installUrl": "https://apps.apple.com/app/id6812917975"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 7,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Feelboard – Mood Widget",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/",
+    "installUrl": "https://apps.apple.com/app/id6815058047"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 8,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Leafday – Plant Watering",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/",
+    "installUrl": "https://apps.apple.com/app/id6815058276"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 9,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Mantel – Photo Widget",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/",
+    "installUrl": "https://apps.apple.com/app/id6814138903"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 10,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Museday – Daily Art Widget",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/",
+    "installUrl": "https://apps.apple.com/app/id6816428852"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 11,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Petalweek – Pregnancy Week",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/weeklybump/",
+    "installUrl": "https://apps.apple.com/app/id6815057854"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 12,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Rowmark – Knitting Counter",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/",
+    "installUrl": "https://apps.apple.com/app/id6815409342"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 13,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Slowdial",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/slowdial/",
+    "installUrl": "https://apps.apple.com/app/id6816011464"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 14,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Threeline – 3 Things Today",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/",
+    "installUrl": "https://apps.apple.com/app/id6814139296"
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 15,
+   "item": {
+    "@type": "SoftwareApplication",
+    "name": "Todayboard – Calendar Widget",
+    "operatingSystem": "iOS",
+    "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/",
+    "installUrl": "https://apps.apple.com/app/id6814139080"
+   }
+  }
+ ]
+}
+</script>
 
-<h2>アプリ</h2>
-<ul>
-  <li><a href="apps/datto/">Datto</a> — ホーム画面のカウントダウンウィジェット</li>
-  <li><a href="apps/farwalk/">Farwalk</a> — 家から誰かの家まで、実際の距離を歩く</li>
-  <li><a href="apps/mantel/">Mantel</a> — 自分の写真をホーム画面に置く写真ウィジェット</li>
-  <li><a href="apps/todayboard/">Todayboard</a> — 今日の予定を出すカレンダーウィジェット</li>
-  <li><a href="apps/threeline/">Threeline</a> — 今日の3つをウィジェット上でチェックする ToDo</li>
-  <li><a href="apps/weeklybump/">Weekly Bump</a> — 妊娠週数を1週1本の年輪でホーム画面に</li>
-  <li><a href="apps/feelboard/">Feelboard</a> — ウィジェットで気分をタップ・1年を1枚の絵に</li>
-  <li><a href="apps/leafday/">Leafday</a> — 今日水をやる鉢をホーム画面に</li>
-  <li><a href="apps/roundwise/">Roundwise</a> — HIIT・ボクシングのインターバルタイマー。ポケットの中でも止まらない</li>
-  <li><a href="apps/slowdial/">Slowdial</a> — 減っていく円盤のビジュアルタイマー。広告は一切出ない</li>
-  <li><a href="apps/museday/">Museday</a> — 毎朝、ホーム画面に1枚の名画を。買い切り・広告なし・オフライン</li>
-  <li><a href="apps/kotoba/">Kotoba</a> — 好きな言葉をホーム画面に留めておくウィジェット</li>
-  <li><a href="apps/optdays/">OPT Days</a> — F-1 OPT の失業日数をロック画面に</li>
-  <li><a href="apps/classicallog/">ClassicalLog</a> — クラシック演奏会の記録と、チケット発売日のお知らせ</li>
-  <li><a href="apps/lancar/">Lancar</a> — インドネシア語技能検定 D級・E級の単語と問題</li>
-  <li><a href="apps/ganpuku/">眼福 Ganpuku</a> — 国宝と浮世絵が、いつどこで見られるか</li>
+<header class="wrap"><h1>minari — Apps</h1><a class="lang" href="en/">English</a></header>
+<ul class="wrap grid">
+  <li class="app"><img src="icons/savebar.png" alt="">
+    <div><a class="name" href="apps/savebar/">Savebar – Savings Tracker</a><p>目標貯金をロック画面で</p>
+    <a class="store" href="https://apps.apple.com/app/id6815409629">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/datto.png" alt="">
+    <div><a class="name" href="apps/datto/ja/">Datto - カウントダウン</a><p>あと何日・記念日を待ち受けに</p>
+    <a class="store" href="https://apps.apple.com/app/id6796972154">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/kotoba.png" alt="">
+    <div><a class="name" href="apps/kotoba/">Kotoba - 言葉のウィジェット</a><p>本の一文や好きな言葉を待ち受けに</p>
+    <a class="store" href="https://apps.apple.com/app/id6796988697">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/bookspine.png" alt="">
+    <div><a class="name" href="apps/bookspine/">Bookspine – Reading Widget</a><p>背表紙の本棚と読書記録</p>
+    <a class="store" href="https://apps.apple.com/app/id6815020170">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/classicallog.png" alt="">
+    <div><a class="name" href="apps/classicallog/">ClassicalLog クラシック演奏会の記録</a><p>チケット発売日の通知と公演ログ</p>
+    <a class="store" href="https://apps.apple.com/app/id6801409117">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/farwalk.png" alt="">
+    <div><a class="name" href="apps/farwalk/">Farwalk - 誰かの家まで歩く</a><p>本当の距離を、自分の足で。</p>
+    <a class="store" href="https://apps.apple.com/app/id6812917975">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/feelboard.png" alt="">
+    <div><a class="name" href="apps/feelboard/">Feelboard – Mood Widget</a><p>ウィジェットで気分を記録</p>
+    <a class="store" href="https://apps.apple.com/app/id6815058047">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/leafday.png" alt="">
+    <div><a class="name" href="apps/leafday/">Leafday – Plant Watering</a><p>水やりリマインダーと植物ケア</p>
+    <a class="store" href="https://apps.apple.com/app/id6815058276">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/mantel.png" alt="">
+    <div><a class="name" href="apps/mantel/">Mantel – Photo Widget</a><p>写真が切り替わるフォトフレーム</p>
+    <a class="store" href="https://apps.apple.com/app/id6814138903">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/museday.png" alt="">
+    <div><a class="name" href="apps/museday/">Museday – Daily Art Widget</a><p>世界の名画と美術の解説</p>
+    <a class="store" href="https://apps.apple.com/app/id6816428852">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/weeklybump.png" alt="">
+    <div><a class="name" href="apps/weeklybump/">Petalweek – Pregnancy Week</a><p>出産予定日までのカウントダウン</p>
+    <a class="store" href="https://apps.apple.com/app/id6815057854">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/rowmark.png" alt="">
+    <div><a class="name" href="apps/rowmark/">Rowmark – Knitting Counter</a><p>段数とPDF編み図をひとつに</p>
+    <a class="store" href="https://apps.apple.com/app/id6815409342">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/slowdial.png" alt="">
+    <div><a class="name" href="apps/slowdial/">Slowdial</a><p>子どもと集中のための円盤タイマー</p>
+    <a class="store" href="https://apps.apple.com/app/id6816011464">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/threeline.png" alt="">
+    <div><a class="name" href="apps/threeline/">Threeline – 3 Things Today</a><p>毎日の優先3つのToDo</p>
+    <a class="store" href="https://apps.apple.com/app/id6814139296">App Store で見る</a></div></li>
+  <li class="app"><img src="icons/todayboard.png" alt="">
+    <div><a class="name" href="apps/todayboard/">Todayboard – Calendar Widget</a><p>今日の予定と予定表をひと目で</p>
+    <a class="store" href="https://apps.apple.com/app/id6814139080">App Store で見る</a></div></li>
 </ul>
+<section class="wrap feeds">
+  <h2>データ配信</h2>
+  <p>個人開発 iOS アプリが読む、静的なデータ配信の置き場です。</p>
+  <ul><li><code>classicallog/concerts.json</code> — クラシック演奏会の公演と発売日</li></ul>
+  <p>事実だけを置き、出典を添えています。掲載についてお申し出があれば止めます。</p>
+</section>
+<footer class="wrap">Made by minari</footer>
