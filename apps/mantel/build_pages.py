@@ -185,10 +185,11 @@ T = {
 STYLE = open(os.path.join(HERE, "_style.txt")).read() if os.path.exists(os.path.join(HERE, "_style.txt")) else None
 
 
-def page(code, folder, hreflang, label):
+def page(code, folder, hreflang, label, out=None):
+    out = folder if out is None else out
     t = T[code]
     e = html.escape
-    up = "../" if folder else ""
+    up = "../" * out.count("/")
     root = up + "../../"
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "SoftwareApplication", "name": "Mantel", "alternateName": ["Mantel – Photo Widget"],
@@ -206,7 +207,7 @@ def page(code, folder, hreflang, label):
            '<meta name="viewport" content="width=device-width, initial-scale=1">',
            "<title>%s</title>" % e(t["title"]),
            '<meta name="description" content="%s">' % e(t["desc"]),
-           '<link rel="canonical" href="%s%s">' % (BASE, folder), alts,
+           '<link rel="canonical" href="%s%s">' % (BASE, out), alts,
            '<link rel="alternate" hreflang="x-default" href="%sen/">' % BASE,
            STYLE_BLOCK,
            '<script type="application/ld+json">\n%s\n</script>' % json.dumps(ld, ensure_ascii=False, indent=2),
@@ -228,12 +229,17 @@ def page(code, folder, hreflang, label):
 
 
 # 見た目（style）は 1.3 までのページのものをそのまま使う。
-_src = open(os.path.join(HERE, "index.html")).read()
-STYLE_BLOCK = _src[_src.index("<style>"):_src.index("</style>") + len("</style>")] + "\n<style> ol { padding-left: 1.3rem; } ol li { margin: .45rem 0; } </style>"
+_STYLE = open(os.path.join(HERE, "_page_style.html")).read()
+STYLE_BLOCK = _STYLE + "\n<style> ol { padding-left: 1.3rem; } ol li { margin: .45rem 0; } </style>"
+
+# LP（store/lp/build.py が作る）がある言語は、使い方ページを faq/<code>/ に書く。
+# 元の場所（ja=直下・en/ など）は LP の置き場所なので、ここからは書かない（2026-11-15）。
+LP_LANGS = {"ja", "en", "pt"}
 
 if __name__ == "__main__":
     for code, folder, hreflang, label in LANGS:
-        d = os.path.join(HERE, folder)
+        out = "faq/%s/" % code if code in LP_LANGS else folder
+        d = os.path.join(HERE, out)
         os.makedirs(d, exist_ok=True)
-        open(os.path.join(d, "index.html"), "w").write(page(code, folder, hreflang, label))
-        print("wrote", folder or "(ja)")
+        open(os.path.join(d, "index.html"), "w").write(page(code, folder, hreflang, label, out))
+        print("wrote", out or "(ja)")
