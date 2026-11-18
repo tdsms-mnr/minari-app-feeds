@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6815409342">
+<title>編み物の段数をiPhoneのロック画面で数える方法 — Rowmark</title>
+<meta name="description" content="編み物・かぎ針の段数を、iPhoneのロック画面・アクションボタン・ホーム画面のウィジェットから数える方法。アプリを開かずに＋1。Rowmarkでの手順です。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/guide/lock-screen/ja/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/guide/lock-screen/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/guide/lock-screen/ja/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/guide/lock-screen/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#34506B; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#A9C1DA; }
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      "name": "編み物の段数をiPhoneのロック画面で数える方法",
+      "inLanguage": "ja",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Rowmarkを開き、「作品」の一覧で今編んでいる作品をタップします。"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "「アプリを開かずに数える」の「ロック画面」をオンにします（Rowmark Pro）。"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "iPhoneをロックします。ロック画面に作品名・今の段数・＋1／−1のボタンが出て、ロックしたまま押せます。"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "8時間ほどでカウンターが消えたら、Rowmarkを開いて「ロック画面」をもう一度オンにします。"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ロック画面のカウンターが消えました。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ロック画面のカウンター（ライブアクティビティ）は、iOSの仕様で8時間ほどで終わります。Rowmarkを開いて「ロック画面」をもう一度オンにしてください。段数はそのまま残っています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "「ライブアクティビティがオフです」と出ます。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "設定 › Rowmarkでオンにしてください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ロック画面で数えるのは無料ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ロック画面のカウンター・ロック画面ウィジェット・アクションボタンはRowmark Pro（買い切り）です。ホーム画面のSmallウィジェットの＋1・−1は無料で、アプリを開かずに押せます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "作品を2つ以上編んでいます。",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ロック画面のカウンターは、アプリで選んだ作品に合わせて切り替わります。「作品」の一覧で別の作品をタップしてください。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<p class="dim"><a href="../../../ja/">Rowmark</a>・使い方ガイド・<a href="../">English</a></p>
+<h1>編み物の段数をiPhoneのロック画面で数える方法</h1>
+<p class="lede">1段編むたびに、ロックを解除して、アプリを探して、＋1を押す。両手に針を持ったままだと、これが毎回の手間になります。ロック画面にカウンターを出せば、押すのは1回だけです。</p>
+<p>編み物・かぎ針の段数カウンター<a href="../../../ja/">Rowmark</a>で、アプリを開かずに数える方法を紹介します。</p>
+
+<h2>アプリを開かずに数える3つの方法</h2>
+<table>
+  <tr><th>場所</th><th>押すもの</th><th>料金</th></tr>
+  <tr><td>ホーム画面のウィジェット（Small）</td><td>ウィジェットの＋1・−1</td><td>無料</td></tr>
+  <tr><td>ロック画面のカウンター</td><td>ロック画面・ダイナミックアイランド・StandByの＋1・−1。ロックしたまま押せる</td><td>Pro</td></tr>
+  <tr><td>アクションボタン・コントロールセンター</td><td>「＋1段」（iOS 18以降。アクションボタンはiPhone 15 Pro以降）</td><td>Pro</td></tr>
+</table>
+<p class="dim">Rowmark Proは買い切りです。サブスクではありません。</p>
+
+<h2>ロック画面で数える</h2>
+<ol>
+  <li>Rowmarkを開き、<b>「作品」</b>の一覧で今編んでいる作品をタップします。</li>
+  <li><b>「アプリを開かずに数える」</b>の<b>「ロック画面」</b>をオンにします。</li>
+  <li>iPhoneをロックします。作品名・今の段数と、<b>＋1</b>／<b>−1</b>のボタンが出て、ロックしたまま押せます。</li>
+</ol>
+<figure><img src="../../../img/lock_ja.jpg" alt="iPhoneのロック画面に出たRowmarkのカウンター。作品名・42段・−1と＋1のボタン" width="700" height="1522" loading="lazy"></figure>
+<p>ロック画面のカウンターは、iOSの仕様で1回につき8時間ほどで終わります。消えたらRowmarkを開いて「ロック画面」をもう一度オンにしてください。段数はそのまま残っています。</p>
+
+<h2>アクションボタンで＋1段</h2>
+<p>iPhone 15 Pro以降・iOS 18以降で使えます。</p>
+<ol>
+  <li><b>設定 › アクションボタン</b>を開きます。</li>
+  <li><b>コントロール</b>を選び、<b>Rowmark</b>を選びます。</li>
+</ol>
+<p>アクションボタンを押すたびに、今の作品が1段進みます。「＋1段」はコントロールセンターや、ロック画面下のボタン（ロック画面を長押し›「カスタマイズ」）にも置けます。</p>
+
+<h2>無料：ホーム画面で＋1</h2>
+<ol>
+  <li>ホーム画面の何もないところを長押しして、アプリが揺れるまで待ちます。</li>
+  <li>左上の<b>「編集」</b>（または<b>＋</b>）をタップして<b>「Rowmark」</b>を検索し、<b>Small</b>を選んで<b>「ウィジェットを追加」</b>をタップします。</li>
+  <li>ウィジェットの<b>＋1</b>か<b>−1</b>を押します。アプリは開きません。</li>
+</ol>
+<figure><img src="../../../img/home_ja.jpg" alt="iPhoneのホーム画面に置いたRowmarkのウィジェット。段数と＋1・−1のボタン" width="700" height="1522" loading="lazy"></figure>
+
+<h2>よくある質問</h2>
+<div class="q"><b>ロック画面のカウンターが消えました。</b>ロック画面のカウンター（ライブアクティビティ）は、iOSの仕様で8時間ほどで終わります。Rowmarkを開いて「ロック画面」をもう一度オンにしてください。段数はそのまま残っています。</div>
+<div class="q"><b>「ライブアクティビティがオフです」と出ます。</b>設定 › Rowmarkでオンにしてください。</div>
+<div class="q"><b>ロック画面で数えるのは無料ですか？</b>ロック画面のカウンター・ロック画面ウィジェット・アクションボタンはRowmark Pro（買い切り）です。ホーム画面のSmallウィジェットの＋1・−1は無料で、アプリを開かずに押せます。</div>
+<div class="q"><b>作品を2つ以上編んでいます。</b>ロック画面のカウンターは、アプリで選んだ作品に合わせて切り替わります。「作品」の一覧で別の作品をタップしてください。</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6815409342?pt=129250766&ct=guide-lock-screen-rowmark-ja&mt=8">App StoreでRowmarkを入手</a>
+<p class="dim">サブスクなし・広告なし・アカウント不要・<a href="../../../ja/">Rowmarkについて</a>・<a href="../../../faq/ja/">使い方とよくある質問</a></p>
+</html>
