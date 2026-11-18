@@ -32,33 +32,80 @@
 </style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "Threeline",
+   "alternateName": [
+    "Threeline – 3 Things Today"
+   ],
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "ProductivityApplication",
+   "description": "サブスクなしのiPhone ToDoウィジェット。今日の3つを書いて、ホーム画面のウィジェット上でそのままチェック。広告なし・アカウント不要。",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/ja/",
+   "installUrl": "https://apps.apple.com/app/id6814139296?pt=129250766&ct=lp-threeline-ja&mt=8",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free with a one-time Pro purchase. Not a subscription."
+   },
+   "author": {
+    "@type": "Person",
+    "name": "minari"
+   },
+   "inLanguage": [
+    "en",
+    "ja"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
     {
-      "@type": "SoftwareApplication",
-      "name": "Threeline",
-      "alternateName": ["Threeline – 3 Things Today"],
-      "operatingSystem": "iOS 17 or later",
-      "applicationCategory": "ProductivityApplication",
-      "description": "サブスクなしのiPhone ToDoウィジェット。今日の3つを書いて、ホーム画面のウィジェット上でそのままチェック。広告なし・アカウント不要。",
-      "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/ja/",
-      "installUrl": "https://apps.apple.com/app/id6814139296?pt=129250766&ct=lp-threeline-ja&mt=8",
-      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free with a one-time Pro purchase. Not a subscription."},
-      "author": {"@type": "Person", "name": "minari"},
-      "inLanguage": ["en", "ja"]
+     "@type": "Question",
+     "name": "アプリを開かずにチェックできるToDoウィジェットはありますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。Threelineのウィジェットはインタラクティブで、丸をタップするとその場でチェックが付きます。Smallは無料。"
+     }
     },
     {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question", "name": "アプリを開かずにチェックできるToDoウィジェットはありますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "はい。Threelineのウィジェットはインタラクティブで、丸をタップするとその場でチェックが付きます。Smallは無料。"}},
-        {"@type": "Question", "name": "サブスクなしのシンプルなToDoアプリは？",
-         "acceptedAnswer": {"@type": "Answer", "text": "ThreelineのProは買い切りです。今日の3つとSmallウィジェットはずっと無料、広告なし・アカウント不要。"}},
-        {"@type": "Question", "name": "なぜ3つだけ？",
-         "acceptedAnswer": {"@type": "Answer", "text": "3つなら終わるからです。やり残しは翌日に持ち越すか、手放せます。"}}
-      ]
+     "@type": "Question",
+     "name": "サブスクなしのシンプルなToDoアプリは？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ThreelineのProは買い切りです。今日の3つとSmallウィジェットはずっと無料、広告なし・アカウント不要。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "なぜ3つだけ？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "3つなら終わるからです。やり残しは翌日に持ち越すか、手放せます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "連続記録はつけられますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "今の連続日数は、メインの画面に無料で出ます。Proでは、連続記録の出るMedium・Largeウィジェットと、8週間の履歴が使えます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "リストはどこに保存されますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iPhoneの中です。開発者には何も届きません。iCloud同期（Pro）をオンにしたときは、あなたのiCloudにも置かれます。"
+     }
     }
-  ]
+   ]
+  }
+ ]
 }
 </script>
 
@@ -82,7 +129,7 @@
   <li>今日の3行。毎朝、新しい空の1日</li>
   <li>ホーム画面のウィジェットで丸をタップすると、その場でチェック</li>
   <li>昨日の残りを持ち越すか、手放すか</li>
-  <li>Pro：Medium・Large、8週間の履歴と連続記録、朝のリマインダー</li>
+  <li>ホーム画面のウィジェットに付箋（1枚は無料）</li><li>Pro：Medium・Large、8週間の履歴と連続記録、朝のリマインダー、月と年の振り返り、付箋を何枚でも、リマインダーから選ぶ（ここで終えるとリマインダー側も完了）、iCloud同期</li>
   <li>英語・日本語</li>
   <li>iOS 17以降</li>
 </ul>
@@ -94,6 +141,8 @@
 ThreelineのProは買い切りです。今日の3つとSmallウィジェットはずっと無料、広告なし・アカウント不要。</p>
 <p><strong>なぜ3つだけ？</strong><br>
 3つなら終わるからです。やり残しは翌日に持ち越すか、手放せます。</p>
+<p><strong>連続記録はつけられますか？</strong><br>今の連続日数は、メインの画面に無料で出ます。Proでは、連続記録の出るMedium・Largeウィジェットと、8週間の履歴が使えます。</p>
+<p><strong>リストはどこに保存されますか？</strong><br>iPhoneの中です。開発者には何も届きません。iCloud同期（Pro）をオンにしたときは、あなたのiCloudにも置かれます。</p>
 
 <h2>プライバシー</h2>
 <p>データは端末の中にだけあります。

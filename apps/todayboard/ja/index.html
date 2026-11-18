@@ -32,33 +32,80 @@
 </style>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@graph": [
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "Todayboard",
+   "alternateName": [
+    "Todayboard – Calendar Widget"
+   ],
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "ProductivityApplication",
+   "description": "サブスクなしのiPhoneカレンダーウィジェット。iPhoneにあるカレンダー（iCloud・Google・Outlook）を読んで今日の予定をホーム画面に出します。読み取りだけ・広告なし・アカウント不要。",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/ja/",
+   "installUrl": "https://apps.apple.com/app/id6814139080?pt=129250766&ct=lp-todayboard-ja&mt=8",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free with a one-time Pro purchase. Not a subscription."
+   },
+   "author": {
+    "@type": "Person",
+    "name": "minari"
+   },
+   "inLanguage": [
+    "en",
+    "ja"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
     {
-      "@type": "SoftwareApplication",
-      "name": "Todayboard",
-      "alternateName": ["Todayboard – Calendar Widget"],
-      "operatingSystem": "iOS 17 or later",
-      "applicationCategory": "ProductivityApplication",
-      "description": "サブスクなしのiPhoneカレンダーウィジェット。iPhoneにあるカレンダー（iCloud・Google・Outlook）を読んで今日の予定をホーム画面に出します。読み取りだけ・広告なし・アカウント不要。",
-      "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/ja/",
-      "installUrl": "https://apps.apple.com/app/id6814139080?pt=129250766&ct=lp-todayboard-ja&mt=8",
-      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free with a one-time Pro purchase. Not a subscription."},
-      "author": {"@type": "Person", "name": "minari"},
-      "inLanguage": ["en", "ja"]
+     "@type": "Question",
+     "name": "サブスクなしのカレンダーウィジェットはありますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。TodayboardのProは買い切りで、広告もありません。今日の予定のSmallウィジェットはずっと無料。"
+     }
     },
     {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question", "name": "サブスクなしのカレンダーウィジェットはありますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "はい。TodayboardのProは買い切りで、広告もありません。今日の予定のSmallウィジェットはずっと無料。"}},
-        {"@type": "Question", "name": "GoogleカレンダーやOutlookでも使えますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "はい。ただしTodayboardが読むのはiPhoneの「カレンダー」に入っている予定です。Googleカレンダーのアプリだけを使っている場合は、先にiPhoneの「設定」→「アプリ」→「カレンダー」→「カレンダーアカウント」→「アカウントを追加」でGoogleアカウントを追加してください（2分・一度だけ。仕事用と私用があれば両方）。"}},
-        {"@type": "Question", "name": "仕事のカレンダーだけ出せますか？",
-         "acceptedAnswer": {"@type": "Answer", "text": "Proで表示するカレンダーを選べます。誕生日や祝日などの終日の予定を隠すのは無料です。"}}
-      ]
+     "@type": "Question",
+     "name": "GoogleカレンダーやOutlookでも使えますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "はい。ただしTodayboardが読むのはiPhoneの「カレンダー」に入っている予定です。Googleカレンダーのアプリだけを使っている場合は、先にiPhoneの「設定」→「アプリ」→「カレンダー」→「カレンダーアカウント」→「アカウントを追加」でGoogleアカウントを追加してください（2分・一度だけ。仕事用と私用があれば両方）。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "仕事のカレンダーだけ出せますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Proで表示するカレンダーを選べます。誕生日や祝日などの終日の予定を隠すのは無料です。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ウィジェットに明日や1週間の予定も出せますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Proで出せます。Mediumウィジェットは今日と明日を並べて、Largeウィジェットは7日先まで出します。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Todayboardは予定を書き換えたり、外に送ったりしますか？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "しません。カレンダーへのアクセスは読み取りだけで、予定がどこかに送られることはありません。"
+     }
     }
-  ]
+   ]
+  }
+ ]
 }
 </script>
 
@@ -94,6 +141,8 @@
 はい。ただしTodayboardが読むのはiPhoneの「カレンダー」に入っている予定です。Googleカレンダーのアプリだけを使っている場合は、先にiPhoneの「設定」→「アプリ」→「カレンダー」→「カレンダーアカウント」→「アカウントを追加」でGoogleアカウントを追加してください（2分・一度だけ。仕事用と私用があれば両方）。</p>
 <p><strong>仕事のカレンダーだけ出せますか？</strong><br>
 Proで表示するカレンダーを選べます。誕生日や祝日などの終日の予定を隠すのは無料です。<a href="../guide/work-calendar-widget/ja/">手順はこちら</a></p>
+<p><strong>ウィジェットに明日や1週間の予定も出せますか？</strong><br>Proで出せます。Mediumウィジェットは今日と明日を並べて、Largeウィジェットは7日先まで出します。</p>
+<p><strong>Todayboardは予定を書き換えたり、外に送ったりしますか？</strong><br>しません。カレンダーへのアクセスは読み取りだけで、予定がどこかに送られることはありません。</p>
 
 <p><a href="../faq/ja/">使い方とよくある質問（全部）</a></p>
 
