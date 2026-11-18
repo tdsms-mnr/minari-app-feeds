@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="tr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6796972154">
+<title>iPhone Ana Ekran’ında doğum günü veya yıl dönümü geri sayımı nasıl gösterilir — Datto</title>
+<meta name="description" content="Doğum günü, yıl dönümü veya seyahate kalan günleri bir widget ile iPhone Ana Ekran’ınızda gösterin. Doğum günlerini Kişiler’den, etkinlikleri Takvim’den seçin. Datto’da bir widget ücretsiz.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/tr/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF7F2; --accent:#B0735C; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171513; --accent:#D3987E; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "iPhone Ana Ekran’ında doğum günü veya yıl dönümü geri sayımı nasıl gösterilir",
+   "inLanguage": "tr",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "Datto’yu açın ve + simgesine dokunun."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Etkinlik adını ve tarihi girin ya da doğum günü seçmek için “Kişilerden seç”e, etkinlik seçmek için “Takvimden seç”e dokunun. Kaydet’e dokunun."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Ana Ekran’da boş bir yere dokunup basılı tutun, sol üstteki + (Düzenle) simgesine dokunun ve “Datto” diye arayın."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Küçük boyutu seçip Widget Ekle’ye dokunun. Kalan günler uygulamayı açmadan görünür."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Ücretsiz olarak neler yapabilirim?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "En fazla üç etkinlik ve bunlardan birini gösteren bir Küçük Ana Ekran widget’ı. Reklam yok, hesap yok. Tek seferlik satın alma olan Datto Pro; sınırsız etkinlik ve widget, Orta, Büyük ve Kilitli Ekran widget’ları ile tekrarlanan etkinlikler ekler."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Kişilerim veya takvimim bir yere gönderiliyor mu?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hayır. Datto’ya yalnızca ad ve tarih kopyalanır; kişilerinizden veya takviminizden hiçbir şey iPhone’unuzdan çıkmaz."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Doğum günü her yıl yeniden geri sayılabilir mi?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet, Datto Pro ile: Tekrar’ı “Her yıl” olarak ayarlayın; geri sayım kendiliğinden bir sonraki yıla geçer."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Widget’ın gösterdiği günü nasıl değiştiririm?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Widget’a dokunup basılı tutun, Widget’ı Düzenle’ye dokunun ve etkinliği seçin."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Datto</a> · Rehber · <a href="../ja/">日本語</a> · <a href="../zh-hant/">繁體中文</a></p>
+<h1>iPhone Ana Ekran’ında doğum günü veya yıl dönümü geri sayımı nasıl gösterilir</h1>
+<p class="lede">Doğum günü, yıl dönümü veya seyahate kalan günleri Ana Ekran’ınıza koyun; artık saymanıza gerek kalmaz — telefonunuzun kilidini her açtığınızda görürsünüz.</p>
+<p>Bunu iPhone için bir geri sayım uygulaması olan <a href="../../../">Datto</a>’yla nasıl yapacağınızı aşağıda anlatıyoruz. Bir widget ve üç etkinlik ücretsiz.</p>
+
+<h2>1. Günü ekleyin</h2>
+<ol>
+  <li>Datto’yu açın ve şuna dokunun: <b>+</b>.</li>
+  <li>Şu alanları doldurun: <b>Etkinlik adı</b> ve <b>Tarih</b>, ardından şuna dokunun: <b>Kaydet</b>.</li>
+</ol>
+<p>Ya da Datto doldursun:</p>
+<ul>
+  <li><b>“Kişilerden seç”</b> — kişilerinizde kayıtlı bir doğum gününü seçin.</li>
+  <li><b>“Takvimden seç”</b> — takviminizdeki önümüzdeki bir yıl içinden bir etkinlik seçin.</li>
+</ul>
+<p class="dim">Yalnızca ad ve tarih kopyalanır. Kişilerinizden veya takviminizden hiçbir şey iPhone’unuzdan çıkmaz.</p>
+<figure><img src="../../../img/list_en.jpg" alt="Datto’daki geri sayım listesi; her biri kalan günleri gösteriyor" width="1000" height="2172" loading="lazy"></figure>
+
+<h2>2. Ana Ekran’a koyun</h2>
+<ol>
+  <li>Ana Ekran’da boş bir yere dokunup basılı tutun.</li>
+  <li>Sol üstteki <b>+</b> (Düzenle) simgesine dokunun ve şunu arayın: <b>“Datto”</b>.</li>
+  <li>Boyut olarak <b>Küçük</b> seçeneğini belirleyin ve şuna dokunun: <b>Widget Ekle</b>.</li>
+</ol>
+<p>Hangi günün gösterileceğini seçmek için widget’a dokunup basılı tutun ve şuna dokunun: <b>Widget’ı Düzenle</b>, sonra etkinliği seçin.</p>
+<figure><img src="../../../img/widget_en.jpg" alt="Bir seyahate kalan günleri gösteren Küçük Datto widget’ı" width="800" height="1093" loading="lazy"></figure>
+
+<h2>3. Doğum günlerini her yıl tekrarlayın (Pro)</h2>
+<p>Datto Pro ile <b>Tekrar</b> ayarını şuna getirin: <b>“Her yıl”</b>. Gün geçince geri sayım kendiliğinden bir sonraki yıla geçer — tarihi düzenlemenize gerek yok. “Her ay” da kullanılabilir.</p>
+<p class="dim">Datto Pro tek seferlik bir satın almadır, abonelik değildir. Ayrıca sınırsız etkinlik ve widget, Orta, Büyük ve Kilitli Ekran widget’ları ve sessiz dönüm noktası hatırlatmaları (100 gün önce, bir gün önce ve o gün — sessiz) ekler.</p>
+
+<h2>Sorular</h2>
+<div class="q"><b>Ücretsiz olarak neler yapabilirim?</b>En fazla üç etkinlik ve bunlardan birini gösteren bir Küçük Ana Ekran widget’ı. Reklam yok, hesap yok. Tek seferlik satın alma olan Datto Pro; sınırsız etkinlik ve widget, Orta, Büyük ve Kilitli Ekran widget’ları ile tekrarlanan etkinlikler ekler.</div>
+<div class="q"><b>Kişilerim veya takvimim bir yere gönderiliyor mu?</b>Hayır. Datto’ya yalnızca ad ve tarih kopyalanır; kişilerinizden veya takviminizden hiçbir şey iPhone’unuzdan çıkmaz.</div>
+<div class="q"><b>Doğum günü her yıl yeniden geri sayılabilir mi?</b>Evet, Datto Pro ile: Tekrar’ı “Her yıl” olarak ayarlayın; geri sayım kendiliğinden bir sonraki yıla geçer.</div>
+<div class="q"><b>Widget’ın gösterdiği günü nasıl değiştiririm?</b>Widget’a dokunup basılı tutun, Widget’ı Düzenle’ye dokunun ve etkinliği seçin.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6796972154?pt=129250766&ct=guide-anniversary-datto-tr&mt=8">Datto’yu App Store’dan indirin</a>
+<p class="dim">Abonelik yok, reklam yok, hesap yok. · <a href="../../../">Datto hakkında</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <b>Türkçe</b> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

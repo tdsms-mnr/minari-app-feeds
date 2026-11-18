@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="uk">
+<meta charset="utf-8">
+<script src="/minari-app-feeds/legacy-notice.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6814138903">
+<title>Mantel — ваші фото на Початковому екрані (віджет із фото, без підписки)</title>
+<meta name="description" content="Застосунок для iPhone, який по черзі показує вибрані вами фото у віджеті на Початковому екрані. Без підписки, без реклами, без облікового запису.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/uk/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/">
+<style>
+  :root { --bezel:#2B2B2B; --bg:#FAF9F7; --surface:#FFFFFF; --ink:#2B2B2B; --dim:#6B6B6B; --track:#ECEAE6; --accent:#2E6E70; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bezel:#3A3A3C; --bg:#171614; --surface:#22201E; --ink:#ECE9E6; --dim:#A09A94; --track:#332F2C; --accent:#7CC5C7; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif;
+         -webkit-font-smoothing: antialiased; line-height:1.6; }
+  a { color:var(--accent); }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
+  .nav { position:sticky; top:12px; z-index:2; display:flex; justify-content:center; padding:0 16px; }
+  .nav-inner { display:flex; align-items:center; gap:10px; padding:8px 18px 8px 10px; border-radius:999px;
+               background:color-mix(in srgb, var(--surface) 80%, transparent); backdrop-filter:blur(12px);
+               box-shadow:0 1px 8px rgba(0,0,0,.06); font-weight:600; font-size:15px; }
+  .nav img { width:28px; height:28px; border-radius:7px; }
+  .nav .lang { font-weight:400; font-size:14px; color:var(--dim); text-decoration:none; margin-left:8px; }
+
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center; padding-top:56px; padding-bottom:80px; }
+  h1 { font-size:52px; line-height:1.15; font-weight:700; letter-spacing:-0.03em; margin:0 0 24px; }
+  .lead { color:var(--accent); }
+  .sub { font-size:18px; color:var(--dim); margin:0 0 32px; max-width:30em; }
+  .badge { display:inline-block; }
+  .badge img { height:54px; display:block; }
+  .facts { display:flex; flex-wrap:wrap; gap:8px; margin:28px 0 0; padding:0; list-style:none; }
+  .facts li { font-size:14px; padding:6px 12px; border-radius:999px; background:var(--track); }
+
+  .device { width:100%; max-width:300px; aspect-ratio:1206/2622; border:10px solid var(--bezel); border-radius:52px;
+            overflow:hidden; box-shadow:0 30px 60px -20px rgba(30,40,60,.35); background:#000; justify-self:center; }
+  .device img { width:100%; height:100%; object-fit:cover; display:block; }
+
+  .statement { text-align:center; padding:96px 24px; }
+  .statement p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto; max-width:22em; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; padding-bottom:96px; }
+  .card { background:var(--surface); border-radius:32px; overflow:hidden; display:flex; flex-direction:column; }
+  .card .shot { background:var(--track); padding:32px 32px 0; display:flex; justify-content:center; align-items:flex-start;
+                height:380px; overflow:hidden; }
+  .card .shot.bottom { align-items:flex-end; padding:0 32px 32px; }
+  .card .shot .device { max-width:210px; border-width:7px; border-radius:36px; box-shadow:0 20px 40px -20px rgba(30,40,60,.35); }
+  .card .shot .watch { width:200px; aspect-ratio:416/496; border:10px solid var(--bezel); border-radius:48px; overflow:hidden;
+                       background:#000; margin-top:40px; box-shadow:0 20px 40px -20px rgba(30,40,60,.35); }
+  .card .shot .watch img { width:100%; display:block; }
+  .card p { margin:0; padding:24px 28px 28px; font-size:17px; color:var(--dim); }
+  .card p b { color:var(--ink); font-weight:600; }
+  .pro { display:inline-block; font-size:12px; font-weight:600; color:var(--accent); border:1px solid currentColor;
+         border-radius:999px; padding:1px 8px; margin-left:6px; vertical-align:2px; }
+
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; padding-bottom:96px; }
+  .split.rev .text { order:2; }
+  h2 { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 0 20px; }
+  .split .text p { font-size:18px; color:var(--dim); margin:0; max-width:28em; }
+
+  .pricing { display:grid; grid-template-columns:1fr 1fr; gap:20px; padding-bottom:96px; }
+  .pricing h2 { grid-column:1/-1; text-align:center; margin-bottom:12px; }
+  .plan { background:var(--surface); border-radius:32px; padding:32px; }
+  .plan h3 { font-size:22px; letter-spacing:-0.02em; margin:0 0 4px; }
+  .plan .note { color:var(--dim); margin:0 0 16px; font-size:15px; }
+  .plan ul { margin:0; padding-left:1.1em; }
+  .plan li { margin:.35em 0; }
+
+  .faq { max-width:760px; padding-bottom:96px; }
+  .faq h2 { text-align:center; margin-bottom:32px; }
+  .faq .q { border-top:1px solid var(--track); padding:20px 0; }
+  .faq .q:last-child { border-bottom:1px solid var(--track); }
+  .faq .q b { display:block; font-weight:600; margin-bottom:4px; }
+  .faq .q span { color:var(--dim); }
+
+  .closing { text-align:center; padding:32px 24px 96px; }
+  .closing p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto 32px; max-width:18em; }
+  footer { text-align:center; color:var(--dim); font-size:14px; padding:0 24px 48px; }
+
+  @media (max-width: 820px) {
+    .wrap { padding:0 16px; }
+    .hero, .split, .pricing { grid-template-columns:1fr; gap:40px; }
+    .hero { padding-top:48px; padding-bottom:64px; }
+    .split.rev .text { order:0; }
+    h1 { font-size:40px; }
+    h2, .statement p, .closing p { font-size:30px; }
+    .statement { padding:64px 16px; }
+    .cards { grid-template-columns:1fr; padding-bottom:64px; }
+    .split, .pricing, .faq { padding-bottom:64px; }
+    .device { max-width:260px; }
+  }
+</style>
+<style>
+  :lang(ja) h1, :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { letter-spacing:0.01em; line-height:1.35; }
+  :lang(ja) h1 { font-size:46px; }
+  @media (max-width: 820px) { :lang(ja) h1 { font-size:34px; } :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { font-size:26px; } }
+  :lang(ja) body { word-break:auto-phrase; }
+  .nb { display:inline-block; }
+  .plan h3 .price { font-weight:400; color:var(--dim); margin-left:8px; }
+  .hero .price-line { margin:14px 0 0; font-size:15px; color:var(--dim); }
+  .hero .price-line b { color:var(--ink); font-weight:600; }
+  .plan .fine { color:var(--dim); font-size:14px; margin:16px 0 0; }
+  .faq .all { text-align:center; margin:24px 0 0; }
+  .credit { max-width:760px; margin:0 auto; padding:0 24px 96px; color:var(--dim); font-size:15px; }
+  .credit h2 { text-align:center; margin-bottom:16px; }
+  .pair { position:relative; justify-self:center; width:100%; max-width:380px; aspect-ratio:380/600; }
+  .pair .device { position:absolute; max-width:250px; }
+  .pair .device:first-child { left:0; top:0; }
+  .pair .device:last-child { right:0; bottom:0; }
+  .crop { display:none; }
+  @media (max-width: 820px) {
+    .hero > .device, .hero > .pair { display:none; }
+    .crop { display:block; margin:0 0 24px; border-radius:28px; overflow:hidden; box-shadow:0 20px 40px -20px rgba(30,40,60,.35); }
+    .crop img { width:100%; display:block; }
+    .credit { padding:0 16px 64px; }
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "Mantel",
+   "alternateName": [
+    "Mantel – віджет із фото"
+   ],
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "PhotographyApplication",
+   "description": "Застосунок для iPhone, який по черзі показує вибрані вами фото у віджеті на Початковому екрані. Без підписки, без реклами, без облікового запису.",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/",
+   "installUrl": "https://apps.apple.com/app/id6814138903?pt=129250766&ct=lp-mantel-uk&mt=8",
+   "offers": [
+    {
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "USD",
+     "description": "Безкоштовно, а Pro — разова покупка. Не підписка."
+    },
+    {
+     "@type": "Offer",
+     "name": "Mantel Pro",
+     "price": "7.99",
+     "priceCurrency": "USD",
+     "description": "Разова покупка в застосунку, не підписка."
+    }
+   ],
+   "author": {
+    "@type": "Person",
+    "name": "minari"
+   },
+   "inLanguage": "uk"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Чи є віджет із фото без підписки?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Так. Малий віджет Mantel (одна добірка до 12 фото) безкоштовний, а Pro — разова покупка. Реклами немає."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Віджет обрізає обличчя на моєму фото.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Торкніться фото в добірці й утримуйте, виберіть «Налаштувати кадр» і торкніться місця, яке має залишатися видимим. Віджет обріже фото навколо цієї точки. Щоб показати фото без обрізання, виберіть «Фото повністю»."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Мої фото не змінюються.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Добірка з одним фото не змінюється. Додайте два або більше фото, і віджет переходитиме до наступного з тією частотою, яку ви задали (у безкоштовній версії — щогодини)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Чи потрібен Mantel доступ до всієї медіатеки?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ні. Mantel використовує стандартний засіб вибору фото iPhone, тож бачить лише ті фото, які ви вибрали. Ваші оригінальні фото ніколи не змінюються."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Чи завантажуються мої фото кудись?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Вони ніколи не надсилаються на сервери розробниці. Фото зберігаються на вашому пристрої, а також — лише з Pro і ввімкненою «Синхронізацією з iCloud» — у вашому власному iCloud (це можна вимкнути в Параметрах)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Як зі мною звʼязатися?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "У Mantel перейдіть у Параметри → «Звʼязатися / повідомити про проблему», щоб надіслати лист. Версію застосунку, версію iOS і модель iPhone буде заповнено автоматично."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "На моєму Середньому або Великому віджеті є замок.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Середні, Великі віджети та віджети для Замкненого екрана — функції Pro. Безкоштовна версія містить один Малий віджет."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Pro не працює на моєму іншому iPhone.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Перевірте, що App Store на тому iPhone увійшов з тим самим Обліковим записом Apple, з якого ви купували, а потім торкніться «Відновити покупки» в Параметрах Mantel. Одразу після покупки може знадобитися трохи часу, щоб Pro зʼявився."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<nav class="nav"><div class="nav-inner"><img src="../img/icon.png" alt="">Mantel<a class="lang" href="../ja/">日本語</a><a class="lang" href="../pt/">Português</a></div></nav>
+
+<section class="wrap hero">
+  <div>
+    <h1><span class="lead">Ваші власні фото —</span> <span class="nb">на Початковому екрані.</span></h1>
+    <div class="crop"><img src="../img/crop_en.jpg" alt="Віджет із фото Mantel на Початковому екрані iPhone поруч із налаштуваннями зміни та порядку «упереміш» для добірки"></div>
+    <p class="sub">Виберіть кілька фото, і вони змінюватимуться у віджеті. Без реклами, без облікового запису.</p>
+    <a class="badge" href="https://apps.apple.com/app/id6814138903?pt=129250766&ct=lp-mantel-uk&mt=8"><img src="../img/badge_en.svg" alt="Завантажити в App Store"></a>
+    <p class="price-line">Частота зміни, порядок упереміш і необмежена кількість фото з <b>Pro, $7.99</b> — разова покупка</p>
+    <ul class="facts"><li>Без підписки</li><li>Без реклами</li><li>Без облікового запису</li><li>Лише вибрані вами фото</li></ul>
+  </div>
+  <div class="pair"><div class="device"><img src="../img/home_photo_en.jpg" alt="Віджет із фото Mantel на Початковому екрані iPhone поруч із налаштуваннями зміни та порядку «упереміш» для добірки"></div><div class="device"><img src="../img/detail_uk.jpg" alt=""></div></div>
+</section>
+
+<section class="statement">
+  <p><span class="lead">Ваш пес, ваші друзі, минуле літо —</span> саме там, куди ви й так дивитеся.</p>
+</section>
+
+<section class="wrap split">
+  <div class="text">
+    <h2><span class="lead">Частота зміни</span> <span class="nb">і порядок упереміш.</span></h2>
+    <p>З Pro фото змінюються кожні 15 хвилин, щогодини, кожні 6 годин або раз на день — по черзі або впереміш. Безкоштовно — щогодини.</p>
+  </div>
+  <div class="device"><img src="../img/detail_uk.jpg" alt="" loading="lazy"></div>
+</section>
+<section class="wrap split rev">
+  <div class="text">
+    <h2><span class="lead">Родина, подорожі, улюбленці —</span> <span class="nb">одна добірка на віджет.</span></h2>
+    <p>У Pro необмежена кількість добірок і фото в кожній. Безкоштовно — одна добірка до 12 фото. Досягнення ліміту ніколи не видаляє те, що ви вже додали. Просто більше не можна додавати.</p>
+  </div>
+  <div class="device"><img src="../img/main_sets_en.jpg" alt="" loading="lazy"></div>
+</section>
+
+<section class="wrap pricing">
+  <h2>Ціни — просто й чесно</h2>
+  <div class="plan"><h3>Безкоштовно</h3><p class="note">Без реклами. Без облікового запису. Без обмеження в часі.</p><ul><li>Вибір фото через системний засіб вибору — Mantel ніколи не просить доступу до всієї медіатеки</li><li>Одна добірка до 12 фото</li><li>Малий віджет на Початковому екрані, що змінює фото щогодини</li><li>Вибір, чи заповнює кожне фото рамку, чи вміщується в неї</li></ul></div>
+  <div class="plan"><h3>Mantel Pro<span class="price">$7.99</span></h3><p class="note">Разова покупка, не підписка.</p><ul><li>Середні, Великі й Дуже великі віджети — скільки завгодно</li><li>Необмежено добірок — родина, подорожі, улюбленці — одна добірка на віджет</li><li>Необмежено фото в добірці</li><li>Частота зміни: кожні 15 хвилин, щогодини, кожні 6 годин або раз на день</li><li>Упереміш</li><li>Зміна добірок за часом</li><li>Додайте слова до своїх фото</li><li>Синхронізація з iCloud</li></ul></div>
+</section>
+
+
+
+<section class="wrap faq">
+  <h2>Часті запитання</h2>
+  <div class="q"><b>Чи є віджет із фото без підписки?</b><span>Так. Малий віджет Mantel (одна добірка до 12 фото) безкоштовний, а Pro — разова покупка. Реклами немає.</span></div>
+  <div class="q"><b>Віджет обрізає обличчя на моєму фото.</b><span>Торкніться фото в добірці й утримуйте, виберіть «Налаштувати кадр» і торкніться місця, яке має залишатися видимим. Віджет обріже фото навколо цієї точки. Щоб показати фото без обрізання, виберіть «Фото повністю». <a href="../guide/faces-cut-off/">Покрокова інструкція зі знімками екрана</a></span></div>
+  <div class="q"><b>Мої фото не змінюються.</b><span>Добірка з одним фото не змінюється. Додайте два або більше фото, і віджет переходитиме до наступного з тією частотою, яку ви задали (у безкоштовній версії — щогодини). <a href="../guide/photos-not-changing/">Що перевірити, крок за кроком</a></span></div>
+  <div class="q"><b>Чи потрібен Mantel доступ до всієї медіатеки?</b><span>Ні. Mantel використовує стандартний засіб вибору фото iPhone, тож бачить лише ті фото, які ви вибрали. Ваші оригінальні фото ніколи не змінюються.</span></div>
+  <div class="q"><b>Чи завантажуються мої фото кудись?</b><span>Вони ніколи не надсилаються на сервери розробниці. Фото зберігаються на вашому пристрої, а також — лише з Pro і ввімкненою «Синхронізацією з iCloud» — у вашому власному iCloud (це можна вимкнути в Параметрах).</span></div>
+  <div class="q"><b>На моєму Середньому або Великому віджеті є замок.</b><span>Середні, Великі віджети та віджети для Замкненого екрана — функції Pro. Безкоштовна версія містить один Малий віджет.</span></div>
+  <div class="q"><b>Pro не працює на моєму іншому iPhone.</b><span>Перевірте, що App Store на тому iPhone увійшов з тим самим Обліковим записом Apple, з якого ви купували, а потім торкніться «Відновити покупки» в Параметрах Mantel. Одразу після покупки може знадобитися трохи часу, щоб Pro зʼявився.</span></div>
+  <div class="q"><b>Виберіть, яку частину фото показувати</b><span>Торкніться фото в добірці й утримуйте, виберіть «Налаштувати кадр» і торкніться місця, яке має залишатися видимим. Віджет обріже фото навколо цієї точки.</span></div>
+  <div class="q"><b>Заповнити рамку чи фото повністю</b><span>«Заповнити рамку» заповнює віджет (краї фото можуть обрізатися). «Фото повністю» показує все фото без обрізання, з невеликим полем навколо.</span></div>
+  <div class="q"><b>Зміна добірок за часом (Pro)</b><span>У добірці ввімкніть «Показувати в заданий час» і виберіть години та дні. Потім торкніться віджета й утримуйте, відкрийте «Редагувати віджет» і виберіть «Змінювати за часом».</span></div>
+  <div class="q"><b>Додайте слова до своїх фото (Pro)</b><span>У добірці введіть короткий рядок у полі «Текст на фото». Він зʼявиться поверх фото у віджеті.</span></div>
+  <div class="q"><b>Синхронізація з іншим iPhone (Pro)</b><span>З Pro «Синхронізація з iCloud» увімкнена від початку. Відкрийте Mantel на іншому iPhone з тим самим Обліковим записом Apple — і там зʼявляться ті самі добірки та фото.</span></div>
+  <div class="q"><b>Як зі мною звʼязатися?</b><span>У Mantel перейдіть у Параметри → «Звʼязатися / повідомити про проблему», щоб надіслати лист. Версію застосунку, версію iOS і модель iPhone буде заповнено автоматично.</span></div>
+</section>
+
+<!-- xapps -->
+<style>
+  .xapps { margin-top:72px; margin-bottom:72px; }
+  .xapps h2 { text-align:center; margin:0 0 24px; }
+  .xapps ul { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(290px, 1fr)); gap:12px; }
+  .xapps li { margin:0; }
+  .xapps a { display:flex; gap:16px; align-items:center; background:var(--surface, transparent); border:1px solid var(--line, transparent);
+             border-radius:24px; padding:16px 20px 16px 16px; text-decoration:none; color:var(--ink); }
+  .xapps img { width:56px; height:56px; border-radius:13px; flex:none; box-shadow:0 0 0 0.5px rgba(0,0,0,.08); }
+  .xapps a > span { color:var(--dim); font-size:15px; line-height:1.4; }
+  .xapps b { display:block; font-weight:600; font-size:17px; color:var(--ink); }
+  .xapps .note { text-align:center; color:var(--dim); font-size:15px; margin:20px 0 0; }
+</style>
+<section class="wrap xapps">
+  <h2>Інші застосунки</h2>
+  <ul>
+    <li><a href="../../savebar/"><img src="../../../icons/savebar.png" alt="" loading="lazy"><span><b>Savebar</b>Цілі заощаджень у віджеті</span></a></li>
+    <li><a href="../../datto/"><img src="../../../icons/datto.png" alt="" loading="lazy"><span><b>Datto</b>Відлік до важливих днів</span></a></li>
+    <li><a href="../../kotoba/"><img src="../../../icons/kotoba.png" alt="" loading="lazy"><span><b>Kotoba</b>Ваші слова у віджеті</span></a></li>
+    <li><a href="../../bookspine/"><img src="../../../icons/bookspine.png" alt="" loading="lazy"><span><b>Bookspine</b>Прочитане у віджеті</span></a></li>
+    <li><a href="../../todayboard/"><img src="../../../icons/todayboard.png" alt="" loading="lazy"><span><b>Todayboard</b>Календарі — окремо</span></a></li>
+  </ul>
+  <p class="note">Без реклами, без підписок. Pro — разова покупка.</p>
+</section>
+<!-- /xapps -->
+
+<section class="closing">
+  <p><span class="lead">Без підписки,</span> без реклами, без облікового запису.</p>
+  <a class="badge" href="https://apps.apple.com/app/id6814138903?pt=129250766&ct=lp-mantel-uk&mt=8"><img src="../img/badge_en.svg" alt="Завантажити в App Store"></a>
+</section>
+
+<footer>18 мов · iOS 17 або новіша · Створила minari · <a href="../../../privacy/mantel/">Політика конфіденційності</a></footer>
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <b>Українська</b> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->

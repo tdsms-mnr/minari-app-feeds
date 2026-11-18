@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pl">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6796972154">
+<title>Jak pokazać odliczanie do urodzin lub rocznicy na ekranie początkowym iPhone’a — Datto</title>
+<meta name="description" content="Pokaż dni pozostałe do urodzin, rocznicy lub podróży na ekranie początkowym iPhone’a za pomocą widżetu. Wybieraj urodziny z Kontaktów lub wydarzenia z Kalendarza. Jeden widżet jest w Datto darmowy.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/pl/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF7F2; --accent:#B0735C; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171513; --accent:#D3987E; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "Jak pokazać odliczanie do urodzin lub rocznicy na ekranie początkowym iPhone’a",
+   "inLanguage": "pl",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "Otwórz Datto i stuknij +."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Wpisz nazwę i datę wydarzenia albo stuknij „Wybierz z Kontaktów”, aby wybrać urodziny, lub „Wybierz z Kalendarza”, aby wybrać wydarzenie. Stuknij Zapisz."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Dotknij i przytrzymaj puste miejsce na ekranie początkowym, stuknij + (Edycja) w lewym górnym rogu i wyszukaj „Datto”."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Wybierz mały rozmiar i stuknij Dodaj widżet. Pozostałe dni widać bez otwierania aplikacji."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Co mogę robić za darmo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Do trzech wydarzeń i jeden mały widżet na ekranie początkowym, który pokazuje jedno z nich. Bez reklam i bez konta. Datto Pro, jednorazowy zakup, dodaje nieograniczoną liczbę wydarzeń i widżetów, widżety średnie, duże i na ekranie blokady oraz powtarzające się wydarzenia."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Czy moje kontakty lub kalendarz są gdzieś wysyłane?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nie. Do Datto kopiowane są tylko nazwa i data, a nic z Twoich kontaktów ani kalendarza nie opuszcza iPhone’a."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Czy urodziny mogą być odliczane co roku od nowa?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tak, z Datto Pro: ustaw Powtarzanie na „Co roku”, a odliczanie samo przejdzie na następny rok."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Jak zmienić dzień pokazywany przez widżet?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Dotknij i przytrzymaj widżet, stuknij Edytuj widżet i wybierz wydarzenie."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Datto</a> · Poradnik · <a href="../ja/">日本語</a> · <a href="../zh-hant/">繁體中文</a></p>
+<h1>Jak pokazać odliczanie do urodzin lub rocznicy na ekranie początkowym iPhone’a</h1>
+<p class="lede">Umieść dni pozostałe do urodzin, rocznicy lub podróży na ekranie początkowym i nie musisz już liczyć — widzisz je za każdym razem, gdy odblokowujesz telefon.</p>
+<p>Oto jak to zrobić w <a href="../../../">Datto</a>, aplikacji do odliczania dni na iPhone’a. Jeden widżet i trzy wydarzenia są za darmo.</p>
+
+<h2>1. Dodaj dzień</h2>
+<ol>
+  <li>Otwórz Datto i stuknij <b>+</b>.</li>
+  <li>Wpisz <b>Nazwa wydarzenia</b> i <b>Data</b>, a potem stuknij <b>Zapisz</b>.</li>
+</ol>
+<p>Albo pozwól Datto wypełnić to za Ciebie:</p>
+<ul>
+  <li><b>„Wybierz z Kontaktów”</b> — wybierz urodziny zapisane w kontaktach.</li>
+  <li><b>„Wybierz z Kalendarza”</b> — wybierz wydarzenie z najbliższych dwunastu miesięcy w kalendarzu.</li>
+</ul>
+<p class="dim">Kopiowane są tylko nazwa i data. Nic z Twoich kontaktów ani kalendarza nie opuszcza iPhone’a.</p>
+<figure><img src="../../../img/list_en.jpg" alt="Lista odliczań w Datto, każde z liczbą pozostałych dni" width="1000" height="2172" loading="lazy"></figure>
+
+<h2>2. Umieść go na ekranie początkowym</h2>
+<ol>
+  <li>Dotknij i przytrzymaj puste miejsce na ekranie początkowym.</li>
+  <li>Stuknij <b>+</b> (Edycja) w lewym górnym rogu i wyszukaj <b>„Datto”</b>.</li>
+  <li>Wybierz rozmiar <b>Mały</b> i stuknij <b>Dodaj widżet</b>.</li>
+</ol>
+<p>Aby wybrać, który dzień pokazuje, dotknij i przytrzymaj widżet, stuknij <b>Edytuj widżet</b>, a potem wybierz wydarzenie.</p>
+<figure><img src="../../../img/widget_en.jpg" alt="Mały widżet Datto pokazujący dni pozostałe do podróży" width="800" height="1093" loading="lazy"></figure>
+
+<h2>3. Powtarzaj urodziny co roku (Pro)</h2>
+<p>Z Datto Pro ustaw <b>Powtarzanie</b> na <b>„Co roku”</b>. Gdy dzień minie, odliczanie samo przejdzie na następny rok — nie trzeba zmieniać daty. „Co miesiąc” też działa.</p>
+<p class="dim">Datto Pro to jednorazowy zakup, nie subskrypcja. Dodaje też nieograniczoną liczbę wydarzeń i widżetów, widżety średnie, duże i na ekranie blokady oraz ciche przypomnienia o kamieniach milowych (100 dni przed, dzień wcześniej, w sam dzień — bez dźwięku).</p>
+
+<h2>Pytania</h2>
+<div class="q"><b>Co mogę robić za darmo?</b>Do trzech wydarzeń i jeden mały widżet na ekranie początkowym, który pokazuje jedno z nich. Bez reklam i bez konta. Datto Pro, jednorazowy zakup, dodaje nieograniczoną liczbę wydarzeń i widżetów, widżety średnie, duże i na ekranie blokady oraz powtarzające się wydarzenia.</div>
+<div class="q"><b>Czy moje kontakty lub kalendarz są gdzieś wysyłane?</b>Nie. Do Datto kopiowane są tylko nazwa i data, a nic z Twoich kontaktów ani kalendarza nie opuszcza iPhone’a.</div>
+<div class="q"><b>Czy urodziny mogą być odliczane co roku od nowa?</b>Tak, z Datto Pro: ustaw Powtarzanie na „Co roku”, a odliczanie samo przejdzie na następny rok.</div>
+<div class="q"><b>Jak zmienić dzień pokazywany przez widżet?</b>Dotknij i przytrzymaj widżet, stuknij Edytuj widżet i wybierz wydarzenie.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6796972154?pt=129250766&ct=guide-anniversary-datto-pl&mt=8">Pobierz Datto z App Store</a>
+<p class="dim">Bez subskrypcji, bez reklam, bez konta. · <a href="../../../">O Datto</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <b>Polski</b> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6815409629">
+<title>Comment afficher un objectif d’épargne sur l’écran d’accueil de l’iPhone — Savebar</title>
+<meta name="description" content="Affichez un objectif d’épargne avec une barre de progression sur l’écran d’accueil de l’iPhone, et alimentez-le en un toucher depuis le widget. Aucune connexion bancaire. Un objectif et le petit widget sont gratuits dans Savebar.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/fr/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF6F0; --accent:#C0582F; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#15110D; --accent:#F0A27A; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "Comment afficher un objectif d’épargne sur l’écran d’accueil de l’iPhone",
+   "inLanguage": "fr",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "Ouvrez Savebar, touchez + et créez un objectif : un nom et un montant visé. Une échéance et un lien vers un produit sont facultatifs."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Dans « Montants du widget », saisissez le montant que vous mettez habituellement de côté, par exemple 20."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Maintenez le doigt sur une zone vide de l’écran d’accueil, touchez « Modifier » (ou +), recherchez « Savebar », choisissez la petite taille et touchez « Ajouter le widget »."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Chaque fois que vous mettez de l’argent de côté, touchez le bouton de montant du widget. La barre avance sans ouvrir l’app."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "L’app se connecte-t-elle à ma banque ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Non. Vous saisissez les montants vous-même : aucun identifiant, rien à associer."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Combien d’objectifs puis-je créer gratuitement ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Un seul, avec le petit widget de l’écran d’accueil. Savebar Pro, un achat unique, offre des objectifs illimités, des widgets moyen et grand qui affichent plusieurs objectifs, des widgets pour l’écran verrouillé et une app Apple Watch."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Puis-je ajouter un montant qui n’est pas sur le bouton ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Oui. Ouvrez l’objectif dans l’app et touchez « + Ajouter » pour saisir n’importe quel montant."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Comment choisir l’objectif affiché par le widget ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Maintenez le doigt sur le widget, touchez « Modifier le widget » et choisissez l’objectif."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Savebar</a> · Mode d’emploi · <a href="../ja/">日本語</a></p>
+<h1>Comment afficher un objectif d’épargne sur l’écran d’accueil de l’iPhone</h1>
+<p class="lede">Épargner pour quelque chose est plus facile quand on le voit. Un widget place la barre — ce que vous avez épargné et ce qu’il reste — là où vous regardez plusieurs fois par jour, et vous permet d’ajouter de l’argent en un toucher.</p>
+<p>Voici comment le configurer avec <a href="../../../">Savebar</a>. Un objectif et le petit widget sont gratuits.</p>
+
+<h2>1. Créez un objectif</h2>
+<ol>
+  <li>Ouvrez Savebar et touchez <b>+</b>.</li>
+  <li>Saisissez un nom et un <b>Montant visé</b>.</li>
+  <li>Facultatif : activez <b>« Fixer une échéance »</b> pour voir les jours restants et combien épargner par jour.</li>
+  <li>Facultatif : collez un lien vers un produit dans <b>« Lien »</b>. La photo et le nom sont repris de la page.</li>
+</ol>
+
+<h2>2. Choisissez le montant du bouton du widget</h2>
+<p>Dans <b>« Montants du widget »</b>, saisissez le montant que vous mettez habituellement de côté. Le bouton du widget l’ajoute en un toucher, sans ouvrir l’app.</p>
+<figure><img src="../../../img/edit_fr.jpg" alt="Modifier un objectif dans Savebar : lien du produit, photo, nom de l’objectif, montant visé et échéance" width="460" height="1000" loading="lazy"></figure>
+
+<h2>3. Placez le widget sur l’écran d’accueil</h2>
+<ol>
+  <li>Maintenez le doigt sur une zone vide de l’écran d’accueil jusqu’à ce que les apps se mettent à trembler.</li>
+  <li>Touchez <b>Modifier</b> (ou <b>+</b>) dans le coin supérieur, puis recherchez <b>« Savebar »</b>.</li>
+  <li>Choisissez la taille <b>Petit</b> et touchez <b>Ajouter le widget</b>.</li>
+</ol>
+<p>Chaque fois que vous mettez de l’argent de côté, touchez le bouton de montant du widget. La barre et le pourcentage avancent directement.</p>
+<figure><img src="../../../img/home_fr.jpg" alt="Widgets Savebar sur l’écran d’accueil d’un iPhone : un objectif avec sa photo, sa barre de progression, son pourcentage et un bouton de montant" width="460" height="1000" loading="lazy"></figure>
+<p class="dim">Le plus grand widget de cette image, avec plusieurs objectifs, fait partie de Savebar Pro.</p>
+
+<h2>Envie de plus ?</h2>
+<p>Savebar Pro est un achat unique, pas un abonnement :</p>
+<ul>
+  <li>Objectifs illimités</li>
+  <li>Widgets moyen et grand avec plusieurs objectifs, et jusqu’à deux boutons de montant par objectif</li>
+  <li>Widgets de l’écran verrouillé</li>
+  <li>Une app Apple Watch avec les mêmes boutons de montant</li>
+</ul>
+
+<h2>Questions fréquentes</h2>
+<div class="q"><b>L’app se connecte-t-elle à ma banque ?</b>Non. Vous saisissez les montants vous-même : aucun identifiant, rien à associer.</div>
+<div class="q"><b>Combien d’objectifs puis-je créer gratuitement ?</b>Un seul, avec le petit widget de l’écran d’accueil. Savebar Pro, un achat unique, offre des objectifs illimités, des widgets moyen et grand qui affichent plusieurs objectifs, des widgets pour l’écran verrouillé et une app Apple Watch.</div>
+<div class="q"><b>Puis-je ajouter un montant qui n’est pas sur le bouton ?</b>Oui. Ouvrez l’objectif dans l’app et touchez « + Ajouter » pour saisir n’importe quel montant.</div>
+<div class="q"><b>Comment choisir l’objectif affiché par le widget ?</b>Maintenez le doigt sur le widget, touchez « Modifier le widget » et choisissez l’objectif.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6815409629?pt=129250766&ct=guide-goal-widget-savebar-fr&mt=8">Télécharger Savebar dans l’App Store</a>
+<p class="dim">Sans abonnement, sans publicité, sans connexion bancaire, sans compte. · <a href="../../../">À propos de Savebar</a></p>
+
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <b>Français</b> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

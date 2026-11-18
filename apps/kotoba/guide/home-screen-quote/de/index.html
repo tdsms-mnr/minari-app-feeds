@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6796988697">
+<title>Eigene Worte oder ein Lieblingszitat auf den iPhone-Home-Bildschirm bringen — Kotoba</title>
+<meta name="description" content="Bring ein Motto, eine Zeile aus einem Buch oder deine eigenen Worte mit einem Text-Widget auf den Home- oder Sperrbildschirm deines iPhone. Zwanzig Sprüche und ein Spruch auf deinen Widgets sind in Kotoba kostenlos. Kein Abo.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/de/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF7F2; --accent:#B0735C; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171513; --accent:#D3987E; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "So bringst du eigene Worte oder ein Lieblingszitat auf den Home-Bildschirm deines iPhone",
+   "inLanguage": "de",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "Öffne Kotoba und tippe unten rechts auf +. Schreib deine Worte unter „Spruch“; Quelle, Tags und Hintergrundfarbe sind optional. Tippe auf „Sichern“."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Halte eine freie Stelle auf dem Home-Bildschirm gedrückt, tippe auf „Bearbeiten“ (oder +) und suche nach „Kotoba“. Wähle eine Größe und tippe auf „Widget hinzufügen“."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Halte das Widget gedrückt, tippe auf „Widget bearbeiten“ und wähle die Worte unter „Spruch“."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Für den Sperrbildschirm: Halte den Sperrbildschirm gedrückt, tippe auf „Anpassen“, tippe auf den Widget-Bereich und füge Kotoba hinzu."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Brauche ich einen Account oder ein Abo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein. Deine Sprüche bleiben auf deinem iPhone. Zwanzig Sprüche und ein Spruch auf deinen Widgets sind kostenlos. Kotoba Pro ist ein Einmalkauf, kein Abo."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Mein Widget zeigt „Mit Pro anzeigen“.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In der kostenlosen Version zeigen deine Widgets einen Spruch. Für andere Worte öffne in Kotoba das Menü (…) und tippe auf „Spruch im Widget wechseln“. Halte dann das Widget gedrückt, tippe auf „Widget bearbeiten“ und wähle den neuen Spruch. Widgets mit verschiedenen Sprüchen gleichzeitig gehören zu Pro."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Können die Worte jeden Tag wechseln?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja, mit Pro: Stelle unter „Widget bearbeiten“ bei „Anzeige“ „Jeden Tag ein neuer“, „Jede Woche ein neuer“ oder „Jede Stunde ein neuer“ ein. Es wählt aus deinen eigenen Sprüchen, und du kannst nach Tag eingrenzen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was passiert bei 20 Sprüchen?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nichts, was du gesichert hast, wird gelöscht. Nur neue Sprüche kannst du nicht mehr hinzufügen. Mit Pro fügst du so viele hinzu, wie du willst."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Kotoba</a> · Anleitung · <a href="../ja/">日本語</a></p>
+<h1>So bringst du eigene Worte oder ein Lieblingszitat auf den Home-Bildschirm deines iPhone</h1>
+<p class="lede">Ein Motto, eine Zeile aus einem Buch oder Film, ein Versprechen an dich selbst. In einer Notizen-App geht es unter. Auf einem Widget siehst du es jedes Mal, wenn du dein iPhone in die Hand nimmst.</p>
+<p>So geht es mit <a href="../../../">Kotoba</a>, einem Text-Widget für eigene Worte. Zwanzig Sprüche und ein Spruch auf deinen Widgets sind kostenlos.</p>
+
+<h2>1. Deine Worte sichern</h2>
+<ol>
+  <li>Öffne Kotoba und tippe auf <b>+</b> unten rechts.</li>
+  <li>Schreib deine Worte unter <b>Spruch</b>.</li>
+  <li>Optional: <b>Quelle</b> (ein Buch, ein Film, ein Freund), <b>Tags</b> und <b>Hintergrund</b> als Farbe für das Widget.</li>
+  <li>Tippe auf <b>Sichern</b>.</li>
+</ol>
+<p class="dim">Beim ersten Öffnen von Kotoba sind ein paar Beispielsprüche da. Du kannst sie behalten oder entfernen.</p>
+<figure><img src="../../../img/edit_en.jpg" alt="Einen Spruch in Kotoba bearbeiten: der Spruch, seine Quelle, Tags und Hintergrundfarbe" width="460" height="1000" loading="lazy"></figure>
+
+<h2>2. Das Widget auf den Home-Bildschirm legen</h2>
+<ol>
+  <li>Halte eine freie Stelle auf dem Home-Bildschirm gedrückt.</li>
+  <li>Tippe auf <b>Bearbeiten</b> (oder <b>+</b>) in der oberen Ecke und suche nach <b>„Kotoba“</b>.</li>
+  <li>Wähle Klein, Mittel oder Groß und tippe auf <b>Widget hinzufügen</b>.</li>
+</ol>
+
+<h2>3. Die angezeigten Worte wählen</h2>
+<p>Halte das Widget gedrückt, tippe auf <b>Widget bearbeiten</b>, dann wähle deine Worte unter <b>Spruch</b>. Wählst du nichts, zeigt es den ersten Spruch deiner Liste. Tippe auf das Widget, um diesen Spruch in der App zu öffnen.</p>
+<figure><img src="../../../img/widget_en.jpg" alt="Ein kleines Kotoba-Widget auf einem iPhone-Home-Bildschirm mit einem Sprichwort in Weiß auf braunem Hintergrund" width="400" height="448" loading="lazy"></figure>
+
+<h2>Auf dem Sperrbildschirm</h2>
+<p>Halte den Sperrbildschirm gedrückt, tippe auf <b>Anpassen</b>, wähle den Sperrbildschirm, tippe auf den Widget-Bereich und füge Kotoba hinzu. Es gibt drei Stile für den Sperrbildschirm. Den Spruch wählst du genauso, mit „Widget bearbeiten“.</p>
+
+<h2>Mehr gewünscht?</h2>
+<p>Kotoba Pro ist ein Einmalkauf, kein Abo:</p>
+<ul>
+  <li>So viele Sprüche, wie du willst</li>
+  <li>So viele Widgets, wie du willst, jedes mit anderen Worten</li>
+  <li>Jeden Tag, jede Woche oder jede Stunde ein neuer Spruch aus deinen eigenen Sprüchen (auf Wunsch nach Tag eingegrenzt)</li>
+  <li>Schrift, Textgröße und Ausrichtung für jedes Widget</li>
+  <li>Backup importieren und iCloud-Sync, für ein neues oder zweites Gerät</li>
+</ul>
+
+<h2>Fragen</h2>
+<div class="q"><b>Brauche ich einen Account oder ein Abo?</b>Nein. Deine Sprüche bleiben auf deinem iPhone. Zwanzig Sprüche und ein Spruch auf deinen Widgets sind kostenlos. Kotoba Pro ist ein Einmalkauf, kein Abo.</div>
+<div class="q"><b>Mein Widget zeigt „Mit Pro anzeigen“.</b>In der kostenlosen Version zeigen deine Widgets einen Spruch. Für andere Worte öffne in Kotoba das Menü (…) und tippe auf „Spruch im Widget wechseln“. Halte dann das Widget gedrückt, tippe auf „Widget bearbeiten“ und wähle den neuen Spruch. Widgets mit verschiedenen Sprüchen gleichzeitig gehören zu Pro.</div>
+<div class="q"><b>Können die Worte jeden Tag wechseln?</b>Ja, mit Pro: Stelle unter „Widget bearbeiten“ bei „Anzeige“ „Jeden Tag ein neuer“, „Jede Woche ein neuer“ oder „Jede Stunde ein neuer“ ein. Es wählt aus deinen eigenen Sprüchen, und du kannst nach Tag eingrenzen.</div>
+<div class="q"><b>Was passiert bei 20 Sprüchen?</b>Nichts, was du gesichert hast, wird gelöscht. Nur neue Sprüche kannst du nicht mehr hinzufügen. Mit Pro fügst du so viele hinzu, wie du willst.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6796988697?pt=129250766&ct=guide-home-screen-quote-kotoba-de&mt=8">Kotoba im App Store laden</a>
+<p class="dim">Kein Abo, keine Werbung, keine Mitteilungen, kein Account. · <a href="../../../">Über Kotoba</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <b>Deutsch</b> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

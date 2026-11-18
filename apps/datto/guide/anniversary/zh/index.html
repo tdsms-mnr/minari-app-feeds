@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-Hans">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6796972154">
+<title>如何在 iPhone 主屏幕上显示生日或纪念日倒计时 — Datto</title>
+<meta name="description" content="用小组件在 iPhone 主屏幕上显示距离生日、纪念日或旅行的剩余天数。可从通讯录选取生日，从日历选取事件。Datto 免费提供 1 个小组件。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/zh/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF7F2; --accent:#B0735C; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171513; --accent:#D3987E; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "如何在 iPhone 主屏幕上显示生日或纪念日倒计时",
+   "inLanguage": "zh-Hans",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "打开 Datto，轻点 +。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "输入事件名称和日期，或轻点“从通讯录选择”选取生日、轻点“从日历选择”选取事件。然后轻点“保存”。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "在主屏幕空白处按住，轻点左上角的 +（编辑），然后搜索“Datto”。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "选择小号尺寸，轻点“添加小组件”。不用打开 App 就能看到剩余天数。"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "免费可以做什么？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "最多 3 个事件，以及 1 个显示其中一个事件的主屏幕小号小组件。没有广告，也不需要账户。Datto Pro 一次购买，增加不限数量的事件和小组件、中号、大号和锁定屏幕小组件，以及重复事件。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "会把我的通讯录或日历发送到别处吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不会。只有名称和日期会复制到 Datto，通讯录和日历中的任何内容都不会离开你的 iPhone。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "生日能每年重新倒计时吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以，需要 Datto Pro：把“重复”设为“每年”，倒计时会自动跳到下一年。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "怎样更改小组件显示的日子？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "按住小组件，轻点“编辑小组件”，然后选择事件。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Datto</a> · 指南 · <a href="../ja/">日本語</a> · <a href="../zh-hant/">繁體中文</a></p>
+<h1>如何在 iPhone 主屏幕上显示生日或纪念日倒计时</h1>
+<p class="lede">把距离生日、纪念日或旅行的剩余天数放在主屏幕上，就不用再掰着手指数了——每次解锁手机都能看到。</p>
+<p>下面介绍如何用 <a href="../../../">Datto</a>来实现，这是一款 iPhone 倒计时 App。1 个小组件和 3 个事件可免费使用。</p>
+
+<h2>1. 添加日子</h2>
+<ol>
+  <li>打开 Datto，轻点 <b>+</b>.</li>
+  <li>输入 <b>事件名称</b> 和 <b>日期</b>，然后轻点 <b>保存</b>.</li>
+</ol>
+<p>也可以让 Datto 帮你填写：</p>
+<ul>
+  <li><b>“从通讯录选择”</b> — 选取通讯录中保存的生日。</li>
+  <li><b>“从日历选择”</b> — 选取日历中未来一年内的事件。</li>
+</ul>
+<p class="dim">只复制名称和日期。通讯录和日历中的任何内容都不会离开你的 iPhone。</p>
+<figure><img src="../../../img/list_en.jpg" alt="Datto 的倒计时列表，每项都显示剩余天数" width="1000" height="2172" loading="lazy"></figure>
+
+<h2>2. 放到主屏幕上</h2>
+<ol>
+  <li>在主屏幕空白处按住。</li>
+  <li>轻点左上角的 <b>+</b> （编辑），然后搜索 <b>“Datto”</b>.</li>
+  <li>选择 <b>小号</b> 尺寸，然后轻点 <b>添加小组件</b>.</li>
+</ol>
+<p>要选择显示哪一天，请按住小组件，轻点 <b>编辑小组件</b>，然后选择事件。</p>
+<figure><img src="../../../img/widget_en.jpg" alt="显示距离旅行还剩几天的 Datto 小号小组件" width="800" height="1093" loading="lazy"></figure>
+
+<h2>3. 让生日每年重复（Pro）</h2>
+<p>使用 Datto Pro，将 <b>重复</b> 设为 <b>“每年”</b>。那天过后，倒计时会自动跳到下一年，不用修改日期。也可以选“每月”。</p>
+<p class="dim">Datto Pro 是一次购买，不是订阅。它还会增加不限数量的事件和小组件、中号、大号和锁定屏幕小组件，以及安静的里程碑提醒（提前 100 天、前一天和当天——没有声音）。</p>
+
+<h2>常见问题</h2>
+<div class="q"><b>免费可以做什么？</b>最多 3 个事件，以及 1 个显示其中一个事件的主屏幕小号小组件。没有广告，也不需要账户。Datto Pro 一次购买，增加不限数量的事件和小组件、中号、大号和锁定屏幕小组件，以及重复事件。</div>
+<div class="q"><b>会把我的通讯录或日历发送到别处吗？</b>不会。只有名称和日期会复制到 Datto，通讯录和日历中的任何内容都不会离开你的 iPhone。</div>
+<div class="q"><b>生日能每年重新倒计时吗？</b>可以，需要 Datto Pro：把“重复”设为“每年”，倒计时会自动跳到下一年。</div>
+<div class="q"><b>怎样更改小组件显示的日子？</b>按住小组件，轻点“编辑小组件”，然后选择事件。</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6796972154?pt=129250766&ct=guide-anniversary-datto-zh&mt=8">在 App Store 获取 Datto</a>
+<p class="dim">无订阅，无广告，无需账户。· <a href="../../../">关于 Datto</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <b>简体中文</b> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

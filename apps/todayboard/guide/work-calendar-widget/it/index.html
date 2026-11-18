@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="it">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6814139080">
+<title>Come mostrare solo il calendario di lavoro in un widget per iPhone — Todayboard</title>
+<meta name="description" content="Mostra solo il calendario di lavoro, anche un calendario Google, in un widget della schermata Home dell’iPhone, oppure tieni calendari di lavoro e personali su widget separati. Sola lettura, nessun account. La scelta dei calendari fa parte di Todayboard Pro, un acquisto unico.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/it/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#3B55B5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#8FA2F0; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "Come mostrare solo il calendario di lavoro in un widget per iPhone",
+   "inLanguage": "it",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "Verifica che il calendario di lavoro sia nell’app Calendario dell’iPhone. Se non c’è, aggiungi l’account in Impostazioni → App → Calendario → Account Calendario → Aggiungi account e attiva Calendari per quell’account."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Apri Todayboard, tocca Continua e consenti l’accesso completo ai calendari. L’accesso è di sola lettura."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Con Todayboard Pro, tocca “Calendari mostrati” nella scheda VISUALIZZAZIONE e seleziona solo i calendari di lavoro."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Tieni premuto sulla schermata Home, tocca Modifica, poi Aggiungi widget. Cerca “Todayboard”, scegli una dimensione e tocca Aggiungi widget."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Per avere un widget per il lavoro e uno per casa, tieni premuto un widget, tocca Modifica widget e scegli i suoi Calendari."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Mostra il mio calendario Google?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sì. Aggiungi il tuo account Google in Impostazioni → App → Calendario → Account Calendario → Aggiungi account e attiva Calendari. I suoi eventi compaiono così nell’app Calendario dell’iPhone e Todayboard li mostra. Todayboard non accede mai direttamente a Google."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Posso farlo gratis?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Il widget piccolo gratuito mostra gli eventi di oggi di tutti i calendari, e anche “Nascondi eventi di tutto il giorno” è gratis. Scegliere quali calendari mostrare fa parte di Todayboard Pro, un acquisto unico, insieme ai widget medio e grande, ai widget della schermata di blocco e alla vista di domani o dei prossimi 7 giorni."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Il mio calendario di lavoro non è nell’elenco.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Todayboard legge i calendari configurati sull’iPhone. Aggiungi l’account in Impostazioni → App → Calendario → Account Calendario → Aggiungi account (su iOS 17: Impostazioni → Calendario → Account), attiva Calendari per quell’account, poi torna su Todayboard."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Il widget dice “Scegliere i calendari è Pro.”",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sono stati scelti dei calendari in Modifica widget senza Pro. Rimuovili in Modifica widget per mostrare di nuovo tutti i calendari, oppure passa a Todayboard Pro."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Todayboard modifica o carica i miei eventi?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. L’accesso al calendario è di sola lettura e nulla lascia il tuo dispositivo."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Todayboard</a> · Guida · <a href="../ja/">日本語</a></p>
+<h1>Come mostrare solo il calendario di lavoro in un widget per iPhone</h1>
+<p class="lede">Se sull’iPhone hai sia calendari di lavoro sia personali, un widget che mostra tutto si riempie in fretta. Un widget con solo il calendario di lavoro mostra il prossimo impegno di lavoro, e nient’altro.</p>
+<p>Ecco come fare con <a href="../../../">Todayboard</a>, un widget calendario che legge i calendari già presenti sull’iPhone. La scelta dei calendari fa parte di Todayboard Pro, un acquisto unico. Il widget piccolo gratuito mostra tutti i calendari.</p>
+
+<h2>1. Verifica che il calendario di lavoro sia sull’iPhone</h2>
+<p>Todayboard legge gli eventi dell’app Calendario dell’iPhone. Se il calendario di lavoro non c’è ancora:</p>
+<ol>
+  <li>Apri <b>Impostazioni → App → Calendario → Account Calendario</b> (su iOS 17: <b>Impostazioni → Calendario → Account</b>).</li>
+  <li>Tocca <b>Aggiungi account</b> e aggiungi l’account di lavoro, per esempio il tuo account Google.</li>
+  <li>Attiva <b>Calendari</b> per quell’account.</li>
+</ol>
+
+<h2>2. Consenti l’accesso al calendario</h2>
+<p>Apri Todayboard, tocca <b>Continua</b> e consenti l’accesso completo. L’accesso è di sola lettura: Todayboard non modifica mai i tuoi eventi.</p>
+<p class="dim">Hai rifiutato per errore? L’iPhone non lo chiederà più. Apri Impostazioni → Calendari e scegli “Accesso completo”.</p>
+
+<h2>3. Scegli i calendari di lavoro (Pro)</h2>
+<ol>
+  <li>Trova la scheda <b>VISUALIZZAZIONE</b> nella schermata principale di Todayboard.</li>
+  <li>Tocca <b>“Calendari mostrati”</b> e seleziona solo i calendari di lavoro.</li>
+  <li>Facoltativo: attiva <b>“Nascondi eventi di tutto il giorno”</b> per nascondere compleanni e festività. Questa opzione è gratis.</li>
+</ol>
+
+<h2>4. Metti il widget nella schermata Home</h2>
+<ol>
+  <li>Vai alla schermata Home. Tieni premuto su un’area vuota finché le app non iniziano a muoversi.</li>
+  <li>Tocca <b>Modifica</b> in alto a sinistra, poi <b>Aggiungi widget</b>.</li>
+  <li>Cerca <b>“Todayboard”</b>, scegli una dimensione e tocca <b>Aggiungi widget</b>.</li>
+</ol>
+
+<h2>5. Lavoro e casa su widget separati (Pro)</h2>
+<p>Ogni widget può mostrare i propri calendari. Tieni premuto un widget, tocca <b>Modifica widget</b>, poi scegli i suoi <b>Calendari</b>. Un widget senza scelte segue “Calendari mostrati” nell’app.</p>
+
+<h2>Vuoi di più?</h2>
+<p>Todayboard Pro è un acquisto unico, non un abbonamento:</p>
+<ul>
+  <li>Scegli quali calendari mostrare, nell’app e per ogni widget</li>
+  <li>Widget medio (oggi e domani) e grande (fino a 7 giorni)</li>
+  <li>Widget della schermata di blocco</li>
+</ul>
+
+<h2>Domande</h2>
+<div class="q"><b>Mostra il mio calendario Google?</b>Sì. Aggiungi il tuo account Google in Impostazioni → App → Calendario → Account Calendario → Aggiungi account e attiva Calendari. I suoi eventi compaiono così nell’app Calendario dell’iPhone e Todayboard li mostra. Todayboard non accede mai direttamente a Google.</div>
+<div class="q"><b>Posso farlo gratis?</b>Il widget piccolo gratuito mostra gli eventi di oggi di tutti i calendari, e anche “Nascondi eventi di tutto il giorno” è gratis. Scegliere quali calendari mostrare fa parte di Todayboard Pro, un acquisto unico, insieme ai widget medio e grande, ai widget della schermata di blocco e alla vista di domani o dei prossimi 7 giorni.</div>
+<div class="q"><b>Il mio calendario di lavoro non è nell’elenco.</b>Todayboard legge i calendari configurati sull’iPhone. Aggiungi l’account in Impostazioni → App → Calendario → Account Calendario → Aggiungi account (su iOS 17: Impostazioni → Calendario → Account), attiva Calendari per quell’account, poi torna su Todayboard.</div>
+<div class="q"><b>Il widget dice “Scegliere i calendari è Pro.”</b>Sono stati scelti dei calendari in Modifica widget senza Pro. Rimuovili in Modifica widget per mostrare di nuovo tutti i calendari, oppure passa a Todayboard Pro.</div>
+<div class="q"><b>Todayboard modifica o carica i miei eventi?</b>No. L’accesso al calendario è di sola lettura e nulla lascia il tuo dispositivo.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6814139080?pt=129250766&ct=guide-work-calendar-widget-todayboard-it&mt=8">Scarica Todayboard dall’App Store</a>
+<p class="dim">Nessun abbonamento, niente pubblicità, nessun account. · <a href="../../../">Informazioni su Todayboard</a> · <a href="../../../faq/">Come si usa &amp; tutte le FAQ</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <b>Italiano</b> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

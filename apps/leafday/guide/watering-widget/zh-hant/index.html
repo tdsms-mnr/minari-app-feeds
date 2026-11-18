@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6815058276">
+<title>如何在 iPhone 主畫面上查看今天要澆水的植物 — Leafday</title>
+<meta name="description" content="在 iPhone 主畫面上查看今天要澆水的植物，不用打開 App 就能在小工具上標記已澆水。Leafday 的小尺寸小工具和不限數量的植物都是免費的。不用訂閱。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/zh-hant/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#2F6B4F; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#8CC7A6; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "如何在 iPhone 主畫面上查看今天要澆水的植物",
+   "inLanguage": "zh-Hant",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "打開 Leafday，點一下右上角的 +。輸入名稱和澆水頻率，然後點一下「儲存」。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "在主畫面的空白處按住，點一下「編輯」（或 +），搜尋「Leafday」，選擇小尺寸，然後點一下「加入小工具」。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "小工具每天會顯示一株今天需要澆水的植物。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "澆完水後，點一下小工具上的「澆水」。不用打開 App，下一株植物就會出現。"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "有沒有不用訂閱的植物澆水提醒 App？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "有。小尺寸小工具和不限數量的植物都是免費的，沒有廣告，也不用註冊帳號。Leafday Pro 是一次買斷。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "不打開 App 也能標記已澆水嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。點一下主畫面小工具上的「澆水」即可。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "不小心點了「澆水」。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "打開 Leafday，再點一下植物旁邊的水滴就能復原。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "可以傳通知給我嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "在你選擇的時間每天提醒一次，是 Leafday Pro 的功能。Pro 還提供中、大尺寸和鎖定畫面小工具，施肥、噴霧和換盆排程，房間，旅行模式，依天氣調整，以及 iCloud 同步。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Leafday</a> · 指南 · <a href="../ja/">日本語</a></p>
+<h1>如何在 iPhone 主畫面上查看今天要澆水的植物</h1>
+<p class="lede">每株植物的澆水週期都不同，很容易忘記。小工具會把今天要澆水的植物顯示在你常看的地方，點一下就能標記已澆水。</p>
+<p>以下說明如何用 <a href="../../../">Leafday</a>來設定。小尺寸小工具和不限數量的植物都是免費的。</p>
+
+<h2>1. 加入植物</h2>
+<ol>
+  <li>打開 Leafday，點一下右上角的 <b>+</b> 。</li>
+  <li>輸入名稱，例如「龜背芋」。</li>
+  <li>在 <b>多久一次</b>中設定天數。 <b>常見植物（參考）</b> 會提供常見室內植物的建議間隔。</li>
+  <li>選填：在 <b>上次澆水</b>中設定上次澆水的時間，也可以加入照片。</li>
+  <li>點一下 <b>儲存</b>。植物想加多少就加多少。</li>
+</ol>
+<p class="dim">建議間隔只是參考——花盆、光線和季節都會帶來很大差異。先看看土壤：表層 2～3 公分乾了再澆。</p>
+
+<h2>2. 把小工具放到主畫面</h2>
+<ol>
+  <li>在主畫面的空白處按住，直到 App 開始晃動。</li>
+  <li>點一下 <b>編輯</b> （或 <b>+</b>），位在上方角落，然後搜尋 <b>「Leafday」</b>.</li>
+  <li>選擇 <b>小</b> 尺寸，然後點一下 <b>加入小工具</b>.</li>
+</ol>
+<p class="dim">中、大尺寸屬於 Leafday Pro。免費版會顯示一個鎖頭。</p>
+
+<h2>3. 澆水時點一下「澆水」</h2>
+<p>小工具會顯示一株今天需要澆水的植物、還剩幾株，以及一個 <b>澆水</b> 按鈕。澆完水後，點一下 <b>澆水</b>。不用打開 App，下一株植物就會出現。全部完成後，會顯示 <b>全部澆完了</b> ，以及下一株是哪一株。</p>
+<p>在 App 裡，也可以點一下每株植物旁邊的水滴。再點一下就能復原。</p>
+
+<h2>想要更多？</h2>
+<p>Leafday Pro 是一次買斷，不是訂閱：</p>
+<ul>
+  <li>可顯示多株植物的中、大尺寸小工具，以及鎖定畫面小工具</li>
+  <li>在你選擇的時間每天提醒一次</li>
+  <li>施肥、噴霧和換盆排程</li>
+  <li>房間，每個房間一個小工具</li>
+  <li>旅行模式、依天氣調整和 iCloud 同步</li>
+</ul>
+
+<h2>常見問題</h2>
+<div class="q"><b>有沒有不用訂閱的植物澆水提醒 App？</b>有。小尺寸小工具和不限數量的植物都是免費的，沒有廣告，也不用註冊帳號。Leafday Pro 是一次買斷。</div>
+<div class="q"><b>不打開 App 也能標記已澆水嗎？</b>可以。點一下主畫面小工具上的「澆水」即可。</div>
+<div class="q"><b>不小心點了「澆水」。</b>打開 Leafday，再點一下植物旁邊的水滴就能復原。</div>
+<div class="q"><b>可以傳通知給我嗎？</b>在你選擇的時間每天提醒一次，是 Leafday Pro 的功能。Pro 還提供中、大尺寸和鎖定畫面小工具，施肥、噴霧和換盆排程，房間，旅行模式，依天氣調整，以及 iCloud 同步。</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6815058276?pt=129250766&ct=guide-watering-widget-leafday-zh-hant&mt=8">在 App Store 下載 Leafday</a>
+<p class="dim">不用訂閱、沒有廣告、不用帳號。· <a href="../../../">關於 Leafday</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <b>繁體中文</b> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

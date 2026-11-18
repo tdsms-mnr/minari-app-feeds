@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-Hans">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6814139296">
+<title>如何在 iPhone 主屏幕小组件上勾选待办事项 — Threeline</title>
+<meta name="description" content="写下今天的三件事，直接在 iPhone 主屏幕小组件上勾选，不用打开 App。Threeline 的小尺寸小组件免费。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/guide/check-off-widget/zh/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/guide/check-off-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/guide/check-off-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/guide/check-off-widget/zh/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/guide/check-off-widget/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/guide/check-off-widget/pt/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/guide/check-off-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#3F7A4A; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#86C48F; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "如何在 iPhone 主屏幕小组件上勾选待办事项",
+   "inLanguage": "zh-Hans",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "打开 Threeline，在“第 1 件”“第 2 件”“第 3 件”中写下今天的三件事。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "在主屏幕空白处按住，点按“编辑”（或“+”），然后搜索“Threeline”。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "选择 Threeline 小组件（不是“便签”），选择小尺寸，然后点按“添加小组件”。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "做完一件事，就点按小组件上它旁边的圆圈。不用打开 App 就能勾选。再点一次即可撤销。"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "小组件免费吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "免费。今天的三件事和支持点按勾选的小尺寸小组件都免费。无广告，无需账户。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "为什么只有三件？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "因为三件事才做得完。Threeline 每天只有三行，而不是一长串待办清单。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "没做完的事会怎样？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "第二天打开 Threeline，在“昨天未完成”下点按“移到今天”，就能把它移到今天。没有移过来的事会留在昨天。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "可以从提醒事项中选出今天的三件事吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以，需要 Threeline Pro（一次买断）：点按“从提醒事项添加”。在 Threeline 中勾选后，提醒事项中也会同步完成。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Threeline</a> · 指南 · <a href="../ja/">日本語</a></p>
+<h1>如何在 iPhone 主屏幕小组件上勾选待办事项</h1>
+<p class="lede">需要打开才能看的待办清单，很容易被忘掉。用小组件的话，今天的事就摆在主屏幕上，当场就能勾选。</p>
+<p>下面介绍如何用 <a href="../../../">Threeline</a>来设置。它每天只放三件事，小尺寸小组件免费。</p>
+
+<h2>1. 写下今天的三件事</h2>
+<ol>
+  <li>打开 Threeline，它会问你 <b>“今天的三件事是什么？”</b></li>
+  <li>分别在以下栏中各写一件事： <b>“第 1 件”</b>, <b>“第 2 件”</b> 和 <b>“第 3 件”</b>.</li>
+</ol>
+
+<h2>2. 把小组件放到主屏幕上</h2>
+<ol>
+  <li>在主屏幕空白处按住，直到 App 开始晃动。</li>
+  <li>点按顶部角落的 <b>编辑</b> （或 <b>+</b>），然后搜索 <b>“Threeline”</b>.</li>
+  <li>选择 <b>Threeline</b> 小组件。（<b>便签</b> 是另一个小组件，用来显示一张便签。）</li>
+  <li>选择 <b>小</b> 尺寸，然后点按 <b>添加小组件</b>.</li>
+</ol>
+
+<h2>3. 点按勾选</h2>
+<p>做完一件事，就点按小组件上它旁边的圆圈。不用打开 App，当场就能勾选。点错了？再点一次即可撤销。</p>
+
+<h2>4. 每天从空白开始</h2>
+<p>每天都从三行空白开始。如果昨天有事没做完，打开 Threeline，点按 <b>“移到今天”</b> （位于 <b>“昨天未完成”</b>下方）。没有移过来的事会留在昨天。</p>
+
+<h2>想要更多？</h2>
+<p>Threeline Pro 是一次买断，不是订阅：</p>
+<ul>
+  <li>中号和大号小组件：更大的文字、连续天数和 14 天条带——同样可以点按勾选</li>
+  <li>锁定屏幕小组件</li>
+  <li>历史：最近 8 周一目了然</li>
+  <li>在你选定的时间发送早间提醒</li>
+  <li>从提醒事项中选出今天的三件事</li>
+</ul>
+
+<h2>常见问题</h2>
+<div class="q"><b>小组件免费吗？</b>免费。今天的三件事和支持点按勾选的小尺寸小组件都免费。无广告，无需账户。</div>
+<div class="q"><b>为什么只有三件？</b>因为三件事才做得完。Threeline 每天只有三行，而不是一长串待办清单。</div>
+<div class="q"><b>没做完的事会怎样？</b>第二天打开 Threeline，在“昨天未完成”下点按“移到今天”，就能把它移到今天。没有移过来的事会留在昨天。</div>
+<div class="q"><b>可以从提醒事项中选出今天的三件事吗？</b>可以，需要 Threeline Pro（一次买断）：点按“从提醒事项添加”。在 Threeline 中勾选后，提醒事项中也会同步完成。</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6814139296?pt=129250766&ct=guide-check-off-widget-threeline-zh&mt=8">在 App Store 获取 Threeline</a>
+<p class="dim">无订阅，无广告，无需账户。· <a href="../../../">关于 Threeline</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <b>简体中文</b> · <a href="../es/" hreflang="es">Español</a> · <a href="../pt/" hreflang="pt-BR">Português</a></p><!-- /langs -->
+</html>

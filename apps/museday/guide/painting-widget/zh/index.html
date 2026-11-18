@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-Hans">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6816428852">
+<title>如何每天在 iPhone 主屏幕上看到一幅名画 — Museday</title>
+<meta name="description" content="在 iPhone 主屏幕上放一幅每天午夜更换的名画，不联网也能换。511 幅公有领域名作。Museday 的小尺寸小组件免费；Pro 为一次性买断。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/zh/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF9F7; --accent:#2E6E70; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#7CC5C7; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "如何每天在 iPhone 主屏幕上看到一幅名画",
+   "inLanguage": "zh-Hans",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "安装 Museday 并打开一次。今天的画作就在第一个界面。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "按住主屏幕上的空白处，轻点“编辑”（或 +），搜索“Museday”，选择小尺寸，然后轻点“添加小组件”。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "放在那里就好。每天午夜，新的画作会替换上来，不联网也一样。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "轻点小组件即可打开这幅画的页面，阅读“关于这幅画”。"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "免费吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "显示今天画作的小尺寸小组件和锁定屏幕小组件都是免费的，没有时间限制，也没有广告。Museday Pro 为一次性买断，增加中、大、特大尺寸小组件，可显示你的收藏、某个主题、某个时代或某家美术馆的小组件，以及所有过往画作。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "画作什么时候更换？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "每天午夜。511 幅画全部内置在 App 中，所以即使没有网络也会更换。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "我的中尺寸或大尺寸小组件变模糊了，还显示“Museday Pro”。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "中、大、特大尺寸小组件属于 Pro。免费版请使用小尺寸。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "还能再看昨天的画吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。最近 7 天的画作在“今天”页面的“最近 7 天”里。更早的日子需要 Pro 才能打开。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Museday</a> · 指南 · <a href="../ja/">日本語</a></p>
+<h1>如何每天在 iPhone 主屏幕上看到一幅名画</h1>
+<p class="lede">梵高、维米尔、伦勃朗。一个在午夜更换画作的小组件，让你每次拿起手机，主屏幕都像一次小小的美术馆之旅。</p>
+<p>下面介绍如何用 <a href="../../../">Museday</a>来设置。显示今天画作的小尺寸小组件是免费的。</p>
+
+<h2>1. 打开一次 Museday</h2>
+<p>安装并打开 Museday。今天的画作就在第一个界面，附有标题、画家、年份和收藏它的美术馆。轻点 <b>关于这幅画</b> 即可阅读美术馆亲自撰写的作品介绍。</p>
+<figure><img src="../../../img/today_en.jpg" alt="Museday 的“今天”页面：今天的画作及其标题、画家、年份和美术馆，关于这幅画，以及最近 7 天" width="460" height="1000" loading="lazy"></figure>
+
+<h2>2. 把小组件放到主屏幕上</h2>
+<ol>
+  <li>按住主屏幕上的空白处，直到 App 开始晃动。</li>
+  <li>轻点顶部角落的 <b>编辑</b> （或 <b>+</b>），然后搜索 <b>“Museday”</b>.</li>
+  <li>选择 <b>小</b> 尺寸，然后轻点 <b>添加小组件</b>.</li>
+</ol>
+<p>这样就完成了。每天午夜，新的画作会替换上来。App 内置 290 位画家的 511 幅画，所以不联网也会继续更换。</p>
+<figure><img src="../../../img/home_en.jpg" alt="iPhone 主屏幕上的 Museday 小组件：一幅肖像画，附有标题、画家、年份和介绍的第一行" width="460" height="1000" loading="lazy"></figure>
+<p class="dim">图中的两个小组件是大尺寸和中尺寸，属于 Museday Pro。免费的小组件是小尺寸，画作铺满整个方形。</p>
+
+<h2>3. 在锁定屏幕上</h2>
+<p>按住锁定屏幕，轻点 <b>自定</b>，轻点小组件区域，然后添加 Museday 的 <b>今日画作（标题）</b> 小组件。它会显示今天画作的标题和画家。锁定屏幕小组件是免费的。</p>
+
+<h2>想要更多？</h2>
+<p>Museday Pro 为一次性买断，不是订阅：</p>
+<ul>
+  <li>中、大尺寸小组件 —“画作与标题”或“仅画作”</li>
+  <li>iOS 27 上的特大尺寸小组件</li>
+  <li>显示你的收藏、某个主题、某个时代或某家美术馆的小组件，在“编辑小组件”的“显示”中选择</li>
+  <li>过往每一天的画作，可按时代、美术馆和画家筛选</li>
+</ul>
+
+<h2>常见问题</h2>
+<div class="q"><b>免费吗？</b>显示今天画作的小尺寸小组件和锁定屏幕小组件都是免费的，没有时间限制，也没有广告。Museday Pro 为一次性买断，增加中、大、特大尺寸小组件，可显示你的收藏、某个主题、某个时代或某家美术馆的小组件，以及所有过往画作。</div>
+<div class="q"><b>画作什么时候更换？</b>每天午夜。511 幅画全部内置在 App 中，所以即使没有网络也会更换。</div>
+<div class="q"><b>我的中尺寸或大尺寸小组件变模糊了，还显示“Museday Pro”。</b>中、大、特大尺寸小组件属于 Pro。免费版请使用小尺寸。</div>
+<div class="q"><b>还能再看昨天的画吗？</b>可以。最近 7 天的画作在“今天”页面的“最近 7 天”里。更早的日子需要 Pro 才能打开。</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6816428852?pt=129250766&ct=guide-painting-widget-museday-zh&mt=8">在 App Store 获取 Museday</a>
+<p class="dim">没有订阅、没有广告、无需账户。· <a href="../../../">关于 Museday</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <b>简体中文</b> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

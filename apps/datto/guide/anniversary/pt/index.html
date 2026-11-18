@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6796972154">
+<title>Como mostrar uma contagem regressiva de aniversário na Tela de Início do iPhone — Datto</title>
+<meta name="description" content="Mostre os dias que faltam para um aniversário ou uma viagem na Tela de Início do iPhone com um widget. Escolha aniversários dos Contatos ou eventos do Calendário. Um widget é grátis no Datto.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/pt/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF7F2; --accent:#B0735C; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171513; --accent:#D3987E; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "Como mostrar uma contagem regressiva de aniversário na Tela de Início do iPhone",
+   "inLanguage": "pt-BR",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "Abra o Datto e toque em +."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Digite o nome e a data do evento, ou toque em “Escolher dos Contatos” para escolher um aniversário ou em “Escolher do Calendário” para escolher um evento. Toque em Salvar."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Toque e mantenha pressionado um espaço vazio da Tela de Início, toque em + (Editar) no canto superior esquerdo e busque “Datto”."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Escolha o tamanho pequeno e toque em Adicionar Widget. Os dias restantes aparecem sem abrir o app."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "O que posso fazer de graça?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Até três eventos e um widget pequeno na Tela de Início mostrando um deles. Sem anúncios e sem conta. O Datto Pro, uma compra única, adiciona eventos e widgets ilimitados, widgets médios, grandes e da Tela Bloqueada, e eventos que se repetem."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Meus contatos ou meu calendário são enviados para algum lugar?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Não. Só o nome e a data são copiados para o Datto, e nada dos seus contatos ou do seu calendário sai do seu iPhone."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Um aniversário pode voltar a contar todo ano?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sim, com o Datto Pro: defina Repetir como “Todo ano” e a contagem passa sozinha para o ano seguinte."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Como mudo o dia que o widget mostra?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Toque e mantenha pressionado o widget, toque em Editar Widget e escolha o evento."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Datto</a> · Guia · <a href="../ja/">日本語</a> · <a href="../zh-hant/">繁體中文</a></p>
+<h1>Como mostrar uma contagem regressiva de aniversário na Tela de Início do iPhone</h1>
+<p class="lede">Coloque os dias que faltam para um aniversário, uma data especial ou uma viagem na Tela de Início e você não precisa mais contar: vê toda vez que desbloqueia o celular.</p>
+<p>Veja como fazer isso com o <a href="../../../">Datto</a>, um app de contagem regressiva para iPhone. Um widget e três eventos são grátis.</p>
+
+<h2>1. Adicione o dia</h2>
+<ol>
+  <li>Abra o Datto e toque em <b>+</b>.</li>
+  <li>Preencha <b>Nome do evento</b> e <b>Data</b>, depois toque em <b>Salvar</b>.</li>
+</ol>
+<p>Ou deixe o Datto preencher para você:</p>
+<ul>
+  <li><b>“Escolher dos Contatos”</b> — escolha um aniversário salvo nos seus contatos.</li>
+  <li><b>“Escolher do Calendário”</b> — escolha um evento dos próximos doze meses no seu calendário.</li>
+</ul>
+<p class="dim">Só o nome e a data são copiados. Nada dos seus contatos ou do seu calendário sai do seu iPhone.</p>
+<figure><img src="../../../img/list_en.jpg" alt="A lista de contagens do Datto, cada uma com os dias restantes" width="1000" height="2172" loading="lazy"></figure>
+
+<h2>2. Coloque na Tela de Início</h2>
+<ol>
+  <li>Toque e mantenha pressionado um espaço vazio da Tela de Início.</li>
+  <li>Toque em <b>+</b> (Editar) no canto superior esquerdo e busque <b>“Datto”</b>.</li>
+  <li>Escolha o tamanho <b>Pequeno</b> e toque em <b>Adicionar Widget</b>.</li>
+</ol>
+<p>Para escolher qual dia ele mostra, toque e mantenha pressionado o widget, toque em <b>Editar Widget</b>, e depois escolha o evento.</p>
+<figure><img src="../../../img/widget_en.jpg" alt="Um widget pequeno do Datto mostrando os dias que faltam para uma viagem" width="800" height="1093" loading="lazy"></figure>
+
+<h2>3. Faça os aniversários se repetirem todo ano (Pro)</h2>
+<p>Com o Datto Pro, defina <b>Repetir</b> como <b>“Todo ano”</b>. Depois que o dia passa, a contagem vai sozinha para o ano seguinte, sem precisar editar a data. “Todo mês” também funciona.</p>
+<p class="dim">O Datto Pro é uma compra única, não uma assinatura. Ele também adiciona eventos e widgets ilimitados, widgets médios, grandes e da Tela Bloqueada, e lembretes discretos de marcos (100 dias antes, na véspera, no próprio dia — sem som).</p>
+
+<h2>Perguntas</h2>
+<div class="q"><b>O que posso fazer de graça?</b>Até três eventos e um widget pequeno na Tela de Início mostrando um deles. Sem anúncios e sem conta. O Datto Pro, uma compra única, adiciona eventos e widgets ilimitados, widgets médios, grandes e da Tela Bloqueada, e eventos que se repetem.</div>
+<div class="q"><b>Meus contatos ou meu calendário são enviados para algum lugar?</b>Não. Só o nome e a data são copiados para o Datto, e nada dos seus contatos ou do seu calendário sai do seu iPhone.</div>
+<div class="q"><b>Um aniversário pode voltar a contar todo ano?</b>Sim, com o Datto Pro: defina Repetir como “Todo ano” e a contagem passa sozinha para o ano seguinte.</div>
+<div class="q"><b>Como mudo o dia que o widget mostra?</b>Toque e mantenha pressionado o widget, toque em Editar Widget e escolha o evento.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6796972154?pt=129250766&ct=guide-anniversary-datto-pt&mt=8">Baixe o Datto na App Store</a>
+<p class="dim">Sem assinatura, sem anúncios, sem conta. · <a href="../../../">Sobre o Datto</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <b>Português</b> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

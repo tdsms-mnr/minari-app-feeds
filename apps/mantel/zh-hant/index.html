@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<script src="/minari-app-feeds/legacy-notice.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6814138903">
+<title>Mantel — 把你自己的照片放上主畫面（照片小工具，不用訂閱）</title>
+<meta name="description" content="在主畫面小工具中輪流顯示你挑選的照片的 iPhone App。不用訂閱、沒有廣告、不需帳號。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/zh-hant/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/">
+<style>
+  :root { --bezel:#2B2B2B; --bg:#FAF9F7; --surface:#FFFFFF; --ink:#2B2B2B; --dim:#6B6B6B; --track:#ECEAE6; --accent:#2E6E70; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bezel:#3A3A3C; --bg:#171614; --surface:#22201E; --ink:#ECE9E6; --dim:#A09A94; --track:#332F2C; --accent:#7CC5C7; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif;
+         -webkit-font-smoothing: antialiased; line-height:1.6; }
+  a { color:var(--accent); }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
+  .nav { position:sticky; top:12px; z-index:2; display:flex; justify-content:center; padding:0 16px; }
+  .nav-inner { display:flex; align-items:center; gap:10px; padding:8px 18px 8px 10px; border-radius:999px;
+               background:color-mix(in srgb, var(--surface) 80%, transparent); backdrop-filter:blur(12px);
+               box-shadow:0 1px 8px rgba(0,0,0,.06); font-weight:600; font-size:15px; }
+  .nav img { width:28px; height:28px; border-radius:7px; }
+  .nav .lang { font-weight:400; font-size:14px; color:var(--dim); text-decoration:none; margin-left:8px; }
+
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center; padding-top:56px; padding-bottom:80px; }
+  h1 { font-size:52px; line-height:1.15; font-weight:700; letter-spacing:-0.03em; margin:0 0 24px; }
+  .lead { color:var(--accent); }
+  .sub { font-size:18px; color:var(--dim); margin:0 0 32px; max-width:30em; }
+  .badge { display:inline-block; }
+  .badge img { height:54px; display:block; }
+  .facts { display:flex; flex-wrap:wrap; gap:8px; margin:28px 0 0; padding:0; list-style:none; }
+  .facts li { font-size:14px; padding:6px 12px; border-radius:999px; background:var(--track); }
+
+  .device { width:100%; max-width:300px; aspect-ratio:1206/2622; border:10px solid var(--bezel); border-radius:52px;
+            overflow:hidden; box-shadow:0 30px 60px -20px rgba(30,40,60,.35); background:#000; justify-self:center; }
+  .device img { width:100%; height:100%; object-fit:cover; display:block; }
+
+  .statement { text-align:center; padding:96px 24px; }
+  .statement p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto; max-width:22em; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; padding-bottom:96px; }
+  .card { background:var(--surface); border-radius:32px; overflow:hidden; display:flex; flex-direction:column; }
+  .card .shot { background:var(--track); padding:32px 32px 0; display:flex; justify-content:center; align-items:flex-start;
+                height:380px; overflow:hidden; }
+  .card .shot.bottom { align-items:flex-end; padding:0 32px 32px; }
+  .card .shot .device { max-width:210px; border-width:7px; border-radius:36px; box-shadow:0 20px 40px -20px rgba(30,40,60,.35); }
+  .card .shot .watch { width:200px; aspect-ratio:416/496; border:10px solid var(--bezel); border-radius:48px; overflow:hidden;
+                       background:#000; margin-top:40px; box-shadow:0 20px 40px -20px rgba(30,40,60,.35); }
+  .card .shot .watch img { width:100%; display:block; }
+  .card p { margin:0; padding:24px 28px 28px; font-size:17px; color:var(--dim); }
+  .card p b { color:var(--ink); font-weight:600; }
+  .pro { display:inline-block; font-size:12px; font-weight:600; color:var(--accent); border:1px solid currentColor;
+         border-radius:999px; padding:1px 8px; margin-left:6px; vertical-align:2px; }
+
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; padding-bottom:96px; }
+  .split.rev .text { order:2; }
+  h2 { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 0 20px; }
+  .split .text p { font-size:18px; color:var(--dim); margin:0; max-width:28em; }
+
+  .pricing { display:grid; grid-template-columns:1fr 1fr; gap:20px; padding-bottom:96px; }
+  .pricing h2 { grid-column:1/-1; text-align:center; margin-bottom:12px; }
+  .plan { background:var(--surface); border-radius:32px; padding:32px; }
+  .plan h3 { font-size:22px; letter-spacing:-0.02em; margin:0 0 4px; }
+  .plan .note { color:var(--dim); margin:0 0 16px; font-size:15px; }
+  .plan ul { margin:0; padding-left:1.1em; }
+  .plan li { margin:.35em 0; }
+
+  .faq { max-width:760px; padding-bottom:96px; }
+  .faq h2 { text-align:center; margin-bottom:32px; }
+  .faq .q { border-top:1px solid var(--track); padding:20px 0; }
+  .faq .q:last-child { border-bottom:1px solid var(--track); }
+  .faq .q b { display:block; font-weight:600; margin-bottom:4px; }
+  .faq .q span { color:var(--dim); }
+
+  .closing { text-align:center; padding:32px 24px 96px; }
+  .closing p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto 32px; max-width:18em; }
+  footer { text-align:center; color:var(--dim); font-size:14px; padding:0 24px 48px; }
+
+  @media (max-width: 820px) {
+    .wrap { padding:0 16px; }
+    .hero, .split, .pricing { grid-template-columns:1fr; gap:40px; }
+    .hero { padding-top:48px; padding-bottom:64px; }
+    .split.rev .text { order:0; }
+    h1 { font-size:40px; }
+    h2, .statement p, .closing p { font-size:30px; }
+    .statement { padding:64px 16px; }
+    .cards { grid-template-columns:1fr; padding-bottom:64px; }
+    .split, .pricing, .faq { padding-bottom:64px; }
+    .device { max-width:260px; }
+  }
+</style>
+<style>
+  :lang(ja) h1, :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { letter-spacing:0.01em; line-height:1.35; }
+  :lang(ja) h1 { font-size:46px; }
+  @media (max-width: 820px) { :lang(ja) h1 { font-size:34px; } :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { font-size:26px; } }
+  :lang(ja) body { word-break:auto-phrase; }
+  .nb { display:inline-block; }
+  .plan h3 .price { font-weight:400; color:var(--dim); margin-left:8px; }
+  .hero .price-line { margin:14px 0 0; font-size:15px; color:var(--dim); }
+  .hero .price-line b { color:var(--ink); font-weight:600; }
+  .plan .fine { color:var(--dim); font-size:14px; margin:16px 0 0; }
+  .faq .all { text-align:center; margin:24px 0 0; }
+  .credit { max-width:760px; margin:0 auto; padding:0 24px 96px; color:var(--dim); font-size:15px; }
+  .credit h2 { text-align:center; margin-bottom:16px; }
+  .pair { position:relative; justify-self:center; width:100%; max-width:380px; aspect-ratio:380/600; }
+  .pair .device { position:absolute; max-width:250px; }
+  .pair .device:first-child { left:0; top:0; }
+  .pair .device:last-child { right:0; bottom:0; }
+  .crop { display:none; }
+  @media (max-width: 820px) {
+    .hero > .device, .hero > .pair { display:none; }
+    .crop { display:block; margin:0 0 24px; border-radius:28px; overflow:hidden; box-shadow:0 20px 40px -20px rgba(30,40,60,.35); }
+    .crop img { width:100%; display:block; }
+    .credit { padding:0 16px 64px; }
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "Mantel",
+   "alternateName": [
+    "Mantel – 照片小工具"
+   ],
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "PhotographyApplication",
+   "description": "在主畫面小工具中輪流顯示你挑選的照片的 iPhone App。不用訂閱、沒有廣告、不需帳號。",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/",
+   "installUrl": "https://apps.apple.com/app/id6814138903?pt=129250766&ct=lp-mantel-zh-hant&mt=8",
+   "offers": [
+    {
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "TWD",
+     "description": "免費使用，Pro 為一次性購買。不是訂閱制。"
+    },
+    {
+     "@type": "Offer",
+     "name": "Mantel Pro",
+     "price": "220",
+     "priceCurrency": "TWD",
+     "description": "一次性 App 內購買，不是訂閱制。"
+    }
+   ],
+   "author": {
+    "@type": "Person",
+    "name": "minari"
+   },
+   "inLanguage": "zh-Hant"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "有不用訂閱的照片小工具嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "有。Mantel 的小型小工具（一個相片組，最多 12 張照片）免費，Pro 為一次性購買。沒有廣告。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "小工具把照片裡的臉裁掉了。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "在相片組中長按照片，選擇「調整位置」，再點一下想保留在畫面中的位置。小工具會以該點為中心裁切。若要不裁切地顯示照片，請選擇「完整照片」。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "照片沒有切換。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "只有一張照片的相片組不會切換。加入兩張以上的照片後，小工具會依你設定的頻率切換到下一張（免費版為每小時）。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Mantel 需要取用我的整個照片圖庫嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不需要。Mantel 使用 iPhone 標準的照片選擇器，所以只看得到你挑選的照片。你的原始照片絕不會被更改。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "我的照片會被上傳到哪裡嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "照片絕不會傳送到開發者的伺服器。照片儲存在你的裝置上，而且——只有在使用 Pro 並開啟「使用 iCloud 同步」時——也會存放在你自己的 iCloud 中（可在設定中關閉）。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "要如何聯絡你？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "在 Mantel 中前往 設定 →「聯絡我們・回報問題」即可寄送電子郵件。App 版本、iOS 版本和 iPhone 機型會自動填入。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "我的中型或大型小工具上有鎖頭。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "中型、大型和鎖定畫面小工具是 Pro 功能。免費版包含一個小型小工具。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Pro 在我的另一台 iPhone 上無法使用。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "請確認那台 iPhone 的 App Store 登入的是購買時使用的同一個 Apple 帳號，然後在 Mantel 的設定中點一下「回復購買項目」。剛購買後，可能需要一點時間才會顯示。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<nav class="nav"><div class="nav-inner"><img src="../img/icon.png" alt="">Mantel<a class="lang" href="../ja/">日本語</a><a class="lang" href="../pt/">Português</a></div></nav>
+
+<section class="wrap hero">
+  <div>
+    <h1><span class="lead">你自己的照片，</span> <span class="nb">放在主畫面上。</span></h1>
+    <div class="crop"><img src="../img/crop_en.jpg" alt="iPhone 主畫面上的 Mantel 照片小工具，旁邊是相片組的切換與隨機播放設定"></div>
+    <p class="sub">挑幾張照片，就會在小工具中輪流顯示。沒有廣告，不需帳號。</p>
+    <a class="badge" href="https://apps.apple.com/app/id6814138903?pt=129250766&ct=lp-mantel-zh-hant&mt=8"><img src="../img/badge_en.svg" alt="在 App Store 下載"></a>
+    <p class="price-line">切換頻率、隨機播放與無限照片，來自 <b>Pro, NT$220</b> — 一次性購買</p>
+    <ul class="facts"><li>不用訂閱</li><li>沒有廣告</li><li>不需帳號</li><li>只有你挑選的照片</li></ul>
+  </div>
+  <div class="pair"><div class="device"><img src="../img/home_photo_en.jpg" alt="iPhone 主畫面上的 Mantel 照片小工具，旁邊是相片組的切換與隨機播放設定"></div><div class="device"><img src="../img/detail_zh-Hant.jpg" alt=""></div></div>
+</section>
+
+<section class="statement">
+  <p><span class="lead">你的狗、你的朋友、去年夏天——</span> 就在你每天會看的地方。</p>
+</section>
+
+<section class="wrap split">
+  <div class="text">
+    <h2><span class="lead">切換頻率</span> <span class="nb">與隨機播放。</span></h2>
+    <p>使用 Pro，照片可每 15 分鐘、每小時、每 6 小時或每天切換——依序或隨機。免費版為每小時切換。</p>
+  </div>
+  <div class="device"><img src="../img/detail_zh-Hant.jpg" alt="" loading="lazy"></div>
+</section>
+<section class="wrap split rev">
+  <div class="text">
+    <h2><span class="lead">家人、旅行、寵物——</span> <span class="nb">一個小工具一個相片組。</span></h2>
+    <p>Pro 的相片組數量與每組照片數都無限制。免費版為一個相片組，最多 12 張照片。達到上限時，已加入的內容絕不會被刪除，只是無法再新增。</p>
+  </div>
+  <div class="device"><img src="../img/main_sets_en.jpg" alt="" loading="lazy"></div>
+</section>
+
+<section class="wrap pricing">
+  <h2>價格，說清楚</h2>
+  <div class="plan"><h3>免費</h3><p class="note">沒有廣告。不需帳號。沒有時間限制。</p><ul><li>用系統的照片選擇器挑照片——Mantel 絕不會要求取用你的整個照片圖庫</li><li>一個相片組，最多 12 張照片</li><li>主畫面上每小時切換照片的小型小工具</li><li>可選擇每張照片要填滿畫框，或完整放入畫框內</li></ul></div>
+  <div class="plan"><h3>Mantel Pro<span class="price">NT$220</span></h3><p class="note">一次性購買，不是訂閱制。</p><ul><li>中型、大型和超大型小工具，想放幾個都可以</li><li>無限相片組——家人、旅行、寵物——一個小工具一個相片組</li><li>每組照片數無限制</li><li>切換頻率：每 15 分鐘、每小時、每 6 小時或每天</li><li>隨機播放</li><li>依時段切換相片組</li><li>在照片上寫一句話</li><li>使用 iCloud 同步</li></ul></div>
+</section>
+
+
+
+<section class="wrap faq">
+  <h2>常見問題</h2>
+  <div class="q"><b>有不用訂閱的照片小工具嗎？</b><span>有。Mantel 的小型小工具（一個相片組，最多 12 張照片）免費，Pro 為一次性購買。沒有廣告。</span></div>
+  <div class="q"><b>小工具把照片裡的臉裁掉了。</b><span>在相片組中長按照片，選擇「調整位置」，再點一下想保留在畫面中的位置。小工具會以該點為中心裁切。若要不裁切地顯示照片，請選擇「完整照片」。 <a href="../guide/faces-cut-off/">附截圖的逐步教學</a></span></div>
+  <div class="q"><b>照片沒有切換。</b><span>只有一張照片的相片組不會切換。加入兩張以上的照片後，小工具會依你設定的頻率切換到下一張（免費版為每小時）。 <a href="../guide/photos-not-changing/">逐步檢查項目</a></span></div>
+  <div class="q"><b>Mantel 需要取用我的整個照片圖庫嗎？</b><span>不需要。Mantel 使用 iPhone 標準的照片選擇器，所以只看得到你挑選的照片。你的原始照片絕不會被更改。</span></div>
+  <div class="q"><b>我的照片會被上傳到哪裡嗎？</b><span>照片絕不會傳送到開發者的伺服器。照片儲存在你的裝置上，而且——只有在使用 Pro 並開啟「使用 iCloud 同步」時——也會存放在你自己的 iCloud 中（可在設定中關閉）。</span></div>
+  <div class="q"><b>我的中型或大型小工具上有鎖頭。</b><span>中型、大型和鎖定畫面小工具是 Pro 功能。免費版包含一個小型小工具。</span></div>
+  <div class="q"><b>Pro 在我的另一台 iPhone 上無法使用。</b><span>請確認那台 iPhone 的 App Store 登入的是購買時使用的同一個 Apple 帳號，然後在 Mantel 的設定中點一下「回復購買項目」。剛購買後，可能需要一點時間才會顯示。</span></div>
+  <div class="q"><b>選擇照片要顯示的部分</b><span>在相片組中長按照片，選擇「調整位置」，再點一下想保留在畫面中的位置。小工具會以該點為中心裁切。</span></div>
+  <div class="q"><b>填滿畫框或完整照片</b><span>「填滿畫框」會填滿整個小工具（照片邊緣可能被裁掉）。「完整照片」會不裁切地顯示整張照片，周圍留有少許邊界。</span></div>
+  <div class="q"><b>依時段切換相片組（Pro）</b><span>在相片組中開啟「在固定時段顯示」，並選擇時段與星期。接著長按小工具，打開「編輯小工具」，選擇「依時段切換」。</span></div>
+  <div class="q"><b>在照片上寫一句話（Pro）</b><span>在相片組的「照片上的文字」中輸入一句短短的話。這句話會顯示在小工具中的照片上。</span></div>
+  <div class="q"><b>與你的另一台 iPhone 同步（Pro）</b><span>使用 Pro 時，「使用 iCloud 同步」一開始就是開啟的。在另一台使用同一個 Apple 帳號的 iPhone 上打開 Mantel，就會出現相同的相片組和照片。</span></div>
+  <div class="q"><b>要如何聯絡你？</b><span>在 Mantel 中前往 設定 →「聯絡我們・回報問題」即可寄送電子郵件。App 版本、iOS 版本和 iPhone 機型會自動填入。</span></div>
+</section>
+
+<!-- xapps -->
+<style>
+  .xapps { margin-top:72px; margin-bottom:72px; }
+  .xapps h2 { text-align:center; margin:0 0 24px; }
+  .xapps ul { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(290px, 1fr)); gap:12px; }
+  .xapps li { margin:0; }
+  .xapps a { display:flex; gap:16px; align-items:center; background:var(--surface, transparent); border:1px solid var(--line, transparent);
+             border-radius:24px; padding:16px 20px 16px 16px; text-decoration:none; color:var(--ink); }
+  .xapps img { width:56px; height:56px; border-radius:13px; flex:none; box-shadow:0 0 0 0.5px rgba(0,0,0,.08); }
+  .xapps a > span { color:var(--dim); font-size:15px; line-height:1.4; }
+  .xapps b { display:block; font-weight:600; font-size:17px; color:var(--ink); }
+  .xapps .note { text-align:center; color:var(--dim); font-size:15px; margin:20px 0 0; }
+</style>
+<section class="wrap xapps">
+  <h2>更多 App</h2>
+  <ul>
+    <li><a href="../../savebar/"><img src="../../../icons/savebar.png" alt="" loading="lazy"><span><b>Savebar</b>儲蓄目標，變成小工具</span></a></li>
+    <li><a href="../../datto/"><img src="../../../icons/datto.png" alt="" loading="lazy"><span><b>Datto</b>倒數重要的日子</span></a></li>
+    <li><a href="../../kotoba/"><img src="../../../icons/kotoba.png" alt="" loading="lazy"><span><b>Kotoba</b>你的話語，變成小工具</span></a></li>
+    <li><a href="../../bookspine/"><img src="../../../icons/bookspine.png" alt="" loading="lazy"><span><b>Bookspine</b>你讀過的書，變成小工具</span></a></li>
+    <li><a href="../../todayboard/"><img src="../../../icons/todayboard.png" alt="" loading="lazy"><span><b>Todayboard</b>各個行事曆，分開顯示</span></a></li>
+  </ul>
+  <p class="note">沒有廣告，不用訂閱。Pro 為一次性購買。</p>
+</section>
+<!-- /xapps -->
+
+<section class="closing">
+  <p><span class="lead">不用訂閱，</span> 沒有廣告，不需帳號。</p>
+  <a class="badge" href="https://apps.apple.com/app/id6814138903?pt=129250766&ct=lp-mantel-zh-hant&mt=8"><img src="../img/badge_en.svg" alt="在 App Store 下載"></a>
+</section>
+
+<footer>18 種語言 · iOS 17 或以上版本 · 由 minari 製作 · <a href="../../../privacy/mantel/">隱私權政策</a></footer>
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <b>繁體中文</b> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->

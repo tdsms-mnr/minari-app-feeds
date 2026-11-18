@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="th">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6814139080">
+<title>วิธีแสดงเฉพาะปฏิทินงานในวิดเจ็ต iPhone — Todayboard</title>
+<meta name="description" content="แสดงเฉพาะปฏิทินงาน รวมถึง Google ปฏิทิน ในวิดเจ็ตบนหน้าจอโฮมของ iPhone หรือแยกปฏิทินงานกับปฏิทินส่วนตัวไว้คนละวิดเจ็ต อ่านอย่างเดียว ไม่ต้องมีบัญชี การเลือกปฏิทินเป็นส่วนหนึ่งของ Todayboard Pro ซึ่งซื้อครั้งเดียว">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/th/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#3B55B5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#8FA2F0; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "วิธีแสดงเฉพาะปฏิทินงานในวิดเจ็ต iPhone",
+   "inLanguage": "th",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "ตรวจสอบว่าปฏิทินงานอยู่ในแอปปฏิทินของ iPhone แล้ว ถ้ายังไม่มี ให้เพิ่มบัญชีที่ การตั้งค่า → แอป → ปฏิทิน → บัญชีปฏิทิน → เพิ่มบัญชี แล้วเปิดปฏิทินของบัญชีนั้น"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "เปิด Todayboard แตะ “ดำเนินการต่อ” แล้วอนุญาตให้เข้าถึงปฏิทินแบบเต็ม การเข้าถึงเป็นแบบอ่านอย่างเดียว"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "เมื่อมี Todayboard Pro ให้แตะ “ปฏิทินที่แสดง” ในการ์ด การแสดงผล แล้วเลือกเฉพาะปฏิทินงาน"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "แตะค้างที่หน้าจอโฮม แตะ แก้ไข แล้วแตะ เพิ่มวิดเจ็ต ค้นหา “Todayboard” เลือกขนาด แล้วแตะ เพิ่มวิดเจ็ต"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "ถ้าต้องการแยกวิดเจ็ตงานกับวิดเจ็ตส่วนตัว ให้แตะค้างที่วิดเจ็ต แตะ แก้ไขวิดเจ็ต แล้วเลือกปฏิทินของวิดเจ็ตนั้น"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "แสดง Google ปฏิทินของฉันได้ไหม",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ได้ เพิ่มบัญชี Google ที่ การตั้งค่า → แอป → ปฏิทิน → บัญชีปฏิทิน → เพิ่มบัญชี แล้วเปิดปฏิทิน นัดหมายจะขึ้นในแอปปฏิทินของ iPhone และ Todayboard จะแสดงนัดหมายเหล่านั้น Todayboard ไม่เคยลงชื่อเข้าใช้ Google เอง"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ทำแบบนี้ได้ฟรีไหม",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "วิดเจ็ตขนาดเล็กแบบฟรีแสดงนัดหมายวันนี้จากทุกปฏิทิน และ “ซ่อนนัดหมายทั้งวัน” ก็ใช้ได้ฟรี การเลือกปฏิทินที่จะแสดงเป็นส่วนหนึ่งของ Todayboard Pro ซึ่งซื้อครั้งเดียว พร้อมกับวิดเจ็ตขนาดกลางและใหญ่ วิดเจ็ตหน้าจอล็อค และการดูพรุ่งนี้หรือ 7 วันข้างหน้า"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "ปฏิทินงานของฉันไม่อยู่ในรายการ",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Todayboard อ่านปฏิทินที่ตั้งค่าไว้ใน iPhone ให้เพิ่มบัญชีที่ การตั้งค่า → แอป → ปฏิทิน → บัญชีปฏิทิน → เพิ่มบัญชี (ใน iOS 17: การตั้งค่า → ปฏิทิน → บัญชี) เปิดปฏิทินของบัญชีนั้น แล้วกลับมาที่ Todayboard"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "วิดเจ็ตขึ้นว่า “การเลือกปฏิทินเป็นของ Pro”",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "มีการเลือกปฏิทินใน แก้ไขวิดเจ็ต โดยไม่มี Pro ให้ล้างตัวเลือกใน แก้ไขวิดเจ็ต เพื่อแสดงทุกปฏิทินอีกครั้ง หรือซื้อ Todayboard Pro"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Todayboard แก้ไขหรืออัปโหลดนัดหมายของฉันไหม",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "ไม่ การเข้าถึงปฏิทินเป็นแบบอ่านอย่างเดียว และไม่มีข้อมูลใดออกจากอุปกรณ์ของคุณ"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Todayboard</a> · คู่มือ · <a href="../ja/">日本語</a></p>
+<h1>วิธีแสดงเฉพาะปฏิทินงานในวิดเจ็ต iPhone</h1>
+<p class="lede">ถ้า iPhone มีทั้งปฏิทินงานและปฏิทินส่วนตัว วิดเจ็ตที่แสดงทุกอย่างจะดูแน่น วิดเจ็ตที่มีแค่ปฏิทินงานจะบอกเฉพาะงานถัดไปเท่านั้น</p>
+<p>นี่คือวิธีทำด้วย <a href="../../../">Todayboard</a>ซึ่งเป็นวิดเจ็ตปฏิทินที่อ่านปฏิทินที่มีอยู่แล้วใน iPhone การเลือกปฏิทินเป็นส่วนหนึ่งของ Todayboard Pro ซึ่งซื้อครั้งเดียว วิดเจ็ตขนาดเล็กแบบฟรีแสดงทุกปฏิทินของคุณ</p>
+
+<h2>1. ตรวจสอบว่าปฏิทินงานอยู่ใน iPhone</h2>
+<p>Todayboard อ่านนัดหมายในแอปปฏิทินของ iPhone ถ้าปฏิทินงานยังไม่อยู่ในนั้น:</p>
+<ol>
+  <li>เปิด <b>การตั้งค่า → แอป → ปฏิทิน → บัญชีปฏิทิน</b> (ใน iOS 17: <b>การตั้งค่า → ปฏิทิน → บัญชี</b>).</li>
+  <li>แตะ <b>เพิ่มบัญชี</b> แล้วเพิ่มบัญชีงานของคุณ เช่น บัญชี Google</li>
+  <li>เปิด <b>ปฏิทิน</b> ของบัญชีนั้น</li>
+</ol>
+
+<h2>2. อนุญาตการเข้าถึงปฏิทิน</h2>
+<p>เปิด Todayboard แตะ <b>ดำเนินการต่อ</b> แล้วอนุญาตการเข้าถึงแบบเต็ม การเข้าถึงเป็นแบบอ่านอย่างเดียว: Todayboard ไม่แก้ไขนัดหมายของคุณ</p>
+<p class="dim">เผลอปฏิเสธไปแล้ว? iPhone จะไม่ถามอีก ให้เปิด การตั้งค่า → ปฏิทิน แล้วเลือก การเข้าถึงเต็มรูปแบบ</p>
+
+<h2>3. เลือกปฏิทินงาน (Pro)</h2>
+<ol>
+  <li>ในหน้าจอหลักของ Todayboard หาการ์ด <b>การแสดงผล</b> ให้เจอ</li>
+  <li>แตะ <b>“ปฏิทินที่แสดง”</b> แล้วเลือกเฉพาะปฏิทินงาน</li>
+  <li>ไม่บังคับ: เปิด <b>“ซ่อนนัดหมายทั้งวัน”</b> เพื่อซ่อนวันเกิดและวันหยุด ตัวเลือกนี้ใช้ได้ฟรี</li>
+</ol>
+
+<h2>4. วางวิดเจ็ตบนหน้าจอโฮม</h2>
+<ol>
+  <li>ไปที่หน้าจอโฮม แตะค้างที่พื้นที่ว่างจนแอปเริ่มสั่น</li>
+  <li>แตะ <b>แก้ไข</b> ที่มุมซ้ายบน แล้วแตะ <b>เพิ่มวิดเจ็ต</b>.</li>
+  <li>ค้นหา <b>“Todayboard”</b>เลือกขนาด แล้วแตะ <b>เพิ่มวิดเจ็ต</b>.</li>
+</ol>
+
+<h2>5. แยกวิดเจ็ตงานกับวิดเจ็ตส่วนตัว (Pro)</h2>
+<p>แต่ละวิดเจ็ตแสดงปฏิทินของตัวเองได้ แตะค้างที่วิดเจ็ต แตะ <b>แก้ไขวิดเจ็ต</b>แล้วเลือก <b>ปฏิทิน</b>ของวิดเจ็ตนั้น วิดเจ็ตที่ไม่ได้เลือกอะไรจะใช้ “ปฏิทินที่แสดง” ในแอป</p>
+
+<h2>ต้องการเพิ่มเติม?</h2>
+<p>Todayboard Pro ซื้อครั้งเดียว ไม่ใช่การสมัครสมาชิก:</p>
+<ul>
+  <li>เลือกปฏิทินที่จะแสดง ทั้งในแอปและแยกตามวิดเจ็ต</li>
+  <li>วิดเจ็ตขนาดกลาง (วันนี้และพรุ่งนี้) และขนาดใหญ่ (สูงสุด 7 วัน)</li>
+  <li>วิดเจ็ตหน้าจอล็อค</li>
+</ul>
+
+<h2>คำถาม</h2>
+<div class="q"><b>แสดง Google ปฏิทินของฉันได้ไหม</b>ได้ เพิ่มบัญชี Google ที่ การตั้งค่า → แอป → ปฏิทิน → บัญชีปฏิทิน → เพิ่มบัญชี แล้วเปิดปฏิทิน นัดหมายจะขึ้นในแอปปฏิทินของ iPhone และ Todayboard จะแสดงนัดหมายเหล่านั้น Todayboard ไม่เคยลงชื่อเข้าใช้ Google เอง</div>
+<div class="q"><b>ทำแบบนี้ได้ฟรีไหม</b>วิดเจ็ตขนาดเล็กแบบฟรีแสดงนัดหมายวันนี้จากทุกปฏิทิน และ “ซ่อนนัดหมายทั้งวัน” ก็ใช้ได้ฟรี การเลือกปฏิทินที่จะแสดงเป็นส่วนหนึ่งของ Todayboard Pro ซึ่งซื้อครั้งเดียว พร้อมกับวิดเจ็ตขนาดกลางและใหญ่ วิดเจ็ตหน้าจอล็อค และการดูพรุ่งนี้หรือ 7 วันข้างหน้า</div>
+<div class="q"><b>ปฏิทินงานของฉันไม่อยู่ในรายการ</b>Todayboard อ่านปฏิทินที่ตั้งค่าไว้ใน iPhone ให้เพิ่มบัญชีที่ การตั้งค่า → แอป → ปฏิทิน → บัญชีปฏิทิน → เพิ่มบัญชี (ใน iOS 17: การตั้งค่า → ปฏิทิน → บัญชี) เปิดปฏิทินของบัญชีนั้น แล้วกลับมาที่ Todayboard</div>
+<div class="q"><b>วิดเจ็ตขึ้นว่า “การเลือกปฏิทินเป็นของ Pro”</b>มีการเลือกปฏิทินใน แก้ไขวิดเจ็ต โดยไม่มี Pro ให้ล้างตัวเลือกใน แก้ไขวิดเจ็ต เพื่อแสดงทุกปฏิทินอีกครั้ง หรือซื้อ Todayboard Pro</div>
+<div class="q"><b>Todayboard แก้ไขหรืออัปโหลดนัดหมายของฉันไหม</b>ไม่ การเข้าถึงปฏิทินเป็นแบบอ่านอย่างเดียว และไม่มีข้อมูลใดออกจากอุปกรณ์ของคุณ</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6814139080?pt=129250766&ct=guide-work-calendar-widget-todayboard-th&mt=8">ดาวน์โหลด Todayboard จาก App Store</a>
+<p class="dim">ไม่มีการสมัครสมาชิก ไม่มีโฆษณา ไม่ต้องมีบัญชี · <a href="../../../">เกี่ยวกับ Todayboard</a> · <a href="../../../faq/">วิธีใช้ &amp; คำถามที่พบบ่อยทั้งหมด</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <b>ไทย</b> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-Hans">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6796988697">
+<title>如何把自己的话或喜欢的名言放到 iPhone 主屏幕上 — Kotoba</title>
+<meta name="description" content="用自定义文字小组件，把座右铭、书中的一句话或你自己的话放到 iPhone 主屏幕或锁定屏幕上。Kotoba 可免费保存 20 条句子，并在小组件上免费显示 1 条句子。无需订阅。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/zh/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF7F2; --accent:#B0735C; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171513; --accent:#D3987E; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "如何把自己的话或喜欢的名言放到 iPhone 主屏幕上",
+   "inLanguage": "zh-Hans",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "打开 Kotoba，轻点右下角的 +。在“句子”下输入文字；出处、标签和背景颜色可选填。轻点“保存”。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "在主屏幕的空白处按住，轻点“编辑”（或 +），然后搜索“Kotoba”。选择尺寸，再轻点“添加小组件”。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "按住小组件，轻点“编辑小组件”，然后在“句子”下选择要显示的文字。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "锁定屏幕：按住锁定屏幕，轻点“自定”，轻点小组件区域，然后添加 Kotoba。"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "需要注册账户或订阅吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不需要。你的句子只保存在 iPhone 上。可免费保存 20 条句子，小组件上可免费显示 1 条句子。Kotoba Pro 是一次买断，不是订阅。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "我的小组件显示“Pro 版可显示”。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "免费版中，小组件只显示 1 条句子。想显示其他文字，请在 Kotoba 中打开菜单（…），轻点“更换小组件上的句子”，然后按住小组件，轻点“编辑小组件”，选择新的句子。让多个小组件同时显示不同的句子属于 Pro 功能。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "文字可以每天自动更换吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以，需要 Pro：在“编辑小组件”中，把“显示方式”设为“每天更换”“每周更换”或“每小时更换”。它会从你自己的句子中挑选，也可以按标签缩小范围。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "存满 20 条句子会怎样？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "已保存的内容不会被删除，只是不能再添加新句子。升级 Pro 后可以想加多少就加多少。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Kotoba</a> · 使用指南 · <a href="../ja/">日本語</a></p>
+<h1>如何把自己的话或喜欢的名言放到 iPhone 主屏幕上</h1>
+<p class="lede">座右铭、书里或电影里的一句话、对自己的承诺。存在备忘录里，很快就被淹没了。放在小组件上，每次拿起手机都能看到。</p>
+<p>下面介绍如何用 <a href="../../../">Kotoba</a>（一款自定义文字小组件）来实现。可免费保存 20 条句子，并在小组件上免费显示 1 条句子。</p>
+
+<h2>1. 保存你的文字</h2>
+<ol>
+  <li>打开 Kotoba，轻点右下角的 <b>+</b> 。</li>
+  <li>在以下栏目输入文字： <b>句子</b>.</li>
+  <li>可选：添加 <b>出处</b> （一本书、一部电影、一位朋友）， <b>标签</b> 以及小组件的 <b>背景</b> 颜色。</li>
+  <li>轻点 <b>保存</b>.</li>
+</ol>
+<p class="dim">第一次打开 Kotoba 时，会有几条示例句子。可以保留，也可以删除。</p>
+<figure><img src="../../../img/edit_zh-Hans.jpg" alt="在 Kotoba 中编辑句子：句子、出处、标签和背景颜色" width="460" height="1000" loading="lazy"></figure>
+
+<h2>2. 把小组件放到主屏幕上</h2>
+<ol>
+  <li>在主屏幕的空白处按住。</li>
+  <li>轻点 <b>编辑</b> （或 <b>+</b>），它在屏幕顶部角落，然后搜索 <b>“Kotoba”</b>.</li>
+  <li>选择小、中或大尺寸，然后轻点 <b>添加小组件</b>.</li>
+</ol>
+
+<h2>3. 选择要显示的文字</h2>
+<p>按住小组件，轻点 <b>编辑小组件</b>，然后在以下栏目选择文字： <b>句子</b>。如果不选择，会显示列表中的第一条句子。轻点小组件，可在 App 中打开那条句子。</p>
+<figure><img src="../../../img/widget_en.jpg" alt="iPhone 主屏幕上的小尺寸 Kotoba 小组件，在棕色背景上用白字显示一句谚语" width="400" height="448" loading="lazy"></figure>
+
+<h2>在锁定屏幕上</h2>
+<p>按住锁定屏幕，轻点 <b>自定</b>，选择锁定屏幕，轻点小组件区域，然后添加 Kotoba。锁定屏幕有三种样式可选。选择句子的方法相同，使用“编辑小组件”。</p>
+
+<h2>想要更多？</h2>
+<p>Kotoba Pro 是一次买断，不是订阅：</p>
+<ul>
+  <li>句子数量不限</li>
+  <li>小组件数量不限，每个可显示不同的文字</li>
+  <li>每天、每周或每小时从你自己的句子中换一条新的（也可以按标签缩小范围）</li>
+  <li>每个小组件可单独设置字体、字号和对齐方式</li>
+  <li>导入备份和 iCloud 同步，适用于新设备或第二台设备</li>
+</ul>
+
+<h2>常见问题</h2>
+<div class="q"><b>需要注册账户或订阅吗？</b>不需要。你的句子只保存在 iPhone 上。可免费保存 20 条句子，小组件上可免费显示 1 条句子。Kotoba Pro 是一次买断，不是订阅。</div>
+<div class="q"><b>我的小组件显示“Pro 版可显示”。</b>免费版中，小组件只显示 1 条句子。想显示其他文字，请在 Kotoba 中打开菜单（…），轻点“更换小组件上的句子”，然后按住小组件，轻点“编辑小组件”，选择新的句子。让多个小组件同时显示不同的句子属于 Pro 功能。</div>
+<div class="q"><b>文字可以每天自动更换吗？</b>可以，需要 Pro：在“编辑小组件”中，把“显示方式”设为“每天更换”“每周更换”或“每小时更换”。它会从你自己的句子中挑选，也可以按标签缩小范围。</div>
+<div class="q"><b>存满 20 条句子会怎样？</b>已保存的内容不会被删除，只是不能再添加新句子。升级 Pro 后可以想加多少就加多少。</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6796988697?pt=129250766&ct=guide-home-screen-quote-kotoba-zh&mt=8">在 App Store 获取 Kotoba</a>
+<p class="dim">无订阅、无广告、无通知、无需账户。· <a href="../../../">关于 Kotoba</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <b>简体中文</b> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

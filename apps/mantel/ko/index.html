@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<script src="/minari-app-feeds/legacy-notice.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6814138903">
+<title>Mantel — 내 사진을 홈 화면에 (사진 위젯, 구독 없음)</title>
+<meta name="description" content="고른 사진을 홈 화면 위젯에서 번갈아 보여주는 iPhone 앱. 구독 없음, 광고 없음, 계정 없음.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ko/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/">
+<style>
+  :root { --bezel:#2B2B2B; --bg:#FAF9F7; --surface:#FFFFFF; --ink:#2B2B2B; --dim:#6B6B6B; --track:#ECEAE6; --accent:#2E6E70; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bezel:#3A3A3C; --bg:#171614; --surface:#22201E; --ink:#ECE9E6; --dim:#A09A94; --track:#332F2C; --accent:#7CC5C7; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif;
+         -webkit-font-smoothing: antialiased; line-height:1.6; }
+  a { color:var(--accent); }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
+  .nav { position:sticky; top:12px; z-index:2; display:flex; justify-content:center; padding:0 16px; }
+  .nav-inner { display:flex; align-items:center; gap:10px; padding:8px 18px 8px 10px; border-radius:999px;
+               background:color-mix(in srgb, var(--surface) 80%, transparent); backdrop-filter:blur(12px);
+               box-shadow:0 1px 8px rgba(0,0,0,.06); font-weight:600; font-size:15px; }
+  .nav img { width:28px; height:28px; border-radius:7px; }
+  .nav .lang { font-weight:400; font-size:14px; color:var(--dim); text-decoration:none; margin-left:8px; }
+
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center; padding-top:56px; padding-bottom:80px; }
+  h1 { font-size:52px; line-height:1.15; font-weight:700; letter-spacing:-0.03em; margin:0 0 24px; }
+  .lead { color:var(--accent); }
+  .sub { font-size:18px; color:var(--dim); margin:0 0 32px; max-width:30em; }
+  .badge { display:inline-block; }
+  .badge img { height:54px; display:block; }
+  .facts { display:flex; flex-wrap:wrap; gap:8px; margin:28px 0 0; padding:0; list-style:none; }
+  .facts li { font-size:14px; padding:6px 12px; border-radius:999px; background:var(--track); }
+
+  .device { width:100%; max-width:300px; aspect-ratio:1206/2622; border:10px solid var(--bezel); border-radius:52px;
+            overflow:hidden; box-shadow:0 30px 60px -20px rgba(30,40,60,.35); background:#000; justify-self:center; }
+  .device img { width:100%; height:100%; object-fit:cover; display:block; }
+
+  .statement { text-align:center; padding:96px 24px; }
+  .statement p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto; max-width:22em; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; padding-bottom:96px; }
+  .card { background:var(--surface); border-radius:32px; overflow:hidden; display:flex; flex-direction:column; }
+  .card .shot { background:var(--track); padding:32px 32px 0; display:flex; justify-content:center; align-items:flex-start;
+                height:380px; overflow:hidden; }
+  .card .shot.bottom { align-items:flex-end; padding:0 32px 32px; }
+  .card .shot .device { max-width:210px; border-width:7px; border-radius:36px; box-shadow:0 20px 40px -20px rgba(30,40,60,.35); }
+  .card .shot .watch { width:200px; aspect-ratio:416/496; border:10px solid var(--bezel); border-radius:48px; overflow:hidden;
+                       background:#000; margin-top:40px; box-shadow:0 20px 40px -20px rgba(30,40,60,.35); }
+  .card .shot .watch img { width:100%; display:block; }
+  .card p { margin:0; padding:24px 28px 28px; font-size:17px; color:var(--dim); }
+  .card p b { color:var(--ink); font-weight:600; }
+  .pro { display:inline-block; font-size:12px; font-weight:600; color:var(--accent); border:1px solid currentColor;
+         border-radius:999px; padding:1px 8px; margin-left:6px; vertical-align:2px; }
+
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; padding-bottom:96px; }
+  .split.rev .text { order:2; }
+  h2 { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 0 20px; }
+  .split .text p { font-size:18px; color:var(--dim); margin:0; max-width:28em; }
+
+  .pricing { display:grid; grid-template-columns:1fr 1fr; gap:20px; padding-bottom:96px; }
+  .pricing h2 { grid-column:1/-1; text-align:center; margin-bottom:12px; }
+  .plan { background:var(--surface); border-radius:32px; padding:32px; }
+  .plan h3 { font-size:22px; letter-spacing:-0.02em; margin:0 0 4px; }
+  .plan .note { color:var(--dim); margin:0 0 16px; font-size:15px; }
+  .plan ul { margin:0; padding-left:1.1em; }
+  .plan li { margin:.35em 0; }
+
+  .faq { max-width:760px; padding-bottom:96px; }
+  .faq h2 { text-align:center; margin-bottom:32px; }
+  .faq .q { border-top:1px solid var(--track); padding:20px 0; }
+  .faq .q:last-child { border-bottom:1px solid var(--track); }
+  .faq .q b { display:block; font-weight:600; margin-bottom:4px; }
+  .faq .q span { color:var(--dim); }
+
+  .closing { text-align:center; padding:32px 24px 96px; }
+  .closing p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto 32px; max-width:18em; }
+  footer { text-align:center; color:var(--dim); font-size:14px; padding:0 24px 48px; }
+
+  @media (max-width: 820px) {
+    .wrap { padding:0 16px; }
+    .hero, .split, .pricing { grid-template-columns:1fr; gap:40px; }
+    .hero { padding-top:48px; padding-bottom:64px; }
+    .split.rev .text { order:0; }
+    h1 { font-size:40px; }
+    h2, .statement p, .closing p { font-size:30px; }
+    .statement { padding:64px 16px; }
+    .cards { grid-template-columns:1fr; padding-bottom:64px; }
+    .split, .pricing, .faq { padding-bottom:64px; }
+    .device { max-width:260px; }
+  }
+</style>
+<style>
+  :lang(ja) h1, :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { letter-spacing:0.01em; line-height:1.35; }
+  :lang(ja) h1 { font-size:46px; }
+  @media (max-width: 820px) { :lang(ja) h1 { font-size:34px; } :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { font-size:26px; } }
+  :lang(ja) body { word-break:auto-phrase; }
+  .nb { display:inline-block; }
+  .plan h3 .price { font-weight:400; color:var(--dim); margin-left:8px; }
+  .hero .price-line { margin:14px 0 0; font-size:15px; color:var(--dim); }
+  .hero .price-line b { color:var(--ink); font-weight:600; }
+  .plan .fine { color:var(--dim); font-size:14px; margin:16px 0 0; }
+  .faq .all { text-align:center; margin:24px 0 0; }
+  .credit { max-width:760px; margin:0 auto; padding:0 24px 96px; color:var(--dim); font-size:15px; }
+  .credit h2 { text-align:center; margin-bottom:16px; }
+  .pair { position:relative; justify-self:center; width:100%; max-width:380px; aspect-ratio:380/600; }
+  .pair .device { position:absolute; max-width:250px; }
+  .pair .device:first-child { left:0; top:0; }
+  .pair .device:last-child { right:0; bottom:0; }
+  .crop { display:none; }
+  @media (max-width: 820px) {
+    .hero > .device, .hero > .pair { display:none; }
+    .crop { display:block; margin:0 0 24px; border-radius:28px; overflow:hidden; box-shadow:0 20px 40px -20px rgba(30,40,60,.35); }
+    .crop img { width:100%; display:block; }
+    .credit { padding:0 16px 64px; }
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "Mantel",
+   "alternateName": [
+    "Mantel – 사진 위젯"
+   ],
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "PhotographyApplication",
+   "description": "고른 사진을 홈 화면 위젯에서 번갈아 보여주는 iPhone 앱. 구독 없음, 광고 없음, 계정 없음.",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/",
+   "installUrl": "https://apps.apple.com/app/id6814138903?pt=129250766&ct=lp-mantel-ko&mt=8",
+   "offers": [
+    {
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "KRW",
+     "description": "무료이며, Pro는 한 번만 구입하면 돼요. 구독이 아니에요."
+    },
+    {
+     "@type": "Offer",
+     "name": "Mantel Pro",
+     "price": "11000",
+     "priceCurrency": "KRW",
+     "description": "한 번만 구입하는 앱 내 구입이며, 구독이 아니에요."
+    }
+   ],
+   "author": {
+    "@type": "Person",
+    "name": "minari"
+   },
+   "inLanguage": "ko"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "구독 없는 사진 위젯이 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "네. Mantel의 작은 위젯(사진 최대 12장짜리 세트 1개)은 무료이고, Pro는 한 번만 구입하면 돼요. 광고는 없어요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "위젯에서 사진 속 얼굴이 잘려요.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "세트에서 사진을 길게 누르고 “위치 조정”을 선택한 다음, 계속 보이게 하고 싶은 곳을 탭하세요. 위젯이 그 지점을 중심으로 사진을 잘라요. 사진을 자르지 않고 보여주려면 “사진 전체”를 선택하세요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "사진이 바뀌지 않아요.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "사진이 1장뿐인 세트는 바뀌지 않아요. 2장 이상 추가하면 설정한 간격마다 위젯이 다음 사진으로 넘어가요(무료 버전은 1시간마다)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Mantel이 사진 보관함 전체에 접근해야 하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "아니요. iPhone 기본 사진 선택 화면을 사용하기 때문에 Mantel은 고른 사진만 볼 수 있어요. 원본 사진은 절대 변경되지 않아요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "사진이 어딘가에 업로드되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "개발자의 서버로는 절대 전송되지 않아요. 사진은 기기에 저장되며, Pro에서 “iCloud로 동기화”를 켠 경우에만 본인의 iCloud에도 저장돼요(설정에서 끌 수 있어요)."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "문의는 어떻게 하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Mantel에서 설정 → “문의·문제 신고”로 이메일을 보낼 수 있어요. 앱 버전, iOS 버전, iPhone 모델은 자동으로 입력돼요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "중간 또는 큰 위젯에 자물쇠가 표시돼요.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "중간, 큰, 잠금 화면 위젯은 Pro 기능이에요. 무료 버전에는 작은 위젯 1개가 포함돼요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "다른 iPhone에서 Pro가 적용되지 않아요.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "그 iPhone의 App Store에 구입할 때와 같은 Apple 계정으로 로그인되어 있는지 확인한 다음, Mantel 설정에서 “구입 내역 복원”을 탭하세요. 구입 직후에는 반영되기까지 조금 시간이 걸릴 수 있어요."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<nav class="nav"><div class="nav-inner"><img src="../img/icon.png" alt="">Mantel<a class="lang" href="../ja/">日本語</a><a class="lang" href="../pt/">Português</a></div></nav>
+
+<section class="wrap hero">
+  <div>
+    <h1><span class="lead">내 사진을,</span> <span class="nb">홈 화면에.</span></h1>
+    <div class="crop"><img src="../img/crop_en.jpg" alt="iPhone 홈 화면의 Mantel 사진 위젯과 세트의 사진 전환·무작위 설정"></div>
+    <p class="sub">사진 몇 장만 고르면 위젯에서 번갈아 보여줘요. 광고 없음, 계정 없음.</p>
+    <a class="badge" href="https://apps.apple.com/app/id6814138903?pt=129250766&ct=lp-mantel-ko&mt=8"><img src="../img/badge_ko.svg" alt="App Store에서 다운로드"></a>
+    <p class="price-line">바뀌는 간격, 무작위, 사진 무제한은 <b>Pro, ₩11,000</b> — 한 번만 구입</p>
+    <ul class="facts"><li>구독 없음</li><li>광고 없음</li><li>계정 없음</li><li>고른 사진만</li></ul>
+  </div>
+  <div class="pair"><div class="device"><img src="../img/home_photo_en.jpg" alt="iPhone 홈 화면의 Mantel 사진 위젯과 세트의 사진 전환·무작위 설정"></div><div class="device"><img src="../img/detail_ko.jpg" alt=""></div></div>
+</section>
+
+<section class="statement">
+  <p><span class="lead">우리 집 강아지, 친구들, 지난여름 —</span> 늘 보는 바로 그 자리에.</p>
+</section>
+
+<section class="wrap split">
+  <div class="text">
+    <h2><span class="lead">바뀌는 간격과</span> <span class="nb">무작위.</span></h2>
+    <p>Pro에서는 15분, 1시간, 6시간, 하루마다 사진이 바뀌어요. 순서대로 또는 무작위로. 무료 버전은 1시간마다 바뀌어요.</p>
+  </div>
+  <div class="device"><img src="../img/detail_ko.jpg" alt="" loading="lazy"></div>
+</section>
+<section class="wrap split rev">
+  <div class="text">
+    <h2><span class="lead">가족, 여행, 반려동물 —</span> <span class="nb">위젯마다 세트 하나.</span></h2>
+    <p>Pro는 세트 수와 세트당 사진 수가 무제한이에요. 무료는 사진 최대 12장짜리 세트 1개예요. 한도에 도달해도 이미 추가한 것은 절대 삭제되지 않아요. 더 추가할 수 없게 될 뿐이에요.</p>
+  </div>
+  <div class="device"><img src="../img/main_sets_en.jpg" alt="" loading="lazy"></div>
+</section>
+
+<section class="wrap pricing">
+  <h2>요금, 솔직하게</h2>
+  <div class="plan"><h3>무료</h3><p class="note">광고 없음. 계정 없음. 기간 제한 없음.</p><ul><li>시스템 사진 선택 화면으로 사진 고르기 — Mantel은 사진 보관함 전체에 대한 접근을 요청하지 않아요</li><li>사진 최대 12장짜리 세트 1개</li><li>1시간마다 사진이 바뀌는 홈 화면의 작은 위젯</li><li>사진마다 프레임을 꽉 채울지, 안에 맞출지 선택</li></ul></div>
+  <div class="plan"><h3>Mantel Pro<span class="price">₩11,000</span></h3><p class="note">한 번만 구입, 구독이 아니에요.</p><ul><li>중간, 큰, 아주 큰 위젯을 원하는 만큼</li><li>세트 무제한 — 가족, 여행, 반려동물 — 위젯마다 세트 하나</li><li>세트당 사진 무제한</li><li>바뀌는 간격: 15분, 1시간, 6시간, 하루마다</li><li>무작위</li><li>시간대별로 세트 바꾸기</li><li>사진 위에 한마디 넣기</li><li>iCloud로 동기화</li></ul></div>
+</section>
+
+
+
+<section class="wrap faq">
+  <h2>자주 묻는 질문</h2>
+  <div class="q"><b>구독 없는 사진 위젯이 있나요?</b><span>네. Mantel의 작은 위젯(사진 최대 12장짜리 세트 1개)은 무료이고, Pro는 한 번만 구입하면 돼요. 광고는 없어요.</span></div>
+  <div class="q"><b>위젯에서 사진 속 얼굴이 잘려요.</b><span>세트에서 사진을 길게 누르고 “위치 조정”을 선택한 다음, 계속 보이게 하고 싶은 곳을 탭하세요. 위젯이 그 지점을 중심으로 사진을 잘라요. 사진을 자르지 않고 보여주려면 “사진 전체”를 선택하세요. <a href="../guide/faces-cut-off/">스크린샷으로 보는 단계별 가이드</a></span></div>
+  <div class="q"><b>사진이 바뀌지 않아요.</b><span>사진이 1장뿐인 세트는 바뀌지 않아요. 2장 이상 추가하면 설정한 간격마다 위젯이 다음 사진으로 넘어가요(무료 버전은 1시간마다). <a href="../guide/photos-not-changing/">확인할 것, 단계별로</a></span></div>
+  <div class="q"><b>Mantel이 사진 보관함 전체에 접근해야 하나요?</b><span>아니요. iPhone 기본 사진 선택 화면을 사용하기 때문에 Mantel은 고른 사진만 볼 수 있어요. 원본 사진은 절대 변경되지 않아요.</span></div>
+  <div class="q"><b>사진이 어딘가에 업로드되나요?</b><span>개발자의 서버로는 절대 전송되지 않아요. 사진은 기기에 저장되며, Pro에서 “iCloud로 동기화”를 켠 경우에만 본인의 iCloud에도 저장돼요(설정에서 끌 수 있어요).</span></div>
+  <div class="q"><b>중간 또는 큰 위젯에 자물쇠가 표시돼요.</b><span>중간, 큰, 잠금 화면 위젯은 Pro 기능이에요. 무료 버전에는 작은 위젯 1개가 포함돼요.</span></div>
+  <div class="q"><b>다른 iPhone에서 Pro가 적용되지 않아요.</b><span>그 iPhone의 App Store에 구입할 때와 같은 Apple 계정으로 로그인되어 있는지 확인한 다음, Mantel 설정에서 “구입 내역 복원”을 탭하세요. 구입 직후에는 반영되기까지 조금 시간이 걸릴 수 있어요.</span></div>
+  <div class="q"><b>사진에서 보일 부분 고르기</b><span>세트에서 사진을 길게 누르고 “위치 조정”을 선택한 다음, 계속 보이게 하고 싶은 곳을 탭하세요. 위젯이 그 지점을 중심으로 사진을 잘라요.</span></div>
+  <div class="q"><b>꽉 채우기 또는 사진 전체</b><span>“꽉 채우기”는 위젯을 가득 채워요(사진 가장자리가 잘릴 수 있어요). “사진 전체”는 사진을 자르지 않고 전체를 보여주며, 주위에 약간의 여백이 생겨요.</span></div>
+  <div class="q"><b>시간대별로 세트 바꾸기 (Pro)</b><span>세트에서 “정해진 시간에 보여주기”를 켜고 시간과 요일을 고르세요. 그다음 위젯을 길게 누르고 “위젯 편집”을 열어 “시간대별로 바꾸기”를 선택하세요.</span></div>
+  <div class="q"><b>사진 위에 한마디 넣기 (Pro)</b><span>세트의 “사진 위 문구”에 짧은 한 줄을 입력하세요. 위젯의 사진 위에 표시돼요.</span></div>
+  <div class="q"><b>다른 iPhone과 동기화 (Pro)</b><span>Pro에서는 “iCloud로 동기화”가 처음부터 켜져 있어요. 같은 Apple 계정을 쓰는 다른 iPhone에서 Mantel을 열면 같은 세트와 사진이 나타나요.</span></div>
+  <div class="q"><b>문의는 어떻게 하나요?</b><span>Mantel에서 설정 → “문의·문제 신고”로 이메일을 보낼 수 있어요. 앱 버전, iOS 버전, iPhone 모델은 자동으로 입력돼요.</span></div>
+</section>
+
+<!-- xapps -->
+<style>
+  .xapps { margin-top:72px; margin-bottom:72px; }
+  .xapps h2 { text-align:center; margin:0 0 24px; }
+  .xapps ul { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(290px, 1fr)); gap:12px; }
+  .xapps li { margin:0; }
+  .xapps a { display:flex; gap:16px; align-items:center; background:var(--surface, transparent); border:1px solid var(--line, transparent);
+             border-radius:24px; padding:16px 20px 16px 16px; text-decoration:none; color:var(--ink); }
+  .xapps img { width:56px; height:56px; border-radius:13px; flex:none; box-shadow:0 0 0 0.5px rgba(0,0,0,.08); }
+  .xapps a > span { color:var(--dim); font-size:15px; line-height:1.4; }
+  .xapps b { display:block; font-weight:600; font-size:17px; color:var(--ink); }
+  .xapps .note { text-align:center; color:var(--dim); font-size:15px; margin:20px 0 0; }
+</style>
+<section class="wrap xapps">
+  <h2>다른 앱</h2>
+  <ul>
+    <li><a href="../../savebar/"><img src="../../../icons/savebar.png" alt="" loading="lazy"><span><b>Savebar</b>저축 목표를 위젯으로</span></a></li>
+    <li><a href="../../datto/"><img src="../../../icons/datto.png" alt="" loading="lazy"><span><b>Datto</b>중요한 날까지 카운트다운</span></a></li>
+    <li><a href="../../kotoba/"><img src="../../../icons/kotoba.png" alt="" loading="lazy"><span><b>Kotoba</b>나의 말을 위젯으로</span></a></li>
+    <li><a href="../../bookspine/"><img src="../../../icons/bookspine.png" alt="" loading="lazy"><span><b>Bookspine</b>읽은 책을 위젯으로</span></a></li>
+    <li><a href="../../todayboard/"><img src="../../../icons/todayboard.png" alt="" loading="lazy"><span><b>Todayboard</b>캘린더를 따로따로</span></a></li>
+  </ul>
+  <p class="note">광고 없음, 구독 없음. Pro는 한 번만 구입하면 돼요.</p>
+</section>
+<!-- /xapps -->
+
+<section class="closing">
+  <p><span class="lead">구독 없음,</span> 광고 없음, 계정 없음.</p>
+  <a class="badge" href="https://apps.apple.com/app/id6814138903?pt=129250766&ct=lp-mantel-ko&mt=8"><img src="../img/badge_ko.svg" alt="App Store에서 다운로드"></a>
+</section>
+
+<footer>18개 언어 · iOS 17 이상 · 제작: minari · <a href="../../../privacy/mantel/">개인정보 처리방침</a></footer>
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <b>한국어</b> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->

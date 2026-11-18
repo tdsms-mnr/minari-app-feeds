@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6814139080">
+<title>iPhone 위젯에 업무 캘린더만 보이게 하는 방법 — Todayboard</title>
+<meta name="description" content="업무 캘린더만(Google 캘린더 포함) iPhone 홈 화면 위젯에 보이게 하거나, 업무와 개인 캘린더를 다른 위젯에 나눠 두는 방법. 읽기 전용, 계정 불필요. 캘린더 고르기는 한 번만 결제하는 Todayboard Pro에 포함돼요.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ko/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#3B55B5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#8FA2F0; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "iPhone 위젯에 업무 캘린더만 보이게 하는 방법",
+   "inLanguage": "ko",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "업무 캘린더가 iPhone 캘린더 앱에 있는지 확인해요. 없다면 설정 → 앱 → 캘린더 → 캘린더 계정 → 계정 추가에서 계정을 추가하고, 그 계정의 캘린더를 켜요."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Todayboard를 열고 ‘계속’을 탭한 뒤 캘린더 전체 접근을 허용해요. 접근은 읽기 전용이에요."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Todayboard Pro에서는 ‘표시’ 카드의 ‘보이는 캘린더’를 탭하고 업무 캘린더만 체크해요."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "홈 화면을 길게 누르고 ‘편집’, ‘위젯 추가’를 차례로 탭해요. ‘Todayboard’를 검색해 크기를 고르고 ‘위젯 추가’를 탭해요."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "업무용 위젯과 개인용 위젯을 따로 두려면, 위젯을 길게 누르고 ‘위젯 편집’을 탭해 그 위젯의 캘린더를 골라요."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Google 캘린더도 보이나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "네. 설정 → 앱 → 캘린더 → 캘린더 계정 → 계정 추가에서 Google 계정을 추가하고 캘린더를 켜요. 그러면 일정이 iPhone 캘린더 앱에 나타나고, Todayboard에도 보여요. Todayboard가 직접 Google에 로그인하는 일은 없어요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "무료로도 할 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "무료 작은 위젯은 모든 캘린더의 오늘 일정을 보여 주고, ‘하루 종일 일정 숨기기’도 무료예요. 보일 캘린더 고르기는 한 번만 결제하는 Todayboard Pro에 포함돼요. 중간·큰 위젯, 잠금 화면 위젯, 내일과 앞으로 7일 보기도 Pro예요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "업무 캘린더가 목록에 없어요.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Todayboard는 iPhone에 설정된 캘린더를 읽어요. 설정 → 앱 → 캘린더 → 캘린더 계정 → 계정 추가(iOS 17에서는 설정 → 캘린더 → 계정)에서 계정을 추가하고 그 계정의 캘린더를 켠 다음, Todayboard로 돌아와요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "위젯에 ‘캘린더 고르기는 Pro예요.’라고 떠요.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pro 없이 ‘위젯 편집’에서 캘린더를 골랐기 때문이에요. ‘위젯 편집’에서 선택을 지우면 다시 모든 캘린더가 보여요. 또는 Todayboard Pro를 구입해요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Todayboard가 일정을 바꾸거나 업로드하나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "아니요. 캘린더 접근은 읽기 전용이고, 기기 밖으로 아무것도 보내지 않아요."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Todayboard</a> · 가이드 · <a href="../ja/">日本語</a></p>
+<h1>iPhone 위젯에 업무 캘린더만 보이게 하는 방법</h1>
+<p class="lede">iPhone에 업무 캘린더와 개인 캘린더가 함께 있으면, 모든 것을 보여 주는 위젯은 금방 복잡해져요. 업무 캘린더만 보이는 위젯이라면 업무의 다음 일정만 딱 보여요.</p>
+<p>이 가이드에서는 <a href="../../../">Todayboard</a>, 즉 iPhone에 이미 있는 캘린더를 읽는 캘린더 위젯으로 하는 방법을 소개해요. 캘린더 고르기는 한 번만 결제하는 Todayboard Pro에 포함돼요. 무료 작은 위젯은 모든 캘린더를 보여 줘요.</p>
+
+<h2>1. 업무 캘린더가 iPhone에 있는지 확인하기</h2>
+<p>Todayboard는 iPhone 캘린더 앱의 일정을 읽어요. 업무 캘린더가 아직 없다면:</p>
+<ol>
+  <li>다음으로 이동해요: <b>설정 → 앱 → 캘린더 → 캘린더 계정</b> (iOS 17에서는: <b>설정 → 캘린더 → 계정</b>).</li>
+  <li>다음을 탭해요: <b>계정 추가</b> — 그리고 업무 계정을 추가해요. 예를 들면 Google 계정이에요.</li>
+  <li>다음을 켜요: <b>캘린더</b> — 그 계정에서.</li>
+</ol>
+
+<h2>2. 캘린더 접근 허용하기</h2>
+<p>Todayboard를 열고 다음을 탭해요: <b>계속</b> — 그런 다음 전체 접근을 허용해요. 접근은 읽기 전용이라 Todayboard가 일정을 고치는 일은 없어요.</p>
+<p class="dim">실수로 거부했나요? iPhone은 다시 묻지 않아요. 설정 → 캘린더를 열고 ‘전체 접근’을 선택해요.</p>
+
+<h2>3. 업무 캘린더 고르기 (Pro)</h2>
+<ol>
+  <li>Todayboard 메인 화면에서 <b>표시</b> 카드를 찾아요.</li>
+  <li>다음을 탭해요: <b>‘보이는 캘린더’</b> — 그리고 업무 캘린더만 체크해요.</li>
+  <li>선택 사항: 다음을 켜요: <b>‘하루 종일 일정 숨기기’</b> — 생일과 공휴일이 숨겨져요. 이건 무료예요.</li>
+</ol>
+
+<h2>4. 홈 화면에 위젯 놓기</h2>
+<ol>
+  <li>홈 화면으로 가서 앱이 흔들릴 때까지 빈 곳을 길게 눌러요.</li>
+  <li>다음을 탭해요: <b>편집</b> (왼쪽 위 모서리), 그다음 <b>위젯 추가</b>.</li>
+  <li>검색창에 <b>‘Todayboard’</b>를 입력하고 크기를 고른 뒤 다음을 탭해요: <b>위젯 추가</b>.</li>
+</ol>
+
+<h2>5. 업무용과 개인용을 다른 위젯으로 (Pro)</h2>
+<p>위젯마다 따로 캘린더를 보여 줄 수 있어요. 위젯을 길게 누르고 다음을 탭해요: <b>위젯 편집</b>. 그다음 그 위젯의 <b>캘린더</b>를 골라요. 아무것도 고르지 않은 위젯은 앱의 ‘보이는 캘린더’ 설정을 따라요.</p>
+
+<h2>더 쓰고 싶다면?</h2>
+<p>Todayboard Pro는 구독이 아니라 한 번만 결제해요:</p>
+<ul>
+  <li>보일 캘린더 고르기 — 앱 전체에도, 위젯마다도</li>
+  <li>중간(오늘과 내일)·큰(최대 7일) 위젯</li>
+  <li>잠금 화면 위젯</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+<div class="q"><b>Google 캘린더도 보이나요?</b>네. 설정 → 앱 → 캘린더 → 캘린더 계정 → 계정 추가에서 Google 계정을 추가하고 캘린더를 켜요. 그러면 일정이 iPhone 캘린더 앱에 나타나고, Todayboard에도 보여요. Todayboard가 직접 Google에 로그인하는 일은 없어요.</div>
+<div class="q"><b>무료로도 할 수 있나요?</b>무료 작은 위젯은 모든 캘린더의 오늘 일정을 보여 주고, ‘하루 종일 일정 숨기기’도 무료예요. 보일 캘린더 고르기는 한 번만 결제하는 Todayboard Pro에 포함돼요. 중간·큰 위젯, 잠금 화면 위젯, 내일과 앞으로 7일 보기도 Pro예요.</div>
+<div class="q"><b>업무 캘린더가 목록에 없어요.</b>Todayboard는 iPhone에 설정된 캘린더를 읽어요. 설정 → 앱 → 캘린더 → 캘린더 계정 → 계정 추가(iOS 17에서는 설정 → 캘린더 → 계정)에서 계정을 추가하고 그 계정의 캘린더를 켠 다음, Todayboard로 돌아와요.</div>
+<div class="q"><b>위젯에 ‘캘린더 고르기는 Pro예요.’라고 떠요.</b>Pro 없이 ‘위젯 편집’에서 캘린더를 골랐기 때문이에요. ‘위젯 편집’에서 선택을 지우면 다시 모든 캘린더가 보여요. 또는 Todayboard Pro를 구입해요.</div>
+<div class="q"><b>Todayboard가 일정을 바꾸거나 업로드하나요?</b>아니요. 캘린더 접근은 읽기 전용이고, 기기 밖으로 아무것도 보내지 않아요.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6814139080?pt=129250766&ct=guide-work-calendar-widget-todayboard-ko&mt=8">App Store에서 Todayboard 받기</a>
+<p class="dim">구독 없음, 광고 없음, 계정 없음. · <a href="../../../">Todayboard 소개</a> · <a href="../../../faq/">사용법 &amp; 전체 FAQ</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <b>한국어</b> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

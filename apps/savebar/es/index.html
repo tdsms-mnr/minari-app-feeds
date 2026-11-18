@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<script src="/minari-app-feeds/legacy-notice.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6815409629">
+<title>Savebar — el progreso de tus metas de ahorro en la pantalla de inicio y de bloqueo (sin suscripción)</title>
+<meta name="description" content="Un widget de metas de ahorro para iPhone sin suscripción. Mira tu progreso en la pantalla de inicio y en la pantalla de bloqueo, y añade dinero con un toque desde el widget. Sin conexión con el banco: las cantidades se quedan en tu iPhone.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/es/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/">
+<style>
+  :root { --bezel:#1F1A15; --bg:#FAF6F0; --surface:#FFFFFF; --ink:#1F1A15; --dim:#6B6259; --track:#EDE5DA; --accent:#C0582F; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bezel:#3A322B; --bg:#15110D; --surface:#1E1914; --ink:#F1ECE5; --dim:#B3AAA0; --track:#2E2721; --accent:#F0A27A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif;
+         -webkit-font-smoothing: antialiased; line-height:1.6; }
+  a { color:var(--accent); }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
+  .nav { position:sticky; top:12px; z-index:2; display:flex; justify-content:center; padding:0 16px; }
+  .nav-inner { display:flex; align-items:center; gap:10px; padding:8px 18px 8px 10px; border-radius:999px;
+               background:color-mix(in srgb, var(--surface) 80%, transparent); backdrop-filter:blur(12px);
+               box-shadow:0 1px 8px rgba(0,0,0,.06); font-weight:600; font-size:15px; }
+  .nav img { width:28px; height:28px; border-radius:7px; }
+  .nav .lang { font-weight:400; font-size:14px; color:var(--dim); text-decoration:none; margin-left:8px; }
+
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center; padding-top:56px; padding-bottom:80px; }
+  h1 { font-size:52px; line-height:1.15; font-weight:700; letter-spacing:-0.03em; margin:0 0 24px; }
+  .lead { color:var(--accent); }
+  .sub { font-size:18px; color:var(--dim); margin:0 0 32px; max-width:30em; }
+  .badge { display:inline-block; }
+  .badge img { height:54px; display:block; }
+  .facts { display:flex; flex-wrap:wrap; gap:8px; margin:28px 0 0; padding:0; list-style:none; }
+  .facts li { font-size:14px; padding:6px 12px; border-radius:999px; background:var(--track); }
+
+  .device { width:100%; max-width:300px; aspect-ratio:1206/2622; border:10px solid var(--bezel); border-radius:52px;
+            overflow:hidden; box-shadow:0 30px 60px -20px rgba(60,40,20,.35); background:#000; justify-self:center; }
+  .device img { width:100%; height:100%; object-fit:cover; display:block; }
+
+  .statement { text-align:center; padding:96px 24px; }
+  .statement p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto; max-width:22em; }
+
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; padding-bottom:96px; }
+  .card { background:var(--surface); border-radius:32px; overflow:hidden; display:flex; flex-direction:column; }
+  .card .shot { background:var(--track); padding:32px 32px 0; display:flex; justify-content:center; align-items:flex-start;
+                height:380px; overflow:hidden; }
+  .card .shot.bottom { align-items:flex-end; padding:0 32px 32px; }
+  .card .shot .device { max-width:210px; border-width:7px; border-radius:36px; box-shadow:0 20px 40px -20px rgba(60,40,20,.35); }
+  .card .shot .watch { width:200px; aspect-ratio:416/496; border:10px solid var(--bezel); border-radius:48px; overflow:hidden;
+                       background:#000; margin-top:40px; box-shadow:0 20px 40px -20px rgba(60,40,20,.35); }
+  .card .shot .watch img { width:100%; display:block; }
+  .card p { margin:0; padding:24px 28px 28px; font-size:17px; color:var(--dim); }
+  .card p b { color:var(--ink); font-weight:600; }
+  .pro { display:inline-block; font-size:12px; font-weight:600; color:var(--accent); border:1px solid currentColor;
+         border-radius:999px; padding:1px 8px; margin-left:6px; vertical-align:2px; }
+
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; padding-bottom:96px; }
+  .split.rev .text { order:2; }
+  h2 { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 0 20px; }
+  .split .text p { font-size:18px; color:var(--dim); margin:0; max-width:28em; }
+
+  .pricing { display:grid; grid-template-columns:1fr 1fr; gap:20px; padding-bottom:96px; }
+  .pricing h2 { grid-column:1/-1; text-align:center; margin-bottom:12px; }
+  .plan { background:var(--surface); border-radius:32px; padding:32px; }
+  .plan h3 { font-size:22px; letter-spacing:-0.02em; margin:0 0 4px; }
+  .plan .note { color:var(--dim); margin:0 0 16px; font-size:15px; }
+  .plan ul { margin:0; padding-left:1.1em; }
+  .plan li { margin:.35em 0; }
+
+  .faq { max-width:760px; padding-bottom:96px; }
+  .faq h2 { text-align:center; margin-bottom:32px; }
+  .faq .q { border-top:1px solid var(--track); padding:20px 0; }
+  .faq .q:last-child { border-bottom:1px solid var(--track); }
+  .faq .q b { display:block; font-weight:600; margin-bottom:4px; }
+  .faq .q span { color:var(--dim); }
+
+  .closing { text-align:center; padding:32px 24px 96px; }
+  .closing p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto 32px; max-width:18em; }
+  footer { text-align:center; color:var(--dim); font-size:14px; padding:0 24px 48px; }
+
+  @media (max-width: 820px) {
+    .wrap { padding:0 16px; }
+    .hero, .split, .pricing { grid-template-columns:1fr; gap:40px; }
+    .hero { padding-top:48px; padding-bottom:64px; }
+    .split.rev .text { order:0; }
+    h1 { font-size:40px; }
+    h2, .statement p, .closing p { font-size:30px; }
+    .statement { padding:64px 16px; }
+    .cards { grid-template-columns:1fr; padding-bottom:64px; }
+    .split, .pricing, .faq { padding-bottom:64px; }
+    .device { max-width:260px; }
+  }
+</style>
+<style>
+  :lang(ja) h1, :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { letter-spacing:0.01em; line-height:1.35; }
+  :lang(ja) h1 { font-size:46px; }
+  @media (max-width: 820px) { :lang(ja) h1 { font-size:34px; } :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { font-size:26px; } }
+  :lang(ja) body { word-break:auto-phrase; }
+  .nb { display:inline-block; }
+  .plan h3 .price { font-weight:400; color:var(--dim); margin-left:8px; }
+  .card .shot.flush { padding:0; }
+  .card .shot.flush img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "Savebar",
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "FinanceApplication",
+   "description": "Un widget de metas de ahorro para iPhone sin suscripción. Mira tu progreso en la pantalla de inicio y en la pantalla de bloqueo, y añade dinero con un toque desde el widget. Sin conexión con el banco: las cantidades se quedan en tu iPhone.",
+   "installUrl": "https://apps.apple.com/app/id6815409629?pt=129250766&ct=lp-savebar-es&mt=8",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/",
+   "offers": [
+    {
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "EUR",
+     "description": "Gratis, con una compra única de Pro. No es una suscripción."
+    },
+    {
+     "@type": "Offer",
+     "name": "Savebar Pro",
+     "price": "5.99",
+     "priceCurrency": "EUR",
+     "description": "Compra única dentro de la app, no es una suscripción."
+    }
+   ],
+   "author": {
+    "@type": "Person",
+    "name": "minari"
+   },
+   "inLanguage": [
+    "es",
+    "es"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿Hay alguna app de metas de ahorro sin suscripción?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. El widget pequeño de Savebar y una meta son gratis, y Pro —más metas y widgets más grandes— es una compra única."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cuántas metas puedo crear gratis?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Una. Savebar Pro (compra única, sin suscripción) te da metas ilimitadas."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Puedo ver mi progreso en la pantalla de bloqueo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Los widgets de la pantalla de bloqueo (un anillo con tu porcentaje, lo que te falta y una vista de una línea) forman parte de Savebar Pro. La versión gratis incluye el widget pequeño en la pantalla de inicio."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Se conecta con mi banco?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Las cantidades las añades tú, así que no hay inicios de sesión ni nada que vincular."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Puedo añadir dinero sin abrir la app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Toca el botón de cantidad (como +10 €) en el widget de la pantalla de inicio."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Dónde se guardan mis metas y cantidades?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "En tu iPhone. No se sube nada."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<nav class="nav"><div class="nav-inner"><img src="../img/icon.png" alt="">Savebar<a class="lang" href="../ja/">日本語</a></div></nav>
+
+<section class="wrap hero">
+  <div>
+    <h1><span class="lead">Tu progreso de ahorro,</span> <span class="nb">cada vez que tomas el móvil.</span></h1>
+    <p class="sub">Toca + en el widget cuando apartes dinero. Pon una fecha para ver cuánto ahorrar al día.</p>
+    <a class="badge" href="https://apps.apple.com/app/id6815409629?pt=129250766&ct=lp-savebar-es&mt=8"><img src="../img/badge_en.svg" alt="Descargar en el App Store"></a>
+    <ul class="facts"><li>Sin suscripción</li><li>Sin anuncios</li><li>Sin conexión con el banco</li><li>Sin cuenta</li></ul>
+  </div>
+  <div class="device"><img src="../img/home_es.jpg" alt="Widgets de Savebar en la pantalla de inicio de un iPhone"></div>
+</section>
+
+<section class="statement">
+  <p><span class="lead">Aparta algo de dinero,</span> toca un botón de cantidad como +10 € en el widget y mira cómo avanza la barra.</p>
+</section>
+
+<section class="wrap cards">
+  <div class="card">
+    <div class="shot flush"><img src="../img/card_home_en.jpg" alt="" loading="lazy"></div>
+    <p><b>Lo que quieres conseguir, en tu pantalla de inicio.</b> El widget pequeño es gratis: una meta, su barra de progreso y un botón que añade la cantidad que elijas sin abrir la app.</p>
+  </div>
+  <div class="card">
+    <div class="shot bottom"><div class="device"><img src="../img/lock_es.jpg" alt="" loading="lazy"></div></div>
+    <p><b>Mira cómo tu meta se acerca cada día.</b><span class="pro">Pro</span> Widgets de la pantalla de bloqueo: un anillo con tu porcentaje, lo que te falta y una vista de una línea.</p>
+  </div>
+  <div class="card">
+    <div class="shot"><div class="watch"><img src="../img/watch_en.png" alt="" loading="lazy"></div></div>
+    <p><b>Añade a una meta desde la muñeca.</b><span class="pro">Pro</span> Los mismos botones de cantidad que el widget, más complicaciones para la esfera del reloj.</p>
+  </div>
+</section>
+
+<section class="wrap split">
+  <div class="text">
+    <h2><span class="lead">Pega un enlace.</span> <span class="nb">La foto y el nombre se rellenan solos.</span></h2>
+    <p>Añade una foto de lo que quieres conseguir: el widget pequeño la muestra en grande. Guarda algo de una tienda en Safari —o con el botón Compartir— como meta, con su foto, nombre y precio.</p>
+  </div>
+  <div class="device"><img src="../img/edit_es.jpg" alt="" loading="lazy"></div>
+</section>
+
+<section class="wrap split rev">
+  <div class="text">
+    <h2><span class="lead">Cada meta.</span> <span class="nb">Días restantes, por día.</span></h2>
+    <p>Con una fecha: cuántos días quedan y cuánto apartar al día. Cada ingreso queda en un historial que puedes editar o eliminar.</p>
+  </div>
+  <div class="device"><img src="../img/list_es.jpg" alt="" loading="lazy"></div>
+</section>
+
+<section class="wrap pricing">
+  <h2>Precios, sin rodeos</h2>
+  <div class="plan"><h3>Gratis</h3><p class="note">Sin anuncios. Sin cuenta.</p><ul><li>Widget pequeño con barra de progreso y un botón de cantidad de un toque</li><li>Una meta: nombre, cantidad objetivo y fecha opcional</li><li>Una foto y un enlace al producto para tu meta</li><li>Días restantes y cuánto al día</li><li>Cualquier moneda, incluso una distinta para cada meta</li></ul></div>
+  <div class="plan"><h3>Savebar Pro<span class="price">5,99 €</span></h3><p class="note">Compra única, sin suscripción.</p><ul><li>Metas ilimitadas: ahorra para varias cosas a la vez</li><li>Widgets mediano y grande con varias metas y hasta dos botones de cantidad cada una</li><li>Widgets de la pantalla de bloqueo</li><li>App para Apple Watch y complicaciones para la esfera</li></ul></div>
+</section>
+
+<section class="wrap faq">
+  <h2>Preguntas frecuentes</h2>
+  <div class="q"><b>¿Hay alguna app de metas de ahorro sin suscripción?</b><span>Sí. El widget pequeño de Savebar y una meta son gratis, y Pro —más metas y widgets más grandes— es una compra única.</span></div>
+  <div class="q"><b>¿Cuántas metas puedo crear gratis?</b><span>Una. Savebar Pro (compra única, sin suscripción) te da metas ilimitadas.</span></div>
+  <div class="q"><b>¿Puedo ver mi progreso en la pantalla de bloqueo?</b><span>Sí. Los widgets de la pantalla de bloqueo (un anillo con tu porcentaje, lo que te falta y una vista de una línea) forman parte de Savebar Pro. La versión gratis incluye el widget pequeño en la pantalla de inicio.</span></div>
+  <div class="q"><b>¿Se conecta con mi banco?</b><span>No. Las cantidades las añades tú, así que no hay inicios de sesión ni nada que vincular.</span></div>
+  <div class="q"><b>¿Puedo añadir dinero sin abrir la app?</b><span>Sí. Toca el botón de cantidad (como +10 €) en el widget de la pantalla de inicio. Para añadir otra cantidad, abre la app y toca “+ Añadir”. <a href="../guide/goal-widget/">Guía paso a paso</a></span></div>
+  <div class="q"><b>¿Dónde se guardan mis metas y cantidades?</b><span>En tu iPhone. No se sube nada.</span></div>
+  <div class="q"><b>¿Cómo cambio la cantidad del botón del widget?</b><span>Abre la meta, toca “…” › “Editar” y cambia “Cantidades del widget”. Los widgets mediano y grande pueden mostrar una segunda cantidad.</span></div>
+  <div class="q"><b>¿Cómo elimino una meta?</b><span>Mantén pulsada la meta en la lista y toca “Eliminar”. Puedes deshacerlo durante unos segundos.</span></div>
+  <div class="q"><b>Un enlace de tienda no rellenó la foto.</b><span>Algunas tiendas no dejan que las apps lean sus páginas. Elige una foto de tu fototeca.</span></div>
+</section>
+
+<!-- xapps -->
+<style>
+  .xapps { margin-top:72px; margin-bottom:72px; }
+  .xapps h2 { text-align:center; margin:0 0 24px; }
+  .xapps ul { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(290px, 1fr)); gap:12px; }
+  .xapps li { margin:0; }
+  .xapps a { display:flex; gap:16px; align-items:center; background:var(--surface, transparent); border:1px solid var(--line, transparent);
+             border-radius:24px; padding:16px 20px 16px 16px; text-decoration:none; color:var(--ink); }
+  .xapps img { width:56px; height:56px; border-radius:13px; flex:none; box-shadow:0 0 0 0.5px rgba(0,0,0,.08); }
+  .xapps a > span { color:var(--dim); font-size:15px; line-height:1.4; }
+  .xapps b { display:block; font-weight:600; font-size:17px; color:var(--ink); }
+  .xapps .note { text-align:center; color:var(--dim); font-size:15px; margin:20px 0 0; }
+</style>
+<section class="wrap xapps">
+  <h2>Más apps</h2>
+  <ul>
+    <li><a href="../../datto/"><img src="../../../icons/datto.png" alt="" loading="lazy"><span><b>Datto</b>Cuenta atrás para los grandes días</span></a></li>
+    <li><a href="../../kotoba/"><img src="../../../icons/kotoba.png" alt="" loading="lazy"><span><b>Kotoba</b>Tus palabras, en un widget</span></a></li>
+    <li><a href="../../mantel/"><img src="../../../icons/mantel.png" alt="" loading="lazy"><span><b>Mantel</b>Tus fotos, en un widget</span></a></li>
+    <li><a href="../../bookspine/"><img src="../../../icons/bookspine.png" alt="" loading="lazy"><span><b>Bookspine</b>Tus lecturas, en un widget</span></a></li>
+    <li><a href="../../todayboard/"><img src="../../../icons/todayboard.png" alt="" loading="lazy"><span><b>Todayboard</b>Calendarios, por separado</span></a></li>
+  </ul>
+  <p class="note">Sin anuncios, sin suscripciones. Pro es una compra única.</p>
+</section>
+<!-- /xapps -->
+
+<section class="closing">
+  <p><span class="lead">Sin conexión con el banco,</span> sin cuenta, sin suscripción.</p>
+  <a class="badge" href="https://apps.apple.com/app/id6815409629?pt=129250766&ct=lp-savebar-es&mt=8"><img src="../img/badge_en.svg" alt="Descargar en el App Store"></a>
+</section>
+
+<footer>Disponible en 19 idiomas · iOS 17 o posterior · Hecho por minari · <a href="../../../privacy/savebar/">Política de privacidad</a></footer>
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <b>Español</b> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->

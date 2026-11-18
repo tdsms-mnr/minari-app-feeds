@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6815409629">
+<title>Cómo poner una meta de ahorro en la pantalla de inicio del iPhone — Savebar</title>
+<meta name="description" content="Muestra una meta de ahorro con barra de progreso en la pantalla de inicio del iPhone y añade dinero con un toque desde el widget. Sin iniciar sesión en el banco. Una meta y el widget pequeño son gratis en Savebar.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/es/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF6F0; --accent:#C0582F; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#15110D; --accent:#F0A27A; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "Cómo poner una meta de ahorro en la pantalla de inicio del iPhone",
+   "inLanguage": "es",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "Abre Savebar, toca + y crea una meta: un nombre y una cantidad objetivo. La fecha límite y el enlace de un producto son opcionales."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "En “Cantidades del widget”, escribe la cantidad que sueles apartar, por ejemplo 20."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Mantén pulsada una zona vacía de la pantalla de inicio, toca “Editar” (o +), busca “Savebar”, elige el tamaño pequeño y toca “Añadir widget”."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Cada vez que apartes dinero, toca el botón de cantidad del widget. La barra avanza sin abrir la app."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿Se conecta con mi banco?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Las cantidades las añades tú, así que no hay inicio de sesión ni nada que vincular."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cuántas metas puedo crear gratis?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Una, con el widget pequeño de la pantalla de inicio. Savebar Pro, un pago único, ofrece metas ilimitadas, widgets mediano y grande con varias metas, widgets de la pantalla de bloqueo y una app para Apple Watch."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Puedo añadir una cantidad que no está en el botón?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Abre la meta en la app y toca “+ Añadir” para introducir cualquier cantidad."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cómo elijo qué meta muestra el widget?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Mantén pulsado el widget, toca “Editar widget” y elige la meta."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Savebar</a> · Guía · <a href="../ja/">日本語</a></p>
+<h1>Cómo poner una meta de ahorro en la pantalla de inicio del iPhone</h1>
+<p class="lede">Ahorrar para algo es más fácil cuando lo ves. Un widget pone la barra —cuánto llevas ahorrado y cuánto falta— donde miras muchas veces al día, y te deja añadir dinero con un toque.</p>
+<p>Así se configura con <a href="../../../">Savebar</a>. Una meta y el widget pequeño son gratis.</p>
+
+<h2>1. Crea una meta</h2>
+<ol>
+  <li>Abre Savebar y toca <b>+</b>.</li>
+  <li>Escribe un nombre y una <b>Cantidad objetivo</b>.</li>
+  <li>Opcional: activa <b>“Fijar una fecha límite”</b> para ver los días que quedan y cuánto ahorrar al día.</li>
+  <li>Opcional: pega el enlace de un producto en <b>“Enlace”</b>. La foto y el nombre se rellenan desde la página.</li>
+</ol>
+
+<h2>2. Elige la cantidad del botón del widget</h2>
+<p>En <b>“Cantidades del widget”</b>, escribe la cantidad que sueles apartar. El botón del widget la añade con un toque, sin abrir la app.</p>
+<figure><img src="../../../img/edit_es.jpg" alt="Editar una meta en Savebar: enlace del producto, foto, nombre de la meta, cantidad objetivo y fecha límite" width="460" height="1000" loading="lazy"></figure>
+
+<h2>3. Pon el widget en la pantalla de inicio</h2>
+<ol>
+  <li>Mantén pulsada una zona vacía de la pantalla de inicio hasta que las apps se muevan.</li>
+  <li>Toca <b>Editar</b> (o <b>+</b>) en la esquina superior y busca <b>“Savebar”</b>.</li>
+  <li>Elige el tamaño <b>Pequeño</b> y toca <b>Añadir widget</b>.</li>
+</ol>
+<p>Cada vez que apartes dinero, toca el botón de cantidad del widget. La barra y el porcentaje avanzan ahí mismo.</p>
+<figure><img src="../../../img/home_es.jpg" alt="Widgets de Savebar en la pantalla de inicio de un iPhone: una meta con su foto, barra de progreso, porcentaje y un botón de cantidad" width="460" height="1000" loading="lazy"></figure>
+<p class="dim">El widget más grande de esta imagen, con varias metas, forma parte de Savebar Pro.</p>
+
+<h2>¿Quieres más?</h2>
+<p>Savebar Pro es un pago único, no una suscripción:</p>
+<ul>
+  <li>Metas ilimitadas</li>
+  <li>Widgets mediano y grande con varias metas, y hasta dos botones de cantidad por meta</li>
+  <li>Widgets de la pantalla de bloqueo</li>
+  <li>Una app para Apple Watch con los mismos botones de cantidad</li>
+</ul>
+
+<h2>Preguntas</h2>
+<div class="q"><b>¿Se conecta con mi banco?</b>No. Las cantidades las añades tú, así que no hay inicio de sesión ni nada que vincular.</div>
+<div class="q"><b>¿Cuántas metas puedo crear gratis?</b>Una, con el widget pequeño de la pantalla de inicio. Savebar Pro, un pago único, ofrece metas ilimitadas, widgets mediano y grande con varias metas, widgets de la pantalla de bloqueo y una app para Apple Watch.</div>
+<div class="q"><b>¿Puedo añadir una cantidad que no está en el botón?</b>Sí. Abre la meta en la app y toca “+ Añadir” para introducir cualquier cantidad.</div>
+<div class="q"><b>¿Cómo elijo qué meta muestra el widget?</b>Mantén pulsado el widget, toca “Editar widget” y elige la meta.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6815409629?pt=129250766&ct=guide-goal-widget-savebar-es&mt=8">Descarga Savebar en el App Store</a>
+<p class="dim">Sin suscripción, sin anuncios, sin iniciar sesión en el banco, sin cuenta. · <a href="../../../">Acerca de Savebar</a></p>
+
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <b>Español</b> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

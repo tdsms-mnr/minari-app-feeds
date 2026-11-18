@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-Hans">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6814139080">
+<title>如何让 iPhone 小组件只显示工作日历 — Todayboard</title>
+<meta name="description" content="让 iPhone 主屏幕小组件只显示工作日历（包括 Google 日历），或把工作和个人日历放在不同的小组件上。只读，无需账号。选择日历属于 Todayboard Pro，一次性购买。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#3B55B5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#8FA2F0; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "如何让 iPhone 小组件只显示工作日历",
+   "inLanguage": "zh-Hans",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "先确认工作日历已在 iPhone 的“日历” App 中。如果没有，请在“设置”→“App”→“日历”→“日历账户”→“添加账户”中添加账户，并为它打开“日历”。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "打开 Todayboard，点按“继续”，允许完全访问你的日历。访问是只读的。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "有 Todayboard Pro 时，在“显示”卡片中点按“显示的日历”，只勾选工作日历。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "按住主屏幕，点按“编辑”，再点按“添加小组件”。搜索“Todayboard”，选择尺寸后点按“添加小组件”。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "想把工作和生活分成两个小组件？按住小组件，点按“编辑小组件”，选择它的“日历”。"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "能显示我的 Google 日历吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "能。在“设置”→“App”→“日历”→“日历账户”→“添加账户”中添加你的 Google 账户，并打开“日历”。之后它的日程会出现在 iPhone 的“日历” App 中，Todayboard 也会显示。Todayboard 从不直接登录 Google。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "可以免费做到吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "免费的小号小组件会显示所有日历中今天的日程，“隐藏全天日程”也是免费的。选择显示哪些日历属于 Todayboard Pro（一次性购买），中号和大号小组件、锁定屏幕小组件，以及查看明天或未来 7 天也一样。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "我的工作日历不在列表里。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Todayboard 读取的是 iPhone 上已设置的日历。请在“设置”→“App”→“日历”→“日历账户”→“添加账户”（iOS 17：“设置”→“日历”→“账户”）中添加账户，为它打开“日历”，然后回到 Todayboard。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "小组件显示“选择日历属于 Pro。”",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "这是因为没有 Pro 时在“编辑小组件”中选择了日历。在“编辑小组件”中取消选择即可重新显示所有日历，或者购买 Todayboard Pro。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Todayboard 会修改或上传我的日程吗？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不会。日历访问是只读的，数据不会离开你的设备。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Todayboard</a> · 指南 · <a href="../ja/">日本語</a></p>
+<h1>如何让 iPhone 小组件只显示工作日历</h1>
+<p class="lede">如果 iPhone 上同时有工作和个人日历，显示全部内容的小组件会很拥挤。只显示工作日历的小组件，只告诉你工作上接下来的安排。</p>
+<p>下面介绍如何用 <a href="../../../">Todayboard</a>来做到。它是一款读取 iPhone 上已有日历的日历小组件。选择日历属于 Todayboard Pro，一次性购买。免费的小号小组件会显示所有日历。</p>
+
+<h2>1. 确认工作日历已在 iPhone 上</h2>
+<p>Todayboard 读取 iPhone“日历” App 中的日程。如果工作日历还不在那里：</p>
+<ol>
+  <li>打开 <b>“设置”→“App”→“日历”→“日历账户”</b> （iOS 17： <b>“设置”→“日历”→“账户”</b>).</li>
+  <li>点按 <b>“添加账户”</b> 添加你的工作账户，例如 Google 账户。</li>
+  <li>为该账户打开 <b>“日历”</b> 即可。</li>
+</ol>
+
+<h2>2. 允许访问日历</h2>
+<p>打开 Todayboard，点按 <b>“继续”</b> 并允许完全访问。访问是只读的：Todayboard 从不修改你的日程。</p>
+<p class="dim">不小心拒绝了？iPhone 不会再次询问。请打开“设置”→“日历”，选择“完全访问”。</p>
+
+<h2>3. 选择工作日历（Pro）</h2>
+<ol>
+  <li>在 Todayboard 主屏幕上找到 <b>“显示”</b> 卡片。</li>
+  <li>点按 <b>“显示的日历”</b> 然后只勾选工作日历。</li>
+  <li>可选：打开 <b>“隐藏全天日程”</b> 可隐藏生日和节假日。这项是免费的。</li>
+</ol>
+
+<h2>4. 把小组件放到主屏幕上</h2>
+<ol>
+  <li>回到主屏幕，按住空白处，直到 App 开始晃动。</li>
+  <li>点按 <b>左上角的“编辑”</b> 然后点按 <b>“添加小组件”</b>.</li>
+  <li>搜索 <b>“Todayboard”</b>，选择尺寸后点按 <b>“添加小组件”</b>.</li>
+</ol>
+
+<h2>5. 工作和生活分成两个小组件（Pro）</h2>
+<p>每个小组件都可以显示自己的日历。按住小组件，点按 <b>“编辑小组件”</b>，然后选择它的 <b>“日历”</b>。没有选择任何日历的小组件，会沿用 App 中“显示的日历”的设置。</p>
+
+<h2>想要更多？</h2>
+<p>Todayboard Pro 是一次性购买，不是订阅：</p>
+<ul>
+  <li>选择显示哪些日历，可在 App 中设置，也可为每个小组件单独设置</li>
+  <li>中号（今天和明天）和大号（最多 7 天）小组件</li>
+  <li>锁定屏幕小组件</li>
+</ul>
+
+<h2>常见问题</h2>
+<div class="q"><b>能显示我的 Google 日历吗？</b>能。在“设置”→“App”→“日历”→“日历账户”→“添加账户”中添加你的 Google 账户，并打开“日历”。之后它的日程会出现在 iPhone 的“日历” App 中，Todayboard 也会显示。Todayboard 从不直接登录 Google。</div>
+<div class="q"><b>可以免费做到吗？</b>免费的小号小组件会显示所有日历中今天的日程，“隐藏全天日程”也是免费的。选择显示哪些日历属于 Todayboard Pro（一次性购买），中号和大号小组件、锁定屏幕小组件，以及查看明天或未来 7 天也一样。</div>
+<div class="q"><b>我的工作日历不在列表里。</b>Todayboard 读取的是 iPhone 上已设置的日历。请在“设置”→“App”→“日历”→“日历账户”→“添加账户”（iOS 17：“设置”→“日历”→“账户”）中添加账户，为它打开“日历”，然后回到 Todayboard。</div>
+<div class="q"><b>小组件显示“选择日历属于 Pro。”</b>这是因为没有 Pro 时在“编辑小组件”中选择了日历。在“编辑小组件”中取消选择即可重新显示所有日历，或者购买 Todayboard Pro。</div>
+<div class="q"><b>Todayboard 会修改或上传我的日程吗？</b>不会。日历访问是只读的，数据不会离开你的设备。</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6814139080?pt=129250766&ct=guide-work-calendar-widget-todayboard-zh&mt=8">在 App Store 获取 Todayboard</a>
+<p class="dim">无订阅，无广告，无需账号。· <a href="../../../">关于 Todayboard</a> · <a href="../../../faq/">使用方法 &amp; 全部常见问题</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <b>简体中文</b> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

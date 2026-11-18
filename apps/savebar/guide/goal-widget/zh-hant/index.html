@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6815409629">
+<title>如何把存錢目標放到 iPhone 主畫面上 — Savebar</title>
+<meta name="description" content="用進度條把存錢目標顯示在 iPhone 主畫面上，在小工具上點一下就能存入。不用登入銀行。Savebar 的一個目標和小型小工具免費。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh-hant/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF6F0; --accent:#C0582F; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#15110D; --accent:#F0A27A; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "如何把存錢目標放到 iPhone 主畫面上",
+   "inLanguage": "zh-Hant",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "打開 Savebar，點一下 + 建立目標：填入名稱和目標金額。目標日期和商品連結可以不填。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "在「小工具按鈕金額」填入你平常每次存的金額，例如 600。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "在主畫面空白處按住，點一下「編輯」（或 +），搜尋「Savebar」，選擇小型尺寸，然後點一下「加入小工具」。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "每次存錢時，點一下小工具上的金額按鈕。不用打開 App，進度條就會前進。"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "會連結銀行帳戶嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不會。金額由你自己存入，所以不用登入，也不用連結任何東西。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "免費可以建立幾個目標？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "一個，並可使用主畫面小型小工具。Savebar Pro 為一次性購買，可建立不限數量的目標，還提供顯示多個目標的中型和大型小工具、鎖定畫面小工具和 Apple Watch App。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "可以存入按鈕上沒有的金額嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "可以。在 App 裡打開目標，點一下「+ 存入」就能輸入任何金額。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "要怎麼選擇小工具顯示哪個目標？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "按住小工具，點一下「編輯小工具」，然後選擇目標。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Savebar</a> · 指南 · <a href="../ja/">日本語</a></p>
+<h1>如何把存錢目標放到 iPhone 主畫面上</h1>
+<p class="lede">為某樣東西存錢，看得見就更容易。小工具把進度條——已經存了多少、還差多少——放在你一天會看很多次的地方，點一下就能存入。</p>
+<p>以下說明如何用 <a href="../../../">Savebar</a> 進行設定。一個目標和小型小工具免費。</p>
+
+<h2>1. 建立目標</h2>
+<ol>
+  <li>打開 Savebar，點一下 <b>+</b>.</li>
+  <li>輸入名稱和 <b>目標金額</b>.</li>
+  <li>選用：開啟 <b>「設定目標日期」</b> ，就能看到剩餘天數和每天要存多少。</li>
+  <li>選用：在 <b>「連結」</b>貼上商品連結，照片和名稱會從網頁自動填入。</li>
+</ol>
+
+<h2>2. 選擇小工具按鈕的金額</h2>
+<p>在 <b>「小工具按鈕金額」</b>填入你平常每次存的金額。點一下小工具按鈕就會存入這個金額，不用打開 App。</p>
+<figure><img src="../../../img/edit_zh-Hant.jpg" alt="在 Savebar 中編輯目標：商品連結、照片、目標名稱、目標金額和目標日期" width="460" height="1000" loading="lazy"></figure>
+
+<h2>3. 把小工具放到主畫面上</h2>
+<ol>
+  <li>在主畫面空白處按住，直到 App 開始晃動。</li>
+  <li>點一下上方角落的 <b>「編輯」</b> （或 <b>+</b>），然後搜尋 <b>「Savebar」</b>.</li>
+  <li>選擇 <b>小型</b> 尺寸，然後點一下 <b>「加入小工具」</b>.</li>
+</ol>
+<p>每次存錢時，點一下小工具上的金額按鈕。進度條和百分比會當場變化。</p>
+<figure><img src="../../../img/home_zh-Hant.jpg" alt="iPhone 主畫面上的 Savebar 小工具：附照片、進度條、百分比和金額按鈕的目標" width="460" height="1000" loading="lazy"></figure>
+<p class="dim">圖中顯示多個目標的較大小工具屬於 Savebar Pro。</p>
+
+<h2>想要更多？</h2>
+<p>Savebar Pro 是一次性購買，不是訂閱：</p>
+<ul>
+  <li>不限數量的目標</li>
+  <li>顯示多個目標的中型和大型小工具，每個目標最多兩個金額按鈕</li>
+  <li>鎖定畫面小工具</li>
+  <li>有相同金額按鈕的 Apple Watch App</li>
+</ul>
+
+<h2>常見問題</h2>
+<div class="q"><b>會連結銀行帳戶嗎？</b>不會。金額由你自己存入，所以不用登入，也不用連結任何東西。</div>
+<div class="q"><b>免費可以建立幾個目標？</b>一個，並可使用主畫面小型小工具。Savebar Pro 為一次性購買，可建立不限數量的目標，還提供顯示多個目標的中型和大型小工具、鎖定畫面小工具和 Apple Watch App。</div>
+<div class="q"><b>可以存入按鈕上沒有的金額嗎？</b>可以。在 App 裡打開目標，點一下「+ 存入」就能輸入任何金額。</div>
+<div class="q"><b>要怎麼選擇小工具顯示哪個目標？</b>按住小工具，點一下「編輯小工具」，然後選擇目標。</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6815409629?pt=129250766&ct=guide-goal-widget-savebar-zh-hant&mt=8">在 App Store 取得 Savebar</a>
+<p class="dim">沒有訂閱、沒有廣告、不用登入銀行、不用帳號。· <a href="../../../">關於 Savebar</a></p>
+
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <b>繁體中文</b> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

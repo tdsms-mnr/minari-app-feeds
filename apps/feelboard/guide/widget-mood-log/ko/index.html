@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6815058047">
+<title>앱을 열지 않고 iPhone 위젯에서 기분을 기록하는 방법 — Feelboard</title>
+<meta name="description" content="앱을 열지 않고 iPhone 홈 화면 위젯에서 한 번 탭으로 기분을 기록하세요. 하루하루가 색깔 칸 하나가 돼요. Feelboard의 작은 위젯은 무료예요.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/guide/widget-mood-log/ko/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/guide/widget-mood-log/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/guide/widget-mood-log/ja/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/guide/widget-mood-log/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/guide/widget-mood-log/ko/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/guide/widget-mood-log/es/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/guide/widget-mood-log/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#3E4A6E; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#A9B5DA; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "앱을 열지 않고 iPhone 위젯에서 기분을 기록하는 방법",
+   "inLanguage": "ko",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "홈 화면의 빈 곳을 길게 누르고, 편집(또는 +)을 탭한 다음 “Feelboard”를 검색해 작은 크기를 고르고 위젯 추가를 탭하세요."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "위젯의 색깔 동그라미 다섯 개 중 하나를 탭하세요. 앱을 열지 않아도 기분이 기록돼요."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "잘못 탭했나요? 10분 안에 맞는 것을 다시 탭하면 마지막 기록이 바뀌어요."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "메모를 남기려면 위젯에서 “한 줄 쓰기”를 탭하세요. Feelboard가 열리고 한 줄을 쓸 수 있어요."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "위젯은 무료인가요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "네. 작은 위젯은 무료이고, 몇 번이든 기록할 수 있어요. 광고도 계정도 없어요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "다섯 가지 기분을 바꿀 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "한 번만 구매하는 Feelboard Pro로 가능해요. 설정에서 “기분 편집”을 탭해 이름이나 색을 바꾸거나 나만의 기분을 추가하세요. 처음 다섯 개가 위젯에 표시돼요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "1년 전체를 볼 수 있나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "네, Feelboard Pro로 볼 수 있어요. 앱 안의 “1년 픽셀”, 그리고 이번 달 캘린더와 1년을 한 줄 띠로 보여 주는 큰 위젯이 있어요."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "기분은 어디에 저장되나요?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "내 iPhone에 저장돼요. 계정이 없고, 개발자에게 아무것도 전송되지 않아요. iCloud 동기화(Pro)를 켜면 사본이 내 iCloud에만 보관돼요."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Feelboard</a> · 가이드 · <a href="../ja/">日本語</a></p>
+<h1>앱을 열지 않고 iPhone 위젯에서 기분을 기록하는 방법</h1>
+<p class="lede">기분 기록은 1초면 끝날 때 가장 잘 이어져요. 홈 화면에 위젯을 두면 그 자리에서 기분을 탭하면 돼요. 앱을 열 필요도, 글을 쓸 필요도 없어요.</p>
+<p>아래는 <a href="../../../">Feelboard</a>로 설정하는 방법이에요. 작은 위젯은 무료예요.</p>
+
+<h2>1. 홈 화면에 위젯 놓기</h2>
+<ol>
+  <li>홈 화면의 빈 곳을 앱이 흔들릴 때까지 길게 누르세요.</li>
+  <li>위쪽 모서리의 <b>편집</b> (또는 <b>+</b>)을 탭한 다음 검색하세요: <b>“Feelboard”</b>.</li>
+  <li>크기는 <b>작은 크기</b> 로 고르고, 다음을 탭하세요: <b>위젯 추가</b>.</li>
+</ol>
+
+<h2>2. 기분 탭하기</h2>
+<p>위젯에 <b>“지금 기분은?”</b> 이라는 질문과 색깔 동그라미 다섯 개가 나와요: <b>최고</b>, <b>좋음</b>, <b>보통</b>, <b>별로</b> 그리고 <b>힘듦</b>. 하나를 탭하면 기록되고, 위젯에 오늘의 기분이 표시돼요.</p>
+<ul>
+  <li>잘못 탭했나요? 10분 안에 맞는 것을 다시 탭하면 마지막 기록이 바뀌어요.</li>
+  <li>하루에 여러 번 기록해도 돼요. 하루하루가 색깔 칸 하나가 되고, 그날 마지막으로 기록한 기분의 색으로 칠해져요.</li>
+</ul>
+
+<h2>3. 메모 남기기(선택)</h2>
+<p>기록하면 위젯에 <b>“한 줄 쓰기”</b>가 표시돼요. 탭하면 Feelboard가 열리고 <b>“한 줄 메모 (선택)”</b> 칸에 오늘 하루를 한 줄로 적을 수 있어요.</p>
+
+<p class="dim">Feelboard는 간단한 개인 기록 앱이며, 의료 서비스나 정신 건강 서비스가 아니에요.</p>
+
+<h2>더 필요하다면</h2>
+<p>Feelboard Pro는 구독이 아니라 한 번만 구매해요:</p>
+<ul>
+  <li>이번 주를 보여 주는 중간 위젯, 이번 달 캘린더와 1년을 한 줄 띠로 보여 주는 큰 위젯</li>
+  <li>잠금 화면 위젯</li>
+  <li>앱 안의 “1년 픽셀”</li>
+  <li>나만의 기분, 태그, 돌아보기</li>
+  <li>Face ID 잠금, 저녁 알림, iCloud 동기화</li>
+</ul>
+
+<h2>질문</h2>
+<div class="q"><b>위젯은 무료인가요?</b>네. 작은 위젯은 무료이고, 몇 번이든 기록할 수 있어요. 광고도 계정도 없어요.</div>
+<div class="q"><b>다섯 가지 기분을 바꿀 수 있나요?</b>한 번만 구매하는 Feelboard Pro로 가능해요. 설정에서 “기분 편집”을 탭해 이름이나 색을 바꾸거나 나만의 기분을 추가하세요. 처음 다섯 개가 위젯에 표시돼요.</div>
+<div class="q"><b>1년 전체를 볼 수 있나요?</b>네, Feelboard Pro로 볼 수 있어요. 앱 안의 “1년 픽셀”, 그리고 이번 달 캘린더와 1년을 한 줄 띠로 보여 주는 큰 위젯이 있어요.</div>
+<div class="q"><b>기분은 어디에 저장되나요?</b>내 iPhone에 저장돼요. 계정이 없고, 개발자에게 아무것도 전송되지 않아요. iCloud 동기화(Pro)를 켜면 사본이 내 iCloud에만 보관돼요.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6815058047?pt=129250766&ct=guide-widget-mood-log-feelboard-ko&mt=8">App Store에서 Feelboard 받기</a>
+<p class="dim">구독 없음, 광고 없음, 계정 없음. · <a href="../../../">Feelboard 소개</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <b>한국어</b> · <a href="../es/" hreflang="es">Español</a></p><!-- /langs -->
+</html>

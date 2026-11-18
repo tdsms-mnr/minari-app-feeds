@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6815409629">
+<title>Как вывести цель накоплений на экран «Домой» iPhone — Savebar</title>
+<meta name="description" content="Выведите цель накоплений со шкалой прогресса на экран «Домой» iPhone и пополняйте её одним нажатием прямо из виджета. Без входа в банк. Одна цель и маленький виджет в Savebar бесплатны.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ru/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF6F0; --accent:#C0582F; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#15110D; --accent:#F0A27A; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "Как вывести цель накоплений на экран «Домой» iPhone",
+   "inLanguage": "ru",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "Откройте Savebar, нажмите + и создайте цель: название и сумму цели. Срок и ссылка на товар — по желанию."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "В разделе «Суммы в виджете» укажите сумму, которую вы обычно откладываете, например 1000."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Нажмите и удерживайте пустое место на экране «Домой», нажмите «Изменить» (или +), найдите «Savebar», выберите маленький размер и нажмите «Добавить виджет»."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Каждый раз, когда откладываете деньги, нажимайте кнопку суммы в виджете. Шкала сдвигается без открытия приложения."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Приложение подключается к моему банку?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Нет. Суммы вы вносите сами, поэтому не нужно никуда входить и ничего привязывать."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Сколько целей можно создать бесплатно?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Одну, с маленьким виджетом на экране «Домой». Savebar Pro — разовая покупка — даёт неограниченное число целей, средний и большой виджеты с несколькими целями, виджеты для экрана блокировки и приложение для Apple Watch."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Можно ли добавить сумму, которой нет на кнопке?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Да. Откройте цель в приложении и нажмите «+ Пополнить», чтобы ввести любую сумму."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Как выбрать, какую цель показывает виджет?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Нажмите и удерживайте виджет, нажмите «Изменить виджет» и выберите цель."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Savebar</a> · Инструкция · <a href="../ja/">日本語</a></p>
+<h1>Как вывести цель накоплений на экран «Домой» iPhone</h1>
+<p class="lede">Копить на что-то проще, когда это видно. Виджет показывает шкалу — сколько уже отложено и сколько осталось — там, куда вы смотрите много раз в день, и позволяет пополнить цель одним нажатием.</p>
+<p>Вот как настроить это в <a href="../../../">Savebar</a>. Одна цель и маленький виджет бесплатны.</p>
+
+<h2>1. Создайте цель</h2>
+<ol>
+  <li>Откройте Savebar и нажмите <b>+</b>.</li>
+  <li>Введите название и <b>Сумму цели</b>.</li>
+  <li>По желанию: включите <b>«Указать срок»</b> — так вы увидите, сколько дней осталось и сколько откладывать в день.</li>
+  <li>По желанию: вставьте ссылку на товар в поле <b>«Ссылка»</b>. Фото и название подставятся со страницы.</li>
+</ol>
+
+<h2>2. Выберите сумму для кнопки виджета</h2>
+<p>Раздел <b>«Суммы в виджете»</b>: укажите здесь сумму, которую вы обычно откладываете. Кнопка виджета добавляет её одним нажатием, без открытия приложения.</p>
+<figure><img src="../../../img/edit_ru.jpg" alt="Редактирование цели в Savebar: ссылка на товар, фото, название цели, сумма цели и срок" width="460" height="1000" loading="lazy"></figure>
+
+<h2>3. Добавьте виджет на экран «Домой»</h2>
+<ol>
+  <li>Нажмите и удерживайте пустое место на экране «Домой», пока приложения не начнут покачиваться.</li>
+  <li>Нажмите <b>Изменить</b> (или <b>+</b>) в верхнем углу, затем найдите <b>«Savebar»</b>.</li>
+  <li>Выберите размер <b>Маленький</b> и нажмите <b>Добавить виджет</b>.</li>
+</ol>
+<p>Каждый раз, когда откладываете деньги, нажимайте кнопку суммы в виджете. Шкала и процент меняются прямо там.</p>
+<figure><img src="../../../img/home_ru.jpg" alt="Виджеты Savebar на экране «Домой» iPhone: цель с фото, шкалой прогресса, процентом и кнопкой суммы" width="460" height="1000" loading="lazy"></figure>
+<p class="dim">Виджет побольше на этой картинке, с несколькими целями, входит в Savebar Pro.</p>
+
+<h2>Хотите больше?</h2>
+<p>Savebar Pro — это разовая покупка, а не подписка:</p>
+<ul>
+  <li>Неограниченное число целей</li>
+  <li>Средний и большой виджеты с несколькими целями и до двух кнопок сумм на цель</li>
+  <li>Виджеты для экрана блокировки</li>
+  <li>Приложение для Apple Watch с теми же кнопками сумм</li>
+</ul>
+
+<h2>Вопросы</h2>
+<div class="q"><b>Приложение подключается к моему банку?</b>Нет. Суммы вы вносите сами, поэтому не нужно никуда входить и ничего привязывать.</div>
+<div class="q"><b>Сколько целей можно создать бесплатно?</b>Одну, с маленьким виджетом на экране «Домой». Savebar Pro — разовая покупка — даёт неограниченное число целей, средний и большой виджеты с несколькими целями, виджеты для экрана блокировки и приложение для Apple Watch.</div>
+<div class="q"><b>Можно ли добавить сумму, которой нет на кнопке?</b>Да. Откройте цель в приложении и нажмите «+ Пополнить», чтобы ввести любую сумму.</div>
+<div class="q"><b>Как выбрать, какую цель показывает виджет?</b>Нажмите и удерживайте виджет, нажмите «Изменить виджет» и выберите цель.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6815409629?pt=129250766&ct=guide-goal-widget-savebar-ru&mt=8">Скачать Savebar в App Store</a>
+<p class="dim">Без подписки, без рекламы, без входа в банк, без аккаунта. · <a href="../../../">О Savebar</a></p>
+
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <b>Русский</b> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

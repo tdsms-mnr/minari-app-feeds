@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6796988697">
+<title>Cómo poner tus propias palabras o una cita favorita en la pantalla de inicio del iPhone — Kotoba</title>
+<meta name="description" content="Pon un lema, una línea de un libro o tus propias palabras en la pantalla de inicio o de bloqueo del iPhone con un widget de texto personalizado. En Kotoba, veinte frases y una frase en tus widgets son gratis. Sin suscripción.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/es/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF7F2; --accent:#B0735C; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171513; --accent:#D3987E; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "Cómo poner tus propias palabras o una cita favorita en la pantalla de inicio del iPhone",
+   "inLanguage": "es",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "Abre Kotoba y toca + abajo a la derecha. Escribe tus palabras en “Frase”; la fuente, las etiquetas y el color de fondo son opcionales. Toca “Guardar”."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Mantén pulsado un espacio vacío de la pantalla de inicio, toca “Editar” (o +) y busca “Kotoba”. Elige un tamaño y toca “Añadir widget”."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Mantén pulsado el widget, toca “Editar widget” y elige las palabras en “Frase”."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Para la pantalla de bloqueo, mantén pulsada la pantalla de bloqueo, toca “Personalizar”, toca la zona de widgets y añade Kotoba."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿Necesito una cuenta o una suscripción?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Tus frases se quedan en tu iPhone. Veinte frases y una frase en tus widgets son gratis. Kotoba Pro es un pago único, no una suscripción."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Mi widget dice “Disponible con Pro”.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "En la versión gratuita, tus widgets muestran una frase. Para mostrar otras palabras, abre el menú (…) en Kotoba y toca “Cambiar la frase del widget”; luego mantén pulsado el widget, toca “Editar widget” y elige la nueva frase. Tener widgets con frases distintas a la vez es parte de Pro."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Pueden cambiar las palabras cada día?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí, con Pro: en “Editar widget”, pon “Mostrar” en “Una nueva cada día”, “Una nueva cada semana” o “Una nueva cada hora”. Elige entre tus propias frases y puedes filtrarlas por etiqueta."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Qué pasa al llegar a 20 frases?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No se borra nada de lo que guardaste. Solo ya no puedes añadir frases nuevas. Con Pro puedes añadir todas las que quieras."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Kotoba</a> · Guía · <a href="../ja/">日本語</a></p>
+<h1>Cómo poner tus propias palabras o una cita favorita en la pantalla de inicio del iPhone</h1>
+<p class="lede">Un lema, una línea de un libro o de una película, una promesa a ti mismo. Guardado en una app de notas, se pierde. En un widget, lo ves cada vez que tomas el teléfono.</p>
+<p>Así se hace con <a href="../../../">Kotoba</a>, un widget de texto personalizado. Veinte frases y una frase en tus widgets son gratis.</p>
+
+<h2>1. Guarda tus palabras</h2>
+<ol>
+  <li>Abre Kotoba y toca <b>+</b> abajo a la derecha.</li>
+  <li>Escribe las palabras en <b>Frase</b>.</li>
+  <li>Opcional: <b>Fuente</b> (un libro, una película, un amigo), <b>Etiquetas</b> y <b>Fondo</b> como color del widget.</li>
+  <li>Toca <b>Guardar</b>.</li>
+</ol>
+<p class="dim">La primera vez que abres Kotoba hay algunas frases de ejemplo. Puedes conservarlas o eliminarlas.</p>
+<figure><img src="../../../img/edit_en.jpg" alt="Editar una frase en Kotoba: la frase, su fuente, etiquetas y color de fondo" width="460" height="1000" loading="lazy"></figure>
+
+<h2>2. Pon el widget en la pantalla de inicio</h2>
+<ol>
+  <li>Mantén pulsado un espacio vacío de la pantalla de inicio.</li>
+  <li>Toca <b>Editar</b> (o <b>+</b>) en la esquina superior y busca <b>“Kotoba”</b>.</li>
+  <li>Elige Pequeño, Mediano o Grande y toca <b>Añadir widget</b>.</li>
+</ol>
+
+<h2>3. Elige las palabras que muestra</h2>
+<p>Mantén pulsado el widget, toca <b>Editar widget</b>, luego elige tus palabras en <b>Frase</b>. Si no eliges ninguna, muestra la primera frase de tu lista. Toca el widget para abrir esa frase en la app.</p>
+<figure><img src="../../../img/widget_en.jpg" alt="Un widget pequeño de Kotoba en la pantalla de inicio de un iPhone con un proverbio en blanco sobre fondo marrón" width="400" height="448" loading="lazy"></figure>
+
+<h2>En la pantalla de bloqueo</h2>
+<p>Mantén pulsada la pantalla de bloqueo, toca <b>Personalizar</b>, elige la pantalla de bloqueo, toca la zona de widgets y añade Kotoba. Hay tres estilos para la pantalla de bloqueo. La frase se elige igual, con “Editar widget”.</p>
+
+<h2>¿Quieres más?</h2>
+<p>Kotoba Pro es un pago único, no una suscripción:</p>
+<ul>
+  <li>Todas las frases que quieras</li>
+  <li>Todos los widgets que quieras, cada uno con palabras distintas</li>
+  <li>Una frase nueva cada día, cada semana o cada hora, de tus propias frases (filtradas por etiqueta si quieres)</li>
+  <li>Tipo de letra, tamaño de texto y alineación para cada widget</li>
+  <li>Importar una copia de seguridad y sincronización con iCloud, para un dispositivo nuevo o un segundo dispositivo</li>
+</ul>
+
+<h2>Preguntas</h2>
+<div class="q"><b>¿Necesito una cuenta o una suscripción?</b>No. Tus frases se quedan en tu iPhone. Veinte frases y una frase en tus widgets son gratis. Kotoba Pro es un pago único, no una suscripción.</div>
+<div class="q"><b>Mi widget dice “Disponible con Pro”.</b>En la versión gratuita, tus widgets muestran una frase. Para mostrar otras palabras, abre el menú (…) en Kotoba y toca “Cambiar la frase del widget”; luego mantén pulsado el widget, toca “Editar widget” y elige la nueva frase. Tener widgets con frases distintas a la vez es parte de Pro.</div>
+<div class="q"><b>¿Pueden cambiar las palabras cada día?</b>Sí, con Pro: en “Editar widget”, pon “Mostrar” en “Una nueva cada día”, “Una nueva cada semana” o “Una nueva cada hora”. Elige entre tus propias frases y puedes filtrarlas por etiqueta.</div>
+<div class="q"><b>¿Qué pasa al llegar a 20 frases?</b>No se borra nada de lo que guardaste. Solo ya no puedes añadir frases nuevas. Con Pro puedes añadir todas las que quieras.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6796988697?pt=129250766&ct=guide-home-screen-quote-kotoba-es&mt=8">Descarga Kotoba en el App Store</a>
+<p class="dim">Sin suscripción, sin anuncios, sin notificaciones, sin cuenta. · <a href="../../../">Acerca de Kotoba</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <b>Español</b> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6814139080">
+<title>如何讓 iPhone 小工具只顯示工作行事曆 — Todayboard</title>
+<meta name="description" content="讓 iPhone 主畫面小工具只顯示工作行事曆（包括 Google 日曆），或把工作和個人行事曆放在不同的小工具上。唯讀，不需要帳號。選擇行事曆屬於 Todayboard Pro，一次購買。">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh-hant/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#3B55B5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#8FA2F0; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "如何讓 iPhone 小工具只顯示工作行事曆",
+   "inLanguage": "zh-Hant",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "先確認工作行事曆已在 iPhone 的「行事曆」App 中。如果沒有，請到「設定」→「App」→「行事曆」→「行事曆帳號」→「加入帳號」加入帳號，並為它開啟「行事曆」。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "打開 Todayboard，點一下「繼續」，允許完整取用你的行事曆。取用權限是唯讀的。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "有 Todayboard Pro 時，在「顯示」卡片中點一下「顯示的行事曆」，只勾選工作行事曆。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "按住主畫面，點一下「編輯」，再點一下「加入小工具」。搜尋「Todayboard」，選擇尺寸後點一下「加入小工具」。"
+    },
+    {
+     "@type": "HowToStep",
+     "text": "想把工作和生活分成兩個小工具？按住小工具，點一下「編輯小工具」，選擇它的「行事曆」。"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "會顯示我的 Google 日曆嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "會。到「設定」→「App」→「行事曆」→「行事曆帳號」→「加入帳號」加入你的 Google 帳號，並開啟「行事曆」。之後它的行程會出現在 iPhone 的「行事曆」App 中，Todayboard 也會顯示。Todayboard 從不自行登入 Google。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "可以免費做到嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "免費的小型小工具會顯示所有行事曆中今天的行程，「隱藏整天行程」也是免費的。選擇顯示哪些行事曆屬於 Todayboard Pro（一次購買），中型和大型小工具、鎖定畫面小工具，以及查看明天或未來 7 天也一樣。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "我的工作行事曆不在列表中。",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Todayboard 讀取的是 iPhone 上已設定的行事曆。請到「設定」→「App」→「行事曆」→「行事曆帳號」→「加入帳號」（iOS 17：「設定」→「行事曆」→「帳號」）加入帳號，為它開啟「行事曆」，然後回到 Todayboard。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "小工具顯示「選擇行事曆屬於 Pro。」",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "這是因為沒有 Pro 時在「編輯小工具」中選了行事曆。在「編輯小工具」中取消選擇即可重新顯示所有行事曆，或購買 Todayboard Pro。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Todayboard 會更改或上傳我的行程嗎？",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "不會。行事曆取用是唯讀的，資料也不會離開你的裝置。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Todayboard</a> · 指南 · <a href="../ja/">日本語</a></p>
+<h1>如何讓 iPhone 小工具只顯示工作行事曆</h1>
+<p class="lede">如果 iPhone 上同時有工作和個人行事曆，顯示全部內容的小工具會很擁擠。只顯示工作行事曆的小工具，只告訴你工作上接下來的行程。</p>
+<p>以下介紹如何用 <a href="../../../">Todayboard</a>做到。它是一款讀取 iPhone 上現有行事曆的行事曆小工具。選擇行事曆屬於 Todayboard Pro，一次購買。免費的小型小工具會顯示所有行事曆。</p>
+
+<h2>1. 確認工作行事曆已在 iPhone 上</h2>
+<p>Todayboard 讀取 iPhone「行事曆」App 中的行程。如果工作行事曆還不在那裡：</p>
+<ol>
+  <li>打開 <b>「設定」→「App」→「行事曆」→「行事曆帳號」</b> （iOS 17： <b>「設定」→「行事曆」→「帳號」</b>).</li>
+  <li>點一下 <b>「加入帳號」</b> 加入你的工作帳號，例如 Google 帳號。</li>
+  <li>為該帳號開啟 <b>「行事曆」</b> 即可。</li>
+</ol>
+
+<h2>2. 允許取用行事曆</h2>
+<p>打開 Todayboard，點一下 <b>「繼續」</b> 並允許完整取用。取用權限是唯讀的：Todayboard 從不修改你的行程。</p>
+<p class="dim">不小心拒絕了？iPhone 不會再詢問。請打開「設定」→「行事曆」，選擇「完整取用權限」。</p>
+
+<h2>3. 選擇工作行事曆（Pro）</h2>
+<ol>
+  <li>在 Todayboard 主畫面上找到 <b>「顯示」</b> 卡片。</li>
+  <li>點一下 <b>「顯示的行事曆」</b> 然後只勾選工作行事曆。</li>
+  <li>可選：開啟 <b>「隱藏整天行程」</b> 可隱藏生日和節日。這項是免費的。</li>
+</ol>
+
+<h2>4. 把小工具放到主畫面上</h2>
+<ol>
+  <li>回到主畫面，按住空白處，直到 App 開始晃動。</li>
+  <li>點一下 <b>左上角的「編輯」</b> 然後點一下 <b>「加入小工具」</b>.</li>
+  <li>搜尋 <b>「Todayboard」</b>，選擇尺寸後點一下 <b>「加入小工具」</b>.</li>
+</ol>
+
+<h2>5. 工作和生活分成兩個小工具（Pro）</h2>
+<p>每個小工具都可以顯示自己的行事曆。按住小工具，點一下 <b>「編輯小工具」</b>，然後選擇它的 <b>「行事曆」</b>。沒有選擇任何行事曆的小工具，會沿用 App 中「顯示的行事曆」的設定。</p>
+
+<h2>想要更多？</h2>
+<p>Todayboard Pro 是一次購買，不是訂閱：</p>
+<ul>
+  <li>選擇顯示哪些行事曆，可在 App 中設定，也可為每個小工具個別設定</li>
+  <li>中型（今天和明天）和大型（最多 7 天）小工具</li>
+  <li>鎖定畫面小工具</li>
+</ul>
+
+<h2>常見問題</h2>
+<div class="q"><b>會顯示我的 Google 日曆嗎？</b>會。到「設定」→「App」→「行事曆」→「行事曆帳號」→「加入帳號」加入你的 Google 帳號，並開啟「行事曆」。之後它的行程會出現在 iPhone 的「行事曆」App 中，Todayboard 也會顯示。Todayboard 從不自行登入 Google。</div>
+<div class="q"><b>可以免費做到嗎？</b>免費的小型小工具會顯示所有行事曆中今天的行程，「隱藏整天行程」也是免費的。選擇顯示哪些行事曆屬於 Todayboard Pro（一次購買），中型和大型小工具、鎖定畫面小工具，以及查看明天或未來 7 天也一樣。</div>
+<div class="q"><b>我的工作行事曆不在列表中。</b>Todayboard 讀取的是 iPhone 上已設定的行事曆。請到「設定」→「App」→「行事曆」→「行事曆帳號」→「加入帳號」（iOS 17：「設定」→「行事曆」→「帳號」）加入帳號，為它開啟「行事曆」，然後回到 Todayboard。</div>
+<div class="q"><b>小工具顯示「選擇行事曆屬於 Pro。」</b>這是因為沒有 Pro 時在「編輯小工具」中選了行事曆。在「編輯小工具」中取消選擇即可重新顯示所有行事曆，或購買 Todayboard Pro。</div>
+<div class="q"><b>Todayboard 會更改或上傳我的行程嗎？</b>不會。行事曆取用是唯讀的，資料也不會離開你的裝置。</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6814139080?pt=129250766&ct=guide-work-calendar-widget-todayboard-zh&mt=8">在 App Store 下載 Todayboard</a>
+<p class="dim">無訂閱，無廣告，不需要帳號。· <a href="../../../">關於 Todayboard</a> · <a href="../../../faq/">使用方式 &amp; 所有常見問題</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <b>繁體中文</b> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <a href="../vi/" hreflang="vi">Tiếng Việt</a> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

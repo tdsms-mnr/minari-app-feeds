@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="vi">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6815409629">
+<title>Cách đặt mục tiêu tiết kiệm lên Màn hình chính iPhone — Savebar</title>
+<meta name="description" content="Hiển thị mục tiêu tiết kiệm trên Màn hình chính iPhone bằng thanh tiến độ, và thêm tiền chỉ với một chạm từ tiện ích. Không cần đăng nhập ngân hàng. Savebar miễn phí một mục tiêu và tiện ích cỡ Nhỏ.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/vi/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF6F0; --accent:#C0582F; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#15110D; --accent:#F0A27A; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "Cách đặt mục tiêu tiết kiệm lên Màn hình chính iPhone",
+   "inLanguage": "vi",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "Mở Savebar, chạm + và tạo mục tiêu: tên và số tiền cần đạt. Hạn chót và liên kết sản phẩm là tùy chọn."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Ở “Số tiền trên tiện ích”, nhập số tiền bạn thường để dành, ví dụ 400.000."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Chạm và giữ một vùng trống trên Màn hình chính, chạm Sửa (hoặc +), tìm “Savebar”, chọn cỡ Nhỏ rồi chạm Thêm tiện ích."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Mỗi lần để dành tiền, hãy chạm nút số tiền trên tiện ích. Thanh tiến độ tăng lên mà không cần mở ứng dụng."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Ứng dụng có kết nối với ngân hàng của tôi không?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Không. Bạn tự nhập số tiền, nên không cần đăng nhập và không có gì phải liên kết."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Tôi có thể tạo bao nhiêu mục tiêu miễn phí?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Một mục tiêu, kèm tiện ích Màn hình chính cỡ Nhỏ. Savebar Pro, mua một lần, cho phép tạo mục tiêu không giới hạn, có tiện ích cỡ Vừa và Lớn hiển thị nhiều mục tiêu, tiện ích Màn hình khóa và ứng dụng Apple Watch."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Tôi có thể thêm số tiền không có trên nút không?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Có. Mở mục tiêu trong ứng dụng và chạm “+ Thêm” để nhập số tiền bất kỳ."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Làm sao chọn mục tiêu mà tiện ích hiển thị?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Chạm và giữ tiện ích, chạm Sửa tiện ích rồi chọn mục tiêu."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Savebar</a> · Hướng dẫn · <a href="../ja/">日本語</a></p>
+<h1>Cách đặt mục tiêu tiết kiệm lên Màn hình chính iPhone</h1>
+<p class="lede">Tiết kiệm cho một điều gì đó sẽ dễ hơn khi bạn nhìn thấy nó. Tiện ích đặt thanh tiến độ — đã để dành bao nhiêu và còn thiếu bao nhiêu — ở nơi bạn nhìn nhiều lần mỗi ngày, và cho phép thêm tiền chỉ với một chạm.</p>
+<p>Đây là cách thiết lập với <a href="../../../">Savebar</a>. Một mục tiêu và tiện ích cỡ Nhỏ được miễn phí.</p>
+
+<h2>1. Tạo mục tiêu</h2>
+<ol>
+  <li>Mở Savebar và chạm <b>+</b>.</li>
+  <li>Nhập tên và <b>Số tiền cần đạt</b>.</li>
+  <li>Tùy chọn: bật <b>“Đặt hạn chót”</b> để xem số ngày còn lại và số tiền cần để dành mỗi ngày.</li>
+  <li>Tùy chọn: dán liên kết sản phẩm vào <b>“Liên kết”</b>. Ảnh và tên sẽ được điền tự động từ trang đó.</li>
+</ol>
+
+<h2>2. Chọn số tiền cho nút trên tiện ích</h2>
+<p>Ở <b>“Số tiền trên tiện ích”</b>, nhập số tiền bạn thường để dành. Nút trên tiện ích sẽ thêm số tiền đó chỉ với một chạm, không cần mở ứng dụng.</p>
+<figure><img src="../../../img/edit_vi.jpg" alt="Sửa mục tiêu trong Savebar: liên kết sản phẩm, ảnh, tên mục tiêu, số tiền cần đạt và hạn chót" width="460" height="1000" loading="lazy"></figure>
+
+<h2>3. Đặt tiện ích lên Màn hình chính</h2>
+<ol>
+  <li>Chạm và giữ một vùng trống trên Màn hình chính cho đến khi các ứng dụng rung lên.</li>
+  <li>Chạm <b>Sửa</b> (hoặc <b>+</b>) ở góc trên, rồi tìm <b>“Savebar”</b>.</li>
+  <li>Chọn cỡ <b>Nhỏ</b> rồi chạm <b>Thêm tiện ích</b>.</li>
+</ol>
+<p>Mỗi lần để dành tiền, hãy chạm nút số tiền trên tiện ích. Thanh tiến độ và phần trăm thay đổi ngay tại đó.</p>
+<figure><img src="../../../img/home_vi.jpg" alt="Tiện ích Savebar trên Màn hình chính iPhone: một mục tiêu với ảnh, thanh tiến độ, phần trăm và nút số tiền" width="460" height="1000" loading="lazy"></figure>
+<p class="dim">Tiện ích lớn hơn trong ảnh này, với nhiều mục tiêu, thuộc Savebar Pro.</p>
+
+<h2>Muốn thêm?</h2>
+<p>Savebar Pro là mua một lần, không phải gói đăng ký:</p>
+<ul>
+  <li>Mục tiêu không giới hạn</li>
+  <li>Tiện ích cỡ Vừa và Lớn với nhiều mục tiêu, và tối đa hai nút số tiền cho mỗi mục tiêu</li>
+  <li>Tiện ích Màn hình khóa</li>
+  <li>Ứng dụng Apple Watch với các nút số tiền tương tự</li>
+</ul>
+
+<h2>Câu hỏi</h2>
+<div class="q"><b>Ứng dụng có kết nối với ngân hàng của tôi không?</b>Không. Bạn tự nhập số tiền, nên không cần đăng nhập và không có gì phải liên kết.</div>
+<div class="q"><b>Tôi có thể tạo bao nhiêu mục tiêu miễn phí?</b>Một mục tiêu, kèm tiện ích Màn hình chính cỡ Nhỏ. Savebar Pro, mua một lần, cho phép tạo mục tiêu không giới hạn, có tiện ích cỡ Vừa và Lớn hiển thị nhiều mục tiêu, tiện ích Màn hình khóa và ứng dụng Apple Watch.</div>
+<div class="q"><b>Tôi có thể thêm số tiền không có trên nút không?</b>Có. Mở mục tiêu trong ứng dụng và chạm “+ Thêm” để nhập số tiền bất kỳ.</div>
+<div class="q"><b>Làm sao chọn mục tiêu mà tiện ích hiển thị?</b>Chạm và giữ tiện ích, chạm Sửa tiện ích rồi chọn mục tiêu.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6815409629?pt=129250766&ct=guide-goal-widget-savebar-vi&mt=8">Tải Savebar trên App Store</a>
+<p class="dim">Không gói đăng ký, không quảng cáo, không đăng nhập ngân hàng, không cần tài khoản. · <a href="../../../">Giới thiệu Savebar</a></p>
+
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <b>Tiếng Việt</b> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>

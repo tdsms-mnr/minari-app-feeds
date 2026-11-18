@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="vi">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6816428852">
+<title>Cách để mỗi ngày có một bức danh họa trên Màn hình chính iPhone — Museday</title>
+<meta name="description" content="Đặt một bức danh họa đổi mới mỗi nửa đêm lên Màn hình chính iPhone, kể cả khi ngoại tuyến. 511 kiệt tác thuộc phạm vi công cộng. Tiện ích Small trong Museday miễn phí; Pro mua một lần.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/vi/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/zh-hant/">
+<link rel="alternate" hreflang="ko" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/ko/">
+<link rel="alternate" hreflang="de" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/de/">
+<link rel="alternate" hreflang="fr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/fr/">
+<link rel="alternate" hreflang="es" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/es/">
+<link rel="alternate" hreflang="it" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/it/">
+<link rel="alternate" hreflang="nl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/nl/">
+<link rel="alternate" hreflang="pl" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/pt/">
+<link rel="alternate" hreflang="ru" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/ru/">
+<link rel="alternate" hreflang="th" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/th/">
+<link rel="alternate" hreflang="tr" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/tr/">
+<link rel="alternate" hreflang="uk" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/uk/">
+<link rel="alternate" hreflang="vi" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/vi/">
+<link rel="alternate" hreflang="id" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/id/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF9F7; --accent:#2E6E70; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#7CC5C7; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "HowTo",
+   "name": "Cách để mỗi ngày có một bức danh họa trên Màn hình chính iPhone",
+   "inLanguage": "vi",
+   "step": [
+    {
+     "@type": "HowToStep",
+     "text": "Cài Museday và mở một lần. Tranh hôm nay nằm ở màn hình đầu tiên."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Chạm và giữ vào một vùng trống trên Màn hình chính, chạm “Sửa” (hoặc +), tìm “Museday”, chọn kích cỡ Small rồi chạm “Thêm tiện ích”."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Cứ để đó. Mỗi đêm lúc nửa đêm, một bức tranh mới sẽ thay chỗ, kể cả khi ngoại tuyến."
+    },
+    {
+     "@type": "HowToStep",
+     "text": "Chạm vào tiện ích để mở trang của bức tranh và đọc “Về bức tranh này”."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Có miễn phí không?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tiện ích Small với tranh hôm nay và các tiện ích Màn hình khóa đều miễn phí, không giới hạn thời gian và không có quảng cáo. Museday Pro, mua một lần, bổ sung tiện ích Medium, Large và Cực lớn, tiện ích hiện tranh yêu thích, một chủ đề, một thời kỳ hoặc một bảo tàng, và mọi bức tranh của những ngày trước."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Khi nào tranh thay đổi?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Mỗi ngày lúc nửa đêm. Cả 511 bức tranh đều có sẵn trong ứng dụng, nên tranh vẫn đổi dù không có kết nối internet."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Tiện ích Medium hoặc Large của tôi bị mờ và hiện “Museday Pro”.",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tiện ích Medium, Large và Cực lớn thuộc Pro. Ở bản miễn phí, hãy dùng kích cỡ Small."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Tôi có thể xem lại tranh hôm qua không?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Có. Tranh của 7 ngày gần nhất nằm trên màn hình Hôm nay, trong mục “7 ngày gần nhất”. Những ngày trước đó mở được với Pro."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<p class="dim"><a href="../../../">Museday</a> · Hướng dẫn · <a href="../ja/">日本語</a></p>
+<h1>Cách để mỗi ngày có một bức danh họa trên Màn hình chính iPhone</h1>
+<p class="lede">Van Gogh, Vermeer, Rembrandt. Một tiện ích đổi tranh lúc nửa đêm biến Màn hình chính thành một chuyến ghé thăm bảo tàng nhỏ mỗi lần bạn cầm điện thoại lên.</p>
+<p>Đây là cách thiết lập với <a href="../../../">Museday</a>. Tiện ích Small với tranh hôm nay là miễn phí.</p>
+
+<h2>1. Mở Museday một lần</h2>
+<p>Cài Museday và mở ứng dụng. Tranh hôm nay nằm ở màn hình đầu tiên, kèm tên tranh, họa sĩ, năm và bảo tàng đang lưu giữ tranh. Chạm <b>Về bức tranh này</b> để đọc phần giới thiệu tác phẩm do chính bảo tàng viết.</p>
+<figure><img src="../../../img/today_en.jpg" alt="Màn hình Hôm nay trong Museday: tranh hôm nay kèm tên tranh, họa sĩ, năm và bảo tàng, Về bức tranh này, và 7 ngày gần nhất" width="460" height="1000" loading="lazy"></figure>
+
+<h2>2. Đặt tiện ích lên Màn hình chính</h2>
+<ol>
+  <li>Chạm và giữ vào một vùng trống trên Màn hình chính cho đến khi các ứng dụng rung lên.</li>
+  <li>Chạm <b>Sửa</b> (hoặc <b>+</b>) ở góc trên cùng, rồi tìm <b>“Museday”</b>.</li>
+  <li>Chọn kích cỡ <b>Small</b> rồi chạm <b>Thêm tiện ích</b>.</li>
+</ol>
+<p>Vậy là xong. Mỗi đêm lúc nửa đêm, một bức tranh mới sẽ thay chỗ. Có 511 bức tranh của 290 họa sĩ, tất cả đều có sẵn trong ứng dụng, nên tranh vẫn tiếp tục đổi kể cả khi ngoại tuyến.</p>
+<figure><img src="../../../img/home_en.jpg" alt="Tiện ích Museday trên Màn hình chính iPhone: một bức chân dung kèm tên tranh, họa sĩ, năm và dòng đầu tiên của câu chuyện" width="460" height="1000" loading="lazy"></figure>
+<p class="dim">Hai tiện ích trong ảnh này là kích cỡ Large và Medium, thuộc Museday Pro. Tiện ích miễn phí là kích cỡ Small, với bức tranh lấp đầy ô vuông.</p>
+
+<h2>3. Trên Màn hình khóa</h2>
+<p>Chạm và giữ Màn hình khóa, chạm <b>Tùy chỉnh</b>, chạm vào vùng tiện ích và thêm <b>Tranh hôm nay (tên tranh)</b> từ Museday. Tiện ích này hiện tên tranh và họa sĩ của bức tranh hôm nay. Tiện ích Màn hình khóa là miễn phí.</p>
+
+<h2>Muốn nhiều hơn?</h2>
+<p>Museday Pro là mua một lần, không phải gói đăng ký:</p>
+<ul>
+  <li>Tiện ích Medium và Large — “Tranh và tên tranh” hoặc “Chỉ có tranh”</li>
+  <li>Tiện ích Cực lớn trên iOS 27</li>
+  <li>Tiện ích hiện tranh yêu thích, một chủ đề, một thời kỳ hoặc một bảo tàng, chọn trong “Hiển thị” ở “Sửa tiện ích”</li>
+  <li>Tranh của mọi ngày trước đây, với bộ lọc theo thời kỳ, bảo tàng và họa sĩ</li>
+</ul>
+
+<h2>Câu hỏi</h2>
+<div class="q"><b>Có miễn phí không?</b>Tiện ích Small với tranh hôm nay và các tiện ích Màn hình khóa đều miễn phí, không giới hạn thời gian và không có quảng cáo. Museday Pro, mua một lần, bổ sung tiện ích Medium, Large và Cực lớn, tiện ích hiện tranh yêu thích, một chủ đề, một thời kỳ hoặc một bảo tàng, và mọi bức tranh của những ngày trước.</div>
+<div class="q"><b>Khi nào tranh thay đổi?</b>Mỗi ngày lúc nửa đêm. Cả 511 bức tranh đều có sẵn trong ứng dụng, nên tranh vẫn đổi dù không có kết nối internet.</div>
+<div class="q"><b>Tiện ích Medium hoặc Large của tôi bị mờ và hiện “Museday Pro”.</b>Tiện ích Medium, Large và Cực lớn thuộc Pro. Ở bản miễn phí, hãy dùng kích cỡ Small.</div>
+<div class="q"><b>Tôi có thể xem lại tranh hôm qua không?</b>Có. Tranh của 7 ngày gần nhất nằm trên màn hình Hôm nay, trong mục “7 ngày gần nhất”. Những ngày trước đó mở được với Pro.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6816428852?pt=129250766&ct=guide-painting-widget-museday-vi&mt=8">Tải Museday trên App Store</a>
+<p class="dim">Không gói đăng ký, không quảng cáo, không tài khoản. · <a href="../../../">Giới thiệu Museday</a></p>
+
+<!-- langs --><p class="langs-row" style="text-align:center;font-size:13px;line-height:2;opacity:.75;margin:8px 16px 32px"><a href="../" hreflang="en">English</a> · <a href="../ja/" hreflang="ja">日本語</a> · <a href="../zh/" hreflang="zh-Hans">简体中文</a> · <a href="../zh-hant/" hreflang="zh-Hant">繁體中文</a> · <a href="../ko/" hreflang="ko">한국어</a> · <a href="../de/" hreflang="de">Deutsch</a> · <a href="../fr/" hreflang="fr">Français</a> · <a href="../es/" hreflang="es">Español</a> · <a href="../it/" hreflang="it">Italiano</a> · <a href="../nl/" hreflang="nl">Nederlands</a> · <a href="../pl/" hreflang="pl">Polski</a> · <a href="../pt/" hreflang="pt-BR">Português</a> · <a href="../ru/" hreflang="ru">Русский</a> · <a href="../th/" hreflang="th">ไทย</a> · <a href="../tr/" hreflang="tr">Türkçe</a> · <a href="../uk/" hreflang="uk">Українська</a> · <b>Tiếng Việt</b> · <a href="../id/" hreflang="id">Bahasa Indonesia</a></p><!-- /langs -->
+</html>
