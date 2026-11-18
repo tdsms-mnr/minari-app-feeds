@@ -1,57 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/guide/reading-widget/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/guide/reading-widget/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/guide/reading-widget/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/guide/reading-widget/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/guide/reading-widget/ko/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/ko/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/classicallog/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/pl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/vi/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/zh/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/guide/anniversary/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/pl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/vi/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/zh/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/datto/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/farwalk/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/farwalk/faq/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/farwalk/faq/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/farwalk/faq/ja/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/farwalk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/farwalk/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/guide/widget-mood-log/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/guide/widget-mood-log/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/guide/widget-mood-log/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/guide/widget-mood-log/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/guide/widget-mood-log/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/feelboard/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/pl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/vi/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/guide/home-screen-quote/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/ja/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/pl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/vi/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/kotoba/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/pl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/vi/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/guide/watering-widget/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/pl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/vi/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/leafday/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/de/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/faq/en/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/faq/ja/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/faq/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/pl/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/vi/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/faces-cut-off/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/pl/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/vi/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/guide/photos-not-changing/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/pl/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/vi/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/mantel/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/de/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/faq/en/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/faq/ja/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/pl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/vi/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/guide/painting-widget/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/it/</loc><lastmod>2026-11-18</lastmod></url>
@@ -67,34 +231,108 @@
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/vi/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/zh/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/museday/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/faq/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/faq/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/faq/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/guide/lock-screen/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/guide/lock-screen/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/guide/lock-screen/ja/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/rowmark/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/pl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/vi/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/guide/goal-widget/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/pl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/vi/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/savebar/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/slowdial/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/slowdial/guide/lock-screen-timer/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/slowdial/guide/lock-screen-timer/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/slowdial/guide/lock-screen-timer/ja/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/slowdial/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/slowdial/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/guide/check-off-widget/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/guide/check-off-widget/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/guide/check-off-widget/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/guide/check-off-widget/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/guide/check-off-widget/zh/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/threeline/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/faq/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/faq/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/faq/ja/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/faq/pt/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/faq/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/de/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/es/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/fr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/pl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/vi/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/id/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/it/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/ja/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/ko/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/nl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/pl/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/pt/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/ru/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/th/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/tr/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/uk/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/vi/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/zh/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/zh-hant/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/weeklybump/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/weeklybump/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/weeklybump/ja/</loc><lastmod>2026-11-18</lastmod></url>
