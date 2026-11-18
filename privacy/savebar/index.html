@@ -18,7 +18,7 @@
 The app does not send them to the developer's servers and does not share them with third parties. There is no account and no advertising.</p>
 <h2>Photos</h2>
 <p>To add a photo to a goal, the app uses the iOS photo picker. The app receives only the photo you choose; it does not access your whole photo library.
-A smaller copy of the chosen photo is saved on your device, in the app's own container, and shown in the widget. The original photo is not changed, and photos never leave your device.</p>
+A smaller copy of the chosen photo is saved on your device, in the app's own container, and shown in the widget. The original photo is not changed. Photos never leave your device, except to your own iCloud when you use iCloud sync (see below).</p>
 <h2>Loading a photo and name from a product link</h2>
 <p>When you enter a product link for a goal, the app loads that store's page and product image directly from the store's servers. Nothing passes through the developer's servers.
 As with ordinary web browsing, the store can see your IP address and similar connection details. The app does not keep cookies from this connection and never sends your goal names or amounts to the store. If you don't enter a link, this connection never happens.</p>
@@ -27,6 +27,9 @@ As with ordinary web browsing, the store can see your IP address and similar con
 When you save, the goal's name, target amount, product link and photo are stored on your device, in the app's own container, like any other goal. The product photo is loaded directly from the store's servers (as in "Loading a photo and name from a product link" above). When you use the Share button from an app other than Safari, the app loads the shared link's page directly from the store's servers.</p>
 <h2>Apple Watch</h2>
 <p>Savebar on Apple Watch talks directly to the app on your iPhone using Apple's WatchConnectivity. The watch keeps a copy of your goals' names, amounts and progress, and deposits you tap on the watch are passed to the iPhone app and saved there. This stays between your iPhone and your Apple Watch and is never sent to our server. The watch app does not send anonymous usage events either.</p>
+<h2>iCloud sync (version 1.6 and later, Pro)</h2>
+<p>Only if you have Pro and keep iCloud sync on, goals, target amounts, deadlines, deposits, product links and goal photos are stored in your own iCloud (Apple’s CloudKit private database) and synced only between your own iPhone and iPad signed in with the same Apple Account.
+The developer cannot see this content, and nothing is sent to the developer’s servers. You can turn sync off in the app’s settings at any time; turning it off deletes nothing.</p>
 <h2>Anonymous usage</h2>
 <p>To improve the app, the following anonymous records are sent to the developer's server.</p>
 <ul>
