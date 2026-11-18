@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-itunes-app" content="app-id=6814139080">
+<title>How to show only your work calendar in an iPhone widget — Todayboard</title>
+<meta name="description" content="Show only your work calendar in an iPhone Home Screen widget, or keep work and personal calendars on separate widgets. Read-only, no account. Choosing calendars is part of Todayboard Pro, a one-time purchase.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ja/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
+<style>
+  :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#faf9f7; --accent:#3B55B5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#171614; --accent:#8FA2F0; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
+  }
+  body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
+         margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
+         color: var(--ink); background: var(--bg); }
+  h1 { font-size: 1.9rem; margin: 0 0 .8rem; letter-spacing: -.01em; line-height: 1.3; }
+  h2 { font-size: 1.15rem; margin: 2.5rem 0 .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  ol, ul { padding-left: 1.3rem; } li { margin: .45rem 0; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; margin: .8rem 0; }
+  th, td { text-align: left; padding: .5rem .4rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .lede { font-size: 1.05rem; }
+  .dim { color: var(--dim); font-size: .9rem; }
+  a { color: var(--accent); }
+  .cta { display: inline-block; margin: 1.2rem 0; padding: .7rem 1.4rem; background: var(--accent); color: #fff;
+         border-radius: 999px; text-decoration: none; font-weight: 600; }
+  figure { margin: 1.2rem 0; } figure img { display:block; width:100%; max-width: 320px; height:auto; border-radius: 14px; border:1px solid var(--line); }
+  .q { margin: 1.2rem 0; } .q b { display: block; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      "name": "How to show only your work calendar in an iPhone widget",
+      "inLanguage": "en",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Make sure your work calendar is in the iPhone Calendar app. If not, add the account in Settings → Apps → Calendar → Calendar Accounts → Add Account, and turn on Calendars for it."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Open Todayboard, tap Continue and allow full access to your calendars. Access is read-only."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "With Todayboard Pro, tap “Show calendars” in the DISPLAY card and check only your work calendars."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Touch and hold your Home Screen, tap Edit, then Add Widget. Search for “Todayboard”, pick a size and tap Add Widget."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "For a separate work widget and home widget, touch and hold a widget, tap Edit Widget and choose its Calendars."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I do this for free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The free Small widget shows today's events from all your calendars, and “Hide all-day events” is free too. Choosing which calendars show is part of Todayboard Pro, a one-time purchase, along with Medium and Large widgets, Lock Screen widgets and tomorrow or the next 7 days."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My work calendar isn't in the list.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Todayboard reads the calendars set up on your iPhone. Add the account in Settings → Apps → Calendar → Calendar Accounts → Add Account (on iOS 17: Settings → Calendar → Accounts), turn on Calendars for it, then come back to Todayboard."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The widget says “Choosing calendars is Pro.”",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Calendars were chosen in Edit Widget without Pro. Remove them in Edit Widget to show all calendars again, or get Todayboard Pro."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Todayboard change or upload my events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Calendar access is read-only, and nothing leaves your device."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<p class="dim"><a href="../../">Todayboard</a> · Guide · <a href="ja/">日本語</a></p>
+<h1>How to show only your work calendar in an iPhone widget</h1>
+<p class="lede">If your iPhone holds both work and personal calendars, a widget that shows everything gets crowded. A widget with just your work calendar shows what's next at work, and nothing else.</p>
+<p>Here is how to do it with <a href="../../">Todayboard</a>, a calendar widget that reads the calendars already on your iPhone. Choosing calendars is part of Todayboard Pro, a one-time purchase. The free Small widget shows all your calendars.</p>
+
+<h2>1. Check that your work calendar is on your iPhone</h2>
+<p>Todayboard reads the events in your iPhone's Calendar app. If your work calendar isn't there yet:</p>
+<ol>
+  <li>Open <b>Settings → Apps → Calendar → Calendar Accounts</b> (on iOS 17: <b>Settings → Calendar → Accounts</b>).</li>
+  <li>Tap <b>Add Account</b> and add your work account.</li>
+  <li>Turn on <b>Calendars</b> for that account.</li>
+</ol>
+
+<h2>2. Allow calendar access</h2>
+<p>Open Todayboard, tap <b>Continue</b> and allow full access. Access is read-only: Todayboard never edits your events.</p>
+<p class="dim">Declined by mistake? iPhone won't ask again. Open Settings → Calendars and choose Full Access.</p>
+
+<h2>3. Choose your work calendars (Pro)</h2>
+<ol>
+  <li>On Todayboard's main screen, find the <b>DISPLAY</b> card.</li>
+  <li>Tap <b>“Show calendars”</b> and check only your work calendars.</li>
+  <li>Optional: turn on <b>“Hide all-day events”</b> to hide birthdays and holidays. This one is free.</li>
+</ol>
+
+<h2>4. Put the widget on your Home Screen</h2>
+<ol>
+  <li>Go to your Home Screen. Touch and hold an empty area until the apps jiggle.</li>
+  <li>Tap <b>Edit</b> in the top-left corner, then <b>Add Widget</b>.</li>
+  <li>Search for <b>“Todayboard”</b>, pick a size and tap <b>Add Widget</b>.</li>
+</ol>
+
+<h2>5. Work and home on separate widgets (Pro)</h2>
+<p>Each widget can show its own calendars. Touch and hold a widget, tap <b>Edit Widget</b>, then choose its <b>Calendars</b>. A widget with nothing chosen follows “Show calendars” in the app.</p>
+
+<h2>Want more?</h2>
+<p>Todayboard Pro is a one-time purchase, not a subscription:</p>
+<ul>
+  <li>Choose which calendars show, in the app and for each widget</li>
+  <li>Medium (today and tomorrow) and Large (up to 7 days) widgets</li>
+  <li>Lock Screen widgets</li>
+</ul>
+
+<h2>Questions</h2>
+<div class="q"><b>Can I do this for free?</b>The free Small widget shows today's events from all your calendars, and “Hide all-day events” is free too. Choosing which calendars show is part of Todayboard Pro, a one-time purchase, along with Medium and Large widgets, Lock Screen widgets and tomorrow or the next 7 days.</div>
+<div class="q"><b>My work calendar isn't in the list.</b>Todayboard reads the calendars set up on your iPhone. Add the account in Settings → Apps → Calendar → Calendar Accounts → Add Account (on iOS 17: Settings → Calendar → Accounts), turn on Calendars for it, then come back to Todayboard.</div>
+<div class="q"><b>The widget says “Choosing calendars is Pro.”</b>Calendars were chosen in Edit Widget without Pro. Remove them in Edit Widget to show all calendars again, or get Todayboard Pro.</div>
+<div class="q"><b>Does Todayboard change or upload my events?</b>No. Calendar access is read-only, and nothing leaves your device.</div>
+
+<a class="cta" href="https://apps.apple.com/app/id6814139080?pt=129250766&ct=guide-work-calendar-widget-todayboard-en&mt=8">Get Todayboard on the App Store</a>
+<p class="dim">No subscription, no ads, no account. · <a href="../../">About Todayboard</a> · <a href="../../faq/">How to use &amp; all FAQ</a></p>
+</html>

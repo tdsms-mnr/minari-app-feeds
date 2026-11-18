@@ -13,6 +13,7 @@
   :root { --ink:#2b2b2b; --dim:#6b6b6b; --line:#e6e4e1; --bg:#FAF6F0; --accent:#C0582F; }
   @media (prefers-color-scheme: dark) {
     :root { --ink:#ece9e6; --dim:#a09a94; --line:#332f2c; --bg:#15110D; --accent:#F0A27A; }
+    body .cta { color: var(--bg); }   /* 後ろの .cta より強く。 暗いときのアクセントは明るい＝白文字だと読めない（コントラスト約2）→地の色で 7〜9 */
   }
   body { font-family: -apple-system, "Helvetica Neue", "Hiragino Sans", "PingFang TC", sans-serif; max-width: 42rem;
          margin: 0 auto; padding: 3.5rem 1.5rem 5rem; line-height: 1.7;
