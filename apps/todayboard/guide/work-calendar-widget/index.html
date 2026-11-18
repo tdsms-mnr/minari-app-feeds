@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-itunes-app" content="app-id=6814139080">
 <title>How to show only your work calendar in an iPhone widget — Todayboard</title>
-<meta name="description" content="Show only your work calendar in an iPhone Home Screen widget, or keep work and personal calendars on separate widgets. Read-only, no account. Choosing calendars is part of Todayboard Pro, a one-time purchase.">
+<meta name="description" content="Show only your work calendar — including a Google Calendar — in an iPhone Home Screen widget, or keep work and personal calendars on separate widgets. Read-only, no account. Choosing calendars is part of Todayboard Pro, a one-time purchase.">
 <link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
 <link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/">
 <link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/todayboard/guide/work-calendar-widget/ja/">
@@ -67,6 +67,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Does it show my Google Calendar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Add your Google account in Settings → Apps → Calendar → Calendar Accounts → Add Account and turn on Calendars. Its events then appear in the iPhone Calendar app, and Todayboard shows them. Todayboard never signs in to Google itself."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Can I do this for free?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -111,7 +119,7 @@
 <p>Todayboard reads the events in your iPhone's Calendar app. If your work calendar isn't there yet:</p>
 <ol>
   <li>Open <b>Settings → Apps → Calendar → Calendar Accounts</b> (on iOS 17: <b>Settings → Calendar → Accounts</b>).</li>
-  <li>Tap <b>Add Account</b> and add your work account.</li>
+  <li>Tap <b>Add Account</b> and add your work account — for example your Google account.</li>
   <li>Turn on <b>Calendars</b> for that account.</li>
 </ol>
 
@@ -145,6 +153,7 @@
 </ul>
 
 <h2>Questions</h2>
+<div class="q"><b>Does it show my Google Calendar?</b>Yes. Add your Google account in Settings → Apps → Calendar → Calendar Accounts → Add Account and turn on Calendars. Its events then appear in the iPhone Calendar app, and Todayboard shows them. Todayboard never signs in to Google itself.</div>
 <div class="q"><b>Can I do this for free?</b>The free Small widget shows today's events from all your calendars, and “Hide all-day events” is free too. Choosing which calendars show is part of Todayboard Pro, a one-time purchase, along with Medium and Large widgets, Lock Screen widgets and tomorrow or the next 7 days.</div>
 <div class="q"><b>My work calendar isn't in the list.</b>Todayboard reads the calendars set up on your iPhone. Add the account in Settings → Apps → Calendar → Calendar Accounts → Add Account (on iOS 17: Settings → Calendar → Accounts), turn on Calendars for it, then come back to Todayboard.</div>
 <div class="q"><b>The widget says “Choosing calendars is Pro.”</b>Calendars were chosen in Edit Widget without Pro. Remove them in Edit Widget to show all calendars again, or get Todayboard Pro.</div>
