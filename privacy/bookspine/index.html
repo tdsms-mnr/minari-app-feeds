@@ -27,6 +27,10 @@ barcode of a Japanese book (an ISBN starting with 978-4), the ISBN is sent to <a
 the bibliographic database of Japanese publishers. Only that search
 term is sent — never the contents of your shelf, your name, or any device identifier. You can also add a book by
 typing its title yourself, which sends nothing at all.</p>
+<p>If Open Library returns few matches for a search — common for books in Chinese, Korean, Russian or Ukrainian —
+the same search term is also sent to Apple's <a href="https://performance-partners.apple.com/search-api">iTunes Search API</a>
+(Apple Books search) to find the book and its cover. Only the search term is sent. When you add a book found this way,
+its cover image from Apple Books is downloaded to your device.</p>
 <p>Only if you turn on “Also find covers on Apple Books” in Settings, the title and author of books without a cover
 are sent to Apple's <a href="https://performance-partners.apple.com/search-api">iTunes Search API</a> (Apple Books search),
 and the cover image found there is downloaded. This setting is off by default and can be turned off at any time

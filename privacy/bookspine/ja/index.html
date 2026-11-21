@@ -27,6 +27,9 @@
 <a href="https://openbd.jp/">openBD</a> へ、その ISBN を送信します。
 このとき送られるのは検索語（または ISBN）だけで、利用者の本棚の中身・氏名・端末の識別子は送信しません。
 検索を使わずに、書名を自分で入力して本を登録することもできます（通信は発生しません）。</p>
+<p>Open Libraryで見つかる候補が少ないとき（中国語・韓国語・ロシア語・ウクライナ語の本でよく起こります）は、同じ検索語を
+Appleの<a href="https://performance-partners.apple.com/search-api">iTunes Search API</a>（Apple Booksの検索）にも送信し、本と表紙を探します。
+送信するのは検索語だけです。こうして見つけた本を登録すると、Apple Booksの表紙の画像を端末に取り込みます。</p>
 <p>設定で「Apple Books からも表紙を探す」をオンにした場合に限り、表紙が見つからない本の書名と著者名を
 Apple の <a href="https://performance-partners.apple.com/search-api">iTunes Search API</a>（Apple Books の検索）へ送信し、
 見つかった表紙の画像を取り込みます。この設定は既定でオフで、いつでもオフに戻せます（オフにすると、Apple Books から取り込んだ表紙は端末から削除されます）。</p>
