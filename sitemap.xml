@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/ja/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/nightwick/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/nightwick/ja/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/driftfall/</loc><lastmod>2026-11-23</lastmod></url>
+  <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/driftfall/ja/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/de/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/es/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://tdsms-mnr.github.io/minari-app-feeds/apps/bookspine/guide/reading-widget/de/</loc><lastmod>2026-11-18</lastmod></url>

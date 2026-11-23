@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<script src="/minari-app-feeds/legacy-notice.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>minari — small apps for iPhone</title>
+<meta name="description" content="Small apps for iPhone by minari. No ads in any of them.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/">
+<link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/">
+<link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/ja/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/">
+<style>
+  :root { --bg:#F4F0EB; --surface:#FFFDFB; --ink:#2B2A28; --dim:#7D7A75; --track:#E4DED6; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1F1E1D; --surface:#2B2A28; --ink:#EDE9E4; --dim:#A6A29C; --track:#34322F; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif;
+         -webkit-font-smoothing:antialiased; line-height:1.6; }
+  a { color:inherit; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
+  header { display:flex; justify-content:space-between; align-items:center; padding-top:32px; }
+  .nb { display:inline-block; }
+  .mark { font-weight:600; font-size:17px; text-decoration:none; }
+  .lang { font-size:14px; color:var(--dim); text-decoration:none; }
+  .hero { padding:96px 0 64px; }
+  h1 { font-size:52px; line-height:1.15; font-weight:700; letter-spacing:-0.03em; margin:0 0 16px; }
+  .sub { font-size:18px; color:var(--dim); margin:0; }
+  .apps { list-style:none; margin:0; padding:0 0 96px; display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; }
+  .apps a { display:flex; gap:16px; align-items:center; background:var(--surface); border-radius:24px;
+            padding:20px 24px 20px 20px; text-decoration:none; height:100%; transition:transform .2s ease; }
+  .apps a:hover { transform:translateY(-2px); }
+  .apps img { width:64px; height:64px; border-radius:15px; flex:none; box-shadow:0 0 0 0.5px rgba(0,0,0,.08); }
+  .apps b { display:block; font-weight:600; font-size:17px; }
+  .apps span span { display:block; color:var(--dim); font-size:15px; line-height:1.4; }
+  footer { border-top:1px solid var(--track); padding:32px 0 48px; color:var(--dim); font-size:14px;
+           display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-between; }
+  @media (max-width: 900px) { .apps { grid-template-columns:repeat(2, 1fr); } }
+  @media (max-width: 600px) {
+    .wrap { padding:0 16px; }
+    .hero { padding:64px 0 48px; }
+    h1 { font-size:36px; }
+    .apps { grid-template-columns:1fr; gap:12px; padding-bottom:64px; }
+  }
+  :lang(ja) h1 { letter-spacing:0.01em; line-height:1.35; font-size:46px; }
+  @media (max-width: 600px) { :lang(ja) h1 { font-size:32px; } }
+  :lang(ja) body { word-break:auto-phrase; }
+</style>
+
+<div class="wrap">
+<header><a class="mark" href="./">minari</a><a class="lang" href="ja/">日本語</a></header>
+<section class="hero">
+  <h1>Small apps for iPhone.</h1>
+  <p class="sub">No ads in any of them.</p>
+</section>
+<ul class="apps">
+  <li><a href="apps/savebar/"><img src="icons/savebar.png" alt="" loading="lazy"><span><b>Savebar</b><span>Savings goals, as a widget</span></span></a></li>
+  <li><a href="apps/datto/"><img src="icons/datto.png" alt="" loading="lazy"><span><b>Datto</b><span>Count down to big days</span></span></a></li>
+  <li><a href="apps/kotoba/"><img src="icons/kotoba.png" alt="" loading="lazy"><span><b>Kotoba</b><span>Your words, as a widget</span></span></a></li>
+  <li><a href="apps/mantel/"><img src="icons/mantel.png" alt="" loading="lazy"><span><b>Mantel</b><span>Your photos, as a widget</span></span></a></li>
+  <li><a href="apps/bookspine/"><img src="icons/bookspine.png" alt="" loading="lazy"><span><b>Bookspine</b><span>Your reads, as a widget</span></span></a></li>
+  <li><a href="apps/museday/"><img src="icons/museday.png" alt="" loading="lazy"><span><b>Museday</b><span>A painting a day, as a widget</span></span></a></li>
+  <li><a href="apps/todayboard/"><img src="icons/todayboard.png" alt="" loading="lazy"><span><b>Todayboard</b><span>Calendars, kept separate</span></span></a></li>
+  <li><a href="apps/threeline/"><img src="icons/threeline.png" alt="" loading="lazy"><span><b>Threeline</b><span>Three things today</span></span></a></li>
+  <li><a href="apps/leafday/"><img src="icons/leafday.png" alt="" loading="lazy"><span><b>Leafday</b><span>Which plants need water today</span></span></a></li>
+  <li><a href="apps/feelboard/"><img src="icons/feelboard.png" alt="" loading="lazy"><span><b>Feelboard</b><span>A year of moods in one picture</span></span></a></li>
+  <li><a href="apps/weeklybump/"><img src="icons/weeklybump.png" alt="" loading="lazy"><span><b>Petalweek</b><span>Your pregnancy week, as a widget</span></span></a></li>
+  <li><a href="apps/rowmark/"><img src="icons/rowmark.png" alt="" loading="lazy"><span><b>Rowmark</b><span>Count rows on the Lock Screen</span></span></a></li>
+  <li><a href="apps/nightwick/"><img src="icons/nightwick.png" alt="" loading="lazy"><span><b>Nightwick</b><span>Tonight&#x27;s candle, from your shelf</span></span></a></li>
+  <li><a href="apps/driftfall/"><img src="icons/driftfall.png" alt="" loading="lazy"><span><b>Driftfall</b><span>Snow and petals on your photos</span></span></a></li>
+  <li><a href="apps/classicallog/"><img src="icons/classicallog.png" alt="" loading="lazy"><span><b>ClassicalLog</b><span>A journal for classical concerts</span></span></a></li>
+  <li><a href="apps/slowdial/"><img src="icons/slowdial.png" alt="" loading="lazy"><span><b>Slowdial</b><span>A timer you can watch shrink</span></span></a></li>
+  <li><a href="apps/farwalk/"><img src="icons/farwalk.png" alt="" loading="lazy"><span><b>Farwalk</b><span>Walk the real distance to someone</span></span></a></li>
+</ul>
+<footer><span>Contact: minariapps@gmail.com</span><span>© 2026 minari</span></footer>
+</div>

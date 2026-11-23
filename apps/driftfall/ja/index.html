@@ -1,58 +1,247 @@
 <!doctype html>
 <html lang="ja">
 <meta charset="utf-8">
+<script src="/minari-app-feeds/legacy-notice.js" defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Driftfall — 自分の写真に、雪と花びらを</title>
-<meta name="description" content="自分の写真に、雪や桜の花びら、紅葉などを降らせるアプリ。ロック画面の壁紙にしたり、動く写真として送ったりできます。写真はiPhoneの中だけに残ります。">
+<meta name="apple-itunes-app" content="app-id=6836211068">
+<title>Driftfall — 自分の写真に雪や桜を降らせて、ロック画面の壁紙や動く写真に（買い切り）</title>
+<meta name="description" content="自分の写真に、雪や桜、紅葉などを降らせるアプリ。ロック画面の壁紙にも、動く写真として送ることもできます。写真はiPhoneの中だけ。Proは買い切り。">
 <link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/driftfall/ja/">
 <link rel="alternate" hreflang="en" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/driftfall/">
 <link rel="alternate" hreflang="ja" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/driftfall/ja/">
+<link rel="alternate" hreflang="x-default" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/driftfall/">
 <style>
-  :root { --bg:#F4EFEC; --surface:#FFFFFF; --ink:#3A3335; --dim:#6B5F63; --track:#E7DFDA; --accent:#3A3335; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#221E20; --surface:#2E292B; --ink:#EDE7E8; --dim:#A99FA3; --track:#3A3336; --accent:#EDE7E8; } }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
-  .wrap { max-width:760px; margin:0 auto; padding:48px max(16px, env(safe-area-inset-left)) 64px; }
-  header { display:flex; align-items:center; gap:16px; }
-  header img { width:64px; height:64px; border-radius:15px; }
-  h1 { font-size:32px; line-height:1.25; margin:0; }
-  .lang { margin-left:auto; color:var(--dim); font-size:14px; }
-  .lead { font-size:18px; margin:24px 0 32px; }
-  .shot { display:block; width:min(280px,100%); margin:0 auto 40px; border-radius:32px; border:8px solid #3A3335; }
-  h2 { font-size:22px; margin:40px 0 12px; }
-  .plans { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-  @media (max-width:600px) { .plans { grid-template-columns:1fr; } }
-  .plan { background:var(--surface); border-radius:20px; padding:20px 24px; }
-  .plan h3 { margin:0 0 8px; font-size:18px; }
-  .plan ul { margin:0; padding-left:1.1em; }
-  .q { border-top:1px solid var(--track); padding:16px 0; }
-  .q b { display:block; }
-  .q span { color:var(--dim); }
+  :root { --bezel:#3A3335; --bg:#F4EFEC; --surface:#FFFFFF; --ink:#3A3335; --dim:#6B5F63; --track:#E7DFDA; --accent:#3A3335; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bezel:#2E292B; --bg:#221E20; --surface:#2E292B; --ink:#EDE7E8; --dim:#A99FA3; --track:#3A3336; --accent:#EDE7E8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", sans-serif;
+         -webkit-font-smoothing: antialiased; line-height:1.6; }
   a { color:var(--accent); }
-  footer { color:var(--dim); font-size:14px; margin-top:48px; }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 24px; }
+  .nav { position:sticky; top:12px; z-index:2; display:flex; justify-content:center; padding:0 16px; }
+  .nav-inner { display:flex; align-items:center; gap:10px; padding:8px 18px 8px 10px; border-radius:999px;
+               background:color-mix(in srgb, var(--surface) 80%, transparent); backdrop-filter:blur(12px);
+               box-shadow:0 1px 8px rgba(0,0,0,.06); font-weight:600; font-size:15px; }
+  .nav img { width:28px; height:28px; border-radius:7px; }
+  .nav .lang { font-weight:400; font-size:14px; color:var(--dim); text-decoration:none; margin-left:8px; }
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center; padding-top:56px; padding-bottom:80px; }
+  h1 { font-size:52px; line-height:1.15; font-weight:700; letter-spacing:-0.03em; margin:0 0 24px; }
+  .lead { color:var(--accent); }
+  .sub { font-size:18px; color:var(--dim); margin:0 0 32px; max-width:30em; }
+  .badge { display:inline-block; }
+  .badge img { height:54px; display:block; }
+  .facts { display:flex; flex-wrap:wrap; gap:8px; margin:28px 0 0; padding:0; list-style:none; }
+  .facts li { font-size:14px; padding:6px 12px; border-radius:999px; background:var(--track); }
+  .device { width:100%; max-width:300px; aspect-ratio:1320/2868; border:10px solid var(--bezel); border-radius:52px;
+            overflow:hidden; box-shadow:0 30px 60px -20px rgba(43,36,39,.35); background:#000; justify-self:center; }
+  .device img { width:100%; height:100%; object-fit:cover; display:block; }
+  .statement { text-align:center; padding:96px 24px; }
+  .statement p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto; max-width:22em; }
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; padding-bottom:96px; }
+  .split.rev .text { order:2; }
+  h2 { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 0 20px; }
+  .split .text p { font-size:18px; color:var(--dim); margin:0; max-width:28em; }
+  .pricing { display:grid; grid-template-columns:1fr 1fr; gap:20px; padding-bottom:96px; }
+  .pricing h2 { grid-column:1/-1; text-align:center; margin-bottom:12px; }
+  .plan { background:var(--surface); border-radius:32px; padding:32px; }
+  .plan h3 { font-size:22px; letter-spacing:-0.02em; margin:0 0 4px; }
+  .plan h3 .price { font-weight:400; color:var(--dim); margin-left:8px; }
+  .plan .note { color:var(--dim); margin:0 0 16px; font-size:15px; }
+  .plan ul { margin:0; padding-left:1.1em; }
+  .plan li { margin:.35em 0; }
+  .faq { max-width:760px; padding-bottom:96px; }
+  .faq h2 { text-align:center; margin-bottom:32px; }
+  .faq .q { border-top:1px solid var(--track); padding:20px 0; }
+  .faq .q:last-child { border-bottom:1px solid var(--track); }
+  .faq .q b { display:block; font-weight:600; margin-bottom:4px; }
+  .faq .q span { color:var(--dim); }
+  .xapps { padding-bottom:72px; }
+  .xapps h2 { text-align:center; margin:0 0 24px; }
+  .xapps ul { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(290px, 1fr)); gap:12px; }
+  .xapps li a { display:flex; gap:16px; align-items:center; background:var(--surface); border-radius:24px;
+                padding:16px 20px 16px 16px; text-decoration:none; color:var(--ink); }
+  .xapps img { width:56px; height:56px; border-radius:13px; flex:none; box-shadow:0 0 0 0.5px rgba(0,0,0,.08); }
+  .xapps li a > span { color:var(--dim); font-size:15px; line-height:1.4; }
+  .xapps b { display:block; font-weight:600; font-size:17px; color:var(--ink); }
+  .xapps .all { text-align:center; margin:24px 0 0; font-size:15px; }
+  .closing { text-align:center; padding:32px 24px 96px; }
+  .closing p { font-size:40px; line-height:1.2; font-weight:600; letter-spacing:-0.035em; margin:0 auto 32px; max-width:18em; }
+  footer { text-align:center; color:var(--dim); font-size:14px; padding:0 24px 16px; }
+  .langs-row { text-align:center; font-size:13px; line-height:2; color:var(--dim); margin:0 16px 32px; }
+  .nb { display:inline-block; }
+  @media (max-width: 820px) {
+    .wrap { padding:0 16px; }
+    .hero, .split, .pricing { grid-template-columns:1fr; gap:40px; }
+    .hero { padding-top:48px; padding-bottom:64px; }
+    .split.rev .text { order:0; }
+    h1 { font-size:40px; }
+    h2, .statement p, .closing p { font-size:30px; }
+    .statement { padding:64px 16px; }
+    .split, .pricing, .faq { padding-bottom:64px; }
+    .device { max-width:260px; }
+  }
+  :lang(ja) h1, :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { letter-spacing:0.01em; line-height:1.35; }
+  :lang(ja) h1 { font-size:46px; }
+  @media (max-width: 820px) { :lang(ja) h1 { font-size:34px; } :lang(ja) h2, :lang(ja) .statement p, :lang(ja) .closing p { font-size:26px; } }
+  :lang(ja) body { word-break:auto-phrase; }
 </style>
-<div class="wrap">
-<header><img src="../img/icon.png" alt=""><h1>Driftfall</h1><a class="lang" href="../">English</a></header>
-<p class="lead">自分の写真に、雪や桜の花びら、紅葉などを降らせるアプリです。ロック画面の壁紙にしたり、動く写真として送ったりできます。</p>
-<img class="shot" src="../img/editor_ja.jpg" alt="Driftfallで写真に桜の花びらを降らせている画面">
-<h2>できること</h2>
-<ul>
-  <li>写真を選んで、降らせるものを選ぶ。降る量と風の強さを変えられます。</li>
-  <li>Live Photoとして保存して、ロック画面の壁紙に。iPhoneの画面をつけたとき、少しのあいだ降り出します。</li>
-  <li>つなぎ目なくループする短い動画にして送れます。</li>
-  <li>降らせられるのは14種類：桜、デイジー、紫陽花、雨、蛍、紅葉、銀杏、落ち葉、雪、羽、シャボン玉、紙吹雪、星くず、流れ星。</li>
-</ul>
-<h2>無料とPro</h2>
-<div class="plans">
-  <div class="plan"><h3>無料</h3><ul><li>14種類すべてを自分の写真で試せる</li><li>雨とシャボン玉は保存・送信もできる</li></ul></div>
-  <div class="plan"><h3>Driftfall Pro</h3><ul><li>14種類すべてを保存して送れる</li><li>買い切り。サブスク・広告はありません。</li></ul></div>
-</div>
-<h2>よくある質問</h2>
-<div class="q"><b>壁紙にするには？</b><span>保存したあと、設定＞壁紙＞新しい壁紙を追加＞写真を開いて、保存したLive Photoを選びます。</span></div>
-<div class="q"><b>少ししか動かない</b><span>iOSのLive Photo壁紙は、画面をつけたときに少しのあいだだけ動く仕組みです。長く見たいときは、動画で送ってください。</span></div>
-<div class="q"><b>写真はどこに保存される？</b><span>iPhoneの中だけです。アカウントは無く、どこにも送られません。<a href="../../../privacy/driftfall/ja/">プライバシーポリシー</a>をご覧ください。</span></div>
-<div class="q"><b>別のiPhoneでProを買った</b><span>設定（歯車）を開いて「購入を復元」を押してください。</span></div>
-<h2>お問い合わせ</h2>
-<p>minariapps@gmail.com、またはアプリの設定（歯車）＞お問い合わせから。</p>
-<footer>© 2026 minari</footer>
-</div>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "name": "Driftfall",
+   "operatingSystem": "iOS 17 or later",
+   "applicationCategory": "MultimediaApplication",
+   "description": "自分の写真に、雪や桜、紅葉などを降らせるアプリ。ロック画面の壁紙にも、動く写真として送ることもできます。写真はiPhoneの中だけ。Proは買い切り。",
+   "installUrl": "https://apps.apple.com/app/id6836211068?pt=129250766&ct=lp-driftfall-ja&mt=8",
+   "url": "https://tdsms-mnr.github.io/minari-app-feeds/apps/driftfall/ja/",
+   "offers": [
+    {
+     "@type": "Offer",
+     "price": "0",
+     "priceCurrency": "USD"
+    },
+    {
+     "@type": "Offer",
+     "name": "Driftfall Pro",
+     "price": "14.99",
+     "priceCurrency": "USD",
+     "description": "One-time in-app purchase, not a subscription."
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "サブスクですか",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "いいえ。14種類すべてを自分の写真で無料で試せます。14種類すべてを保存して送れるDriftfall Proは買い切りです。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "壁紙にするには",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "保存したあと、設定＞壁紙＞新しい壁紙を追加＞写真を開いて、保存したLive Photoを選びます。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "少ししか動きません",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iOSのLive Photo壁紙は、画面をつけたときに少しのあいだだけ動く仕組みです。長く見たいときは、動画で送ってください。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "写真はどこに保存されますか",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "iPhoneの中だけです。アカウントは無く、どこにも送られません。プライバシーポリシーをご覧ください。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "別のiPhoneでProを買いました",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "設定（歯車）を開いて「購入を復元」を押してください。"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "問い合わせ先は",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "minariapps@gmail.comにメールしてください。"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+<nav class="nav"><div class="nav-inner"><img src="../img/icon.png" alt="">Driftfall<a class="lang" href="../">English</a></div></nav>
+
+<section class="wrap hero">
+  <div>
+    <h1><span class="lead">自分の写真に、</span><span class="nb">雪や桜を降らせて。</span></h1>
+    <p class="sub">ロック画面の壁紙にも、ループする動画で送ることもできます。</p>
+    <a class="badge" href="https://apps.apple.com/app/id6836211068?pt=129250766&ct=lp-driftfall-ja&mt=8"><img src="../img/badge_ja.svg" alt="App Storeからダウンロード"></a>
+    <ul class="facts"><li>サブスクなし</li><li>広告なし</li><li>アカウント不要</li></ul>
+  </div>
+  <div class="device"><img src="../img/editor_sakura_ja.jpg" alt="川辺の写真に桜の花びらが降るDriftfallの画面"></div>
+</section>
+
+<section class="statement">
+  <p><span class="lead">桜、紅葉、雪、蛍、星くず。</span>降らせられるのは14種類。</p>
+</section>
+
+<section class="wrap split">
+  <div class="text">
+    <h2><span class="lead">好きな1枚に、</span><span class="nb">降らせるものを選ぶ。</span></h2>
+    <p>写真アプリから好きな1枚を選んで、降らせるものを選びます。降る量と風の強さを変えられて、写真の位置もずらせます。</p>
+  </div>
+  <div class="device"><img src="../img/editor_maple_ja.jpg" alt="" loading="lazy"></div>
+</section>
+<section class="wrap split rev">
+  <div class="text">
+    <h2><span class="lead">ロック画面で、</span><span class="nb">画面をつけると降り出す。</span></h2>
+    <p>Live Photoとして保存して、壁紙に設定します。iPhoneの画面をつけたとき、少しのあいだ降り出します。</p>
+  </div>
+  <div class="device"><img src="../img/export_snow_ja.jpg" alt="" loading="lazy"></div>
+</section>
+<section class="wrap split">
+  <div class="text">
+    <h2><span class="lead">動く写真にして、</span><span class="nb">送る。</span></h2>
+    <p>つなぎ目なくループする短い動画にして、メッセージやInstagramなど好きなところへ送れます。</p>
+  </div>
+  <div class="device"><img src="../img/share_bubbles_ja.jpg" alt="" loading="lazy"></div>
+</section>
+
+<section class="wrap pricing">
+  <h2>料金のこと</h2>
+  <div class="plan"><h3>無料</h3><p class="note">広告なし・アカウント不要。</p><ul><li>14種類すべてを自分の写真で試せる</li><li>雨とシャボン玉は保存・送信もできる</li></ul></div>
+  <div class="plan"><h3>Driftfall Pro<span class="price">¥2,500</span></h3><p class="note">買い切り・サブスクなし。</p><ul><li>14種類すべてを保存して送れる</li><li>ロック画面のLive Photoにも、ループする動画にも</li></ul></div>
+</section>
+
+<section class="wrap faq">
+  <h2>よくある質問</h2>
+  <div class="q"><b>サブスクですか</b><span>いいえ。14種類すべてを自分の写真で無料で試せます。14種類すべてを保存して送れるDriftfall Proは買い切りです。</span></div>
+  <div class="q"><b>壁紙にするには</b><span>保存したあと、設定＞壁紙＞新しい壁紙を追加＞写真を開いて、保存したLive Photoを選びます。</span></div>
+  <div class="q"><b>少ししか動きません</b><span>iOSのLive Photo壁紙は、画面をつけたときに少しのあいだだけ動く仕組みです。長く見たいときは、動画で送ってください。</span></div>
+  <div class="q"><b>写真はどこに保存されますか</b><span>iPhoneの中だけです。アカウントは無く、どこにも送られません。<a href="../../../privacy/driftfall/ja/">プライバシーポリシー</a>をご覧ください。</span></div>
+  <div class="q"><b>別のiPhoneでProを買いました</b><span>設定（歯車）を開いて「購入を復元」を押してください。</span></div>
+  <div class="q"><b>問い合わせ先は</b><span>minariapps@gmail.comにメールしてください。</span></div>
+</section>
+
+<section class="wrap xapps">
+  <h2>ほかのアプリ</h2>
+  <ul>
+    <li><a href="../../../apps/mantel/ja/"><img src="../../../icons/mantel.png" alt="" loading="lazy"><span><b>Mantel</b>好きな写真をホーム画面に</span></a></li>
+    <li><a href="../../../apps/museday/ja/"><img src="../../../icons/museday.png" alt="" loading="lazy"><span><b>Museday</b>毎日1枚の名画をホーム画面に</span></a></li>
+    <li><a href="../../../apps/nightwick/ja/"><img src="../../../icons/nightwick.png" alt="" loading="lazy"><span><b>Nightwick</b>手元の棚から、今夜の1本を</span></a></li>
+    <li><a href="../../../apps/kotoba/ja/"><img src="../../../icons/kotoba.png" alt="" loading="lazy"><span><b>Kotoba</b>好きな言葉をホーム画面に</span></a></li>
+    <li><a href="../../../apps/datto/ja/"><img src="../../../icons/datto.png" alt="" loading="lazy"><span><b>Datto</b>あと何日をホーム画面に</span></a></li>
+  </ul>
+  <p class="all"><a href="../../../ja/">すべてのアプリ</a></p>
+</section>
+
+<section class="closing">
+  <p><span class="lead">写真はiPhoneの中だけ。</span>アカウントなし、サブスクなし。</p>
+  <a class="badge" href="https://apps.apple.com/app/id6836211068?pt=129250766&ct=lp-driftfall-ja&mt=8"><img src="../img/badge_ja.svg" alt="App Storeからダウンロード"></a>
+</section>
+
+<footer>iOS 17以降・Made by minari・<a href="../../../privacy/driftfall/ja/">プライバシーポリシー</a></footer>
+<p class="langs-row"><a href="../" hreflang="en">English</a> · <b>日本語</b></p>
