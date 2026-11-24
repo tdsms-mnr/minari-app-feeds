@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moviedeck — films picked for your taste</title>
+<meta name="description" content="Moviedeck picks films from what's streaming now, each with a reason written for your taste.">
+<link rel="canonical" href="https://tdsms-mnr.github.io/minari-app-feeds/apps/konya/">
+<style>
+  :root { --bg:#F3EFEC; --surface:#FBF9F7; --ink:#3A3236; --dim:#8A7F84; --track:#E2D9D6; --accent:#B9727F; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1F1B1D; --surface:#292427; --ink:#ECE4E6; --dim:#A3989C; --track:#3A3336; --accent:#C98793; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; line-height:1.7; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:48px max(16px, env(safe-area-inset-left)) 64px; }
+  header { display:flex; align-items:center; gap:16px; }
+  header img { width:64px; height:64px; border-radius:15px; }
+  h1 { font-size:32px; line-height:1.25; margin:0; }
+  .lead { font-size:18px; margin:24px 0 32px; }
+  h2 { font-size:22px; margin:40px 0 12px; }
+  .plans { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:600px) { .plans { grid-template-columns:1fr; } }
+  .plan { background:var(--surface); border-radius:20px; padding:20px 24px; }
+  .plan h3 { margin:0 0 8px; font-size:18px; }
+  .plan ul { margin:0; padding-left:1.1em; }
+  .q { border-top:1px solid var(--track); padding:16px 0; }
+  .q b { display:block; }
+  .q span { color:var(--dim); }
+  a { color:var(--accent); }
+  footer { color:var(--dim); font-size:14px; margin-top:48px; }
+</style>
+<div class="wrap">
+<header><img src="img/icon.png" alt=""><h1>Moviedeck</h1></header>
+<p class="lead">Moviedeck picks films from what's streaming now, each with a reason written for your taste.</p>
+<h2>Free and Pro</h2>
+<div class="plans">
+  <div class="plan"><h3>Free</h3><ul><li>7 films a day in Discover</li><li>Watchlist and the films you've seen</li></ul></div>
+  <div class="plan"><h3>Moviedeck Pro</h3><ul><li>No daily limit on Discover</li><li>Filter by mood</li><li>$5.99 a month or $32.99 a year. Cancel anytime.</li></ul></div>
+</div>
+<h2>Questions</h2>
+<div class="q"><b>Where are my answers stored?</b><span>On your iPhone. There is no account. See the <a href="../../privacy/konya/">Privacy Policy</a>.</span></div>
+<div class="q"><b>I subscribed on another iPhone.</b><span>Open Library &gt; Pro and tap Restore.</span></div>
+<div class="q"><b>Which countries?</b><span>The United States, for now.</span></div>
+<div class="q"><b>I hold rights to an image or text shown in the app.</b><span>Email us with the film and what you'd like removed, and we'll take it down.</span></div>
+<h2>Contact</h2>
+<p>minariapps@gmail.com</p>
+<footer>© 2026 minari · Streaming availability data provided by <a href="https://www.movieofthenight.com/about/api">Streaming Availability API by Movie of the Night</a>.</footer>
+</div>
